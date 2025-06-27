@@ -14,6 +14,22 @@ Thanks for your interest in contributing!
 
 #### uvx example
 
+##### Step
+
+1. clone your mcp server to folder [servers](./servers)
+2. create manifest.json
+3. install dxt
+
+```sh
+npm install -g @anthropic-ai/dxt
+```
+
+4. pack dxt
+
+```sh
+dxt pack
+```
+
 - [servers/blender-mcp](./servers/blender-mcp)
 
 `manifest.json`
