@@ -46,3 +46,6 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ## About
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)
+
+## Community Resources
+- [r/dxt on Reddit](https://www.reddit.com/r/dxt) – Community discussions, help, and showcase
