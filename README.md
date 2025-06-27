@@ -36,6 +36,7 @@
 #### examples
 
 - [hello-world-node](https://github.com/anthropics/dxt/tree/main/examples/hello-world-node) - Basic MCP server with simple time tool
+- [Blender](https://github.com/ahujasid/blender-mcp) - Blender Model Context Protocol Integration
 
 ```json
 {
