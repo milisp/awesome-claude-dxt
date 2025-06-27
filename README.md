@@ -28,6 +28,7 @@
 #### Development Tools
 
 - [chrome-applescript](https://github.com/anthropics/dxt/tree/main/examples/chrome-applescript) - Browser automation via AppleScript
+- [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes)
 
 #### File Management
 
