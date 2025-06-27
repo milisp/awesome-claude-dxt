@@ -37,6 +37,30 @@
 
 - [hello-world-node](https://github.com/anthropics/dxt/tree/main/examples/hello-world-node) - Basic MCP server with simple time tool
 
+```json
+{
+  "dxt_version": "0.1",
+  "name": "blender-mcp",
+  "display_name": "Blender",
+  "version": "1.2",
+  "description": "Blender Model Context Protocol Integration",
+  "author": {
+    "name": "ahujasid"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "main.py",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "blender-mcp@1.2"
+      ]
+    }
+  },
+  "license": "MIT"
+}
+```
+
 ## Packaging & Management Tools
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
