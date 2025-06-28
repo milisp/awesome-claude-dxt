@@ -1,0 +1,16 @@
+{
+  "GITLAB_PERSONAL_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "Your GitLab personal access token",
+    "sensitive": true,
+    "title": "GITLAB_PERSONAL_ACCESS_TOKEN",
+    "required": true
+  },
+  "GITLAB_API_URL": {
+    "type": "string",
+    "description": "Base URL for GitLab API",
+    "sensitive": false,
+    "title": "GITLAB_API_URL",
+    "required": false
+  }
+}

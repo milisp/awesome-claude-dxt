@@ -1,0 +1,9 @@
+{
+  "EXA_API_KEY": {
+    "type": "string",
+    "description": "API key from dashboard.exa.ai/api-keys",
+    "sensitive": true,
+    "title": "EXA_API_KEY",
+    "required": true
+  }
+}

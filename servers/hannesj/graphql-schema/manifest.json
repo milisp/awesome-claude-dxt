@@ -1,0 +1,77 @@
+{
+  "dxt_version": "0.1",
+  "name": "graphql-schema",
+  "display_name": "GraphQL Schema Model Context Protocol",
+  "version": "1.0.0",
+  "description": "Allow LLMs to explore large GraphQL schemas without bloating the context.",
+  "long_description": "",
+  "author": {
+    "name": "hannesj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hannesj/mcp-graphql-schema"
+  },
+  "homepage": "https://github.com/hannesj/mcp-graphql-schema",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-graphql-schema",
+        "/ABSOLUTE/PATH/TO/schema.graphqls"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List all query fields",
+      "description": "Retrieve a list of all available root-level fields for GraphQL queries.",
+      "text": "What query fields are available in this GraphQL schema?"
+    },
+    {
+      "name": "User query field details",
+      "description": "Get detailed definition for the \"user\" query field.",
+      "text": "Show me the details of the \"user\" query field."
+    },
+    {
+      "name": "Mutation operations",
+      "description": "List all mutation operations that can be performed in the schema.",
+      "text": "What mutation operations can I perform in this schema?"
+    },
+    {
+      "name": "List all types",
+      "description": "Retrieve a list of all types defined in the schema.",
+      "text": "List all types defined in this schema."
+    },
+    {
+      "name": "Type definition",
+      "description": "Show the definition of the \"Product\" type.",
+      "text": "Show me the definition of the \"Product\" type."
+    },
+    {
+      "name": "Order type fields",
+      "description": "List all fields of the \"Order\" type.",
+      "text": "List all fields of the \"Order\" type."
+    },
+    {
+      "name": "Search for types and fields",
+      "description": "Search the schema for types and fields related to \"customer.\"",
+      "text": "Search for types and fields related to \"customer\"."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Schema",
+    "API",
+    "GraphQL",
+    "Dev Tools",
+    "LLMs"
+  ],
+  "license": "[NOT FOUND]"
+}

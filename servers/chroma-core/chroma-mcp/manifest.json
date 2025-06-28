@@ -1,0 +1,128 @@
+{
+  "dxt_version": "0.1",
+  "name": "chroma-mcp",
+  "display_name": "Chroma MCP Server",
+  "version": "1.0.0",
+  "description": "Embeddings, vector search, document storage, and full-text search with the open-source AI application database",
+  "long_description": "",
+  "author": {
+    "name": "chroma-core"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chroma-core/chroma-mcp"
+  },
+  "homepage": "https://www.trychroma.com/",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List Collections",
+      "description": "List all collections with pagination support",
+      "text": "Use chroma_list_collections to show me all available collections."
+    },
+    {
+      "name": "Create Collection",
+      "description": "Create a new collection with optional HNSW configuration",
+      "text": "Use chroma_create_collection to create a new collection named 'my_documents'."
+    },
+    {
+      "name": "Query Documents",
+      "description": "Query documents using semantic search with advanced filtering",
+      "text": "Use chroma_query_documents to find documents in the 'my_documents' collection that are similar to 'machine learning concepts'."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "embeddings",
+    "MCP",
+    "vector database",
+    "LLM",
+    "Databases",
+    "retrieval"
+  ],
+  "license": "Apache 2.0",
+  "user_config": {
+    "client-type": {
+      "type": "number",
+      "description": "Type of client to use (ephemeral, persistent, http, cloud)",
+      "sensitive": false,
+      "title": "client-type",
+      "required": false
+    },
+    "data-dir": {
+      "type": "directory",
+      "description": "Directory to store data for persistent client",
+      "sensitive": false,
+      "title": "data-dir",
+      "required": false
+    },
+    "host": {
+      "type": "string",
+      "description": "Host for HTTP client",
+      "sensitive": false,
+      "title": "host",
+      "required": false
+    },
+    "port": {
+      "type": "number",
+      "description": "Port for HTTP client",
+      "sensitive": false,
+      "title": "port",
+      "required": false
+    },
+    "tenant": {
+      "type": "string",
+      "description": "Tenant ID for cloud client",
+      "sensitive": false,
+      "title": "tenant",
+      "required": false
+    },
+    "database": {
+      "type": "string",
+      "description": "Database name for cloud client",
+      "sensitive": false,
+      "title": "database",
+      "required": false
+    },
+    "api-key": {
+      "type": "string",
+      "description": "API key for cloud client",
+      "sensitive": true,
+      "title": "api-key",
+      "required": false
+    },
+    "custom-auth-credentials": {
+      "type": "string",
+      "description": "Custom authentication credentials for HTTP client",
+      "sensitive": false,
+      "title": "custom-auth-credentials",
+      "required": false
+    },
+    "ssl": {
+      "type": "boolean",
+      "description": "Whether to use SSL for HTTP client",
+      "sensitive": false,
+      "title": "ssl",
+      "required": false
+    },
+    "dotenv-path": {
+      "type": "directory",
+      "description": "Path to .env file",
+      "sensitive": false,
+      "title": "dotenv-path",
+      "required": false
+    }
+  }
+}

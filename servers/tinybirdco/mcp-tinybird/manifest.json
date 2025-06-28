@@ -1,0 +1,230 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-tinybird",
+  "display_name": "Tinybird MCP server",
+  "version": "1.0.0",
+  "description": "An MCP server to interact with a Tinybird Workspace from any MCP client.",
+  "long_description": "",
+  "author": {
+    "name": "tinybirdco"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinybirdco/mcp-tinybird"
+  },
+  "homepage": "https://github.com/tinybirdco/mcp-tinybird",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-tinybird",
+        "stdio"
+      ],
+      "env": {
+        "TB_API_URL": "<TINYBIRD_API_URL>",
+        "TB_ADMIN_TOKEN": "<TINYBIRD_ADMIN_TOKEN>"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "list-data-sources",
+      "description": "List all Data Sources in the Tinybird Workspace",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get-data-source",
+      "description": "Get details of a Data Source in the Tinybird Workspace, such as the schema",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "datasource_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "datasource_id"
+        ]
+      }
+    },
+    {
+      "name": "list-pipes",
+      "description": "List all Pipe Endpoints in the Tinybird Workspace",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get-pipe",
+      "description": "Get details of a Pipe Endpoint in the Tinybird Workspace, such as the nodes SQLs to understand what they do or what Data Sources they use",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pipe_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pipe_id"
+        ]
+      }
+    },
+    {
+      "name": "request-pipe-data",
+      "description": "Requests data from a Pipe Endpoint in the Tinybird Workspace, includes parameters",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pipe_id": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "properties": {}
+          }
+        },
+        "required": [
+          "pipe_id"
+        ]
+      }
+    },
+    {
+      "name": "run-select-query",
+      "description": "Runs a select query to the Tinybird Workspace. It may query Data Sources or Pipe Endpoints",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "select_query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "select_query"
+        ]
+      }
+    },
+    {
+      "name": "append-insight",
+      "description": "Add a business insight to the memo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "insight": {
+            "type": "string",
+            "description": "Business insight discovered from data analysis"
+          }
+        },
+        "required": [
+          "insight"
+        ]
+      }
+    },
+    {
+      "name": "llms-tinybird-docs",
+      "description": "The Tinybird product description and documentation, including API Reference in LLM friendly format",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "analyze-pipe",
+      "description": "Analyze the Pipe Endpoint SQL",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pipe_name": {
+            "type": "string",
+            "description": "The Pipe Endpoint name"
+          }
+        },
+        "required": [
+          "pipe_name"
+        ]
+      }
+    },
+    {
+      "name": "push-datafile",
+      "description": "Push a .datasource or .pipe file to the Workspace",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "string",
+            "description": "The datafile local path"
+          }
+        },
+        "required": [
+          "files"
+        ]
+      }
+    },
+    {
+      "name": "save-event",
+      "description": "Sends an event to a Data Source in Tinybird. The data needs to be in NDJSON format and conform to the Data Source schema in Tinybird",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "datasource_name": {
+            "type": "string",
+            "description": "The name of the Data Source in Tinybird"
+          },
+          "data": {
+            "type": "string",
+            "description": "A JSON object that will be converted to a NDJSON String to save in the Tinybird Data Source via the events API. It should contain one key for each column in the Data Source"
+          }
+        }
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Bluesky metrics",
+      "description": "Analyze Bluesky data using Tinybird MCP server",
+      "text": "Help me analyze my Bluesky data stored in Tinybird"
+    },
+    {
+      "name": "Web analytics",
+      "description": "Analyze web analytics data from the web analytics starter kit",
+      "text": "Help me understand the metrics from my web analytics data in Tinybird"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "analytics",
+    "tinybird",
+    "data",
+    "Analytics"
+  ],
+  "license": "Apache-2.0",
+  "user_config": {
+    "TB_API_URL": {
+      "type": "string",
+      "description": "Tinybird API URL for your workspace",
+      "sensitive": false,
+      "title": "TB_API_URL",
+      "required": true
+    },
+    "TB_ADMIN_TOKEN": {
+      "type": "string",
+      "description": "Tinybird Admin Token for authentication",
+      "sensitive": true,
+      "title": "TB_ADMIN_TOKEN",
+      "required": true
+    },
+    "topic": {
+      "type": "string",
+      "description": "Topic of the data you want to explore",
+      "sensitive": false,
+      "title": "topic",
+      "required": true
+    }
+  }
+}

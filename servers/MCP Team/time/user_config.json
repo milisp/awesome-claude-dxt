@@ -1,0 +1,9 @@
+{
+  "TZ": {
+    "type": "string",
+    "description": "Environment variable to override the system's default timezone",
+    "sensitive": false,
+    "title": "TZ",
+    "required": false
+  }
+}

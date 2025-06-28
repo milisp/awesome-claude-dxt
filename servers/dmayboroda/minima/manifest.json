@@ -1,0 +1,111 @@
+{
+  "dxt_version": "0.1",
+  "name": "minima",
+  "display_name": "Minima",
+  "version": "1.0.0",
+  "description": "MCP server for RAG on local files",
+  "long_description": "",
+  "author": {
+    "name": "dmayboroda"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmayboroda/minima"
+  },
+  "homepage": "https://github.com/dmayboroda/minima",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/dmayboroda/minima.git@main#subdirectory=mcp-server",
+        "minima"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "query",
+      "description": "Find a context in local files (PDF, CSV, DOCX, MD, TXT)",
+      "inputSchema": {
+        "properties": {
+          "text": {
+            "description": "context to find",
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "Query",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "ChatGPT",
+    "Local",
+    "Knowledge Base",
+    "Open Source",
+    "Integration"
+  ],
+  "license": "MPLv2",
+  "user_config": {
+    "LOCAL_FILES_PATH": {
+      "type": "string",
+      "description": "Specify the root folder for indexing (on your cloud or local pc). Indexing is a recursive process, meaning all documents within subfolders of this root folder will also be indexed. Supported file types: .pdf, .xls, .docx, .txt, .md, .csv.",
+      "sensitive": false,
+      "title": "LOCAL_FILES_PATH",
+      "required": true
+    },
+    "EMBEDDING_MODEL_ID": {
+      "type": "string",
+      "description": "Specify the embedding model to use. Currently, only Sentence Transformer models are supported. Testing has been done with sentence-transformers/all-mpnet-base-v2, but other Sentence Transformer models can be used.",
+      "sensitive": false,
+      "title": "EMBEDDING_MODEL_ID",
+      "required": false
+    },
+    "EMBEDDING_SIZE": {
+      "type": "number",
+      "description": "Define the embedding dimension provided by the model, which is needed to configure Qdrant vector storage. Ensure this value matches the actual embedding size of the specified EMBEDDING_MODEL_ID.",
+      "sensitive": false,
+      "title": "EMBEDDING_SIZE",
+      "required": false
+    },
+    "OLLAMA_MODEL": {
+      "type": "string",
+      "description": "Set up the Ollama model, use an ID available on the Ollama site. Please, use LLM model here, not an embedding.",
+      "sensitive": false,
+      "title": "OLLAMA_MODEL",
+      "required": false
+    },
+    "RERANKER_MODEL": {
+      "type": "string",
+      "description": "Specify the reranker model. Currently, we have tested with BAAI rerankers. You can explore all available rerankers using a specific link.",
+      "sensitive": false,
+      "title": "RERANKER_MODEL",
+      "required": false
+    },
+    "USER_ID": {
+      "type": "string",
+      "description": "Just use your email here, this is needed to authenticate custom GPT to search in your data.",
+      "sensitive": false,
+      "title": "USER_ID",
+      "required": true
+    },
+    "PASSWORD": {
+      "type": "number",
+      "description": "Put any password here, this is used to create a firebase account for the email specified above.",
+      "sensitive": false,
+      "title": "PASSWORD",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dxt_version": "0.1",
+  "name": "pif",
+  "display_name": "PIF Framework",
+  "version": "1.0.0",
+  "description": "A Personal Intelligence Framework (PIF), providing tools for file operations, structured reasoning, and journal-based documentation to support continuity and evolving human-AI collaboration across sessions.",
+  "long_description": "",
+  "author": {
+    "name": "hungryrobot1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hungryrobot1/MCP-PIF"
+  },
+  "homepage": "https://github.com/hungryrobot1/MCP-PIF",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/hungryrobot1/MCP-PIF"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Reasoning Example",
+      "description": "Create a structured thought pattern.",
+      "text": "reason: { thoughts: [{ content: 'Initial observation' }, { content: 'Building on previous thought', relationType: 'sequence', relationTo: 0 }] }"
+    },
+    {
+      "name": "Journal Creation Example",
+      "description": "Document development for future reference.",
+      "text": "journal_create: { title: 'Implementation Pattern', content: 'Insights about development...', tags: ['development', 'patterns'] }"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "TypeScript",
+    "PIF",
+    "Node.js",
+    "Knowledge Base"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "MCP_WORKSPACE_ROOT": {
+      "type": "directory",
+      "description": "Environment variable to specify a workspace location for the server.",
+      "sensitive": false,
+      "title": "MCP_WORKSPACE_ROOT",
+      "required": false
+    },
+    "MCP_CONFIG": {
+      "type": "string",
+      "description": "Environment variable containing a JSON string of configuration options for the server.",
+      "sensitive": false,
+      "title": "MCP_CONFIG",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "config": {
+    "type": "directory",
+    "description": "The path to your configuration file, which customizes the server behavior.",
+    "sensitive": false,
+    "title": "config",
+    "required": true
+  }
+}

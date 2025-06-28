@@ -1,0 +1,16 @@
+{
+  "API_KEY": {
+    "type": "string",
+    "description": "Your OpenAI API Key for authentication with the OpenAI services.",
+    "sensitive": true,
+    "title": "API_KEY",
+    "required": true
+  },
+  "BASE_URL": {
+    "type": "string",
+    "description": "The base URL for the OpenAI API that you are connecting to.",
+    "sensitive": false,
+    "title": "BASE_URL",
+    "required": true
+  }
+}

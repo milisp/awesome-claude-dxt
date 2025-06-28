@@ -1,0 +1,16 @@
+{
+  "AIVEN_BASE_URL": {
+    "type": "string",
+    "description": "The Aiven API url",
+    "sensitive": false,
+    "title": "AIVEN_BASE_URL",
+    "required": true
+  },
+  "AIVEN_TOKEN": {
+    "type": "string",
+    "description": "The authentication token",
+    "sensitive": true,
+    "title": "AIVEN_TOKEN",
+    "required": true
+  }
+}

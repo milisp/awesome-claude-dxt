@@ -1,0 +1,30 @@
+{
+  "AI_CHAT_KEY": {
+    "type": "string",
+    "description": "API key for authentication with the chat service provider.",
+    "sensitive": true,
+    "title": "AI_CHAT_KEY",
+    "required": true
+  },
+  "AI_CHAT_NAME": {
+    "type": "number",
+    "description": "The name of the AI chat provider to use, like 'OpenAI' or 'PyroPrompts'.",
+    "sensitive": false,
+    "title": "AI_CHAT_NAME",
+    "required": true
+  },
+  "AI_CHAT_MODEL": {
+    "type": "string",
+    "description": "Specifies which model to be used for the chat service, e.g., 'gpt-4o'.",
+    "sensitive": false,
+    "title": "AI_CHAT_MODEL",
+    "required": true
+  },
+  "AI_CHAT_BASE_URL": {
+    "type": "string",
+    "description": "The base URL for the API service of the chat provider.",
+    "sensitive": false,
+    "title": "AI_CHAT_BASE_URL",
+    "required": true
+  }
+}

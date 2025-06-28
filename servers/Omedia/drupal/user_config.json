@@ -1,0 +1,16 @@
+{
+  "VERSION": {
+    "type": "string",
+    "description": "The version of the MCP server to be used. This must be provided to ensure compatibility with the installed Drupal version.",
+    "sensitive": false,
+    "title": "VERSION",
+    "required": true
+  },
+  "DRUPAL_BASE_URL": {
+    "type": "string",
+    "description": "The base URL of the Drupal site that the MCP server will interact with.",
+    "sensitive": false,
+    "title": "DRUPAL_BASE_URL",
+    "required": true
+  }
+}

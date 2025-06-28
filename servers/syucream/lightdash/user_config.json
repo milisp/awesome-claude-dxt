@@ -1,0 +1,16 @@
+{
+  "LIGHTDASH_API_KEY": {
+    "type": "string",
+    "description": "Your Lightdash PAT (Personal Access Token) required for authenticating API requests.",
+    "sensitive": true,
+    "title": "LIGHTDASH_API_KEY",
+    "required": true
+  },
+  "LIGHTDASH_API_URL": {
+    "type": "string",
+    "description": "The base URL for the Lightdash API that you are connecting to.",
+    "sensitive": false,
+    "title": "LIGHTDASH_API_URL",
+    "required": true
+  }
+}

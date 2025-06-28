@@ -1,0 +1,16 @@
+{
+  "url": {
+    "type": "string",
+    "description": "Meilisearch instance URL",
+    "sensitive": false,
+    "title": "url",
+    "required": false
+  },
+  "api_key": {
+    "type": "string",
+    "description": "Meilisearch API key",
+    "sensitive": true,
+    "title": "api_key",
+    "required": false
+  }
+}

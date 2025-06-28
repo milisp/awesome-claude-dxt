@@ -1,0 +1,97 @@
+{
+  "dxt_version": "0.1",
+  "name": "pushover",
+  "display_name": "Pushover Notifications",
+  "version": "1.0.0",
+  "description": "Send instant notifications to your devices using [Pushover.net](https://pushover.net/)",
+  "long_description": "",
+  "author": {
+    "name": "ashiknesin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashiknesin/pushover-mcp"
+  },
+  "homepage": "https://github.com/ashiknesin/pushover-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "pushover-mcp@latest",
+        "start",
+        "--token",
+        "${YOUR_TOKEN}",
+        "--user",
+        "${YOUR_USER}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "send",
+      "description": "Send a notification via Pushover",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "number",
+            "minimum": -2,
+            "maximum": 2
+          },
+          "sound": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "url_title": {
+            "type": "string"
+          },
+          "device": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "message"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "pushover",
+    "notifications",
+    "Messaging"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "YOUR_TOKEN": {
+      "type": "number",
+      "description": "Application token required for authenticating with Pushover.net",
+      "sensitive": true,
+      "title": "YOUR_TOKEN",
+      "required": true
+    },
+    "YOUR_USER": {
+      "type": "string",
+      "description": "User key associated with your Pushover.net account",
+      "sensitive": false,
+      "title": "YOUR_USER",
+      "required": true
+    }
+  }
+}

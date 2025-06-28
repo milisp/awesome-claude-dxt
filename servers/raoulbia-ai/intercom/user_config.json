@@ -1,0 +1,9 @@
+{
+  "INTERCOM_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "Your Intercom API token used to authenticate requests to the Intercom API.",
+    "sensitive": true,
+    "title": "INTERCOM_ACCESS_TOKEN",
+    "required": true
+  }
+}

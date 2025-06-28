@@ -1,0 +1,16 @@
+{
+  "REPLICATE_API_TOKEN": {
+    "type": "string",
+    "description": "Your Replicate API token for authentication",
+    "sensitive": true,
+    "title": "REPLICATE_API_TOKEN",
+    "required": true
+  },
+  "MODEL": {
+    "type": "string",
+    "description": "The Replicate model to use for image generation. Defaults to \"black-forest-labs/flux-schnell\"",
+    "sensitive": false,
+    "title": "MODEL",
+    "required": false
+  }
+}

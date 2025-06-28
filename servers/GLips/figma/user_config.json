@@ -1,0 +1,9 @@
+{
+  "FIGMA_API_KEY": {
+    "type": "string",
+    "description": "Your Figma API access token (required)",
+    "sensitive": true,
+    "title": "FIGMA_API_KEY",
+    "required": true
+  }
+}

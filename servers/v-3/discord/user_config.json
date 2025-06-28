@@ -1,0 +1,9 @@
+{
+  "DISCORD_TOKEN": {
+    "type": "string",
+    "description": "The Discord bot token required for authentication and to interact with Discord's API.",
+    "sensitive": true,
+    "title": "DISCORD_TOKEN",
+    "required": true
+  }
+}

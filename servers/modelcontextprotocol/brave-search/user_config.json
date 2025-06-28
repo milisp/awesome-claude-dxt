@@ -1,0 +1,9 @@
+{
+  "BRAVE_API_KEY": {
+    "type": "string",
+    "description": "The API key required to authenticate requests to the Brave Search API.",
+    "sensitive": true,
+    "title": "BRAVE_API_KEY",
+    "required": true
+  }
+}

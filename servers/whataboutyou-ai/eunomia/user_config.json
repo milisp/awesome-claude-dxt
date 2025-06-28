@@ -1,0 +1,30 @@
+{
+  "APP_NAME": {
+    "type": "string",
+    "description": "Name of the application",
+    "sensitive": false,
+    "title": "APP_NAME",
+    "required": true
+  },
+  "APP_VERSION": {
+    "type": "string",
+    "description": "Current version of the application",
+    "sensitive": false,
+    "title": "APP_VERSION",
+    "required": true
+  },
+  "LOG_LEVEL": {
+    "type": "number",
+    "description": "Logging level to control the verbosity of logs (default: 'info')",
+    "sensitive": false,
+    "title": "LOG_LEVEL",
+    "required": false
+  },
+  "REQUEST_TIMEOUT": {
+    "type": "number",
+    "description": "Environment variable that sets the request timeout duration in seconds",
+    "sensitive": false,
+    "title": "REQUEST_TIMEOUT",
+    "required": false
+  }
+}

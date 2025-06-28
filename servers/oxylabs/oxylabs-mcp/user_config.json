@@ -1,0 +1,23 @@
+{
+  "url": {
+    "type": "string",
+    "description": "The URL to scrape",
+    "sensitive": false,
+    "title": "url",
+    "required": true
+  },
+  "parse": {
+    "type": "boolean",
+    "description": "Enable structured data extraction",
+    "sensitive": false,
+    "title": "parse",
+    "required": false
+  },
+  "render": {
+    "type": "number",
+    "description": "Use headless browser rendering",
+    "sensitive": false,
+    "title": "render",
+    "required": false
+  }
+}

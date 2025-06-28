@@ -1,0 +1,61 @@
+{
+  "dxt_version": "0.1",
+  "name": "reaper",
+  "display_name": "Reaper",
+  "version": "1.0.0",
+  "description": "Interact with your [Reaper](https://www.reaper.fm/) (Digital Audio Workstation) projects.",
+  "long_description": "",
+  "author": {
+    "name": "dschuler36"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dschuler36/reaper-mcp-server"
+  },
+  "homepage": "https://github.com/dschuler36/reaper-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/dschuler36/reaper-mcp-server",
+        "reaper-mcp-server",
+        "--reaper-projects-dir",
+        "${REAPER_PROJECTS_DIR}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Ask about a Reaper project",
+      "description": "Request information about a specific Reaper project you have.",
+      "text": "What are the tracks in my 'Project A' Reaper file?"
+    },
+    {
+      "name": "Find Reaper projects",
+      "description": "Use the tool to locate all Reaper projects in the configured directory.",
+      "text": "Find all my Reaper projects."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Claude",
+    "Media Creation",
+    "Reaper"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "REAPER_PROJECTS_DIR": {
+      "type": "directory",
+      "description": "The directory where Reaper projects are stored, allowing the MCP server to find and interact with them.",
+      "sensitive": false,
+      "title": "REAPER_PROJECTS_DIR",
+      "required": true
+    }
+  }
+}

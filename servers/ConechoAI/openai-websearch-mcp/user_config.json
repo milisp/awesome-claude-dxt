@@ -1,0 +1,9 @@
+{
+  "OPENAI_API_KEY": {
+    "type": "string",
+    "description": "Your OpenAI API key to authenticate requests to the OpenAI API.",
+    "sensitive": true,
+    "title": "OPENAI_API_KEY",
+    "required": true
+  }
+}

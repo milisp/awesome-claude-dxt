@@ -1,0 +1,85 @@
+{
+  "dxt_version": "0.1",
+  "name": "crypto-feargreed-mcp",
+  "display_name": "Crypto Fear & Greed Index",
+  "version": "1.0.0",
+  "description": "Providing real-time and historical Crypto Fear & Greed Index data.",
+  "long_description": "",
+  "author": {
+    "name": "KukaPay",
+    "url": "https://github.com/kukapay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kukapay/crypto-feargreed-mcp"
+  },
+  "homepage": "https://github.com/kukapay/crypto-feargreed-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/kukapay/crypto-feargreed-mcp",
+        "main.py"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "get_current_fng_tool",
+      "description": "Get the current Fear and Greed Index value.",
+      "inputSchema": {},
+      "required": []
+    },
+    {
+      "name": "get_historical_fng_tool",
+      "description": "Get historical Fear and Greed Index data for the specified number of days.",
+      "inputSchema": {
+        "days": {
+          "type": "integer",
+          "description": "Number of days for historical data"
+        }
+      },
+      "required": [
+        "days"
+      ]
+    },
+    {
+      "name": "analyze_fng_trend",
+      "description": "Analyze the Fear and Greed Index trend over the specified number of days.",
+      "inputSchema": {
+        "days": {
+          "type": "integer",
+          "description": "Number of days for trend analysis"
+        }
+      },
+      "required": [
+        "days"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Get Current Index",
+      "description": "What is the current Crypto Fear & Greed Index?",
+      "text": "What's the current Crypto Fear & Greed Index?"
+    },
+    {
+      "name": "Analyze Trend",
+      "description": "Show the Fear & Greed Index trend for a specific number of days.",
+      "text": "Show me the Crypto Fear & Greed Index trend for the last 30 days."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Crypto Index",
+    "Fear & Greed",
+    "Finance",
+    "Analytics"
+  ],
+  "license": "MIT"
+}

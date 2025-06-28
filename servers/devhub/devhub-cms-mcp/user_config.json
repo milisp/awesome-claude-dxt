@@ -1,0 +1,23 @@
+{
+  "DEVHUB_API_KEY": {
+    "type": "string",
+    "description": "Your DevHub API key",
+    "sensitive": true,
+    "title": "DEVHUB_API_KEY",
+    "required": true
+  },
+  "DEVHUB_API_SECRET": {
+    "type": "string",
+    "description": "Your DevHub API secret",
+    "sensitive": false,
+    "title": "DEVHUB_API_SECRET",
+    "required": true
+  },
+  "DEVHUB_BASE_URL": {
+    "type": "string",
+    "description": "Your DevHub base URL",
+    "sensitive": false,
+    "title": "DEVHUB_BASE_URL",
+    "required": true
+  }
+}

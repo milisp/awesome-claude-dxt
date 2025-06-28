@@ -1,0 +1,270 @@
+{
+  "dxt_version": "0.1",
+  "name": "lightdash",
+  "display_name": "Lightdash",
+  "version": "1.0.0",
+  "description": "Interact with [Lightdash](https://www.lightdash.com/), a BI tool.",
+  "long_description": "",
+  "author": {
+    "name": "syucream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syucream/lightdash-mcp-server"
+  },
+  "homepage": "https://github.com/syucream/lightdash-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "lightdash-mcp-server"
+      ],
+      "env": {
+        "LIGHTDASH_API_KEY": "${LIGHTDASH_API_KEY}",
+        "LIGHTDASH_API_URL": "${LIGHTDASH_API_URL}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "lightdash_list_projects",
+      "description": "List all projects in the Lightdash organization",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "lightdash_get_project",
+      "description": "Get details of a specific project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_list_spaces",
+      "description": "List all spaces in a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_list_charts",
+      "description": "List all charts in a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_list_dashboards",
+      "description": "List all dashboards in a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_custom_metrics",
+      "description": "Get custom metrics for a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_catalog",
+      "description": "Get catalog for a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_metrics_catalog",
+      "description": "Get metrics catalog for a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_charts_as_code",
+      "description": "Get charts as code for a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_dashboards_as_code",
+      "description": "Get dashboards as code for a project",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          }
+        },
+        "required": [
+          "projectUuid"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_metadata",
+      "description": "Get metadata for a specific table in the data catalog",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          },
+          "table": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "projectUuid",
+          "table"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_analytics",
+      "description": "Get analytics for a specific table in the data catalog",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "projectUuid": {
+            "type": "string",
+            "format": "uuid",
+            "description": "The UUID of the project. You can obtain it from the project list."
+          },
+          "table": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "projectUuid",
+          "table"
+        ]
+      }
+    },
+    {
+      "name": "lightdash_get_user_attributes",
+      "description": "Get organization user attributes",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "AI",
+    "Analytics",
+    "Lightdash"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "LIGHTDASH_API_KEY": {
+      "type": "string",
+      "description": "Your Lightdash PAT (Personal Access Token) required for authenticating API requests.",
+      "sensitive": true,
+      "title": "LIGHTDASH_API_KEY",
+      "required": true
+    },
+    "LIGHTDASH_API_URL": {
+      "type": "string",
+      "description": "The base URL for the Lightdash API that you are connecting to.",
+      "sensitive": false,
+      "title": "LIGHTDASH_API_URL",
+      "required": true
+    }
+  }
+}

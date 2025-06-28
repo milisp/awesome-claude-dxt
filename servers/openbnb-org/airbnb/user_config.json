@@ -1,0 +1,86 @@
+{
+  "location": {
+    "type": "string",
+    "description": "The location where you want to search for Airbnb listings",
+    "sensitive": false,
+    "title": "location",
+    "required": true
+  },
+  "placeId": {
+    "type": "string",
+    "description": "The unique identifier for a specific place or location",
+    "sensitive": false,
+    "title": "placeId",
+    "required": false
+  },
+  "checkin": {
+    "type": "string",
+    "description": "The check-in date for your stay in YYYY-MM-DD format",
+    "sensitive": false,
+    "title": "checkin",
+    "required": false
+  },
+  "checkout": {
+    "type": "string",
+    "description": "The check-out date for your stay in YYYY-MM-DD format",
+    "sensitive": false,
+    "title": "checkout",
+    "required": false
+  },
+  "adults": {
+    "type": "number",
+    "description": "The number of adults staying",
+    "sensitive": false,
+    "title": "adults",
+    "required": false
+  },
+  "children": {
+    "type": "number",
+    "description": "The number of children staying",
+    "sensitive": false,
+    "title": "children",
+    "required": false
+  },
+  "infants": {
+    "type": "number",
+    "description": "The number of infants staying",
+    "sensitive": false,
+    "title": "infants",
+    "required": false
+  },
+  "pets": {
+    "type": "number",
+    "description": "The number of pets allowed in the listing",
+    "sensitive": false,
+    "title": "pets",
+    "required": false
+  },
+  "minPrice": {
+    "type": "number",
+    "description": "The minimum price per night for the listings",
+    "sensitive": false,
+    "title": "minPrice",
+    "required": false
+  },
+  "maxPrice": {
+    "type": "number",
+    "description": "The maximum price per night for the listings",
+    "sensitive": false,
+    "title": "maxPrice",
+    "required": false
+  },
+  "cursor": {
+    "type": "string",
+    "description": "A cursor for paginating through results",
+    "sensitive": false,
+    "title": "cursor",
+    "required": false
+  },
+  "ignoreRobotsText": {
+    "type": "boolean",
+    "description": "Set to true to disregard Airbnb's robots.txt rules for all requests",
+    "sensitive": false,
+    "title": "ignoreRobotsText",
+    "required": false
+  }
+}

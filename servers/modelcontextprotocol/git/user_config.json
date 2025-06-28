@@ -1,0 +1,9 @@
+{
+  "GIT_REPO_PATH": {
+    "type": "directory",
+    "description": "The path to the Git repository that the mcp-server-git will interact with.",
+    "sensitive": false,
+    "title": "GIT_REPO_PATH",
+    "required": true
+  }
+}

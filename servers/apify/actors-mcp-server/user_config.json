@@ -1,0 +1,9 @@
+{
+  "APIFY_TOKEN": {
+    "type": "string",
+    "description": "Your Apify API token for authentication",
+    "sensitive": true,
+    "title": "APIFY_TOKEN",
+    "required": true
+  }
+}

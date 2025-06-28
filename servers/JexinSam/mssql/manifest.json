@@ -1,0 +1,95 @@
+{
+  "dxt_version": "0.1",
+  "name": "mssql",
+  "display_name": "MSSQL",
+  "version": "1.0.0",
+  "description": "MCP Server for MSSQL database in Python",
+  "long_description": "",
+  "author": {
+    "name": "JexinSam"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JexinSam/mssql_mcp_server"
+  },
+  "homepage": "https://github.com/JexinSam/mssql_mcp_server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mssql_mcp_server"
+      ],
+      "env": {
+        "MSSQL_DRIVER": "${MSSQL_DRIVER}",
+        "MSSQL_HOST": "${MSSQL_HOST}",
+        "MSSQL_USER": "${MSSQL_USER}",
+        "MSSQL_PASSWORD": "${MSSQL_PASSWORD}",
+        "MSSQL_DATABASE": "${MSSQL_DATABASE}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_sql",
+      "description": "Execute an SQL query on the MSSQL server",
+      "inputSchema": {
+        "query": {
+          "type": "string",
+          "description": "The SQL query to execute"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "AI",
+    "Database Access",
+    "Databases",
+    "MSSQL"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "MSSQL_DRIVER": {
+      "type": "string",
+      "description": "Environment variable that specifies the driver to connect to the MSSQL database.",
+      "sensitive": false,
+      "title": "MSSQL_DRIVER",
+      "required": true
+    },
+    "MSSQL_HOST": {
+      "type": "number",
+      "description": "Environment variable that specifies the hostname or IP address of the MSSQL server.",
+      "sensitive": false,
+      "title": "MSSQL_HOST",
+      "required": true
+    },
+    "MSSQL_USER": {
+      "type": "string",
+      "description": "Environment variable that defines the username for connecting to the MSSQL database.",
+      "sensitive": false,
+      "title": "MSSQL_USER",
+      "required": true
+    },
+    "MSSQL_PASSWORD": {
+      "type": "string",
+      "description": "Environment variable that stores the password for the MSSQL user.",
+      "sensitive": false,
+      "title": "MSSQL_PASSWORD",
+      "required": true
+    },
+    "MSSQL_DATABASE": {
+      "type": "string",
+      "description": "Environment variable that specifies the name of the MSSQL database to connect to.",
+      "sensitive": false,
+      "title": "MSSQL_DATABASE",
+      "required": true
+    }
+  }
+}

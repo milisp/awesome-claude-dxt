@@ -1,0 +1,9 @@
+{
+  "TODOIST_API_TOKEN": {
+    "type": "string",
+    "description": "API token to authenticate with the Todoist service",
+    "sensitive": true,
+    "title": "TODOIST_API_TOKEN",
+    "required": true
+  }
+}

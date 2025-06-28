@@ -1,0 +1,16 @@
+{
+  "USER_FILESYSTEM_DIRECTORY": {
+    "type": "string",
+    "description": "The directory to be mounted in the container",
+    "sensitive": false,
+    "title": "USER_FILESYSTEM_DIRECTORY",
+    "required": true
+  },
+  "USER_FILESYSTEM_ALLOWED_DIR": {
+    "type": "string",
+    "description": "The directory to be mounted in the container",
+    "sensitive": false,
+    "title": "USER_FILESYSTEM_ALLOWED_DIR",
+    "required": true
+  }
+}

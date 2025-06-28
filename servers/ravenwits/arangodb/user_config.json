@@ -1,0 +1,30 @@
+{
+  "ARANGO_URL": {
+    "type": "number",
+    "description": "ArangoDB server URL (note: 8529 is the default port for ArangoDB for local development)",
+    "sensitive": false,
+    "title": "ARANGO_URL",
+    "required": true
+  },
+  "ARANGO_DATABASE": {
+    "type": "string",
+    "description": "Database name",
+    "sensitive": false,
+    "title": "ARANGO_DATABASE",
+    "required": true
+  },
+  "ARANGO_USERNAME": {
+    "type": "string",
+    "description": "Database user",
+    "sensitive": false,
+    "title": "ARANGO_USERNAME",
+    "required": true
+  },
+  "ARANGO_PASSWORD": {
+    "type": "string",
+    "description": "Database password",
+    "sensitive": false,
+    "title": "ARANGO_PASSWORD",
+    "required": true
+  }
+}

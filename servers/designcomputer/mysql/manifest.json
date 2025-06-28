@@ -1,0 +1,97 @@
+{
+  "dxt_version": "0.1",
+  "name": "mysql",
+  "display_name": "MySQL Database Integration",
+  "version": "1.0.0",
+  "description": "MySQL database integration in Python with configurable access controls and schema inspection",
+  "long_description": "",
+  "author": {
+    "name": "designcomputer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/designcomputer/mysql_mcp_server"
+  },
+  "homepage": "https://github.com/designcomputer/mysql_mcp_server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mysql_mcp_server"
+      ],
+      "env": {
+        "MYSQL_HOST": "${MYSQL_HOST}",
+        "MYSQL_PORT": "${MYSQL_PORT}",
+        "MYSQL_USER": "${MYSQL_USER}",
+        "MYSQL_PASSWORD": "${MYSQL_PASSWORD}",
+        "MYSQL_DATABASE": "${MYSQL_DATABASE}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_sql",
+      "description": "Execute an SQL query on the MySQL server",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "MySQL",
+    "Databases",
+    "Database Access"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "MYSQL_HOST": {
+      "type": "number",
+      "description": "Database host",
+      "sensitive": false,
+      "title": "MYSQL_HOST",
+      "required": true
+    },
+    "MYSQL_PORT": {
+      "type": "number",
+      "description": "Database port (defaults to 3306 if not specified)",
+      "sensitive": false,
+      "title": "MYSQL_PORT",
+      "required": false
+    },
+    "MYSQL_USER": {
+      "type": "string",
+      "description": "Username for database access",
+      "sensitive": false,
+      "title": "MYSQL_USER",
+      "required": true
+    },
+    "MYSQL_PASSWORD": {
+      "type": "string",
+      "description": "Password for the database user",
+      "sensitive": false,
+      "title": "MYSQL_PASSWORD",
+      "required": true
+    },
+    "MYSQL_DATABASE": {
+      "type": "string",
+      "description": "Database name to connect to",
+      "sensitive": false,
+      "title": "MYSQL_DATABASE",
+      "required": true
+    }
+  }
+}

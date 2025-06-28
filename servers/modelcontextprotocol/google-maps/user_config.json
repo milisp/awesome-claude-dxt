@@ -1,0 +1,9 @@
+{
+  "GOOGLE_MAPS_API_KEY": {
+    "type": "string",
+    "description": "Your Google Maps API key obtained from the Google Developers Console.",
+    "sensitive": true,
+    "title": "GOOGLE_MAPS_API_KEY",
+    "required": true
+  }
+}

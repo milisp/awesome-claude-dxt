@@ -1,0 +1,9 @@
+{
+  "GOOGLE_MAPS_API_KEY": {
+    "type": "string",
+    "description": "Your Google Maps API key with the following APIs enabled: Places API, Directions API, Geocoding API, Time Zone API",
+    "sensitive": true,
+    "title": "GOOGLE_MAPS_API_KEY",
+    "required": true
+  }
+}

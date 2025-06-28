@@ -1,0 +1,51 @@
+{
+  "dxt_version": "0.1",
+  "name": "dify",
+  "display_name": "Dify",
+  "version": "1.0.0",
+  "description": "A simple implementation of an MCP server for dify workflows.",
+  "long_description": "",
+  "author": {
+    "name": "YanxingLiu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YanxingLiu/dify-mcp-server"
+  },
+  "homepage": "https://github.com/YanxingLiu/dify-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/YanxingLiu/dify-mcp-server",
+        "dify_mcp_server"
+      ],
+      "env": {
+        "CONFIG_PATH": "${CONFIG_PATH}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "AI Systems",
+    "server",
+    "dify",
+    "workflows"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "CONFIG_PATH": {
+      "type": "string",
+      "description": "This environment variable indicates the path to the configuration file for the Dify MCP server, typically a YAML file containing necessary settings.",
+      "sensitive": false,
+      "title": "CONFIG_PATH",
+      "required": true
+    }
+  }
+}

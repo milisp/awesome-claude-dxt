@@ -1,0 +1,81 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-motherduck",
+  "display_name": "MotherDuck MCP Server",
+  "version": "1.0.0",
+  "description": "Query and analyze data with MotherDuck and local DuckDB",
+  "long_description": "",
+  "author": {
+    "name": "motherduckdb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/motherduckdb/mcp-server-motherduck"
+  },
+  "homepage": "https://motherduck.com",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-motherduck",
+        "--db-path",
+        "md:",
+        "--motherduck-token",
+        "${input:motherduck_token}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Create a new database and table",
+      "description": "Create a new database and table in MotherDuck",
+      "text": "Create a new database and table in MotherDuck"
+    },
+    {
+      "name": "Query local CSV file",
+      "description": "Query data from a local CSV file",
+      "text": "Query data from my local CSV file"
+    },
+    {
+      "name": "Join data across sources",
+      "description": "Join data from local DuckDB with MotherDuck tables",
+      "text": "Join data from my local DuckDB database with a table in MotherDuck"
+    },
+    {
+      "name": "Analyze S3 data",
+      "description": "Analyze data stored in Amazon S3",
+      "text": "Analyze data stored in Amazon S3"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "analytics",
+    "DuckDB",
+    "MotherDuck",
+    "Databases",
+    "SQL",
+    "database"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "db-path": {
+      "type": "string",
+      "description": "Path to the database to connect to (md: for MotherDuck, :memory: for in-memory, or path to local file)",
+      "sensitive": false,
+      "title": "db-path",
+      "required": true
+    },
+    "motherduck-token": {
+      "type": "string",
+      "description": "MotherDuck access token for authentication",
+      "sensitive": true,
+      "title": "motherduck-token",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "CRYPTOPANIC_API_KEY": {
+    "type": "string",
+    "description": "API key to access CryptoPanic services. This key is necessary to authenticate requests made to the CryptoPanic API.",
+    "sensitive": true,
+    "title": "CRYPTOPANIC_API_KEY",
+    "required": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "e2bApiKey": {
+    "type": "string",
+    "description": "E2B API key",
+    "sensitive": true,
+    "title": "e2bApiKey",
+    "required": true
+  }
+}

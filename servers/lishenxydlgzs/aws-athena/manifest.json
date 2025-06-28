@@ -1,0 +1,211 @@
+{
+  "dxt_version": "0.1",
+  "name": "aws-athena",
+  "display_name": "AWS Athena",
+  "version": "1.0.0",
+  "description": "A MCP server for AWS Athena to run SQL queries on Glue Catalog.",
+  "long_description": "",
+  "author": {
+    "name": "lishenxydlgzs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lishenxydlgzs/aws-athena-mcp"
+  },
+  "homepage": "https://github.com/lishenxydlgzs/aws-athena-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@lishenxydlgzs/aws-athena-mcp"
+      ],
+      "env": {
+        "OUTPUT_S3_PATH": "${OUTPUT_S3_PATH}",
+        "AWS_REGION": "${AWS_REGION}",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+        "AWS_SESSION_TOKEN": "${AWS_SESSION_TOKEN}",
+        "QUERY_TIMEOUT_MS": "${QUERY_TIMEOUT_MS}",
+        "MAX_RETRIES": "${MAX_RETRIES}",
+        "RETRY_DELAY_MS": "${RETRY_DELAY_MS}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "run_query",
+      "description": "Execute a SQL query using AWS Athena. Returns full results if query completes before timeout, otherwise returns queryExecutionId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "database": {
+            "type": "string",
+            "description": "The Athena database to query"
+          },
+          "query": {
+            "type": "string",
+            "description": "SQL query to execute"
+          },
+          "maxRows": {
+            "type": "number",
+            "description": "Maximum number of rows to return (default: 1000)",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "timeoutMs": {
+            "type": "number",
+            "description": "Timeout in milliseconds (default: 60000)",
+            "minimum": 1000
+          }
+        },
+        "required": [
+          "database",
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_result",
+      "description": "Get results for a completed query. Returns error if query is still running.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "queryExecutionId": {
+            "type": "string",
+            "description": "The query execution ID"
+          },
+          "maxRows": {
+            "type": "number",
+            "description": "Maximum number of rows to return (default: 1000)",
+            "minimum": 1,
+            "maximum": 10000
+          }
+        },
+        "required": [
+          "queryExecutionId"
+        ]
+      }
+    },
+    {
+      "name": "get_status",
+      "description": "Get the current status of a query execution",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "queryExecutionId": {
+            "type": "string",
+            "description": "The query execution ID"
+          }
+        },
+        "required": [
+          "queryExecutionId"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Show All Databases",
+      "description": "Lists all databases in Athena",
+      "text": "{\"database\": \"default\", \"query\": \"SHOW DATABASES\"}"
+    },
+    {
+      "name": "List Tables in a Database",
+      "description": "Shows all tables in the default database",
+      "text": "{\"database\": \"default\", \"query\": \"SHOW TABLES\"}"
+    },
+    {
+      "name": "Get Table Schema",
+      "description": "Fetches the schema of the asin_sitebestimg table",
+      "text": "{\"database\": \"default\", \"query\": \"DESCRIBE default.asin_sitebestimg\"}"
+    },
+    {
+      "name": "Table Rows Preview",
+      "description": "Shows some rows from my_database.mytable",
+      "text": "{\"database\": \"my_database\", \"query\": \"SELECT * FROM my_table LIMIT 10\", \"maxRows\": 10}"
+    },
+    {
+      "name": "Advanced Query with Filtering and Aggregation",
+      "description": "Finds the average price by category for in-stock products",
+      "text": "{\"database\": \"my_database\", \"query\": \"SELECT category, COUNT(*) as count, AVG(price) as avg_price FROM products WHERE in_stock = true GROUP BY category ORDER BY count DESC\", \"maxRows\": 100}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "athena",
+    "sql",
+    "Databases",
+    "aws"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "OUTPUT_S3_PATH": {
+      "type": "string",
+      "description": "S3 bucket path for saving Athena query results.",
+      "sensitive": false,
+      "title": "OUTPUT_S3_PATH",
+      "required": true
+    },
+    "AWS_REGION": {
+      "type": "string",
+      "description": "The AWS region to use for Athena queries, defaults to AWS CLI default region.",
+      "sensitive": false,
+      "title": "AWS_REGION",
+      "required": false
+    },
+    "AWS_PROFILE": {
+      "type": "number",
+      "description": "AWS CLI profile to use, defaults to 'default' profile.",
+      "sensitive": false,
+      "title": "AWS_PROFILE",
+      "required": false
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "type": "string",
+      "description": "AWS access key for authentication, if not using IAM role or environment variables.",
+      "sensitive": true,
+      "title": "AWS_ACCESS_KEY_ID",
+      "required": false
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "type": "string",
+      "description": "AWS secret key for authentication, if not using IAM role or environment variables.",
+      "sensitive": true,
+      "title": "AWS_SECRET_ACCESS_KEY",
+      "required": false
+    },
+    "AWS_SESSION_TOKEN": {
+      "type": "string",
+      "description": "Session token for temporary AWS credentials, if using temporary access.",
+      "sensitive": true,
+      "title": "AWS_SESSION_TOKEN",
+      "required": false
+    },
+    "QUERY_TIMEOUT_MS": {
+      "type": "number",
+      "description": "Timeout setting for queries in milliseconds (default: 300000 ms).",
+      "sensitive": false,
+      "title": "QUERY_TIMEOUT_MS",
+      "required": false
+    },
+    "MAX_RETRIES": {
+      "type": "number",
+      "description": "Number of retry attempts for failed queries (default: 100).",
+      "sensitive": false,
+      "title": "MAX_RETRIES",
+      "required": false
+    },
+    "RETRY_DELAY_MS": {
+      "type": "number",
+      "description": "Delay between retry attempts in milliseconds (default: 500 ms).",
+      "sensitive": false,
+      "title": "RETRY_DELAY_MS",
+      "required": false
+    }
+  }
+}

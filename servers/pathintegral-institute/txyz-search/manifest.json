@@ -1,0 +1,84 @@
+{
+  "dxt_version": "0.1",
+  "name": "txyz-search",
+  "display_name": "TXYZ Search",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for TXYZ Search API. Provides tools for academic and scholarly search, general web search, and smart search.",
+  "long_description": "",
+  "author": {
+    "name": "pathintegral-institute"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pathintegral-institute/mcp.science"
+  },
+  "homepage": "https://github.com/pathintegral-institute/mcp.science/tree/main/servers/txyz-search",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/pathintegral-institute/mcp.science#subdirectory=servers/txyz-search",
+        "mcp-txyz-search"
+      ],
+      "env": {
+        "TXYZ_API_KEY": "${TXYZ_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "txyz_search_scholar",
+      "description": "Academic and scholarly search for papers, articles, and other academic materials",
+      "prompt": "Find recent research papers about quantum computing"
+    },
+    {
+      "name": "txyz_search_web",
+      "description": "General web search functionality for resources from web pages",
+      "prompt": "Find information about the latest smartphone releases"
+    },
+    {
+      "name": "txyz_search_smart",
+      "description": "Automatically selects the best search type based on the query (may include either scholarly materials or web pages)",
+      "prompt": "What are the latest developments in climate change research?"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Academic Search",
+      "description": "Search for academic papers on a topic",
+      "text": "Find recent research papers about quantum computing"
+    },
+    {
+      "name": "Web Search",
+      "description": "Search the web for information",
+      "text": "Find information about the latest smartphone releases"
+    },
+    {
+      "name": "Smart Search",
+      "description": "Let the system choose the best search type",
+      "text": "What are the latest developments in climate change research?"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "search",
+    "Web Services",
+    "web search",
+    "scholarly",
+    "academic"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "TXYZ_API_KEY": {
+      "type": "string",
+      "description": "API key from [TXYZ Platform](https://platform.txyz.ai/console)",
+      "sensitive": true,
+      "title": "TXYZ_API_KEY",
+      "required": true
+    }
+  }
+}

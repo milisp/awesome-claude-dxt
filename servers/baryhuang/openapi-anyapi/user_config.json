@@ -1,0 +1,23 @@
+{
+  "OPENAPI_JSON_DOCS_URL": {
+    "type": "string",
+    "description": "URL to the OpenAPI specification JSON (defaults to https://api.staging.readymojo.com/openapi.json)",
+    "sensitive": false,
+    "title": "OPENAPI_JSON_DOCS_URL",
+    "required": false
+  },
+  "API_REQUEST_BASE_URL": {
+    "type": "string",
+    "description": "Optional base URL to override the default URL extracted from the OpenAPI document.",
+    "sensitive": false,
+    "title": "API_REQUEST_BASE_URL",
+    "required": false
+  },
+  "MCP_API_PREFIX": {
+    "type": "number",
+    "description": "Customizable tool namespace (default 'any_openapi'). Allows for control over tool naming.",
+    "sensitive": false,
+    "title": "MCP_API_PREFIX",
+    "required": false
+  }
+}

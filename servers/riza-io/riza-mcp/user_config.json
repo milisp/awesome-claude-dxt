@@ -1,0 +1,9 @@
+{
+  "RIZA_API_KEY": {
+    "type": "string",
+    "description": "API key for Riza service",
+    "sensitive": true,
+    "title": "RIZA_API_KEY",
+    "required": true
+  }
+}

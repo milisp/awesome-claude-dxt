@@ -1,0 +1,9 @@
+{
+  "HYPERBROWSER_API_KEY": {
+    "type": "string",
+    "description": "Your Hyperbrowser API key",
+    "sensitive": true,
+    "title": "HYPERBROWSER_API_KEY",
+    "required": true
+  }
+}

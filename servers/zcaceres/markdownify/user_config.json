@@ -1,0 +1,9 @@
+{
+  "UV_PATH": {
+    "type": "directory",
+    "description": "Environment variable specifying the installation location of the `uv` dependency.",
+    "sensitive": false,
+    "title": "UV_PATH",
+    "required": false
+  }
+}

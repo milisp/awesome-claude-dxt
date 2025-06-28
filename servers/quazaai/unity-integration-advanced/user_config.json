@@ -1,0 +1,9 @@
+{
+  "MCP_WEBSOCKET_PORT": {
+    "type": "number",
+    "description": "Environment variable to specify the WebSocket port used by the MCP server.",
+    "sensitive": false,
+    "title": "MCP_WEBSOCKET_PORT",
+    "required": false
+  }
+}

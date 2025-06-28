@@ -1,0 +1,154 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-qdrant",
+  "display_name": "Qdrant MCP Server",
+  "version": "1.0.0",
+  "description": "This repository is an example of how to create a MCP server for Qdrant, a vector search engine.",
+  "long_description": "",
+  "author": {
+    "name": "qdrant"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qdrant/mcp-server-qdrant"
+  },
+  "homepage": "https://github.com/qdrant/mcp-server-qdrant/",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-qdrant"
+      ],
+      "env": {
+        "QDRANT_URL": "http://localhost:6333",
+        "QDRANT_API_KEY": "your_api_key",
+        "COLLECTION_NAME": "my-collection",
+        "EMBEDDING_MODEL": "sentence-transformers/all-MiniLM-L6-v2"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "qdrant-store",
+      "description": "Keep the memory for later use, when you are asked to remember something.",
+      "inputSchema": {
+        "properties": {
+          "information": {
+            "title": "Information",
+            "type": "string"
+          },
+          "metadata": {
+            "additionalProperties": true,
+            "default": null,
+            "title": "Metadata",
+            "type": "object"
+          }
+        },
+        "required": [
+          "information"
+        ],
+        "title": "storeArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "qdrant-find",
+      "description": "Look up memories in Qdrant. Use this tool when you need to: \n - Find memories by their content \n - Access memories for further analysis \n - Get some personal information about the user",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "findArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Basic Usage",
+      "description": "Store and retrieve information from Qdrant",
+      "text": "I want to store some information in Qdrant and then retrieve it later. Can you help me with that?"
+    },
+    {
+      "name": "Code Snippet Storage",
+      "description": "Store and retrieve code snippets with descriptions",
+      "text": "I need to store this function that calculates Fibonacci numbers and retrieve it later when I need it."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "semantic-search",
+    "qdrant",
+    "memory",
+    "Databases",
+    "vector-search"
+  ],
+  "license": "Apache License 2.0",
+  "user_config": {
+    "QDRANT_URL": {
+      "type": "string",
+      "description": "URL of the Qdrant server",
+      "sensitive": false,
+      "title": "QDRANT_URL",
+      "required": false
+    },
+    "QDRANT_API_KEY": {
+      "type": "string",
+      "description": "API key for the Qdrant server",
+      "sensitive": true,
+      "title": "QDRANT_API_KEY",
+      "required": false
+    },
+    "COLLECTION_NAME": {
+      "type": "string",
+      "description": "Name of the collection to use",
+      "sensitive": false,
+      "title": "COLLECTION_NAME",
+      "required": true
+    },
+    "QDRANT_LOCAL_PATH": {
+      "type": "directory",
+      "description": "Path to the local Qdrant database (alternative to QDRANT_URL)",
+      "sensitive": false,
+      "title": "QDRANT_LOCAL_PATH",
+      "required": false
+    },
+    "EMBEDDING_PROVIDER": {
+      "type": "number",
+      "description": "Embedding provider to use (currently only \"fastembed\" is supported)",
+      "sensitive": false,
+      "title": "EMBEDDING_PROVIDER",
+      "required": false
+    },
+    "EMBEDDING_MODEL": {
+      "type": "string",
+      "description": "Name of the embedding model to use",
+      "sensitive": false,
+      "title": "EMBEDDING_MODEL",
+      "required": false
+    },
+    "TOOL_STORE_DESCRIPTION": {
+      "type": "string",
+      "description": "Custom description for the store tool",
+      "sensitive": false,
+      "title": "TOOL_STORE_DESCRIPTION",
+      "required": false
+    },
+    "TOOL_FIND_DESCRIPTION": {
+      "type": "string",
+      "description": "Custom description for the find tool",
+      "sensitive": false,
+      "title": "TOOL_FIND_DESCRIPTION",
+      "required": false
+    }
+  }
+}

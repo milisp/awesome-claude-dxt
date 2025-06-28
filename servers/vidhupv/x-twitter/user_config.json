@@ -1,0 +1,30 @@
+{
+  "TWITTER_API_KEY": {
+    "type": "string",
+    "description": "The API key for accessing Twitter's API.",
+    "sensitive": true,
+    "title": "TWITTER_API_KEY",
+    "required": true
+  },
+  "TWITTER_API_SECRET": {
+    "type": "string",
+    "description": "The API secret key for accessing Twitter's API.",
+    "sensitive": false,
+    "title": "TWITTER_API_SECRET",
+    "required": true
+  },
+  "TWITTER_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "The access token for authorizing the application to access Twitter on behalf of the user.",
+    "sensitive": true,
+    "title": "TWITTER_ACCESS_TOKEN",
+    "required": true
+  },
+  "TWITTER_ACCESS_TOKEN_SECRET": {
+    "type": "string",
+    "description": "The access token secret for authorizing the application to access Twitter on behalf of the user.",
+    "sensitive": true,
+    "title": "TWITTER_ACCESS_TOKEN_SECRET",
+    "required": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "OBSIDIAN_VAULT_PATH": {
+    "type": "directory",
+    "description": "Path to your Obsidian vault",
+    "sensitive": false,
+    "title": "OBSIDIAN_VAULT_PATH",
+    "required": true
+  },
+  "OBSIDIAN_VAULT_PATH2": {
+    "type": "directory",
+    "description": "Path to your second Obsidian vault",
+    "sensitive": false,
+    "title": "OBSIDIAN_VAULT_PATH2",
+    "required": false
+  }
+}

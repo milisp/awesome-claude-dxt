@@ -1,0 +1,9 @@
+{
+  "DUNE_API_KEY": {
+    "type": "string",
+    "description": "A valid Dune Analytics API key obtained from Dune Analytics for authentication and data access.",
+    "sensitive": true,
+    "title": "DUNE_API_KEY",
+    "required": true
+  }
+}

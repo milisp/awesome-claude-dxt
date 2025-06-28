@@ -1,0 +1,23 @@
+{
+  "milvus-uri": {
+    "type": "string",
+    "description": "Milvus server URI",
+    "sensitive": false,
+    "title": "milvus-uri",
+    "required": true
+  },
+  "milvus-token": {
+    "type": "string",
+    "description": "Optional authentication token",
+    "sensitive": true,
+    "title": "milvus-token",
+    "required": false
+  },
+  "milvus-db": {
+    "type": "number",
+    "description": "Database name",
+    "sensitive": false,
+    "title": "milvus-db",
+    "required": false
+  }
+}

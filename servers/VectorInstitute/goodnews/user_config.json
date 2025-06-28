@@ -1,0 +1,16 @@
+{
+  "NEWS_API_KEY": {
+    "type": "string",
+    "description": "API key for NewsAPI to fetch news articles",
+    "sensitive": true,
+    "title": "NEWS_API_KEY",
+    "required": true
+  },
+  "COHERE_API_KEY": {
+    "type": "string",
+    "description": "API key for Cohere to analyze sentiment of news articles",
+    "sensitive": true,
+    "title": "COHERE_API_KEY",
+    "required": true
+  }
+}

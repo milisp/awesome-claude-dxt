@@ -1,0 +1,30 @@
+{
+  "AWS_ACCESS_KEY_ID": {
+    "type": "number",
+    "description": "Your AWS Access Key ID required for authenticating API calls to AWS services.",
+    "sensitive": true,
+    "title": "AWS_ACCESS_KEY_ID",
+    "required": true
+  },
+  "AWS_SECRET_ACCESS_KEY": {
+    "type": "string",
+    "description": "Your AWS Secret Access Key required alongside the Access Key ID for authentication.",
+    "sensitive": true,
+    "title": "AWS_SECRET_ACCESS_KEY",
+    "required": true
+  },
+  "AWS_REGION": {
+    "type": "string",
+    "description": "The AWS region where your resources are located. Examples include 'us-east-1', 'eu-west-1'.",
+    "sensitive": false,
+    "title": "AWS_REGION",
+    "required": true
+  },
+  "BEDROCK_LOG_GROUP_NAME": {
+    "type": "string",
+    "description": "The name of the CloudWatch log group where Amazon Bedrock model invocation logs are stored.",
+    "sensitive": false,
+    "title": "BEDROCK_LOG_GROUP_NAME",
+    "required": true
+  }
+}

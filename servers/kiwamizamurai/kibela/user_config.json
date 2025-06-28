@@ -1,0 +1,16 @@
+{
+  "KIBELA_TEAM": {
+    "type": "string",
+    "description": "Your Kibela team name",
+    "sensitive": false,
+    "title": "KIBELA_TEAM",
+    "required": true
+  },
+  "KIBELA_TOKEN": {
+    "type": "string",
+    "description": "Your Kibela API token",
+    "sensitive": true,
+    "title": "KIBELA_TOKEN",
+    "required": true
+  }
+}

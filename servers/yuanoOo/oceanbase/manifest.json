@@ -1,0 +1,100 @@
+{
+  "dxt_version": "0.1",
+  "name": "oceanbase",
+  "display_name": "OceanBase",
+  "version": "1.0.0",
+  "description": "(by yuanoOo) A Model Context Protocol (MCP) server that enables secure interaction with OceanBase databases.",
+  "long_description": "",
+  "author": {
+    "name": "yuanoOo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuanoOo/oceanbase_mcp_server"
+  },
+  "homepage": "https://github.com/yuanoOo/oceanbase_mcp_server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/yuanoOo/oceanbase_mcp_server.git",
+        "oceanbase_mcp_server"
+      ],
+      "env": {
+        "OB_HOST": "${OB_HOST}",
+        "OB_PORT": "${OB_PORT}",
+        "OB_USER": "${OB_USER}",
+        "OB_PASSWORD": "${OB_PASSWORD}",
+        "OB_DATABASE": "${OB_DATABASE}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_sql",
+      "description": "Execute an SQL query on the OceanBase server",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "SQL",
+    "Security",
+    "OceanBase",
+    "Databases"
+  ],
+  "license": "Apache-2.0",
+  "user_config": {
+    "OB_HOST": {
+      "type": "number",
+      "description": "Database host for connecting to the OceanBase server.",
+      "sensitive": false,
+      "title": "OB_HOST",
+      "required": true
+    },
+    "OB_PORT": {
+      "type": "number",
+      "description": "Optional: Database port to connect to OceanBase, defaults to 2881 if not specified.",
+      "sensitive": false,
+      "title": "OB_PORT",
+      "required": false
+    },
+    "OB_USER": {
+      "type": "string",
+      "description": "Username for authenticating with the OceanBase database.",
+      "sensitive": false,
+      "title": "OB_USER",
+      "required": true
+    },
+    "OB_PASSWORD": {
+      "type": "string",
+      "description": "Password for the specified database user.",
+      "sensitive": false,
+      "title": "OB_PASSWORD",
+      "required": true
+    },
+    "OB_DATABASE": {
+      "type": "string",
+      "description": "Name of the OceanBase database to connect to.",
+      "sensitive": false,
+      "title": "OB_DATABASE",
+      "required": true
+    }
+  }
+}

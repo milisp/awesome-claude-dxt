@@ -1,0 +1,9 @@
+{
+  "TICKETMASTER_API_KEY": {
+    "type": "string",
+    "description": "API key required to access the Ticketmaster Discovery API.",
+    "sensitive": true,
+    "title": "TICKETMASTER_API_KEY",
+    "required": true
+  }
+}

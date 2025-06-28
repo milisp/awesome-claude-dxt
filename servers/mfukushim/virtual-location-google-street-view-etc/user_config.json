@@ -1,0 +1,177 @@
+{
+  "GoogleMapApi_key": {
+    "type": "string",
+    "description": "API key for accessing Google Maps services.",
+    "sensitive": true,
+    "title": "GoogleMapApi_key",
+    "required": true
+  },
+  "mapApi_url": {
+    "type": "string",
+    "description": "Custom endpoint for the Map API, if any; otherwise, the default endpoint is used.",
+    "sensitive": false,
+    "title": "mapApi_url",
+    "required": false
+  },
+  "time_scale": {
+    "type": "number",
+    "description": "Scale factor to adjust the travel time based on real roads duration; default is 4.",
+    "sensitive": false,
+    "title": "time_scale",
+    "required": false
+  },
+  "sqlite_path": {
+    "type": "string",
+    "description": "Path for saving the SQLite database file. It determines where the travel log will be stored.",
+    "sensitive": false,
+    "title": "sqlite_path",
+    "required": true
+  },
+  "rembg_path": {
+    "type": "directory",
+    "description": "Absolute path of the installed rembg command line interface for removing backgrounds from images.",
+    "sensitive": false,
+    "title": "rembg_path",
+    "required": true
+  },
+  "remBgUrl": {
+    "type": "string",
+    "description": "URL for the rembg API service if used; this is an alternative to the command line interface.",
+    "sensitive": false,
+    "title": "remBgUrl",
+    "required": false
+  },
+  "pixAi_key": {
+    "type": "string",
+    "description": "API key for accessing PixAI image generation services; either this or sd_key must be set to use image generation.",
+    "sensitive": true,
+    "title": "pixAi_key",
+    "required": true
+  },
+  "sd_key": {
+    "type": "string",
+    "description": "API key for accessing Stability.ai image generation services; either this or pixAi_key must be set.",
+    "sensitive": true,
+    "title": "sd_key",
+    "required": true
+  },
+  "pixAi_modelId": {
+    "type": "number",
+    "description": "ID for the PixAI model to be used, if not set, the default model will be used.",
+    "sensitive": false,
+    "title": "pixAi_modelId",
+    "required": false
+  },
+  "comfy_url": {
+    "type": "string",
+    "description": "URL to the ComfyUI API for image generation; must be set if using ComfyUI for this purpose.",
+    "sensitive": false,
+    "title": "comfy_url",
+    "required": false
+  },
+  "comfy_workflow_t2i": {
+    "type": "directory",
+    "description": "Path to the workflow JSON file for text-to-image conversion in ComfyUI.",
+    "sensitive": false,
+    "title": "comfy_workflow_t2i",
+    "required": false
+  },
+  "comfy_workflow_i2i": {
+    "type": "directory",
+    "description": "Path to the workflow JSON file for image-to-image conversion in ComfyUI.",
+    "sensitive": false,
+    "title": "comfy_workflow_i2i",
+    "required": false
+  },
+  "comfy_params": {
+    "type": "string",
+    "description": "Parameters for the ComfyUI workflow in key-value format, received during the request.",
+    "sensitive": false,
+    "title": "comfy_params",
+    "required": false
+  },
+  "fixed_model_prompt": {
+    "type": "string",
+    "description": "A fixed prompt for avatar generation that prevents changes during conversations.",
+    "sensitive": false,
+    "title": "fixed_model_prompt",
+    "required": false
+  },
+  "bodyAreaRatio": {
+    "type": "string",
+    "description": "Acceptable ratio for the avatar image area; affects how much of the image is used for the avatar.",
+    "sensitive": false,
+    "title": "bodyAreaRatio",
+    "required": false
+  },
+  "bodyHWRatio": {
+    "type": "string",
+    "description": "Acceptable aspect ratios for the avatar image; ensures correct proportions for the avatar.",
+    "sensitive": false,
+    "title": "bodyHWRatio",
+    "required": false
+  },
+  "bodyWindowRatioW": {
+    "type": "string",
+    "description": "Horizontal ratio for the avatar composite window; affects layout.",
+    "sensitive": false,
+    "title": "bodyWindowRatioW",
+    "required": false
+  },
+  "bodyWindowRatioH": {
+    "type": "string",
+    "description": "Aspect ratio for the avatar composite window; also affects layout.",
+    "sensitive": false,
+    "title": "bodyWindowRatioH",
+    "required": false
+  },
+  "bs_id": {
+    "type": "string",
+    "description": "Bluesky SNS registration address for posting travel updates.",
+    "sensitive": false,
+    "title": "bs_id",
+    "required": false
+  },
+  "bs_pass": {
+    "type": "string",
+    "description": "Bluesky SNS password for the dedicated account used for posting.",
+    "sensitive": false,
+    "title": "bs_pass",
+    "required": false
+  },
+  "bs_handle": {
+    "type": "string",
+    "description": "Bluesky SNS handle name for the account; used in the posts.",
+    "sensitive": false,
+    "title": "bs_handle",
+    "required": false
+  },
+  "filter_tools": {
+    "type": "string",
+    "description": "Settings to filter the tools available for use; all tools will be available by default.",
+    "sensitive": false,
+    "title": "filter_tools",
+    "required": false
+  },
+  "moveMode": {
+    "type": "number",
+    "description": "Indicates whether the movement mode is realtime or skip; default is realtime.",
+    "sensitive": false,
+    "title": "moveMode",
+    "required": false
+  },
+  "image_width": {
+    "type": "number",
+    "description": "Width of the generated output image in pixels; the default is 512.",
+    "sensitive": false,
+    "title": "image_width",
+    "required": false
+  },
+  "DATABASE_URL": {
+    "type": "string",
+    "description": "Database URL for persistent storage; used if a different database should be connected.",
+    "sensitive": false,
+    "title": "DATABASE_URL",
+    "required": false
+  }
+}

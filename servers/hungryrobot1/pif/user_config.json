@@ -1,0 +1,16 @@
+{
+  "MCP_WORKSPACE_ROOT": {
+    "type": "directory",
+    "description": "Environment variable to specify a workspace location for the server.",
+    "sensitive": false,
+    "title": "MCP_WORKSPACE_ROOT",
+    "required": false
+  },
+  "MCP_CONFIG": {
+    "type": "string",
+    "description": "Environment variable containing a JSON string of configuration options for the server.",
+    "sensitive": false,
+    "title": "MCP_CONFIG",
+    "required": false
+  }
+}

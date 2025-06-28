@@ -1,0 +1,69 @@
+{
+  "dxt_version": "0.1",
+  "name": "tavily-search",
+  "display_name": "Tavily Search",
+  "version": "1.0.0",
+  "description": "An MCP server for Tavily's search & news API, with explicit site inclusions/exclusions",
+  "long_description": "",
+  "author": {
+    "name": "RamXX"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RamXX/mcp-tavily"
+  },
+  "homepage": "https://github.com/RamXX/mcp-tavily",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-tavily"
+      ],
+      "env": {
+        "TAVILY_API_KEY": "your_api_key_here"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Regular Web Search",
+      "description": "Perform a standard web search using Tavily's capabilities.",
+      "text": "Tell me about Anthropic's newly released MCP protocol"
+    },
+    {
+      "name": "Domain Filtering Report",
+      "description": "Generate a report filtering specific domains.",
+      "text": "Tell me about redwood trees. Please use MLA format in markdown syntax and include the URLs in the citations. Exclude Wikipedia sources."
+    },
+    {
+      "name": "Direct Answer Search",
+      "description": "Use answer search mode for getting direct answers.",
+      "text": "I want a concrete answer backed by current web sources: What is the average lifespan of redwood trees?"
+    },
+    {
+      "name": "News Search",
+      "description": "Retrieve recent news articles on specific topics.",
+      "text": "Give me the top 10 AI-related news in the last 5 days."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "AI",
+    "Web Services",
+    "Search"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "TAVILY_API_KEY": {
+      "type": "string",
+      "description": "Your Tavily API key for accessing Tavily's search API functionalities.",
+      "sensitive": true,
+      "title": "TAVILY_API_KEY",
+      "required": true
+    }
+  }
+}

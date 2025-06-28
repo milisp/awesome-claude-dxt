@@ -1,0 +1,9 @@
+{
+  "SEARCH_PATH": {
+    "type": "string",
+    "description": "This environment variable specifies the system's executable search path, which determines where the operating system looks for executable files when running commands.",
+    "sensitive": false,
+    "title": "SEARCH_PATH",
+    "required": false
+  }
+}

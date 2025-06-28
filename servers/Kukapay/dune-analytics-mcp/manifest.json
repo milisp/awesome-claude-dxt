@@ -1,0 +1,62 @@
+{
+  "dxt_version": "0.1",
+  "name": "dune-analytics-mcp",
+  "display_name": "Dune Analytics",
+  "version": "1.0.0",
+  "description": "A mcp server that bridges Dune Analytics data to AI agents.",
+  "long_description": "",
+  "author": {
+    "name": "Kukapay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kukapay/dune-analytics-mcp"
+  },
+  "homepage": "https://github.com/kukapay/dune-analytics-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/kukapay/dune-analytics-mcp",
+        "main.py"
+      ],
+      "env": {
+        "DUNE_API_KEY": "${DUNE_API_KEY}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Get Latest Result",
+      "description": "Retrieves the latest results of a specified Dune query.",
+      "text": "get_latest_result(query_id=4853921)"
+    },
+    {
+      "name": "Run Query",
+      "description": "Executes a Dune query and returns the results.",
+      "text": "run_query(query_id=1215383)"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "AI agents",
+    "Finance",
+    "Analytics",
+    "Dune"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "DUNE_API_KEY": {
+      "type": "string",
+      "description": "A valid Dune Analytics API key obtained from Dune Analytics for authentication and data access.",
+      "sensitive": true,
+      "title": "DUNE_API_KEY",
+      "required": true
+    }
+  }
+}

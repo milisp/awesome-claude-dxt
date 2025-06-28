@@ -1,0 +1,9 @@
+{
+  "EXCEL_FILES_PATH": {
+    "type": "directory",
+    "description": "Directory where Excel files will be stored.",
+    "sensitive": false,
+    "title": "EXCEL_FILES_PATH",
+    "required": false
+  }
+}

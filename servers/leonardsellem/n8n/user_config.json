@@ -1,0 +1,16 @@
+{
+  "N8N_API_URL": {
+    "type": "string",
+    "description": "URL of the n8n API",
+    "sensitive": false,
+    "title": "N8N_API_URL",
+    "required": true
+  },
+  "N8N_API_KEY": {
+    "type": "string",
+    "description": "API key for authenticating with n8n",
+    "sensitive": true,
+    "title": "N8N_API_KEY",
+    "required": true
+  }
+}

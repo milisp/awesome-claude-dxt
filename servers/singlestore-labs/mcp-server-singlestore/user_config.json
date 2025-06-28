@@ -1,0 +1,23 @@
+{
+  "SINGLESTORE_API_KEY": {
+    "type": "string",
+    "description": "SingleStore's management API key",
+    "sensitive": true,
+    "title": "SINGLESTORE_API_KEY",
+    "required": true
+  },
+  "SINGLESTORE_DB_USERNAME": {
+    "type": "string",
+    "description": "Database username",
+    "sensitive": false,
+    "title": "SINGLESTORE_DB_USERNAME",
+    "required": false
+  },
+  "SINGLESTORE_DB_PASSWORD": {
+    "type": "string",
+    "description": "Database password",
+    "sensitive": false,
+    "title": "SINGLESTORE_DB_PASSWORD",
+    "required": false
+  }
+}

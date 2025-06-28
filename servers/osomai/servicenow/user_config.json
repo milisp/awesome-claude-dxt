@@ -1,0 +1,30 @@
+{
+  "SERVICENOW_INSTANCE_URL": {
+    "type": "string",
+    "description": "URL of the ServiceNow instance to connect to.",
+    "sensitive": false,
+    "title": "SERVICENOW_INSTANCE_URL",
+    "required": true
+  },
+  "SERVICENOW_USERNAME": {
+    "type": "string",
+    "description": "Username for accessing the ServiceNow instance.",
+    "sensitive": false,
+    "title": "SERVICENOW_USERNAME",
+    "required": true
+  },
+  "SERVICENOW_PASSWORD": {
+    "type": "string",
+    "description": "Password for the ServiceNow username.",
+    "sensitive": false,
+    "title": "SERVICENOW_PASSWORD",
+    "required": true
+  },
+  "SERVICENOW_AUTH_TYPE": {
+    "type": "number",
+    "description": "Authentication type for connecting to ServiceNow. Options are 'basic', 'oauth', or 'api_key'.",
+    "sensitive": false,
+    "title": "SERVICENOW_AUTH_TYPE",
+    "required": true
+  }
+}

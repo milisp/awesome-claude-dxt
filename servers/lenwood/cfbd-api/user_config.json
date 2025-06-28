@@ -1,0 +1,16 @@
+{
+  "CFB_API_KEY": {
+    "type": "string",
+    "description": "The API key required to authenticate requests to the College Football Data API.",
+    "sensitive": true,
+    "title": "CFB_API_KEY",
+    "required": true
+  },
+  "PATH": {
+    "type": "directory",
+    "description": "Environment variable that specifies the path to the Python executable being used by the server.",
+    "sensitive": false,
+    "title": "PATH",
+    "required": false
+  }
+}

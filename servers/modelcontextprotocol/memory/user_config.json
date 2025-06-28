@@ -1,0 +1,9 @@
+{
+  "MEMORY_FILE_PATH": {
+    "type": "directory",
+    "description": "Path to the memory storage JSON file (default: memory.json in the server directory)",
+    "sensitive": false,
+    "title": "MEMORY_FILE_PATH",
+    "required": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ESIGNATURES_SECRET_TOKEN": {
+    "type": "string",
+    "description": "Your eSignatures API secret token",
+    "sensitive": true,
+    "title": "ESIGNATURES_SECRET_TOKEN",
+    "required": true
+  }
+}

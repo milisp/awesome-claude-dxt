@@ -1,0 +1,58 @@
+{
+  "NFD_API_KEY": {
+    "type": "string",
+    "description": "API key for the NFD service, required for accessing domain functionalities.",
+    "sensitive": true,
+    "title": "NFD_API_KEY",
+    "required": true
+  },
+  "NFD_API_URL": {
+    "type": "string",
+    "description": "The URL endpoint for the NFD API service.",
+    "sensitive": false,
+    "title": "NFD_API_URL",
+    "required": false
+  },
+  "ALGORAND_ALGOD": {
+    "type": "string",
+    "description": "The URL endpoint for the Algorand Algod node.",
+    "sensitive": false,
+    "title": "ALGORAND_ALGOD",
+    "required": true
+  },
+  "ALGORAND_TOKEN": {
+    "type": "string",
+    "description": "The token required to interact with the Algorand Algod node, usually a blank string for testnets.",
+    "sensitive": true,
+    "title": "ALGORAND_TOKEN",
+    "required": false
+  },
+  "ALGORAND_INDEXER": {
+    "type": "string",
+    "description": "The URL endpoint for the Algorand Indexer service.",
+    "sensitive": false,
+    "title": "ALGORAND_INDEXER",
+    "required": true
+  },
+  "ALGORAND_INDEXER_API": {
+    "type": "string",
+    "description": "The API endpoint for accessing Algorand indexer functionalities.",
+    "sensitive": false,
+    "title": "ALGORAND_INDEXER_API",
+    "required": false
+  },
+  "ALGORAND_INDEXER_PORT": {
+    "type": "string",
+    "description": "The port for the Algorand indexer service, usually left blank for default settings.",
+    "sensitive": false,
+    "title": "ALGORAND_INDEXER_PORT",
+    "required": false
+  },
+  "ALGORAND_NETWORK": {
+    "type": "number",
+    "description": "The network type being used (e.g., testnet or mainnet).",
+    "sensitive": false,
+    "title": "ALGORAND_NETWORK",
+    "required": true
+  }
+}

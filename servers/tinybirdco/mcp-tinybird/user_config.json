@@ -1,0 +1,23 @@
+{
+  "TB_API_URL": {
+    "type": "string",
+    "description": "Tinybird API URL for your workspace",
+    "sensitive": false,
+    "title": "TB_API_URL",
+    "required": true
+  },
+  "TB_ADMIN_TOKEN": {
+    "type": "string",
+    "description": "Tinybird Admin Token for authentication",
+    "sensitive": true,
+    "title": "TB_ADMIN_TOKEN",
+    "required": true
+  },
+  "topic": {
+    "type": "string",
+    "description": "Topic of the data you want to explore",
+    "sensitive": false,
+    "title": "topic",
+    "required": true
+  }
+}

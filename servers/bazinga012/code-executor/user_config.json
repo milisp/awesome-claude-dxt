@@ -1,0 +1,16 @@
+{
+  "CODE_STORAGE_DIR": {
+    "type": "directory",
+    "description": "The directory where the generated code will be stored.",
+    "sensitive": false,
+    "title": "CODE_STORAGE_DIR",
+    "required": true
+  },
+  "CONDA_ENV_NAME": {
+    "type": "string",
+    "description": "The name of the Conda environment in which the code will be executed.",
+    "sensitive": false,
+    "title": "CONDA_ENV_NAME",
+    "required": true
+  }
+}

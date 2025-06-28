@@ -1,0 +1,23 @@
+{
+  "AIRFLOW_HOST": {
+    "type": "string",
+    "description": "URL of your Apache Airflow instance",
+    "sensitive": false,
+    "title": "AIRFLOW_HOST",
+    "required": true
+  },
+  "AIRFLOW_USERNAME": {
+    "type": "number",
+    "description": "Username for authenticating with Airflow",
+    "sensitive": false,
+    "title": "AIRFLOW_USERNAME",
+    "required": true
+  },
+  "AIRFLOW_PASSWORD": {
+    "type": "string",
+    "description": "Password for authenticating with Airflow",
+    "sensitive": false,
+    "title": "AIRFLOW_PASSWORD",
+    "required": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "NS_API_KEY": {
+    "type": "string",
+    "description": "Your NS API key, required for authenticating API requests to access NS travel information.",
+    "sensitive": true,
+    "title": "NS_API_KEY",
+    "required": true
+  }
+}

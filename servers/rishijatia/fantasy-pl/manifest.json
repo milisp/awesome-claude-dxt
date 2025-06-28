@@ -1,0 +1,59 @@
+{
+  "dxt_version": "0.1",
+  "name": "fantasy-pl",
+  "display_name": "Fantasy Premier League",
+  "version": "1.0.0",
+  "description": "Give your coding agent direct access to up-to date Fantasy Premier League data",
+  "long_description": "",
+  "author": {
+    "name": "rishijatia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishijatia/fantasy-pl-mcp"
+  },
+  "homepage": "https://github.com/rishijatia/fantasy-pl-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "fpl-mcp"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Compare Players",
+      "description": "This example shows how to compare the statistics of two players.",
+      "text": "Compare Mohamed Salah and Erling Haaland over the last 5 gameweeks."
+    },
+    {
+      "name": "Find Players",
+      "description": "This example demonstrates how to find players of a specific team.",
+      "text": "Find all Arsenal midfielders."
+    },
+    {
+      "name": "Current Gameweek Status",
+      "description": "This example prompts for the current gameweek status.",
+      "text": "What's the current gameweek status?"
+    },
+    {
+      "name": "Top Forwards",
+      "description": "This example retrieves the top 5 forwards by points.",
+      "text": "Show me the top 5 forwards by points."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "football",
+    "FPL",
+    "Analytics",
+    "fantasy"
+  ],
+  "license": "MIT"
+}

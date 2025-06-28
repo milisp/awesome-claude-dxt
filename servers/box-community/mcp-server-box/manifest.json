@@ -1,0 +1,78 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-box",
+  "display_name": "MCP Server Box",
+  "version": "1.0.0",
+  "description": "MCP Server Box is a Python project that integrates with the Box API to perform various operations such as file search, text extraction, AI-based querying, and data extraction. It leverages the `box-sdk-gen` library and provides a set of tools to interact with Box files and folders.",
+  "long_description": "",
+  "author": {
+    "name": "box-community"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/box-community/mcp-server-box"
+  },
+  "homepage": "https://github.com/box-community/mcp-server-box",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/mcp-server-box",
+        "run",
+        "src/mcp_server_box.py"
+      ],
+      "env": {
+        "BOX_CLIENT_ID": "your_client_id",
+        "BOX_CLIENT_SECRET": "your_client_secret"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Search for files in Box",
+      "description": "Search for files with specific extensions in Box",
+      "text": "Search for PDF files containing 'quarterly report'"
+    },
+    {
+      "name": "Extract data using Box AI",
+      "description": "Extract structured data from a document using Box AI",
+      "text": "Extract the following fields from file 123456: title, date, amount"
+    },
+    {
+      "name": "Ask questions about a document",
+      "description": "Ask Box AI questions about a specific document",
+      "text": "What are the key findings in the document with ID 123456?"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Knowledge Base",
+    "search",
+    "ai",
+    "file-management",
+    "box",
+    "text-extraction"
+  ],
+  "license": "[NOT GIVEN]",
+  "user_config": {
+    "BOX_CLIENT_ID": {
+      "type": "string",
+      "description": "Box API Client ID",
+      "sensitive": false,
+      "title": "BOX_CLIENT_ID",
+      "required": true
+    },
+    "BOX_CLIENT_SECRET": {
+      "type": "string",
+      "description": "Box API Client Secret",
+      "sensitive": false,
+      "title": "BOX_CLIENT_SECRET",
+      "required": true
+    }
+  }
+}

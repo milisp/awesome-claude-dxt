@@ -1,0 +1,9 @@
+{
+  "DEVREV_API_KEY": {
+    "type": "string",
+    "description": "Your DevRev API key required to authenticate requests to the DevRev API.",
+    "sensitive": true,
+    "title": "DEVREV_API_KEY",
+    "required": true
+  }
+}

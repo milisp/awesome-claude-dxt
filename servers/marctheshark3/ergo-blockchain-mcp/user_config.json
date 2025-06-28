@@ -1,0 +1,37 @@
+{
+  "SERVER_HOST": {
+    "type": "number",
+    "description": "Host to bind the server to (default: 0.0.0.0)",
+    "sensitive": false,
+    "title": "SERVER_HOST",
+    "required": false
+  },
+  "SERVER_PORT": {
+    "type": "number",
+    "description": "Port to run the server on (default: 3001)",
+    "sensitive": false,
+    "title": "SERVER_PORT",
+    "required": false
+  },
+  "SERVER_WORKERS": {
+    "type": "number",
+    "description": "Number of worker processes (default: 4)",
+    "sensitive": false,
+    "title": "SERVER_WORKERS",
+    "required": false
+  },
+  "ERGO_NODE_API": {
+    "type": "string",
+    "description": "URL of the Ergo node API (for node-specific features)",
+    "sensitive": false,
+    "title": "ERGO_NODE_API",
+    "required": false
+  },
+  "ERGO_NODE_API_KEY": {
+    "type": "string",
+    "description": "API key for the Ergo node (if required)",
+    "sensitive": true,
+    "title": "ERGO_NODE_API_KEY",
+    "required": false
+  }
+}

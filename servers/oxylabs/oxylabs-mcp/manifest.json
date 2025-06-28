@@ -1,0 +1,169 @@
+{
+  "dxt_version": "0.1",
+  "name": "oxylabs-mcp",
+  "display_name": "Oxylabs Scraper",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server that enables AI assistants like Claude to seamlessly access web data through Oxylabs' powerful web scraping technology.",
+  "long_description": "",
+  "author": {
+    "name": "oxylabs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxylabs/oxylabs-mcp"
+  },
+  "homepage": "https://github.com/oxylabs/oxylabs-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "oxylabs-mcp"
+      ],
+      "env": {
+        "OXYLABS_USERNAME": "YOUR_USERNAME_HERE",
+        "OXYLABS_PASSWORD": "YOUR_PASSWORD_HERE"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "oxylabs_scraper",
+      "description": "Scrape url using Oxylabs Web Api",
+      "inputSchema": {
+        "properties": {
+          "url": {
+            "description": "Url to scrape",
+            "title": "Url",
+            "type": "string"
+          },
+          "parse": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Should result be parsed. If result should not be parsed then html will be stripped and converted to markdown file",
+            "title": "Parse"
+          },
+          "render": {
+            "anyOf": [
+              {
+                "enum": [
+                  "html",
+                  "None"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Whether a headless browser should be used to render the page. See: https://developers.oxylabs.io/scraper-apis/web-scraper-api/features/javascript-rendering `html` will return rendered html page `None` will not use render for scraping.",
+            "title": "Render"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "title": "scrape_urlArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "oxylabs_web_unblocker",
+      "description": "Scrape url using Oxylabs Web Unblocker",
+      "inputSchema": {
+        "properties": {
+          "url": {
+            "description": "Url to scrape with web unblocker",
+            "title": "Url",
+            "type": "string"
+          },
+          "render": {
+            "anyOf": [
+              {
+                "enum": [
+                  "html",
+                  "None"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Whether a headless browser should be used to render the page. See: https://developers.oxylabs.io/advanced-proxy-solutions/web-unblocker/headless-browser/javascript-rendering `html` will return rendered html page `None` will not use render for scraping.",
+            "title": "Render"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "title": "scrape_with_web_unblockerArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Basic Google Search",
+      "description": "Scrape a Google search results page",
+      "text": "Could you scrape https://www.google.com/search?q=ai page?"
+    },
+    {
+      "name": "Amazon Product with Parse",
+      "description": "Scrape an Amazon product page with parsing enabled",
+      "text": "Scrape https://www.amazon.de/-/en/Smartphone-Contract-Function-Manufacturer-Exclusive/dp/B0CNKD651V with parse enabled"
+    },
+    {
+      "name": "Amazon Bestsellers with Parse and Render",
+      "description": "Scrape an Amazon bestsellers page with parsing and rendering enabled",
+      "text": "Scrape https://www.amazon.de/-/en/gp/bestsellers/beauty/ref=zg_bs_nav_beauty_0 with parse and render enabled"
+    },
+    {
+      "name": "Best Buy with Web Unblocker",
+      "description": "Use web unblocker with rendering to scrape a Best Buy page",
+      "text": "Use web unblocker with render to scrape https://www.bestbuy.com/site/top-deals/all-electronics-on-sale/pcmcat1674241939957.c"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "web scraping",
+    "web unblocker",
+    "Web Services",
+    "data extraction"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "url": {
+      "type": "string",
+      "description": "The URL to scrape",
+      "sensitive": false,
+      "title": "url",
+      "required": true
+    },
+    "parse": {
+      "type": "boolean",
+      "description": "Enable structured data extraction",
+      "sensitive": false,
+      "title": "parse",
+      "required": false
+    },
+    "render": {
+      "type": "number",
+      "description": "Use headless browser rendering",
+      "sensitive": false,
+      "title": "render",
+      "required": false
+    }
+  }
+}

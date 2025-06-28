@@ -1,0 +1,9 @@
+{
+  "COINBASE_CDP_API_KEY_NAME": {
+    "type": "string",
+    "description": "The name of your Coinbase CDP API key, which is required for authenticating API requests.",
+    "sensitive": true,
+    "title": "COINBASE_CDP_API_KEY_NAME",
+    "required": true
+  }
+}

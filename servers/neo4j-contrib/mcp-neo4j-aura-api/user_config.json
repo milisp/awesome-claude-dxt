@@ -1,0 +1,16 @@
+{
+  "NEO4J_CLIENT_ID": {
+    "type": "string",
+    "description": "Neo4j client ID",
+    "sensitive": false,
+    "title": "NEO4J_CLIENT_ID",
+    "required": true
+  },
+  "NEO4J_CLIENT_SECRET": {
+    "type": "string",
+    "description": "Neo4j client secret",
+    "sensitive": false,
+    "title": "NEO4J_CLIENT_SECRET",
+    "required": true
+  }
+}

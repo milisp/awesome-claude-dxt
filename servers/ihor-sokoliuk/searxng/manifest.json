@@ -1,0 +1,74 @@
+{
+  "dxt_version": "0.1",
+  "name": "searxng",
+  "display_name": "SearXNG",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol Server for [SearXNG](https://docs.searxng.org/)",
+  "long_description": "",
+  "author": {
+    "name": "ihor-sokoliuk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihor-sokoliuk/mcp-searxng"
+  },
+  "homepage": "https://github.com/ihor-sokoliuk/mcp-searxng",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/ihor-sokoliuk/mcp-searxng"
+      ],
+      "env": {
+        "SEARXNG_URL": "${SEARXNG_URL}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "searxng_web_search",
+      "description": "Execute web searches with pagination.",
+      "inputSchema": {
+        "query": {
+          "type": "string",
+          "description": "Search terms"
+        },
+        "count": {
+          "type": "number",
+          "description": "Results per page (default: 20)",
+          "optional": true
+        },
+        "offset": {
+          "type": "number",
+          "description": "Pagination offset (default: 0)",
+          "optional": true
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "search",
+    "Web Services",
+    "api",
+    "searxng"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "SEARXNG_URL": {
+      "type": "string",
+      "description": "Environment variable to set the URL of the SearXNG instance that will be used for search queries.",
+      "sensitive": false,
+      "title": "SEARXNG_URL",
+      "required": true
+    }
+  }
+}

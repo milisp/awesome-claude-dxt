@@ -1,0 +1,9 @@
+{
+  "GITHUB_PERSONAL_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "A personal access token required for authentication with GitHub API, used to access user repositories and perform actions.",
+    "sensitive": true,
+    "title": "GITHUB_PERSONAL_ACCESS_TOKEN",
+    "required": true
+  }
+}

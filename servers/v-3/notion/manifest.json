@@ -1,0 +1,48 @@
+{
+  "dxt_version": "0.1",
+  "name": "notion",
+  "display_name": "Notion",
+  "version": "1.0.0",
+  "description": "Notion MCP integration. Search, Read, Update, and Create pages through Claude chat.",
+  "long_description": "",
+  "author": {
+    "name": "v-3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v-3/notion-server"
+  },
+  "homepage": "https://github.com/v-3/notion-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/v-3/notion-server"
+      ],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Notion",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "NOTION_API_KEY": {
+      "type": "string",
+      "description": "Your Notion API key for authentication to access data within your Notion workspace.",
+      "sensitive": true,
+      "title": "NOTION_API_KEY",
+      "required": true
+    }
+  }
+}

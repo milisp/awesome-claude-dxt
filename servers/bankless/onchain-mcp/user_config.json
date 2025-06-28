@@ -1,0 +1,9 @@
+{
+  "BANKLESS_API_TOKEN": {
+    "type": "string",
+    "description": "API token for Bankless API authentication",
+    "sensitive": true,
+    "title": "BANKLESS_API_TOKEN",
+    "required": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "AMAP_MAPS_API_KEY": {
+    "type": "string",
+    "description": "The API key to access the AMap service.",
+    "sensitive": true,
+    "title": "AMAP_MAPS_API_KEY",
+    "required": true
+  }
+}

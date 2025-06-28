@@ -1,0 +1,9 @@
+{
+  "TAVILY_API_KEY": {
+    "type": "string",
+    "description": "API key for Tavily services",
+    "sensitive": true,
+    "title": "TAVILY_API_KEY",
+    "required": true
+  }
+}

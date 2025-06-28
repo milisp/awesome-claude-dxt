@@ -1,0 +1,23 @@
+{
+  "NEO4J_URI": {
+    "type": "string",
+    "description": "Neo4j database URI (default: bolt://localhost:7687)",
+    "sensitive": false,
+    "title": "NEO4J_URI",
+    "required": false
+  },
+  "NEO4J_USERNAME": {
+    "type": "number",
+    "description": "Neo4j username (default: neo4j)",
+    "sensitive": false,
+    "title": "NEO4J_USERNAME",
+    "required": false
+  },
+  "NEO4J_PASSWORD": {
+    "type": "string",
+    "description": "Neo4j password",
+    "sensitive": false,
+    "title": "NEO4J_PASSWORD",
+    "required": true
+  }
+}

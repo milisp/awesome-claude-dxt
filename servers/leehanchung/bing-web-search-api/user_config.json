@@ -1,0 +1,9 @@
+{
+  "BING_API_KEY": {
+    "type": "string",
+    "description": "API key required for authenticating requests to the Microsoft Bing Search API.",
+    "sensitive": true,
+    "title": "BING_API_KEY",
+    "required": true
+  }
+}

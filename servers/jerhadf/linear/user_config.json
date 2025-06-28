@@ -1,0 +1,9 @@
+{
+  "LINEAR_API_KEY": {
+    "type": "string",
+    "description": "Your Linear API key to authenticate requests to the Linear API.",
+    "sensitive": true,
+    "title": "LINEAR_API_KEY",
+    "required": true
+  }
+}

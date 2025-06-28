@@ -1,0 +1,161 @@
+{
+  "dxt_version": "0.1",
+  "name": "fetch-mcp",
+  "display_name": "Fetch",
+  "version": "1.0.0",
+  "description": "A server that flexibly fetches HTML, JSON, Markdown, or plaintext.",
+  "long_description": "",
+  "author": {
+    "name": "zcaceres"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcaceres/fetch-mcp"
+  },
+  "homepage": "https://github.com/zcaceres/fetch-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/zcaceres/fetch-mcp"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "fetch_html",
+      "description": "Fetch a website and return the content as HTML",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the website to fetch"
+          },
+          "headers": {
+            "type": "object",
+            "description": "Optional headers to include in the request"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "fetch_markdown",
+      "description": "Fetch a website and return the content as Markdown",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the website to fetch"
+          },
+          "headers": {
+            "type": "object",
+            "description": "Optional headers to include in the request"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "fetch_txt",
+      "description": "Fetch a website, return the content as plain text (no HTML)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the website to fetch"
+          },
+          "headers": {
+            "type": "object",
+            "description": "Optional headers to include in the request"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "fetch_json",
+      "description": "Fetch a JSON file from a URL",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the JSON to fetch"
+          },
+          "headers": {
+            "type": "object",
+            "description": "Optional headers to include in the request"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Fetch HTML",
+      "description": "Fetch a website and return the content as HTML",
+      "text": "fetch_html(url: string, headers?: object) -> string"
+    },
+    {
+      "name": "Fetch JSON",
+      "description": "Fetch a JSON file from a URL",
+      "text": "fetch_json(url: string, headers?: object) -> object"
+    },
+    {
+      "name": "Fetch Plain Text",
+      "description": "Fetch a website and return the content as plain text",
+      "text": "fetch_txt(url: string, headers?: object) -> string"
+    },
+    {
+      "name": "Fetch Markdown",
+      "description": "Fetch a website and return the content as Markdown",
+      "text": "fetch_markdown(url: string, headers?: object) -> string"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Web Services",
+    "api",
+    "fetch",
+    "json",
+    "plain text",
+    "markdown",
+    "web",
+    "html"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "url": {
+      "type": "string",
+      "description": "URL of the website to fetch",
+      "sensitive": false,
+      "title": "url",
+      "required": true
+    },
+    "headers": {
+      "type": "string",
+      "description": "Custom headers to include in the request",
+      "sensitive": false,
+      "title": "headers",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "dxt_version": "0.1",
+  "name": "aws-cost-explorer",
+  "display_name": "AWS Cost Explorer",
+  "version": "1.0.0",
+  "description": "Optimize your AWS spend (including Amazon Bedrock spend) with this MCP server by examining spend across regions, services, instance types and foundation models ([demo video](https://www.youtube.com/watch?v=WuVOmYLRFmI&feature=youtu.be)).",
+  "long_description": "",
+  "author": {
+    "name": "aarora79"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarora79/aws-cost-explorer-mcp-server"
+  },
+  "homepage": "https://github.com/aarora79/aws-cost-explorer-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--directory",
+        "/path/to/aws-cost-explorer-mcp-server",
+        "run",
+        "server.py"
+      ],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+        "AWS_REGION": "${AWS_REGION}",
+        "BEDROCK_LOG_GROUP_NAME": "${BEDROCK_LOG_GROUP_NAME}",
+        "MCP_TRANSPORT": "stdio"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Get EC2 Spending",
+      "description": "Retrieve the EC2 spending data for the previous day.",
+      "text": "What was my EC2 spend yesterday?"
+    },
+    {
+      "name": "Analyze Spending",
+      "description": "Analyze spending by region for the past 14 days.",
+      "text": "Analyze my spending by region for the past 14 days."
+    },
+    {
+      "name": "Show Top Services",
+      "description": "Show me my top 5 AWS services by cost for the last month.",
+      "text": "Show me my top 5 AWS services by cost for the last month."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "AWS",
+    "Cost Explorer",
+    "Analytics",
+    "Amazon Bedrock"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "AWS_ACCESS_KEY_ID": {
+      "type": "number",
+      "description": "Your AWS Access Key ID required for authenticating API calls to AWS services.",
+      "sensitive": true,
+      "title": "AWS_ACCESS_KEY_ID",
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "type": "string",
+      "description": "Your AWS Secret Access Key required alongside the Access Key ID for authentication.",
+      "sensitive": true,
+      "title": "AWS_SECRET_ACCESS_KEY",
+      "required": true
+    },
+    "AWS_REGION": {
+      "type": "string",
+      "description": "The AWS region where your resources are located. Examples include 'us-east-1', 'eu-west-1'.",
+      "sensitive": false,
+      "title": "AWS_REGION",
+      "required": true
+    },
+    "BEDROCK_LOG_GROUP_NAME": {
+      "type": "string",
+      "description": "The name of the CloudWatch log group where Amazon Bedrock model invocation logs are stored.",
+      "sensitive": false,
+      "title": "BEDROCK_LOG_GROUP_NAME",
+      "required": true
+    }
+  }
+}

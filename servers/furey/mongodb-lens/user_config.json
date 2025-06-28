@@ -1,0 +1,16 @@
+{
+  "CONFIG_LOG_LEVEL": {
+    "type": "number",
+    "description": "Sets the logging level of MongoDB Lens, controlling the verbosity of log output.",
+    "sensitive": false,
+    "title": "CONFIG_LOG_LEVEL",
+    "required": false
+  },
+  "MONGODB_URI": {
+    "type": "string",
+    "description": "The connection string for the MongoDB database.",
+    "sensitive": false,
+    "title": "MONGODB_URI",
+    "required": true
+  }
+}

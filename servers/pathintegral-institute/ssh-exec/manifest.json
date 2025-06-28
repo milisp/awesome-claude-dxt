@@ -1,0 +1,165 @@
+{
+  "dxt_version": "0.1",
+  "name": "ssh-exec",
+  "display_name": "SSH Execution",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for executing command-line operations on remote servers via SSH.",
+  "long_description": "",
+  "author": {
+    "name": "pathintegral-institute"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pathintegral-institute/mcp.science"
+  },
+  "homepage": "https://github.com/pathintegral-institute/mcp.science/tree/main/servers/ssh-exec",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/pathintegral-institute/mcp.science#subdirectory=servers/ssh-exec",
+        "mcp-ssh-exec"
+      ],
+      "env": {
+        "SSH_HOST": "your-server.com",
+        "SSH_PORT": "22",
+        "SSH_USERNAME": "your_username",
+        "SSH_PRIVATE_KEY": "$(cat ~/.ssh/id_rsa)",
+        "SSH_ALLOWED_COMMANDS": "ls,ps,cat",
+        "SSH_ALLOWED_PATHS": "/tmp,/home",
+        "SSH_COMMANDS_BLACKLIST": "rm,mv,dd,mkfs,fdisk,format",
+        "SSH_ARGUMENTS_BLACKLIST": "-rf,-fr,--force"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "ssh_exec",
+      "description": "Execute a command on the remote system",
+      "inputSchema": {
+        "properties": {
+          "command": {
+            "description": "Command for SSH server to execute",
+            "title": "Command",
+            "type": "string"
+          },
+          "arguments": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Arguments to pass to the command",
+            "title": "Arguments"
+          },
+          "timeout": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Timeout in seconds for command execution",
+            "title": "Timeout"
+          }
+        },
+        "required": [
+          "command"
+        ],
+        "title": "ssh_execArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Execute a command",
+      "description": "Execute a command on the remote system",
+      "text": "Execute 'ls -la /tmp' on the remote server"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "remote systems",
+    "command execution",
+    "System Tools",
+    "ssh"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "SSH_HOST": {
+      "type": "string",
+      "description": "SSH host to connect to",
+      "sensitive": false,
+      "title": "SSH_HOST",
+      "required": true
+    },
+    "SSH_PORT": {
+      "type": "number",
+      "description": "SSH port",
+      "sensitive": false,
+      "title": "SSH_PORT",
+      "required": false
+    },
+    "SSH_USERNAME": {
+      "type": "string",
+      "description": "SSH username",
+      "sensitive": false,
+      "title": "SSH_USERNAME",
+      "required": true
+    },
+    "SSH_PRIVATE_KEY": {
+      "type": "string",
+      "description": "SSH private key content (not path)",
+      "sensitive": true,
+      "title": "SSH_PRIVATE_KEY",
+      "required": false
+    },
+    "SSH_PASSWORD": {
+      "type": "string",
+      "description": "SSH password",
+      "sensitive": false,
+      "title": "SSH_PASSWORD",
+      "required": false
+    },
+    "SSH_ALLOWED_COMMANDS": {
+      "type": "string",
+      "description": "Comma-separated list of commands that are allowed to be executed",
+      "sensitive": false,
+      "title": "SSH_ALLOWED_COMMANDS",
+      "required": false
+    },
+    "SSH_ALLOWED_PATHS": {
+      "type": "string",
+      "description": "Comma-separated list of paths that are allowed for command execution",
+      "sensitive": false,
+      "title": "SSH_ALLOWED_PATHS",
+      "required": false
+    },
+    "SSH_COMMANDS_BLACKLIST": {
+      "type": "string",
+      "description": "Comma-separated list of commands that are not allowed",
+      "sensitive": false,
+      "title": "SSH_COMMANDS_BLACKLIST",
+      "required": false
+    },
+    "SSH_ARGUMENTS_BLACKLIST": {
+      "type": "string",
+      "description": "Comma-separated list of arguments that are not allowed",
+      "sensitive": false,
+      "title": "SSH_ARGUMENTS_BLACKLIST",
+      "required": false
+    }
+  }
+}

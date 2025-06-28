@@ -1,0 +1,9 @@
+{
+  "keyword": {
+    "type": "string",
+    "description": "The keyword to search for articles in arXiv.",
+    "sensitive": true,
+    "title": "keyword",
+    "required": true
+  }
+}

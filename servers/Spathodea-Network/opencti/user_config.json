@@ -1,0 +1,16 @@
+{
+  "OPENCTI_URL": {
+    "type": "string",
+    "description": "Your OpenCTI instance URL",
+    "sensitive": false,
+    "title": "OPENCTI_URL",
+    "required": true
+  },
+  "OPENCTI_TOKEN": {
+    "type": "string",
+    "description": "Your OpenCTI API token",
+    "sensitive": true,
+    "title": "OPENCTI_TOKEN",
+    "required": true
+  }
+}

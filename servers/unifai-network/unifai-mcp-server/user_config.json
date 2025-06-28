@@ -1,0 +1,9 @@
+{
+  "UNIFAI_AGENT_API_KEY": {
+    "type": "string",
+    "description": "UnifAI Agent API Key for authentication",
+    "sensitive": true,
+    "title": "UNIFAI_AGENT_API_KEY",
+    "required": true
+  }
+}

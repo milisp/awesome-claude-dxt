@@ -1,0 +1,37 @@
+{
+  "GREPTIMEDB_HOST": {
+    "type": "number",
+    "description": "Database host",
+    "sensitive": false,
+    "title": "GREPTIMEDB_HOST",
+    "required": true
+  },
+  "GREPTIMEDB_PORT": {
+    "type": "number",
+    "description": "Database port",
+    "sensitive": false,
+    "title": "GREPTIMEDB_PORT",
+    "required": false
+  },
+  "GREPTIMEDB_USER": {
+    "type": "number",
+    "description": "Database username",
+    "sensitive": false,
+    "title": "GREPTIMEDB_USER",
+    "required": true
+  },
+  "GREPTIMEDB_PASSWORD": {
+    "type": "string",
+    "description": "Database password",
+    "sensitive": false,
+    "title": "GREPTIMEDB_PASSWORD",
+    "required": true
+  },
+  "GREPTIMEDB_DATABASE": {
+    "type": "number",
+    "description": "Database name",
+    "sensitive": false,
+    "title": "GREPTIMEDB_DATABASE",
+    "required": true
+  }
+}

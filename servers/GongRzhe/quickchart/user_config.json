@@ -1,0 +1,9 @@
+{
+  "client": {
+    "type": "number",
+    "description": "Specifies the client type for which the QuickChart Server is installed. In this case, it's for Claude.",
+    "sensitive": false,
+    "title": "client",
+    "required": true
+  }
+}

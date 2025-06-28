@@ -1,0 +1,72 @@
+{
+  "client-type": {
+    "type": "number",
+    "description": "Type of client to use (ephemeral, persistent, http, cloud)",
+    "sensitive": false,
+    "title": "client-type",
+    "required": false
+  },
+  "data-dir": {
+    "type": "directory",
+    "description": "Directory to store data for persistent client",
+    "sensitive": false,
+    "title": "data-dir",
+    "required": false
+  },
+  "host": {
+    "type": "string",
+    "description": "Host for HTTP client",
+    "sensitive": false,
+    "title": "host",
+    "required": false
+  },
+  "port": {
+    "type": "number",
+    "description": "Port for HTTP client",
+    "sensitive": false,
+    "title": "port",
+    "required": false
+  },
+  "tenant": {
+    "type": "string",
+    "description": "Tenant ID for cloud client",
+    "sensitive": false,
+    "title": "tenant",
+    "required": false
+  },
+  "database": {
+    "type": "string",
+    "description": "Database name for cloud client",
+    "sensitive": false,
+    "title": "database",
+    "required": false
+  },
+  "api-key": {
+    "type": "string",
+    "description": "API key for cloud client",
+    "sensitive": true,
+    "title": "api-key",
+    "required": false
+  },
+  "custom-auth-credentials": {
+    "type": "string",
+    "description": "Custom authentication credentials for HTTP client",
+    "sensitive": false,
+    "title": "custom-auth-credentials",
+    "required": false
+  },
+  "ssl": {
+    "type": "boolean",
+    "description": "Whether to use SSL for HTTP client",
+    "sensitive": false,
+    "title": "ssl",
+    "required": false
+  },
+  "dotenv-path": {
+    "type": "directory",
+    "description": "Path to .env file",
+    "sensitive": false,
+    "title": "dotenv-path",
+    "required": false
+  }
+}

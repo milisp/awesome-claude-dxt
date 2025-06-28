@@ -1,0 +1,9 @@
+{
+  "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "Your Content Management API token for accessing Contentful services.",
+    "sensitive": true,
+    "title": "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN",
+    "required": true
+  }
+}

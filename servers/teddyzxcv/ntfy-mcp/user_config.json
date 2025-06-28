@@ -1,0 +1,9 @@
+{
+  "NTFY_TOPIC": {
+    "type": "string",
+    "description": "Environment variable representing the topic name for notifications to be sent to.",
+    "sensitive": false,
+    "title": "NTFY_TOPIC",
+    "required": true
+  }
+}

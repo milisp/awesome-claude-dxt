@@ -1,0 +1,9 @@
+{
+  "PRODUCTBOARD_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "An access token needed to authenticate with the Productboard API. This token is required to make requests to the API and must be kept confidential.",
+    "sensitive": true,
+    "title": "PRODUCTBOARD_ACCESS_TOKEN",
+    "required": true
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "dxt_version": "0.1",
+  "name": "search1api-mcp",
+  "display_name": "Search1API MCP Server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
+  "long_description": "",
+  "author": {
+    "name": "fatwang2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatwang2/search1api-mcp"
+  },
+  "homepage": "https://www.search1api.com/?utm_source=mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "search1api-mcp"
+      ],
+      "env": {
+        "SEARCH1API_KEY": "YOUR_SEARCH1API_KEY"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search",
+      "description": "Web search tool",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query, be simple and concise"
+          },
+          "max_results": {
+            "type": "number",
+            "description": "Maximum number of results to return",
+            "default": 10
+          },
+          "search_service": {
+            "type": "string",
+            "description": "Specify the search engine to use. Choose based on your specific needs",
+            "default": "google",
+            "enum": [
+              "google",
+              "bing",
+              "duckduckgo",
+              "yahoo",
+              "x",
+              "reddit",
+              "github",
+              "youtube",
+              "arxiv",
+              "wechat",
+              "bilibili",
+              "imdb",
+              "wikipedia"
+            ]
+          },
+          "crawl_results": {
+            "type": "number",
+            "description": "Number of results to crawl for full webpage content, useful when search result summaries are insufficient for complex queries",
+            "default": 0
+          },
+          "include_sites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of sites to include in search. Only use when you need special results from sites not available in search_service",
+            "default": []
+          },
+          "exclude_sites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of sites to exclude from search. Only use when you need to explicitly filter out specific domains from results",
+            "default": []
+          },
+          "time_range": {
+            "type": "string",
+            "description": "Time range for search results, only use when specific time constraints are required",
+            "enum": [
+              "day",
+              "month",
+              "year"
+            ]
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "news",
+      "description": "News search tool",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query, be simple and concise"
+          },
+          "max_results": {
+            "type": "number",
+            "description": "Maximum number of results to return",
+            "default": 10
+          },
+          "search_service": {
+            "type": "string",
+            "description": "Specify the news engine to use. Choose based on your specific needs",
+            "default": "bing",
+            "enum": [
+              "google",
+              "bing",
+              "duckduckgo",
+              "yahoo",
+              "hackernews"
+            ]
+          },
+          "crawl_results": {
+            "type": "number",
+            "description": "Number of results to crawl for full webpage content, useful when search result summaries are insufficient for complex queries",
+            "default": 0
+          },
+          "include_sites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of sites to include in search. Only use when you need special results from sites not available in search_service",
+            "default": []
+          },
+          "exclude_sites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of sites to exclude from search. Only use when you need to explicitly filter out specific domains from results",
+            "default": []
+          },
+          "time_range": {
+            "type": "string",
+            "description": "Time range for search results, only use when specific time constraints are required",
+            "enum": [
+              "day",
+              "month",
+              "year"
+            ]
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "crawl",
+      "description": "Extract content from URL",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL to crawl"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "sitemap",
+      "description": "Get all related links from a URL",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL to get sitemap"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      }
+    },
+    {
+      "name": "reasoning",
+      "description": "Deep thinking and complex problem solving",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "description": "The question or problem that needs deep thinking"
+          }
+        },
+        "required": [
+          "content"
+        ]
+      }
+    },
+    {
+      "name": "trending",
+      "description": "Get trending topics from popular platforms",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "search_service": {
+            "type": "string",
+            "description": "Specify the platform to get trending topics from",
+            "enum": [
+              "github",
+              "hackernews"
+            ],
+            "default": "github"
+          },
+          "max_results": {
+            "type": "number",
+            "description": "Maximum number of trending items to return",
+            "default": 10
+          }
+        },
+        "required": [
+          "search_service"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Web Search",
+      "description": "Search the web for information",
+      "text": "Search for the latest news about artificial intelligence"
+    },
+    {
+      "name": "News Search",
+      "description": "Search for news articles",
+      "text": "Find news articles about climate change from the past month"
+    },
+    {
+      "name": "Web Crawling",
+      "description": "Extract content from a specific URL",
+      "text": "Crawl the content from https://example.com"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "reasoning",
+    "search",
+    "trending",
+    "Web Services",
+    "news",
+    "sitemap",
+    "crawl",
+    "web"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "SEARCH1API_KEY": {
+      "type": "string",
+      "description": "Your Search1API API key",
+      "sensitive": true,
+      "title": "SEARCH1API_KEY",
+      "required": true
+    }
+  }
+}

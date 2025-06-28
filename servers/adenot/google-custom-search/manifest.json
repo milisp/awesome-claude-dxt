@@ -1,0 +1,92 @@
+{
+  "dxt_version": "0.1",
+  "name": "google-custom-search",
+  "display_name": "Google Custom Search",
+  "version": "1.0.0",
+  "description": "Provides Google Search results via the Google Custom Search API",
+  "long_description": "",
+  "author": {
+    "name": "adenot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adenot/mcp-google-search"
+  },
+  "homepage": "https://github.com/adenot/mcp-google-search",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@adenot/mcp-google-search"
+      ],
+      "env": {
+        "GOOGLE_API_KEY": "your-api-key-here",
+        "GOOGLE_SEARCH_ENGINE_ID": "your-search-engine-id-here"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search",
+      "description": "Perform a web search query",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query"
+          },
+          "num": {
+            "type": "number",
+            "description": "Number of results (1-10)",
+            "minimum": 1,
+            "maximum": 10
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Search Tool",
+      "description": "Perform web searches using Google Custom Search API.",
+      "text": "{\"name\":\"search\",\"arguments\":{\"query\":\"your search query\",\"num\":5}}"
+    },
+    {
+      "name": "Webpage Reader Tool",
+      "description": "Extract content from any webpage.",
+      "text": "{\"name\":\"read_webpage\",\"arguments\":{\"url\":\"https://example.com\"}}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Custom Search",
+    "Webpage Reading",
+    "Web Services",
+    "Google"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GOOGLE_API_KEY": {
+      "type": "string",
+      "description": "Your Google API key for accessing the Google Custom Search API.",
+      "sensitive": true,
+      "title": "GOOGLE_API_KEY",
+      "required": true
+    },
+    "GOOGLE_SEARCH_ENGINE_ID": {
+      "type": "string",
+      "description": "The unique identifier for your Custom Search Engine that you created on Google.",
+      "sensitive": false,
+      "title": "GOOGLE_SEARCH_ENGINE_ID",
+      "required": true
+    }
+  }
+}

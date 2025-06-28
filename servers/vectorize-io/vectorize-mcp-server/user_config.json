@@ -1,0 +1,23 @@
+{
+  "VECTORIZE_ORG_ID": {
+    "type": "string",
+    "description": "Vectorize Organization ID",
+    "sensitive": false,
+    "title": "VECTORIZE_ORG_ID",
+    "required": true
+  },
+  "VECTORIZE_TOKEN": {
+    "type": "string",
+    "description": "Vectorize Token",
+    "sensitive": true,
+    "title": "VECTORIZE_TOKEN",
+    "required": true
+  },
+  "VECTORIZE_PIPELINE_ID": {
+    "type": "string",
+    "description": "Vectorize Pipeline ID",
+    "sensitive": false,
+    "title": "VECTORIZE_PIPELINE_ID",
+    "required": true
+  }
+}

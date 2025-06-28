@@ -1,0 +1,175 @@
+{
+  "dxt_version": "0.1",
+  "name": "prometheus",
+  "display_name": "Prometheus",
+  "version": "1.0.0",
+  "description": "Query and analyze Prometheus - open-source monitoring system.",
+  "long_description": "",
+  "author": {
+    "name": "pab1it0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pab1it0/prometheus-mcp-server"
+  },
+  "homepage": "https://github.com/pab1it0/prometheus-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/pab1it0/prometheus-mcp-server",
+        "prometheus-mcp-server"
+      ],
+      "env": {
+        "PROMETHEUS_URL": "${PROMETHEUS_URL}",
+        "PROMETHEUS_USERNAME": "${PROMETHEUS_USERNAME}",
+        "PROMETHEUS_PASSWORD": "${PROMETHEUS_PASSWORD}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_query",
+      "description": "Execute a PromQL instant query against Prometheus",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Time"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "execute_queryArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "execute_range_query",
+      "description": "Execute a PromQL range query with start time, end time, and step interval",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "start": {
+            "title": "Start",
+            "type": "string"
+          },
+          "end": {
+            "title": "End",
+            "type": "string"
+          },
+          "step": {
+            "title": "Step",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query",
+          "start",
+          "end",
+          "step"
+        ],
+        "title": "execute_range_queryArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "list_metrics",
+      "description": "List all available metrics in Prometheus",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_metricsArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_metric_metadata",
+      "description": "Get metadata for a specific metric",
+      "inputSchema": {
+        "properties": {
+          "metric": {
+            "title": "Metric",
+            "type": "string"
+          }
+        },
+        "required": [
+          "metric"
+        ],
+        "title": "get_metric_metadataArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_targets",
+      "description": "Get information about all scrape targets",
+      "inputSchema": {
+        "properties": {},
+        "title": "get_targetsArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Execute Query",
+      "description": "Execute a PromQL instant query against Prometheus",
+      "text": "execute_query({ query: \"up\" })"
+    },
+    {
+      "name": "List Metrics",
+      "description": "Get a list of metrics from Prometheus",
+      "text": "list_metrics()"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "AI",
+    "Metrics",
+    "Analytics",
+    "Prometheus"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "PROMETHEUS_URL": {
+      "type": "string",
+      "description": "The URL of the Prometheus server you want to connect to.",
+      "sensitive": false,
+      "title": "PROMETHEUS_URL",
+      "required": true
+    },
+    "PROMETHEUS_USERNAME": {
+      "type": "string",
+      "description": "The username for basic authentication when accessing the Prometheus server.",
+      "sensitive": false,
+      "title": "PROMETHEUS_USERNAME",
+      "required": false
+    },
+    "PROMETHEUS_PASSWORD": {
+      "type": "string",
+      "description": "The password for basic authentication when accessing the Prometheus server.",
+      "sensitive": false,
+      "title": "PROMETHEUS_PASSWORD",
+      "required": false
+    }
+  }
+}

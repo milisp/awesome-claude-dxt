@@ -1,0 +1,161 @@
+{
+  "dxt_version": "0.1",
+  "name": "neo4j",
+  "display_name": "Neo4j Server",
+  "version": "1.0.0",
+  "description": "A community built server that interacts with Neo4j Graph Database.",
+  "long_description": "",
+  "author": {
+    "name": "da-okazaki"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/da-okazaki/mcp-neo4j-server"
+  },
+  "homepage": "https://github.com/da-okazaki/mcp-neo4j-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@alanse/mcp-neo4j-server"
+      ],
+      "env": {
+        "NEO4J_URI": "${NEO4J_URI}",
+        "NEO4J_USERNAME": "${NEO4J_USERNAME}",
+        "NEO4J_PASSWORD": "${NEO4J_PASSWORD}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_query",
+      "description": "Execute a Cypher query on Neo4j database",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Cypher query to execute"
+          },
+          "params": {
+            "type": "object",
+            "description": "Query parameters",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "create_node",
+      "description": "Create a new node in Neo4j",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Node label"
+          },
+          "properties": {
+            "type": "object",
+            "description": "Node properties",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "label",
+          "properties"
+        ]
+      }
+    },
+    {
+      "name": "create_relationship",
+      "description": "Create a relationship between two nodes",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fromNodeId": {
+            "type": "number",
+            "description": "ID of the source node"
+          },
+          "toNodeId": {
+            "type": "number",
+            "description": "ID of the target node"
+          },
+          "type": {
+            "type": "string",
+            "description": "Relationship type"
+          },
+          "properties": {
+            "type": "object",
+            "description": "Relationship properties",
+            "additionalProperties": true
+          }
+        },
+        "required": [
+          "fromNodeId",
+          "toNodeId",
+          "type"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Querying Data",
+      "description": "Ask questions about the data, e.g., 'Show me all employees in the Sales department'.",
+      "text": "User: \"Show me all employees in the Sales department\""
+    },
+    {
+      "name": "Creating Data",
+      "description": "Instruct the bot to create new entities, e.g., 'Add a new person named John Doe who is 30 years old'.",
+      "text": "User: \"Add a new person named John Doe who is 30 years old\""
+    },
+    {
+      "name": "Creating Relationships",
+      "description": "Request to establish relationships between entities, e.g., 'Make John Doe friends with Jane Smith'.",
+      "text": "User: \"Make John Doe friends with Jane Smith\""
+    },
+    {
+      "name": "Complex Operations",
+      "description": "Perform comprehensive queries like 'Find all products purchased by customers who live in New York'.",
+      "text": "User: \"Find all products purchased by customers who live in New York\""
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "neo4j",
+    "Databases",
+    "database"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "NEO4J_URI": {
+      "type": "string",
+      "description": "Neo4j database URI (default: bolt://localhost:7687)",
+      "sensitive": false,
+      "title": "NEO4J_URI",
+      "required": false
+    },
+    "NEO4J_USERNAME": {
+      "type": "number",
+      "description": "Neo4j username (default: neo4j)",
+      "sensitive": false,
+      "title": "NEO4J_USERNAME",
+      "required": false
+    },
+    "NEO4J_PASSWORD": {
+      "type": "string",
+      "description": "Neo4j password",
+      "sensitive": false,
+      "title": "NEO4J_PASSWORD",
+      "required": true
+    }
+  }
+}

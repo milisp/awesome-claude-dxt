@@ -1,0 +1,9 @@
+{
+  "APIMATIC_API_KEY": {
+    "type": "string",
+    "description": "API key for APIMatic service",
+    "sensitive": true,
+    "title": "APIMATIC_API_KEY",
+    "required": true
+  }
+}

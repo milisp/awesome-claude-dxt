@@ -1,0 +1,9 @@
+{
+  "NOTION_API_KEY": {
+    "type": "string",
+    "description": "Your Notion API key for authentication to access data within your Notion workspace.",
+    "sensitive": true,
+    "title": "NOTION_API_KEY",
+    "required": true
+  }
+}

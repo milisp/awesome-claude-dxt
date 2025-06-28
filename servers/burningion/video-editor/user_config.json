@@ -1,0 +1,9 @@
+{
+  "YOURAPIKEY": {
+    "type": "number",
+    "description": "API key required to authenticate and communicate with Video Jungle services.",
+    "sensitive": true,
+    "title": "YOURAPIKEY",
+    "required": true
+  }
+}

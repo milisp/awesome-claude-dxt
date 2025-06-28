@@ -1,0 +1,301 @@
+{
+  "dxt_version": "0.1",
+  "name": "amap",
+  "display_name": "Amap / \u9ad8\u5fb7\u5730\u56fe",
+  "version": "1.0.0",
+  "description": "MCP Server for the AMap Map API.",
+  "long_description": "",
+  "author": {
+    "name": "amap"
+  },
+  "repository": {
+    "type": "npm",
+    "url": "https://www.npmjs.com/package/@amap/amap-maps-mcp-server"
+  },
+  "homepage": "https://lbs.amap.com/api/mcp-server/summary",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@amap/amap-maps-mcp-server"
+      ],
+      "env": {
+        "AMAP_MAPS_API_KEY": "${AMAP_MAPS_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "maps_regeocode",
+      "description": "\u5c06\u7ecf\u7eac\u5ea6\u5750\u6807\u8f6c\u6362\u4e3a\u5546\u5708\u533a\u57df\u4fe1\u606f",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "\u7ecf\u7eac\u5ea6\u5750\u6807"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    },
+    {
+      "name": "maps_geo",
+      "description": "\u5c06\u5730\u5740\u8f6c\u6362\u4e3a\u7ecf\u7eac\u5ea6\u5750\u6807",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "\u5730\u5740"
+          },
+          "city": {
+            "type": "string",
+            "description": "\u6307\u5b9a\u67e5\u8be2\u7684\u57ce\u5e02"
+          }
+        },
+        "required": [
+          "address"
+        ]
+      }
+    },
+    {
+      "name": "maps_ip_location",
+      "description": "\u6839\u636e\u7528\u6237\u8f93\u5165\u7684 IP \u5730\u5740\u786e\u5b9a IP \u7684\u4f4d\u7f6e",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "IP\u5730\u5740"
+          }
+        },
+        "required": [
+          "ip"
+        ]
+      }
+    },
+    {
+      "name": "maps_weather",
+      "description": "\u6839\u636e\u57ce\u5e02\u540d\u79f0\u6216 adcode \u67e5\u8be2\u6307\u5b9a\u57ce\u5e02\u7684\u5929\u6c14",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "\u57ce\u5e02\u540d\u79f0\u6216 adcode"
+          }
+        },
+        "required": [
+          "city"
+        ]
+      }
+    },
+    {
+      "name": "maps_search_detail",
+      "description": "\u6839\u636e\u5173\u952e\u8bcd\u641c\u7d22\u6216\u5468\u8fb9\u641c\u7d22\u83b7\u53d6\u7684POI ID\u7684\u8be6\u7ec6\u4fe1\u606f",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "POI ID"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "maps_bicycling",
+      "description": "\u6839\u636e\u8d77\u70b9\u548c\u7ec8\u70b9\u7684\u7ecf\u7eac\u5ea6\u5750\u6807\u89c4\u5212\u81ea\u884c\u8f66\u8def\u7ebf\uff0c\u89c4\u5212\u65f6\u4f1a\u8003\u8651\u4ea4\u901a\u3001\u5355\u884c\u7ebf\u3001\u5c01\u95ed\u8def\u6bb5\u7b49\u60c5\u51b5\uff0c\u6700\u591a\u652f\u6301500\u516c\u91cc\u7684\u81ea\u884c\u8f66\u8def\u7ebf\u89c4\u5212",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "destination": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      }
+    },
+    {
+      "name": "maps_direction_walking",
+      "description": "\u6839\u636e\u8d77\u70b9\u548c\u7ec8\u70b9\u7684\u7ecf\u7eac\u5ea6\u5750\u6807\u89c4\u5212\u6b65\u884c\u8def\u7ebf\uff0c\u6700\u591a\u652f\u6301100\u516c\u91cc\u7684\u6b65\u884c\u8def\u7ebf\u89c4\u5212",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "destination": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      }
+    },
+    {
+      "name": "maps_direction_driving",
+      "description": "\u6839\u636e\u8d77\u70b9\u548c\u7ec8\u70b9\u7684\u7ecf\u7eac\u5ea6\u5750\u6807\u89c4\u5212\u6c7d\u8f66\u8def\u7ebf\uff0c\u6700\u591a\u652f\u6301500\u516c\u91cc\u7684\u6c7d\u8f66\u8def\u7ebf\u89c4\u5212",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "destination": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      }
+    },
+    {
+      "name": "maps_direction_transit_integrated",
+      "description": "\u6839\u636e\u8d77\u70b9\u548c\u7ec8\u70b9\u7684\u7ecf\u7eac\u5ea6\u5750\u6807\u89c4\u5212\u516c\u5171\u4ea4\u901a\u8def\u7ebf\uff0c\u6700\u591a\u652f\u6301500\u516c\u91cc\u7684\u516c\u5171\u4ea4\u901a\u8def\u7ebf\u89c4\u5212",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "destination": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "city": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u6240\u5728\u57ce\u5e02"
+          },
+          "cityd": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u6240\u5728\u57ce\u5e02"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "city",
+          "cityd"
+        ]
+      }
+    },
+    {
+      "name": "maps_distance",
+      "description": "\u6839\u636e\u4e24\u4e2a\u7ecf\u7eac\u5ea6\u5750\u6807\u8ba1\u7b97\u8ddd\u79bb\uff0c\u652f\u6301\u516c\u4ea4\u3001\u6b65\u884c\u3001\u5730\u94c1\u8ddd\u79bb\u8ba1\u7b97",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origins": {
+            "type": "string",
+            "description": "\u8d77\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6\uff0c\u53ef\u4ee5\u8f93\u5165\u591a\u4e2a\u5750\u6807\uff0c\u7528\u5206\u53f7\u5206\u9694\uff0c\u4f8b\u5982120,30;120,31"
+          },
+          "destination": {
+            "type": "string",
+            "description": "\u7ec8\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "type": {
+            "type": "string",
+            "description": "\u8ddd\u79bb\u7c7b\u578b\uff0c1\u8868\u793a\u516c\u4ea4\u8ddd\u79bb\u8ba1\u7b97\uff0c0\u8868\u793a\u76f4\u7ebf\u8ddd\u79bb\u8ba1\u7b97\uff0c3\u8868\u793a\u6b65\u884c\u8ddd\u79bb\u8ba1\u7b97"
+          }
+        },
+        "required": [
+          "origins",
+          "destination"
+        ]
+      }
+    },
+    {
+      "name": "maps_text_search",
+      "description": "\u5173\u952e\u8bcd\u641c\u7d22\uff0c\u6839\u636e\u7528\u6237\u8f93\u5165\u7684\u5173\u952e\u8bcd\u641c\u7d22\u76f8\u5173\u7684POI",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "\u5173\u952e\u8bcd"
+          },
+          "city": {
+            "type": "string",
+            "description": "\u67e5\u8be2\u57ce\u5e02"
+          },
+          "types": {
+            "type": "string",
+            "description": "POI\u7c7b\u578b\uff0c\u4f8b\u5982\u516c\u4ea4\u7ad9"
+          }
+        },
+        "required": [
+          "keywords"
+        ]
+      }
+    },
+    {
+      "name": "maps_around_search",
+      "description": "\u5468\u8fb9\u641c\u7d22\uff0c\u6839\u636e\u7528\u6237\u8f93\u5165\u7684\u5173\u952e\u8bcd\u548c\u4e2d\u5fc3\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\u641c\u7d22\u5468\u56f4\u7684POI",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "\u5173\u952e\u8bcd"
+          },
+          "location": {
+            "type": "string",
+            "description": "\u4e2d\u5fc3\u70b9\u7ecf\u7eac\u5ea6\u5750\u6807\uff0c\u5750\u6807\u683c\u5f0f\u4e3a\uff1a\u7ecf\u5ea6,\u7eac\u5ea6"
+          },
+          "radius": {
+            "type": "string",
+            "description": "\u641c\u7d22\u534a\u5f84"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "amap",
+    "map",
+    "Web Services"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "AMAP_MAPS_API_KEY": {
+      "type": "string",
+      "description": "The API key to access the AMap service.",
+      "sensitive": true,
+      "title": "AMAP_MAPS_API_KEY",
+      "required": true
+    }
+  }
+}

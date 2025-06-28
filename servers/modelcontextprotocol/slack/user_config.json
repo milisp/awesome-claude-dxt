@@ -1,0 +1,16 @@
+{
+  "SLACK_BOT_TOKEN": {
+    "type": "string",
+    "description": "The OAuth token for the bot user in the Slack workspace, used for authenticating API requests.",
+    "sensitive": true,
+    "title": "SLACK_BOT_TOKEN",
+    "required": true
+  },
+  "SLACK_TEAM_ID": {
+    "type": "number",
+    "description": "The unique identifier of the Slack workspace, required for operations within the workspace.",
+    "sensitive": false,
+    "title": "SLACK_TEAM_ID",
+    "required": true
+  }
+}

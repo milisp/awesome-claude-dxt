@@ -1,0 +1,9 @@
+{
+  "api-key": {
+    "type": "string",
+    "description": "Your Rember API key from the Settings page",
+    "sensitive": true,
+    "title": "api-key",
+    "required": true
+  }
+}

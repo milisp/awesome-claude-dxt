@@ -1,0 +1,9 @@
+{
+  "SEMGREP_APP_TOKEN": {
+    "type": "string",
+    "description": "Token for connecting to Semgrep AppSec Platform",
+    "sensitive": true,
+    "title": "SEMGREP_APP_TOKEN",
+    "required": false
+  }
+}

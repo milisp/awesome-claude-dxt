@@ -1,0 +1,9 @@
+{
+  "MP_API_KEY": {
+    "type": "string",
+    "description": "API key from the Materials Project",
+    "sensitive": true,
+    "title": "MP_API_KEY",
+    "required": true
+  }
+}

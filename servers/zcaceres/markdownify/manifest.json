@@ -1,0 +1,49 @@
+{
+  "dxt_version": "0.1",
+  "name": "markdownify",
+  "display_name": "Markdownify",
+  "version": "1.0.0",
+  "description": "MCP to convert almost anything to Markdown (PPTX, HTML, PDF, Youtube Transcripts and more)",
+  "long_description": "",
+  "author": {
+    "name": "zcaceres"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcaceres/mcp-markdownify-server"
+  },
+  "homepage": "https://github.com/zcaceres/mcp-markdownify-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/zcaceres/mcp-markdownify-server"
+      ],
+      "env": {
+        "UV_PATH": "${UV_PATH}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Media Creation",
+    "conversion",
+    "markdown"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "UV_PATH": {
+      "type": "directory",
+      "description": "Environment variable specifying the installation location of the `uv` dependency.",
+      "sensitive": false,
+      "title": "UV_PATH",
+      "required": false
+    }
+  }
+}

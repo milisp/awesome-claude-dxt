@@ -16,8 +16,9 @@ Thanks for your interest in contributing!
 
 ##### Step
 
-1. clone your mcp server to folder [servers](./servers)
-2. create manifest.json
+1. clone your mcp server to folder [servers](./servers) (uvx or npx can skip this step)
+  - create a folder owner/repo or author/mcp-server
+2. create manifest.json in 
 3. install dxt
 
 ```sh
@@ -30,7 +31,7 @@ npm install -g @anthropic-ai/dxt
 dxt pack
 ```
 
-- [servers/blender-mcp](./servers/blender-mcp)
+- [servers/ahujasid/blender-mcp](./servers/ahujasid/blender-mcp)
 
 `manifest.json`
 

@@ -1,0 +1,9 @@
+{
+  "DATABASE_URL": {
+    "type": "string",
+    "description": "The database connection string which includes the user, password, host, port, and database name.",
+    "sensitive": false,
+    "title": "DATABASE_URL",
+    "required": true
+  }
+}

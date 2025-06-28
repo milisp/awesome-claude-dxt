@@ -1,0 +1,9 @@
+{
+  "REPLICATE_API_TOKEN": {
+    "type": "string",
+    "description": "Your Replicate API token to authenticate requests to the Replicate API. Needed for the server to function and fetch models or execute predictions.",
+    "sensitive": true,
+    "title": "REPLICATE_API_TOKEN",
+    "required": true
+  }
+}

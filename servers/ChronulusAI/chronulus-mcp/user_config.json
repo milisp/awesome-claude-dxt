@@ -1,0 +1,9 @@
+{
+  "CHRONULUS_API_KEY": {
+    "type": "string",
+    "description": "API key for Chronulus services",
+    "sensitive": true,
+    "title": "CHRONULUS_API_KEY",
+    "required": true
+  }
+}

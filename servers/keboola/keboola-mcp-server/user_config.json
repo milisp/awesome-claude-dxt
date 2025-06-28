@@ -1,0 +1,23 @@
+{
+  "api-url": {
+    "type": "string",
+    "description": "Keboola Connection API URL",
+    "sensitive": false,
+    "title": "api-url",
+    "required": true
+  },
+  "KBC_STORAGE_TOKEN": {
+    "type": "string",
+    "description": "Keboola Storage API token",
+    "sensitive": true,
+    "title": "KBC_STORAGE_TOKEN",
+    "required": true
+  },
+  "KBC_WORKSPACE_USER": {
+    "type": "string",
+    "description": "Snowflake workspace username",
+    "sensitive": false,
+    "title": "KBC_WORKSPACE_USER",
+    "required": true
+  }
+}

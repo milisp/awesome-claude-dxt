@@ -1,0 +1,73 @@
+{
+  "dxt_version": "0.1",
+  "name": "sentry",
+  "display_name": "Sentry",
+  "version": "1.0.0",
+  "description": "Retrieving and analyzing issues from Sentry.io",
+  "long_description": "",
+  "author": {
+    "name": "modelcontextprotocol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/blob/main/src/sentry",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-sentry",
+        "--auth-token",
+        "${YOUR_SENTRY_TOKEN}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "get_sentry_issue",
+      "description": "Retrieve and analyze a Sentry issue by ID or URL. Use this tool when you need to:\n                - Investigate production errors and crashes\n                - Access detailed stacktraces from Sentry\n                - Analyze error patterns and frequencies\n                - Get information about when issues first/last occurred\n                - Review error counts and status",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "issue_id_or_url": {
+            "type": "string",
+            "description": "Sentry issue ID or URL to analyze"
+          }
+        },
+        "required": [
+          "issue_id_or_url"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Retrieve issue details from Sentry",
+      "description": "Use this command to get detailed information about a specific Sentry issue using its ID or URL.",
+      "text": "sentry-issue {issue_id_or_url}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "debugging",
+    "monitoring",
+    "errors",
+    "sentry",
+    "Dev Tools"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "YOUR_SENTRY_TOKEN": {
+      "type": "number",
+      "description": "An authentication token required to access your Sentry account and retrieve issue details.",
+      "sensitive": true,
+      "title": "YOUR_SENTRY_TOKEN",
+      "required": true
+    }
+  }
+}

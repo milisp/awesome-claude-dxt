@@ -1,0 +1,16 @@
+{
+  "PERSONAL_BASE_TOKEN": {
+    "type": "string",
+    "description": "Personal base token required for authentication with the Bitable API.",
+    "sensitive": true,
+    "title": "PERSONAL_BASE_TOKEN",
+    "required": true
+  },
+  "APP_TOKEN": {
+    "type": "string",
+    "description": "Application token required for the Bitable server to function properly.",
+    "sensitive": true,
+    "title": "APP_TOKEN",
+    "required": true
+  }
+}

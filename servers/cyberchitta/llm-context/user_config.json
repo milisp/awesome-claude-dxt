@@ -1,0 +1,9 @@
+{
+  "mcp": {
+    "type": "string",
+    "description": "Indicates the model context protocol that should be used for communication.",
+    "sensitive": false,
+    "title": "mcp",
+    "required": true
+  }
+}

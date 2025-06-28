@@ -1,0 +1,9 @@
+{
+  "AIRTABLE_API_KEY": {
+    "type": "string",
+    "description": "Airtable API key for authenticating with the Airtable API",
+    "sensitive": true,
+    "title": "AIRTABLE_API_KEY",
+    "required": true
+  }
+}

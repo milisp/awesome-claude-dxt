@@ -1,0 +1,120 @@
+{
+  "dxt_version": "0.1",
+  "name": "kibela",
+  "display_name": "Kibela",
+  "version": "1.0.0",
+  "description": "Interact with Kibela API.",
+  "long_description": "",
+  "author": {
+    "name": "kiwamizamurai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiwamizamurai/mcp-kibela-server"
+  },
+  "homepage": "https://github.com/kiwamizamurai/mcp-kibela-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/kiwamizamurai/mcp-kibela-server"
+      ],
+      "env": {
+        "KIBELA_TEAM": "${KIBELA_TEAM}",
+        "KIBELA_TOKEN": "${KIBELA_TOKEN}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "kibela_search_notes",
+      "description": "Search Kibela notes with given query",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "kibela_get_my_notes",
+      "description": "Get your latest notes from Kibela",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "number",
+            "description": "Number of notes to fetch (max 50)",
+            "default": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "kibela_get_note_content",
+      "description": "Get content and comments of a specific note",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Note ID"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Search Kibela notes",
+      "description": "Search through your Kibela notes using a query.",
+      "text": "kibela_search_notes(\"my search query\")"
+    },
+    {
+      "name": "Get latest notes",
+      "description": "Retrieve your latest notes from Kibela.",
+      "text": "kibela_get_my_notes()"
+    },
+    {
+      "name": "Get note content",
+      "description": "Fetch content of a specific note by ID.",
+      "text": "kibela_get_note_content(\"note-id\")"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Kibela",
+    "Knowledge Base",
+    "Integration"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "KIBELA_TEAM": {
+      "type": "string",
+      "description": "Your Kibela team name",
+      "sensitive": false,
+      "title": "KIBELA_TEAM",
+      "required": true
+    },
+    "KIBELA_TOKEN": {
+      "type": "string",
+      "description": "Your Kibela API token",
+      "sensitive": true,
+      "title": "KIBELA_TOKEN",
+      "required": true
+    }
+  }
+}

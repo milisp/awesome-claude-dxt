@@ -1,0 +1,51 @@
+{
+  "ACCOUNT": {
+    "type": "string",
+    "description": "The Snowflake account name to connect to.",
+    "sensitive": false,
+    "title": "ACCOUNT",
+    "required": true
+  },
+  "WAREHOUSE": {
+    "type": "string",
+    "description": "The name of the virtual warehouse to be used for the session.",
+    "sensitive": false,
+    "title": "WAREHOUSE",
+    "required": true
+  },
+  "USER": {
+    "type": "string",
+    "description": "The username to authenticate with Snowflake.",
+    "sensitive": false,
+    "title": "USER",
+    "required": true
+  },
+  "PASSWORD": {
+    "type": "string",
+    "description": "The password for the specified user.",
+    "sensitive": false,
+    "title": "PASSWORD",
+    "required": true
+  },
+  "ROLE": {
+    "type": "string",
+    "description": "The role to be assumed during the session.",
+    "sensitive": false,
+    "title": "ROLE",
+    "required": true
+  },
+  "DATABASE": {
+    "type": "string",
+    "description": "The name of the Snowflake database to connect to.",
+    "sensitive": false,
+    "title": "DATABASE",
+    "required": true
+  },
+  "SCHEMA": {
+    "type": "string",
+    "description": "The schema within the database where queries will be executed.",
+    "sensitive": false,
+    "title": "SCHEMA",
+    "required": true
+  }
+}

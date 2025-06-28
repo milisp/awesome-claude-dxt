@@ -1,0 +1,9 @@
+{
+  "API_KEY": {
+    "type": "string",
+    "description": "API key for authentication with Magic AI Agent",
+    "sensitive": true,
+    "title": "API_KEY",
+    "required": true
+  }
+}

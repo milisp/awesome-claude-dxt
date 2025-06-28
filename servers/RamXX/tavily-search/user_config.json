@@ -1,0 +1,9 @@
+{
+  "TAVILY_API_KEY": {
+    "type": "string",
+    "description": "Your Tavily API key for accessing Tavily's search API functionalities.",
+    "sensitive": true,
+    "title": "TAVILY_API_KEY",
+    "required": true
+  }
+}

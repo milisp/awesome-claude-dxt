@@ -1,0 +1,23 @@
+{
+  "MAKE_API_KEY": {
+    "type": "string",
+    "description": "API key generated in your Make profile",
+    "sensitive": true,
+    "title": "MAKE_API_KEY",
+    "required": true
+  },
+  "MAKE_ZONE": {
+    "type": "string",
+    "description": "The zone your organization is hosted in",
+    "sensitive": false,
+    "title": "MAKE_ZONE",
+    "required": true
+  },
+  "MAKE_TEAM": {
+    "type": "string",
+    "description": "Team ID found in the URL of the Team page",
+    "sensitive": false,
+    "title": "MAKE_TEAM",
+    "required": true
+  }
+}

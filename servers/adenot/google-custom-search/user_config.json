@@ -1,0 +1,16 @@
+{
+  "GOOGLE_API_KEY": {
+    "type": "string",
+    "description": "Your Google API key for accessing the Google Custom Search API.",
+    "sensitive": true,
+    "title": "GOOGLE_API_KEY",
+    "required": true
+  },
+  "GOOGLE_SEARCH_ENGINE_ID": {
+    "type": "string",
+    "description": "The unique identifier for your Custom Search Engine that you created on Google.",
+    "sensitive": false,
+    "title": "GOOGLE_SEARCH_ENGINE_ID",
+    "required": true
+  }
+}

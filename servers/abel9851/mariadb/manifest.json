@@ -1,0 +1,107 @@
+{
+  "dxt_version": "0.1",
+  "name": "mariadb",
+  "display_name": "MariaDB Database Integration",
+  "version": "1.0.0",
+  "description": "MariaDB database integration with configurable access controls in Python.",
+  "long_description": "",
+  "author": {
+    "name": "abel9851"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abel9851/mcp-server-mariadb"
+  },
+  "homepage": "https://github.com/abel9851/mcp-server-mariadb",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-mariadb",
+        "--host",
+        "${DB_HOST}",
+        "--port",
+        "${DB_PORT}",
+        "--user",
+        "${DB_USER}",
+        "--password",
+        "${DB_PASSWORD}",
+        "--database",
+        "${DB_NAME}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "query_database",
+      "description": "Execute a read-only operation against the MariaDB database.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Query Database",
+      "description": "Example of executing a read-only operation against MariaDB.",
+      "text": "Execute read-only operations against your MariaDB database."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "MariaDB",
+    "Data Retrieval",
+    "Databases"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "DB_HOST": {
+      "type": "number",
+      "description": "The hostname of the MariaDB server to connect to.",
+      "sensitive": false,
+      "title": "DB_HOST",
+      "required": true
+    },
+    "DB_PORT": {
+      "type": "number",
+      "description": "The port number on which the MariaDB server is listening.",
+      "sensitive": false,
+      "title": "DB_PORT",
+      "required": true
+    },
+    "DB_USER": {
+      "type": "number",
+      "description": "The username to connect to the MariaDB database.",
+      "sensitive": false,
+      "title": "DB_USER",
+      "required": true
+    },
+    "DB_PASSWORD": {
+      "type": "string",
+      "description": "The password for the MariaDB user.",
+      "sensitive": false,
+      "title": "DB_PASSWORD",
+      "required": true
+    },
+    "DB_NAME": {
+      "type": "string",
+      "description": "The name of the database to connect to.",
+      "sensitive": false,
+      "title": "DB_NAME",
+      "required": true
+    }
+  }
+}

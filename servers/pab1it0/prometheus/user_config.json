@@ -1,0 +1,23 @@
+{
+  "PROMETHEUS_URL": {
+    "type": "string",
+    "description": "The URL of the Prometheus server you want to connect to.",
+    "sensitive": false,
+    "title": "PROMETHEUS_URL",
+    "required": true
+  },
+  "PROMETHEUS_USERNAME": {
+    "type": "string",
+    "description": "The username for basic authentication when accessing the Prometheus server.",
+    "sensitive": false,
+    "title": "PROMETHEUS_USERNAME",
+    "required": false
+  },
+  "PROMETHEUS_PASSWORD": {
+    "type": "string",
+    "description": "The password for basic authentication when accessing the Prometheus server.",
+    "sensitive": false,
+    "title": "PROMETHEUS_PASSWORD",
+    "required": false
+  }
+}

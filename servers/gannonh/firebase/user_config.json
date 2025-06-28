@@ -1,0 +1,16 @@
+{
+  "SERVICE_ACCOUNT_KEY_PATH": {
+    "type": "directory",
+    "description": "Path to your Firebase service account key JSON file",
+    "sensitive": true,
+    "title": "SERVICE_ACCOUNT_KEY_PATH",
+    "required": true
+  },
+  "FIREBASE_STORAGE_BUCKET": {
+    "type": "string",
+    "description": "Bucket name for Firebase Storage",
+    "sensitive": false,
+    "title": "FIREBASE_STORAGE_BUCKET",
+    "required": false
+  }
+}

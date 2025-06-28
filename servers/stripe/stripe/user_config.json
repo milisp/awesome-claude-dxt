@@ -1,0 +1,9 @@
+{
+  "STRIPE_SECRET_KEY": {
+    "type": "string",
+    "description": "Your Stripe secret API key required for authenticating requests to the Stripe API.",
+    "sensitive": true,
+    "title": "STRIPE_SECRET_KEY",
+    "required": true
+  }
+}

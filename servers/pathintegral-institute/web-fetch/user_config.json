@@ -1,0 +1,9 @@
+{
+  "user_agent": {
+    "type": "string",
+    "description": "Custom user-agent for fetching web content",
+    "sensitive": false,
+    "title": "user_agent",
+    "required": false
+  }
+}

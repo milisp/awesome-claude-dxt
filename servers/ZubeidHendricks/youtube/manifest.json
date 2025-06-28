@@ -1,0 +1,51 @@
+{
+  "dxt_version": "0.1",
+  "name": "youtube",
+  "display_name": "YouTube",
+  "version": "1.0.0",
+  "description": "Comprehensive YouTube API integration for video management, Shorts creation, and analytics.",
+  "long_description": "",
+  "author": {
+    "name": "ZubeidHendricks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZubeidHendricks/youtube-mcp-server"
+  },
+  "homepage": "https://github.com/ZubeidHendricks/youtube-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-youtube"
+      ],
+      "env": {
+        "YOUTUBE_API_KEY": "${YOUTUBE_API_KEY}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "video",
+    "youtube",
+    "api",
+    "transcripts",
+    "Media Creation"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "YOUTUBE_API_KEY": {
+      "type": "string",
+      "description": "Your YouTube Data API key, needed for authentication when making requests to the YouTube API.",
+      "sensitive": true,
+      "title": "YOUTUBE_API_KEY",
+      "required": true
+    }
+  }
+}

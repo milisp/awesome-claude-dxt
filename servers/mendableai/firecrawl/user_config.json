@@ -1,0 +1,9 @@
+{
+  "FIRECRAWL_API_KEY": {
+    "type": "string",
+    "description": "Your FireCrawl API key. Required for using the cloud API (default) and optional for self-hosted instances.",
+    "sensitive": true,
+    "title": "FIRECRAWL_API_KEY",
+    "required": true
+  }
+}

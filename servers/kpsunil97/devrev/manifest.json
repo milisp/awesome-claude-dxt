@@ -1,0 +1,89 @@
+{
+  "dxt_version": "0.1",
+  "name": "devrev",
+  "display_name": "DevRev",
+  "version": "1.0.0",
+  "description": "An MCP server to integrate with DevRev APIs to search through your DevRev Knowledge Graph where objects can be imported from diff. sources listed [here](https://devrev.ai/docs/import#available-sources).",
+  "long_description": "",
+  "author": {
+    "name": "kpsunil97"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpsunil97/devrev-mcp-server"
+  },
+  "homepage": "https://github.com/kpsunil97/devrev-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "devrev-mcp"
+      ],
+      "env": {
+        "DEVREV_API_KEY": "${DEVREV_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search",
+      "description": "Search DevRev using the provided query",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string",
+            "enum": [
+              "article",
+              "issue",
+              "ticket"
+            ]
+          }
+        },
+        "required": [
+          "query",
+          "namespace"
+        ]
+      }
+    },
+    {
+      "name": "get_object",
+      "description": "Get all information about a DevRev object using its ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "devrev",
+    "search",
+    "server",
+    "Knowledge Base"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "DEVREV_API_KEY": {
+      "type": "string",
+      "description": "Your DevRev API key required to authenticate requests to the DevRev API.",
+      "sensitive": true,
+      "title": "DEVREV_API_KEY",
+      "required": true
+    }
+  }
+}

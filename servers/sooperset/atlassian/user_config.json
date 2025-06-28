@@ -1,0 +1,44 @@
+{
+  "CONFLUENCE_URL": {
+    "type": "string",
+    "description": "The URL of the Confluence site to connect to. Required for both Cloud and Server/Data Center deployments.",
+    "sensitive": false,
+    "title": "CONFLUENCE_URL",
+    "required": true
+  },
+  "CONFLUENCE_USERNAME": {
+    "type": "string",
+    "description": "The username for the Confluence account (email for Cloud). Required to authenticate with Confluence.",
+    "sensitive": false,
+    "title": "CONFLUENCE_USERNAME",
+    "required": true
+  },
+  "CONFLUENCE_TOKEN": {
+    "type": "string",
+    "description": "The API token or personal access token for the Confluence account. Required for authentication with Confluence.",
+    "sensitive": true,
+    "title": "CONFLUENCE_TOKEN",
+    "required": true
+  },
+  "JIRA_URL": {
+    "type": "string",
+    "description": "The URL of the Jira site to connect to. Required for both Cloud and Server/Data Center deployments.",
+    "sensitive": false,
+    "title": "JIRA_URL",
+    "required": true
+  },
+  "JIRA_USERNAME": {
+    "type": "string",
+    "description": "The username for the Jira account (email for Cloud). Required to authenticate with Jira.",
+    "sensitive": false,
+    "title": "JIRA_USERNAME",
+    "required": true
+  },
+  "JIRA_TOKEN": {
+    "type": "string",
+    "description": "The API token or personal access token for the Jira account. Required for authentication with Jira.",
+    "sensitive": true,
+    "title": "JIRA_TOKEN",
+    "required": true
+  }
+}

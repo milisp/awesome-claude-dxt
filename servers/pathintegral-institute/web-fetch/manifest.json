@@ -1,0 +1,97 @@
+{
+  "dxt_version": "0.1",
+  "name": "web-fetch",
+  "display_name": "Web Fetch",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for fetching webpages including html/pdf/plain text type content.",
+  "long_description": "",
+  "author": {
+    "name": "pathintegral-institute"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pathintegral-institute/mcp.science"
+  },
+  "homepage": "https://github.com/pathintegral-institute/mcp.science/tree/main/servers/web-fetch",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/pathintegral-institute/mcp.science#subdirectory=servers/web-fetch",
+        "mcp-web-fetch"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "fetch-web",
+      "description": "Fetch URL and return content according to its content type. Returns parsed content by default or raw content if specified.",
+      "prompt": "Fetch web from url: https://example.com",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL to fetch",
+            "format": "uri",
+            "minLength": 1
+          },
+          "raw": {
+            "type": "boolean",
+            "description": "Whether to return raw content",
+            "default": false
+          }
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Fetch PDF content",
+      "description": "Fetch PDF content from a URL",
+      "text": "fetch web from url: https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+    },
+    {
+      "name": "Fetch HTML content",
+      "description": "Fetch HTML content from a website",
+      "text": "fetch web from url: https://example.com"
+    },
+    {
+      "name": "Fetch raw content",
+      "description": "Fetch raw content from a URL",
+      "text": "fetch web from url: https://example.com/data.json with raw=true"
+    },
+    {
+      "name": "Fetch with custom user-agent",
+      "description": "Fetch content with a custom user-agent (requires server configuration)",
+      "text": "fetch web from url: https://example.com using a mobile browser user-agent"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "text",
+    "Web Services",
+    "fetch",
+    "pdf",
+    "web",
+    "html"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "user_agent": {
+      "type": "string",
+      "description": "Custom user-agent for fetching web content",
+      "sensitive": false,
+      "title": "user_agent",
+      "required": false
+    }
+  }
+}

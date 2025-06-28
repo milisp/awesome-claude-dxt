@@ -1,0 +1,9 @@
+{
+  "YOUR_SENTRY_TOKEN": {
+    "type": "number",
+    "description": "An authentication token required to access your Sentry account and retrieve issue details.",
+    "sensitive": true,
+    "title": "YOUR_SENTRY_TOKEN",
+    "required": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "FR24_API_KEY": {
+    "type": "string",
+    "description": "Flightradar24 API key required for accessing flight data from the Flightradar24 API.",
+    "sensitive": true,
+    "title": "FR24_API_KEY",
+    "required": true
+  },
+  "FR24_API_URL": {
+    "type": "string",
+    "description": "The base URL for calling the Flightradar24 API for fetching real-time flight data.",
+    "sensitive": false,
+    "title": "FR24_API_URL",
+    "required": false
+  }
+}

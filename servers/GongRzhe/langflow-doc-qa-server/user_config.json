@@ -1,0 +1,9 @@
+{
+  "API_ENDPOINT": {
+    "type": "string",
+    "description": "The endpoint URL for the Langflow API service.",
+    "sensitive": false,
+    "title": "API_ENDPOINT",
+    "required": false
+  }
+}

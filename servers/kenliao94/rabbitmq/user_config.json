@@ -1,0 +1,37 @@
+{
+  "RABBITMQ_HOST": {
+    "type": "string",
+    "description": "The hostname of the RabbitMQ server (e.g., test.rabbit.com, localhost).",
+    "sensitive": false,
+    "title": "RABBITMQ_HOST",
+    "required": true
+  },
+  "RABBITMQ_PORT": {
+    "type": "number",
+    "description": "The port number to connect to the RabbitMQ server (e.g., 5672).",
+    "sensitive": false,
+    "title": "RABBITMQ_PORT",
+    "required": true
+  },
+  "RABBITMQ_USERNAME": {
+    "type": "number",
+    "description": "The username to authenticate with the RabbitMQ server.",
+    "sensitive": false,
+    "title": "RABBITMQ_USERNAME",
+    "required": true
+  },
+  "RABBITMQ_PASSWORD": {
+    "type": "number",
+    "description": "The password for the RabbitMQ username provided.",
+    "sensitive": false,
+    "title": "RABBITMQ_PASSWORD",
+    "required": true
+  },
+  "USE_TLS": {
+    "type": "boolean",
+    "description": "Set to true if using TLS (AMQPS), otherwise false.",
+    "sensitive": false,
+    "title": "USE_TLS",
+    "required": false
+  }
+}

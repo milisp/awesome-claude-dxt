@@ -1,0 +1,117 @@
+{
+  "dxt_version": "0.1",
+  "name": "whois-mcp",
+  "display_name": "Whois Lookup",
+  "version": "1.0.0",
+  "description": "MCP server that performs whois lookup against domain, IP, ASN and TLD.",
+  "long_description": "",
+  "author": {
+    "name": "bharathvaj-ganesan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bharathvaj-ganesan/whois-mcp"
+  },
+  "homepage": "https://github.com/bharathvaj-ganesan/whois-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@bharathvaj/whois-mcp@latest"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "whois_domain",
+      "description": "Looksup whois information about the domain",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "domain"
+        ]
+      }
+    },
+    {
+      "name": "whois_tld",
+      "description": "Looksup whois information about the Top Level Domain (TLD)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "tld": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "tld"
+        ]
+      }
+    },
+    {
+      "name": "whois_ip",
+      "description": "Looksup whois information about the IP",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "anyOf": [
+              {
+                "format": "ipv4"
+              },
+              {
+                "format": "ipv6"
+              }
+            ]
+          }
+        },
+        "required": [
+          "ip"
+        ]
+      }
+    },
+    {
+      "name": "whois_as",
+      "description": "Looksup whois information about the Autonomous System Number (ASN)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "asn": {
+            "type": "string",
+            "pattern": "^AS\\d+$"
+          }
+        },
+        "required": [
+          "asn"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Look up WHOIS information",
+      "description": "Using the Whois MCP to find out domain details.",
+      "text": "What can you tell me about example.com?"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Web Services",
+    "domain",
+    "tools",
+    "whois"
+  ],
+  "license": "MIT"
+}

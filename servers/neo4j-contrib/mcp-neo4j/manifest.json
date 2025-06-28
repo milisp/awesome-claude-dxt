@@ -1,0 +1,94 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-neo4j",
+  "display_name": "Neo4j MCP",
+  "version": "1.0.0",
+  "description": "This server enables running Cypher graph queries, analyzing complex domain data, and automatically generating business insights that can be enhanced with Claude's analysis when an Anthropic API key is provided.",
+  "long_description": "",
+  "author": {
+    "name": "neo4j-contrib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neo4j-contrib/mcp-neo4j"
+  },
+  "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-neo4j-cypher",
+        "--db-url",
+        "${NEO4J_URI}",
+        "--username",
+        "${NEO4J_USERNAME}",
+        "--password",
+        "${NEO4J_PASSWORD}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Database Schema Query",
+      "description": "Get information about what's in the graph database",
+      "text": "What is in this graph?"
+    },
+    {
+      "name": "Data Visualization",
+      "description": "Generate charts from graph data",
+      "text": "Render a chart from the top products sold by frequency, total and average volume"
+    },
+    {
+      "name": "Instance Management",
+      "description": "List Neo4j Aura instances",
+      "text": "List my instances"
+    },
+    {
+      "name": "Instance Creation",
+      "description": "Create a new Neo4j Aura instance",
+      "text": "Create a new instance named mcp-test for Aura Professional with 4GB and Graph Data Science enabled"
+    },
+    {
+      "name": "Knowledge Storage",
+      "description": "Store information in the knowledge graph",
+      "text": "Store the fact that I worked on the Neo4j MCP Servers today with Andreas and Oskar"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "mcp",
+    "knowledge graph",
+    "neo4j",
+    "cypher",
+    "Databases"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "NEO4J_URI": {
+      "type": "string",
+      "description": "Neo4j database URL",
+      "sensitive": false,
+      "title": "NEO4J_URI",
+      "required": true
+    },
+    "NEO4J_USERNAME": {
+      "type": "string",
+      "description": "Neo4j username",
+      "sensitive": false,
+      "title": "NEO4J_USERNAME",
+      "required": true
+    },
+    "NEO4J_PASSWORD": {
+      "type": "string",
+      "description": "Neo4j password",
+      "sensitive": false,
+      "title": "NEO4J_PASSWORD",
+      "required": true
+    }
+  }
+}

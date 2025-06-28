@@ -1,0 +1,9 @@
+{
+  "COINMARKETCAP_API_KEY": {
+    "type": "string",
+    "description": "The API key required to access CoinMarketCap data.",
+    "sensitive": true,
+    "title": "COINMARKETCAP_API_KEY",
+    "required": true
+  }
+}

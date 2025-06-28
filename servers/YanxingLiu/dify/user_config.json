@@ -1,0 +1,9 @@
+{
+  "CONFIG_PATH": {
+    "type": "string",
+    "description": "This environment variable indicates the path to the configuration file for the Dify MCP server, typically a YAML file containing necessary settings.",
+    "sensitive": false,
+    "title": "CONFIG_PATH",
+    "required": true
+  }
+}

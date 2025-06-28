@@ -1,0 +1,59 @@
+{
+  "dxt_version": "0.1",
+  "name": "drupal",
+  "display_name": "Drupal Server",
+  "version": "1.0.0",
+  "description": "Server for interacting with [Drupal](https://www.drupal.org/project/mcp) using STDIO transport layer.",
+  "long_description": "",
+  "author": {
+    "name": "Omedia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omedia/mcp-server-drupal"
+  },
+  "homepage": "https://github.com/Omedia/mcp-server-drupal",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deno",
+        "run",
+        "-A",
+        "jsr:@omedia/mcp-server-drupal@${VERSION}",
+        "--drupal-url",
+        "${DRUPAL_BASE_URL}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Drupal",
+    "TypeScript",
+    "Web Services"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "VERSION": {
+      "type": "string",
+      "description": "The version of the MCP server to be used. This must be provided to ensure compatibility with the installed Drupal version.",
+      "sensitive": false,
+      "title": "VERSION",
+      "required": true
+    },
+    "DRUPAL_BASE_URL": {
+      "type": "string",
+      "description": "The base URL of the Drupal site that the MCP server will interact with.",
+      "sensitive": false,
+      "title": "DRUPAL_BASE_URL",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "dxt_version": "0.1",
+  "name": "redis",
+  "display_name": "Redis",
+  "version": "1.0.0",
+  "description": "MCP server to interact with Redis Server, AWS Memory DB, etc for caching or other use-cases where in-memory and key-value based storage is appropriate",
+  "long_description": "",
+  "author": {
+    "name": "prajwalnayak7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prajwalnayak7/mcp-server-redis"
+  },
+  "homepage": "https://github.com/prajwalnayak7/mcp-server-redis",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/prajwalnayak7/mcp-server-redis",
+        "src/server.py"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Check Redis Connection Status",
+      "description": "User requests the current Redis connection status.",
+      "text": "What's the current Redis connection status?"
+    },
+    {
+      "name": "Store Name in Redis",
+      "description": "User wants to store their name in Redis.",
+      "text": "Can you store my name \"Alice\" in Redis?"
+    },
+    {
+      "name": "Verify Stored Name in Redis",
+      "description": "User wants to verify the value stored in Redis.",
+      "text": "Yes please verify it"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Databases"
+  ],
+  "license": "MIT"
+}

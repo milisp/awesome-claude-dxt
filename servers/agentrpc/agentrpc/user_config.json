@@ -1,0 +1,9 @@
+{
+  "AGENTRPC_API_SECRET": {
+    "type": "string",
+    "description": "API secret for authentication",
+    "sensitive": false,
+    "title": "AGENTRPC_API_SECRET",
+    "required": true
+  }
+}

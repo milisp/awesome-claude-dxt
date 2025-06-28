@@ -1,0 +1,38 @@
+{
+  "dxt_version": "0.1",
+  "name": "fingertip",
+  "display_name": "Fingertip",
+  "version": "1.0.0",
+  "description": "MCP server for Fingertip.com to search and create new sites.",
+  "long_description": "",
+  "author": {
+    "name": "fingertip-com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fingertip-com/fingertip-mcp"
+  },
+  "homepage": "https://github.com/fingertip-com/fingertip-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@fingertip/mcp"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Web Services",
+    "AI Assistants",
+    "Fingertip"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "YOUR_API_KEY": {
+    "type": "number",
+    "description": "The API key required to authenticate your requests to the Goal Story service.",
+    "sensitive": true,
+    "title": "YOUR_API_KEY",
+    "required": true
+  }
+}

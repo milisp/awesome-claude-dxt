@@ -1,0 +1,23 @@
+{
+  "AWS_ACCESS_KEY_ID": {
+    "type": "number",
+    "description": "This is the access key ID for your AWS account, required for authenticating requests to AWS services.",
+    "sensitive": true,
+    "title": "AWS_ACCESS_KEY_ID",
+    "required": true
+  },
+  "AWS_SECRET_ACCESS_KEY": {
+    "type": "string",
+    "description": "This is the secret access key for your AWS account, used in conjunction with the access key ID to authenticate requests.",
+    "sensitive": true,
+    "title": "AWS_SECRET_ACCESS_KEY",
+    "required": true
+  },
+  "AWS_REGION": {
+    "type": "string",
+    "description": "This specifies the AWS region you want to use for your operations. It defaults to `us-east-1` if not provided.",
+    "sensitive": false,
+    "title": "AWS_REGION",
+    "required": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "YOUR_TOKEN": {
+    "type": "number",
+    "description": "Application token required for authenticating with Pushover.net",
+    "sensitive": true,
+    "title": "YOUR_TOKEN",
+    "required": true
+  },
+  "YOUR_USER": {
+    "type": "string",
+    "description": "User key associated with your Pushover.net account",
+    "sensitive": false,
+    "title": "YOUR_USER",
+    "required": true
+  }
+}

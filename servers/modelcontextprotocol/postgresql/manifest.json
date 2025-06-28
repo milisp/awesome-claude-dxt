@@ -1,0 +1,53 @@
+{
+  "dxt_version": "0.1",
+  "name": "postgresql",
+  "display_name": "PostgreSQL",
+  "version": "1.0.0",
+  "description": "Read-only database access with schema inspection",
+  "long_description": "",
+  "author": {
+    "name": "modelcontextprotocol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/blob/main/src/postgres",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://localhost/mydb"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "query",
+      "description": "Run a read-only SQL query",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sql": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "PostgreSQL",
+    "Database",
+    "Databases",
+    "Read-Only"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,86 @@
+{
+  "dxt_version": "0.1",
+  "name": "json",
+  "display_name": "JSON Model Context Protocol",
+  "version": "1.0.0",
+  "description": "JSON handling and processing server with advanced query capabilities using JSONPath syntax and support for array, string, numeric, and date operations.",
+  "long_description": "",
+  "author": {
+    "name": "GongRzhe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GongRzhe/JSON-MCP-Server"
+  },
+  "homepage": "https://github.com/GongRzhe/JSON-MCP-Server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "@gongrzhe/server-json-mcp@1.0.3"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "query",
+      "description": "Query JSON data using JSONPath syntax",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the JSON data source"
+          },
+          "jsonPath": {
+            "type": "string",
+            "description": "JSONPath expression (e.g. $.store.book[*].author)"
+          }
+        },
+        "required": [
+          "url",
+          "jsonPath"
+        ]
+      }
+    },
+    {
+      "name": "filter",
+      "description": "Filter JSON data using conditions",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL of the JSON data source"
+          },
+          "jsonPath": {
+            "type": "string",
+            "description": "Base JSONPath expression"
+          },
+          "condition": {
+            "type": "string",
+            "description": "Filter condition (e.g. @.price < 10)"
+          }
+        },
+        "required": [
+          "url",
+          "jsonPath",
+          "condition"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "standardized tools",
+    "json",
+    "data querying"
+  ],
+  "license": "MIT"
+}

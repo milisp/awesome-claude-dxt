@@ -1,0 +1,9 @@
+{
+  "SEARCH1API_KEY": {
+    "type": "string",
+    "description": "Your Search1API API key",
+    "sensitive": true,
+    "title": "SEARCH1API_KEY",
+    "required": true
+  }
+}

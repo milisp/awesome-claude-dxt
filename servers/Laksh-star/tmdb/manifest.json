@@ -1,0 +1,124 @@
+{
+  "dxt_version": "0.1",
+  "name": "tmdb",
+  "display_name": "TMDB",
+  "version": "1.0.0",
+  "description": "This MCP server integrates with The Movie Database (TMDB) API to provide movie information, search capabilities, and recommendations.",
+  "long_description": "",
+  "author": {
+    "name": "Laksh-star"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Laksh-star/mcp-server-tmdb"
+  },
+  "homepage": "https://github.com/Laksh-star/mcp-server-tmdb",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/Laksh-star/mcp-server-tmdb"
+      ],
+      "env": {
+        "TMDB_API_KEY": "${TMDB_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search_movies",
+      "description": "Search for movies by title or keywords",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query for movie titles"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_recommendations",
+      "description": "Get movie recommendations based on a movie ID",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "movieId": {
+            "type": "string",
+            "description": "TMDB movie ID to get recommendations for"
+          }
+        },
+        "required": [
+          "movieId"
+        ]
+      }
+    },
+    {
+      "name": "get_trending",
+      "description": "Get trending movies for a time window",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeWindow": {
+            "type": "string",
+            "enum": [
+              "day",
+              "week"
+            ],
+            "description": "Time window for trending movies"
+          }
+        },
+        "required": [
+          "timeWindow"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Search for Movies",
+      "description": "Search for movies by title or keywords",
+      "text": "\"Search for movies about artificial intelligence\""
+    },
+    {
+      "name": "Get Trending Movies",
+      "description": "Get today's or this week's trending movies",
+      "text": "\"What are the trending movies today?\""
+    },
+    {
+      "name": "Get Movie Recommendations",
+      "description": "Get movie recommendations based on a movie ID",
+      "text": "\"Get movie recommendations based on movie ID 550\""
+    },
+    {
+      "name": "Get Movie Details",
+      "description": "Get details of a specific movie by ID",
+      "text": "\"Tell me about the movie with ID 550\""
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "recommendations",
+    "movies",
+    "Professional Apps",
+    "tmdb"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "TMDB_API_KEY": {
+      "type": "string",
+      "description": "API key used to authenticate requests to the TMDB API.",
+      "sensitive": true,
+      "title": "TMDB_API_KEY",
+      "required": true
+    }
+  }
+}

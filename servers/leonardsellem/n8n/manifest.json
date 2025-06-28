@@ -1,0 +1,119 @@
+{
+  "dxt_version": "0.1",
+  "name": "n8n",
+  "display_name": "n8n",
+  "version": "1.0.0",
+  "description": "This MCP server provides tools and resources for AI assistants to manage n8n workflows and executions, including listing, creating, updating, and deleting workflows, as well as monitoring their execution status.",
+  "long_description": "",
+  "author": {
+    "name": "leonardsellem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonardsellem/n8n-mcp-server"
+  },
+  "homepage": "https://github.com/leonardsellem/n8n-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anaisbetts/mcp-installer"
+      ],
+      "env": {
+        "N8N_API_URL": "${N8N_API_URL}",
+        "N8N_API_KEY": "${N8N_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "install_repo_mcp_server",
+      "description": "Install an MCP server via npx or uvx",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The package name of the MCP server"
+          },
+          "args": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The arguments to pass along"
+          },
+          "env": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The environment variables to set, delimited by ="
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    {
+      "name": "install_local_mcp_server",
+      "description": "Install an MCP server whose code is cloned locally on your computer",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "The path to the MCP server code cloned on your computer"
+          },
+          "args": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The arguments to pass along"
+          },
+          "env": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The environment variables to set, delimited by ="
+          }
+        },
+        "required": [
+          "path"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "AI",
+    "server",
+    "n8n"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "N8N_API_URL": {
+      "type": "string",
+      "description": "URL of the n8n API",
+      "sensitive": false,
+      "title": "N8N_API_URL",
+      "required": true
+    },
+    "N8N_API_KEY": {
+      "type": "string",
+      "description": "API key for authenticating with n8n",
+      "sensitive": true,
+      "title": "N8N_API_KEY",
+      "required": true
+    }
+  }
+}

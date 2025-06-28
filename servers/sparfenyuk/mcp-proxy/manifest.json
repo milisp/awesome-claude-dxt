@@ -1,0 +1,38 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-proxy",
+  "display_name": "MCP Proxy",
+  "version": "1.0.0",
+  "description": "Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.",
+  "long_description": "",
+  "author": {
+    "name": "sparfenyuk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sparfenyuk/mcp-proxy"
+  },
+  "homepage": "https://github.com/sparfenyuk/mcp-proxy",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "MCP Tools",
+    "proxy",
+    "stdio",
+    "sse"
+  ],
+  "license": "MIT"
+}

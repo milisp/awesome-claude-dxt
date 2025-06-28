@@ -1,0 +1,16 @@
+{
+  "XERO_CLIENT_ID": {
+    "type": "string",
+    "description": "Your Xero API client ID from your developer account",
+    "sensitive": false,
+    "title": "XERO_CLIENT_ID",
+    "required": true
+  },
+  "XERO_CLIENT_SECRET": {
+    "type": "string",
+    "description": "Your Xero API client secret from your developer account",
+    "sensitive": false,
+    "title": "XERO_CLIENT_SECRET",
+    "required": true
+  }
+}

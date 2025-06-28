@@ -1,0 +1,77 @@
+{
+  "dxt_version": "0.1",
+  "name": "agentql-mcp",
+  "display_name": "AgentQL MCP Server",
+  "version": "1.0.0",
+  "description": "This is a Model Context Protocol (MCP) server that integrates [AgentQL](https://agentql.com)'s data extraction capabilities.",
+  "long_description": "",
+  "author": {
+    "name": "tinyfish-io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinyfish-io/agentql-mcp"
+  },
+  "homepage": "https://agentql.com",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agentql-mcp"
+      ],
+      "env": {
+        "AGENTQL_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "extract-web-data",
+      "description": "Extracts structured data as JSON from a web page given a URL using a Natural Language description of the data.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "The URL of the public webpage to extract data from"
+          },
+          "prompt": {
+            "type": "string",
+            "description": "Natural Language description of the data to extract from the page"
+          }
+        },
+        "required": [
+          "url",
+          "prompt"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Extract YouTube search results",
+      "description": "Extract structured data from YouTube search results",
+      "text": "Extract the list of videos from the page https://www.youtube.com/results?search_query=agentql, every video should have a title, an author name, a number of views and a url to the video. Make sure to exclude ads items. Format this as a markdown table."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "web scraping",
+    "Web Services",
+    "data extraction"
+  ],
+  "license": "[NOT GIVEN]",
+  "user_config": {
+    "AGENTQL_API_KEY": {
+      "type": "string",
+      "description": "API key from AgentQL Dev Portal",
+      "sensitive": true,
+      "title": "AGENTQL_API_KEY",
+      "required": true
+    }
+  }
+}

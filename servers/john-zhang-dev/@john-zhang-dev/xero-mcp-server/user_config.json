@@ -1,0 +1,23 @@
+{
+  "XERO_CLIENT_ID": {
+    "type": "string",
+    "description": "The Client ID obtained from the Xero Developer center after creating an OAuth 2.0 app, required for authentication.",
+    "sensitive": false,
+    "title": "XERO_CLIENT_ID",
+    "required": true
+  },
+  "XERO_CLIENT_SECRET": {
+    "type": "string",
+    "description": "The Client Secret generated in the Xero Developer center, necessary for authenticating requests.",
+    "sensitive": false,
+    "title": "XERO_CLIENT_SECRET",
+    "required": true
+  },
+  "XERO_REDIRECT_URI": {
+    "type": "string",
+    "description": "The URI to redirect to after authentication, should typically match the redirect URI specified in the OAuth 2.0 app settings.",
+    "sensitive": false,
+    "title": "XERO_REDIRECT_URI",
+    "required": false
+  }
+}

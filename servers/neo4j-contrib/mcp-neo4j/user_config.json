@@ -1,0 +1,23 @@
+{
+  "NEO4J_URI": {
+    "type": "string",
+    "description": "Neo4j database URL",
+    "sensitive": false,
+    "title": "NEO4J_URI",
+    "required": true
+  },
+  "NEO4J_USERNAME": {
+    "type": "string",
+    "description": "Neo4j username",
+    "sensitive": false,
+    "title": "NEO4J_USERNAME",
+    "required": true
+  },
+  "NEO4J_PASSWORD": {
+    "type": "string",
+    "description": "Neo4j password",
+    "sensitive": false,
+    "title": "NEO4J_PASSWORD",
+    "required": true
+  }
+}

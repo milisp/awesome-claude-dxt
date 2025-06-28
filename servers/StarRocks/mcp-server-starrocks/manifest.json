@@ -1,0 +1,106 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-starrocks",
+  "display_name": "StarRocks Official MCP Server",
+  "version": "1.0.0",
+  "description": "The StarRocks MCP Server acts as a bridge between AI assistants and StarRocks databases, allowing for direct SQL execution and database exploration without requiring complex setup or configuration.",
+  "long_description": "",
+  "author": {
+    "name": "StarRocks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StarRocks/mcp-server-starrocks"
+  },
+  "homepage": "https://github.com/StarRocks/mcp-server-starrocks",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-starrocks"
+      ],
+      "env": {
+        "STARROCKS_HOST": "localhost",
+        "STARROCKS_PORT": "9030",
+        "STARROCKS_USER": "root",
+        "STARROCKS_PASSWORD": ""
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "read_query",
+      "description": "Execute a SELECT query or commands that return a ResultSet",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "write_query",
+      "description": "Execute an DDL/DML or other StarRocks command that do not have a ResultSet",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "SQL to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "starrocks",
+    "sql",
+    "Databases",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "user_config": {
+    "STARROCKS_HOST": {
+      "type": "number",
+      "description": "StarRocks database host",
+      "sensitive": false,
+      "title": "STARROCKS_HOST",
+      "required": false
+    },
+    "STARROCKS_PORT": {
+      "type": "number",
+      "description": "StarRocks database port",
+      "sensitive": false,
+      "title": "STARROCKS_PORT",
+      "required": false
+    },
+    "STARROCKS_USER": {
+      "type": "number",
+      "description": "StarRocks database user",
+      "sensitive": false,
+      "title": "STARROCKS_USER",
+      "required": false
+    },
+    "STARROCKS_PASSWORD": {
+      "type": "string",
+      "description": "StarRocks database password",
+      "sensitive": false,
+      "title": "STARROCKS_PASSWORD",
+      "required": false
+    }
+  }
+}

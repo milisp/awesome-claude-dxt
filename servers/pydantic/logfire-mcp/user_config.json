@@ -1,0 +1,16 @@
+{
+  "read_token": {
+    "type": "string",
+    "description": "Logfire read token for accessing the Logfire APIs",
+    "sensitive": true,
+    "title": "read_token",
+    "required": true
+  },
+  "base_url": {
+    "type": "string",
+    "description": "Base URL for the Logfire API (defaults to https://logfire-api.pydantic.dev)",
+    "sensitive": false,
+    "title": "base_url",
+    "required": false
+  }
+}

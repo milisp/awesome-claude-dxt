@@ -1,0 +1,16 @@
+{
+  "DESCOPE_PROJECT_ID": {
+    "type": "string",
+    "description": "Your Descope Project ID",
+    "sensitive": false,
+    "title": "DESCOPE_PROJECT_ID",
+    "required": true
+  },
+  "DESCOPE_MANAGEMENT_KEY": {
+    "type": "string",
+    "description": "Your Descope Management Key",
+    "sensitive": true,
+    "title": "DESCOPE_MANAGEMENT_KEY",
+    "required": true
+  }
+}

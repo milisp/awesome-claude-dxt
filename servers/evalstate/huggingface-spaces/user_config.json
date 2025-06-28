@@ -1,0 +1,9 @@
+{
+  "CLAUDE_DESKTOP_MODE": {
+    "type": "number",
+    "description": "Enables or disables the Claude Desktop Mode for the server.",
+    "sensitive": false,
+    "title": "CLAUDE_DESKTOP_MODE",
+    "required": false
+  }
+}

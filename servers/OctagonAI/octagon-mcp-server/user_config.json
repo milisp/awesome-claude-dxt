@@ -1,0 +1,9 @@
+{
+  "OCTAGON_API_KEY": {
+    "type": "string",
+    "description": "Your Octagon API key",
+    "sensitive": true,
+    "title": "OCTAGON_API_KEY",
+    "required": true
+  }
+}

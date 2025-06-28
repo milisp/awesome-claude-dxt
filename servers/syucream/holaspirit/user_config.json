@@ -1,0 +1,9 @@
+{
+  "HOLASPIRIT_API_TOKEN": {
+    "type": "string",
+    "description": "Your Holaspirit API token",
+    "sensitive": true,
+    "title": "HOLASPIRIT_API_TOKEN",
+    "required": true
+  }
+}

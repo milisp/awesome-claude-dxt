@@ -1,0 +1,9 @@
+{
+  "YML": {
+    "type": "directory",
+    "description": "The path to the YAML configuration file required for setting up the server environment variables.",
+    "sensitive": false,
+    "title": "YML",
+    "required": true
+  }
+}

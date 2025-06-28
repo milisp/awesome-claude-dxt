@@ -1,0 +1,9 @@
+{
+  "NASA_API_KEY": {
+    "type": "string",
+    "description": "Your NASA API key (get at api.nasa.gov)",
+    "sensitive": true,
+    "title": "NASA_API_KEY",
+    "required": false
+  }
+}

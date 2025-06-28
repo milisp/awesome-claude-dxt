@@ -1,0 +1,30 @@
+{
+  "STARROCKS_HOST": {
+    "type": "number",
+    "description": "StarRocks database host",
+    "sensitive": false,
+    "title": "STARROCKS_HOST",
+    "required": false
+  },
+  "STARROCKS_PORT": {
+    "type": "number",
+    "description": "StarRocks database port",
+    "sensitive": false,
+    "title": "STARROCKS_PORT",
+    "required": false
+  },
+  "STARROCKS_USER": {
+    "type": "number",
+    "description": "StarRocks database user",
+    "sensitive": false,
+    "title": "STARROCKS_USER",
+    "required": false
+  },
+  "STARROCKS_PASSWORD": {
+    "type": "string",
+    "description": "StarRocks database password",
+    "sensitive": false,
+    "title": "STARROCKS_PASSWORD",
+    "required": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "DASHSCOPE_API_KEY": {
+    "type": "string",
+    "description": "API key required for authentication with the Dashscope service.",
+    "sensitive": true,
+    "title": "DASHSCOPE_API_KEY",
+    "required": true
+  }
+}

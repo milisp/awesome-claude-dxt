@@ -1,0 +1,9 @@
+{
+  "PERPLEXITY_API_KEY": {
+    "type": "string",
+    "description": "API key for the Perplexity Sonar API",
+    "sensitive": true,
+    "title": "PERPLEXITY_API_KEY",
+    "required": true
+  }
+}

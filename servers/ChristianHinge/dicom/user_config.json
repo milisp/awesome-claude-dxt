@@ -1,0 +1,9 @@
+{
+  "CONFIG_PATH": {
+    "type": "directory",
+    "description": "Path to the configuration file",
+    "sensitive": false,
+    "title": "CONFIG_PATH",
+    "required": true
+  }
+}

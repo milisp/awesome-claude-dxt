@@ -1,0 +1,9 @@
+{
+  "DEEPSEEK_API_KEY": {
+    "type": "string",
+    "description": "An API key required to authenticate requests to the DeepSeek API.",
+    "sensitive": true,
+    "title": "DEEPSEEK_API_KEY",
+    "required": true
+  }
+}

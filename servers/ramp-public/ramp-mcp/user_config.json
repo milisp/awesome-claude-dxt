@@ -1,0 +1,30 @@
+{
+  "RAMP_CLIENT_ID": {
+    "type": "string",
+    "description": "Ramp API client ID",
+    "sensitive": false,
+    "title": "RAMP_CLIENT_ID",
+    "required": true
+  },
+  "RAMP_CLIENT_SECRET": {
+    "type": "string",
+    "description": "Ramp API client secret",
+    "sensitive": false,
+    "title": "RAMP_CLIENT_SECRET",
+    "required": true
+  },
+  "RAMP_ENV": {
+    "type": "number",
+    "description": "Ramp environment (demo, qa, or prd)",
+    "sensitive": false,
+    "title": "RAMP_ENV",
+    "required": true
+  },
+  "-s": {
+    "type": "string",
+    "description": "Comma-separated list of API scopes to enable",
+    "sensitive": false,
+    "title": "-s",
+    "required": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "HUGGINGFACE_TOKEN": {
+    "type": "string",
+    "description": "Your Hugging Face API token for accessing private datasets",
+    "sensitive": true,
+    "title": "HUGGINGFACE_TOKEN",
+    "required": false
+  }
+}

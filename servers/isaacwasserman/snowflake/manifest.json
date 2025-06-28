@@ -1,0 +1,136 @@
+{
+  "dxt_version": "0.1",
+  "name": "snowflake",
+  "display_name": "Snowflake",
+  "version": "1.0.0",
+  "description": "This MCP server enables LLMs to interact with Snowflake databases, allowing for secure and controlled data operations.",
+  "long_description": "",
+  "author": {
+    "name": "isaacwasserman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaacwasserman/mcp-snowflake-server"
+  },
+  "homepage": "https://github.com/isaacwasserman/mcp-snowflake-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp_snowflake_server",
+        "--account",
+        "${ACCOUNT}",
+        "--warehouse",
+        "${WAREHOUSE}",
+        "--user",
+        "${USER}",
+        "--password",
+        "${PASSWORD}",
+        "--role",
+        "${ROLE}",
+        "--database",
+        "${DATABASE}",
+        "--schema",
+        "${SCHEMA}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "read_query",
+      "description": "Execute a SELECT query.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "SELECT SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "append_insight",
+      "description": "Add a data insight to the memo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "insight": {
+            "type": "string",
+            "description": "Data insight discovered from analysis"
+          }
+        },
+        "required": [
+          "insight"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "database",
+    "sql",
+    "Databases",
+    "snowflake"
+  ],
+  "license": "NOT GIVEN",
+  "user_config": {
+    "ACCOUNT": {
+      "type": "string",
+      "description": "The Snowflake account name to connect to.",
+      "sensitive": false,
+      "title": "ACCOUNT",
+      "required": true
+    },
+    "WAREHOUSE": {
+      "type": "string",
+      "description": "The name of the virtual warehouse to be used for the session.",
+      "sensitive": false,
+      "title": "WAREHOUSE",
+      "required": true
+    },
+    "USER": {
+      "type": "string",
+      "description": "The username to authenticate with Snowflake.",
+      "sensitive": false,
+      "title": "USER",
+      "required": true
+    },
+    "PASSWORD": {
+      "type": "string",
+      "description": "The password for the specified user.",
+      "sensitive": false,
+      "title": "PASSWORD",
+      "required": true
+    },
+    "ROLE": {
+      "type": "string",
+      "description": "The role to be assumed during the session.",
+      "sensitive": false,
+      "title": "ROLE",
+      "required": true
+    },
+    "DATABASE": {
+      "type": "string",
+      "description": "The name of the Snowflake database to connect to.",
+      "sensitive": false,
+      "title": "DATABASE",
+      "required": true
+    },
+    "SCHEMA": {
+      "type": "string",
+      "description": "The schema within the database where queries will be executed.",
+      "sensitive": false,
+      "title": "SCHEMA",
+      "required": true
+    }
+  }
+}

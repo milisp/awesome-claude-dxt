@@ -1,0 +1,16 @@
+{
+  "url": {
+    "type": "string",
+    "description": "URL of the website to fetch",
+    "sensitive": false,
+    "title": "url",
+    "required": true
+  },
+  "headers": {
+    "type": "string",
+    "description": "Custom headers to include in the request",
+    "sensitive": false,
+    "title": "headers",
+    "required": false
+  }
+}

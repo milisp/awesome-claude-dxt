@@ -1,0 +1,75 @@
+{
+  "dxt_version": "0.1",
+  "name": "ghost",
+  "display_name": "Ghost",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for interacting with Ghost CMS through LLM interfaces like Claude.",
+  "long_description": "",
+  "author": {
+    "name": "MFYDev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MFYDev/ghost-mcp"
+  },
+  "homepage": "https://github.com/MFYDev/ghost-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/MFYDev/ghost-mcp",
+        "src/main.py"
+      ],
+      "env": {
+        "GHOST_API_URL": "${GHOST_API_URL}",
+        "GHOST_STAFF_API_KEY": "${GHOST_STAFF_API_KEY}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List Posts",
+      "description": "List blog posts with pagination.",
+      "text": "ghost(action=\"list_posts\", params={\"format\": \"text\", \"page\": 1, \"limit\": 15})"
+    },
+    {
+      "name": "Search Posts by Title",
+      "description": "Search for posts by title.",
+      "text": "ghost(action=\"search_posts_by_title\", params={\"query\": \"Welcome\", \"exact\": False})"
+    },
+    {
+      "name": "Create a Post",
+      "description": "Create a new post.",
+      "text": "ghost(action=\"create_post\", params={\"post_data\": {\"title\": \"New Post via MCP\",\"status\": \"draft\",\"lexical\": \"{\\\"root\\\":{\\\"children\\\":[{\\\"children\\\":[{\\\"detail\\\":0,\\\"format\\\":0,\\\"mode\\\":\\\"normal\\\",\\\"style\\\":\\\"\\\",\\\"text\\\":\\\"Hello World\\\",\\\"type\\\":\\\"text\\\",\\\"version\\\":1}],\\\"direction\\\":\\\"ltr\\\",\\\"format\\\":\\\"\\\",\\\"indent\\\":0,\\\"type\\\":\\\"paragraph\\\",\\\"version\\\":1}],\\\"direction\\\":\\\"ltr\\\",\\\"format\\\":\\\"\\\",\\\"indent\\\":0,\\\"type\\\":\\\"root\\\",\\\"version\\\":1}}\"}}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "CMS",
+    "Professional Apps",
+    "Admin API",
+    "Ghost"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GHOST_API_URL": {
+      "type": "string",
+      "description": "Your Ghost Admin API URL",
+      "sensitive": false,
+      "title": "GHOST_API_URL",
+      "required": true
+    },
+    "GHOST_STAFF_API_KEY": {
+      "type": "string",
+      "description": "Your Ghost Staff API key",
+      "sensitive": true,
+      "title": "GHOST_STAFF_API_KEY",
+      "required": true
+    }
+  }
+}

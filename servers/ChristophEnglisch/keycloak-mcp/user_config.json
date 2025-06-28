@@ -1,0 +1,23 @@
+{
+  "KEYCLOAK_URL": {
+    "type": "string",
+    "description": "The URL of the Keycloak server instance that the MCP will connect to.",
+    "sensitive": true,
+    "title": "KEYCLOAK_URL",
+    "required": true
+  },
+  "KEYCLOAK_ADMIN": {
+    "type": "number",
+    "description": "The admin username for accessing the Keycloak server.",
+    "sensitive": true,
+    "title": "KEYCLOAK_ADMIN",
+    "required": true
+  },
+  "KEYCLOAK_ADMIN_PASSWORD": {
+    "type": "number",
+    "description": "The password for the admin user to access the Keycloak server.",
+    "sensitive": true,
+    "title": "KEYCLOAK_ADMIN_PASSWORD",
+    "required": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ADFIN_EMAIL": {
+    "type": "string",
+    "description": "Email for Adfin authentication",
+    "sensitive": false,
+    "title": "ADFIN_EMAIL",
+    "required": true
+  },
+  "ADFIN_PASSWORD": {
+    "type": "string",
+    "description": "Password for Adfin authentication",
+    "sensitive": false,
+    "title": "ADFIN_PASSWORD",
+    "required": true
+  }
+}

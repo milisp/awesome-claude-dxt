@@ -1,0 +1,68 @@
+{
+  "dxt_version": "0.1",
+  "name": "postman",
+  "display_name": "Postman",
+  "version": "1.0.0",
+  "description": "MCP server for running Postman Collections locally via Newman. Allows for simple execution of Postman Server and returns the results of whether the collection passed all the tests.",
+  "long_description": "",
+  "author": {
+    "name": "shannonlal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shannonlal/mcp-postman"
+  },
+  "homepage": "https://github.com/shannonlal/mcp-postman",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/shannonlal/mcp-postman"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "run-collection",
+      "description": "Run a Postman Collection using Newman",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "collection": {
+            "type": "string",
+            "description": "Path or URL to the Postman collection"
+          },
+          "environment": {
+            "type": "string",
+            "description": "Optional path or URL to environment file"
+          },
+          "globals": {
+            "type": "string",
+            "description": "Optional path or URL to globals file"
+          },
+          "iterationCount": {
+            "type": "number",
+            "description": "Optional number of iterations to run"
+          }
+        },
+        "required": [
+          "collection"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "Postman",
+    "Newman",
+    "API"
+  ],
+  "license": "ISC"
+}

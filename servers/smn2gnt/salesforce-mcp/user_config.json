@@ -1,0 +1,23 @@
+{
+  "SALESFORCE_USERNAME": {
+    "type": "string",
+    "description": "Your Salesforce username for authentication",
+    "sensitive": false,
+    "title": "SALESFORCE_USERNAME",
+    "required": true
+  },
+  "SALESFORCE_PASSWORD": {
+    "type": "string",
+    "description": "Your Salesforce password for authentication",
+    "sensitive": false,
+    "title": "SALESFORCE_PASSWORD",
+    "required": true
+  },
+  "SALESFORCE_SECURITY_TOKEN": {
+    "type": "string",
+    "description": "Your Salesforce security token for additional security measures",
+    "sensitive": true,
+    "title": "SALESFORCE_SECURITY_TOKEN",
+    "required": true
+  }
+}

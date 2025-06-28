@@ -1,0 +1,68 @@
+{
+  "dxt_version": "0.1",
+  "name": "actors-mcp-server",
+  "display_name": "Apify Model Context Protocol (MCP) Server",
+  "version": "1.0.0",
+  "description": "Implementation of an MCP server for all [Apify Actors](https://apify.com/store).",
+  "long_description": "",
+  "author": {
+    "name": "apify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apify/actors-mcp-server"
+  },
+  "homepage": "https://apify.com/apify/actors-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Search for restaurants",
+      "description": "Find top restaurants in San Francisco",
+      "text": "Find top 10 best Italian restaurants in San Francisco."
+    },
+    {
+      "name": "Instagram profile analysis",
+      "description": "Analyze an Instagram profile",
+      "text": "Find and analyze Instagram profile of The Rock."
+    },
+    {
+      "name": "Web search and summarization",
+      "description": "Search the web and summarize information",
+      "text": "Search web and summarize recent trends about AI Agents."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "mcp",
+    "ai-agents",
+    "model-context-protocol",
+    "Web Services",
+    "actors",
+    "apify"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "APIFY_TOKEN": {
+      "type": "string",
+      "description": "Your Apify API token for authentication",
+      "sensitive": true,
+      "title": "APIFY_TOKEN",
+      "required": true
+    }
+  }
+}

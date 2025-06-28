@@ -1,0 +1,23 @@
+{
+  "KAGI_API_KEY": {
+    "type": "string",
+    "description": "Your Kagi API key",
+    "sensitive": true,
+    "title": "KAGI_API_KEY",
+    "required": true
+  },
+  "KAGI_SUMMARIZER_ENGINE": {
+    "type": "number",
+    "description": "Summarizer engine choice (defaults to 'cecil')",
+    "sensitive": false,
+    "title": "KAGI_SUMMARIZER_ENGINE",
+    "required": false
+  },
+  "FASTMCP_LOG_LEVEL": {
+    "type": "number",
+    "description": "Level of logging",
+    "sensitive": false,
+    "title": "FASTMCP_LOG_LEVEL",
+    "required": false
+  }
+}

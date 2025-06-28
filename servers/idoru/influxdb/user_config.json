@@ -1,0 +1,23 @@
+{
+  "INFLUXDB_TOKEN": {
+    "type": "string",
+    "description": "Authentication token for the InfluxDB API",
+    "sensitive": true,
+    "title": "INFLUXDB_TOKEN",
+    "required": true
+  },
+  "INFLUXDB_URL": {
+    "type": "string",
+    "description": "URL of the InfluxDB instance",
+    "sensitive": false,
+    "title": "INFLUXDB_URL",
+    "required": false
+  },
+  "INFLUXDB_ORG": {
+    "type": "string",
+    "description": "Default organization name for certain operations",
+    "sensitive": false,
+    "title": "INFLUXDB_ORG",
+    "required": false
+  }
+}

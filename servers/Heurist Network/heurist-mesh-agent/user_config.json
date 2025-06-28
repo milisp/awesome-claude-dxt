@@ -1,0 +1,9 @@
+{
+  "HEURIST_API_KEY": {
+    "type": "string",
+    "description": "API key for accessing the Heurist services.",
+    "sensitive": true,
+    "title": "HEURIST_API_KEY",
+    "required": true
+  }
+}

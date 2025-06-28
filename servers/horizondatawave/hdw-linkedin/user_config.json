@@ -1,0 +1,16 @@
+{
+  "HDW_ACCESS_TOKEN": {
+    "type": "string",
+    "description": "Access token for HorizonDataWave API, used for authentication and authorization to access user data.",
+    "sensitive": true,
+    "title": "HDW_ACCESS_TOKEN",
+    "required": true
+  },
+  "HDW_ACCOUNT_ID": {
+    "type": "string",
+    "description": "Account ID for HorizonDataWave API, used to identify the user's account.",
+    "sensitive": false,
+    "title": "HDW_ACCOUNT_ID",
+    "required": true
+  }
+}

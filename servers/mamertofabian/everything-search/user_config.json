@@ -1,0 +1,9 @@
+{
+  "EVERYTHING_SDK_PATH": {
+    "type": "directory",
+    "description": "Environment variable that specifies the path to the Everything SDK DLL required for the server to function properly.",
+    "sensitive": false,
+    "title": "EVERYTHING_SDK_PATH",
+    "required": true
+  }
+}

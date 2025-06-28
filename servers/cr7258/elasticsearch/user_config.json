@@ -1,0 +1,23 @@
+{
+  "ELASTIC_HOST": {
+    "type": "string",
+    "description": "The host URL of the Elasticsearch server.",
+    "sensitive": false,
+    "title": "ELASTIC_HOST",
+    "required": true
+  },
+  "ELASTIC_USERNAME": {
+    "type": "number",
+    "description": "The username for authenticating with the Elasticsearch server.",
+    "sensitive": false,
+    "title": "ELASTIC_USERNAME",
+    "required": true
+  },
+  "ELASTIC_PASSWORD": {
+    "type": "number",
+    "description": "The password for authenticating with the Elasticsearch server.",
+    "sensitive": false,
+    "title": "ELASTIC_PASSWORD",
+    "required": true
+  }
+}

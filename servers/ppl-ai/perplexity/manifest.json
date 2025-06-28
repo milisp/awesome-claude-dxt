@@ -1,0 +1,91 @@
+{
+  "dxt_version": "0.1",
+  "name": "perplexity",
+  "display_name": "Perplexity Ask MCP Server",
+  "version": "1.0.0",
+  "description": "An MCP server implementation that integrates the Sonar API to provide Claude with unparalleled real-time, web-wide research.",
+  "long_description": "",
+  "author": {
+    "name": "ppl-ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppl-ai/modelcontextprotocol"
+  },
+  "homepage": "https://github.com/ppl-ai/modelcontextprotocol",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "server-perplexity-ask"
+      ],
+      "env": {
+        "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "perplexity_ask",
+      "description": "Engages in a conversation using the Sonar API. Accepts an array of messages (each with a role and content) and returns a ask completion response from the Perplexity model.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "messages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "description": "Role of the message (e.g., system, user, assistant)"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "The content of the message"
+                }
+              },
+              "required": [
+                "role",
+                "content"
+              ]
+            },
+            "description": "Array of conversation messages"
+          }
+        },
+        "required": [
+          "messages"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Web Search",
+      "description": "Use Perplexity to search the web for information",
+      "text": "Search the web for the latest information about climate change policies."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "search",
+    "Web Services",
+    "sonar-api",
+    "web-search",
+    "perplexity"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "PERPLEXITY_API_KEY": {
+      "type": "string",
+      "description": "API key for the Perplexity Sonar API",
+      "sensitive": true,
+      "title": "PERPLEXITY_API_KEY",
+      "required": true
+    }
+  }
+}

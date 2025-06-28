@@ -1,0 +1,83 @@
+{
+  "dxt_version": "0.1",
+  "name": "discourse",
+  "display_name": "Discourse",
+  "version": "1.0.0",
+  "description": "A MCP server to search Discourse posts on a Discourse forum.",
+  "long_description": "",
+  "author": {
+    "name": "AshDevFr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AshDevFr/discourse-mcp-server"
+  },
+  "homepage": "https://github.com/AshDevFr/discourse-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ashdev/discourse-mcp-server"
+      ],
+      "env": {
+        "DISCOURSE_API_URL": "${DISCOURSE_API_URL}",
+        "DISCOURSE_API_KEY": "${DISCOURSE_API_KEY}",
+        "DISCOURSE_API_USERNAME": "${DISCOURSE_API_USERNAME}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "search_posts",
+      "description": "Search Discourse posts",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Query"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "search",
+    "Web Services",
+    "discourse"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "DISCOURSE_API_URL": {
+      "type": "string",
+      "description": "API URL for the Discourse forum that the server will connect to.",
+      "sensitive": false,
+      "title": "DISCOURSE_API_URL",
+      "required": true
+    },
+    "DISCOURSE_API_KEY": {
+      "type": "number",
+      "description": "API key for authenticating to the Discourse forum.",
+      "sensitive": true,
+      "title": "DISCOURSE_API_KEY",
+      "required": true
+    },
+    "DISCOURSE_API_USERNAME": {
+      "type": "number",
+      "description": "Username for authenticating to the Discourse forum.",
+      "sensitive": false,
+      "title": "DISCOURSE_API_USERNAME",
+      "required": true
+    }
+  }
+}

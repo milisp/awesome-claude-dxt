@@ -1,0 +1,16 @@
+{
+  "PROJECT_ID": {
+    "type": "string",
+    "description": "Your Google Cloud project ID",
+    "sensitive": false,
+    "title": "PROJECT_ID",
+    "required": true
+  },
+  "LOCATION": {
+    "type": "string",
+    "description": "BigQuery location, defaults to 'us-central1'.",
+    "sensitive": false,
+    "title": "LOCATION",
+    "required": false
+  }
+}

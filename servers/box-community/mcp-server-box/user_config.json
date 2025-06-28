@@ -1,0 +1,16 @@
+{
+  "BOX_CLIENT_ID": {
+    "type": "string",
+    "description": "Box API Client ID",
+    "sensitive": false,
+    "title": "BOX_CLIENT_ID",
+    "required": true
+  },
+  "BOX_CLIENT_SECRET": {
+    "type": "string",
+    "description": "Box API Client Secret",
+    "sensitive": false,
+    "title": "BOX_CLIENT_SECRET",
+    "required": true
+  }
+}

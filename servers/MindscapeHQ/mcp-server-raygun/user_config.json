@@ -1,0 +1,16 @@
+{
+  "RAYGUN_PAT_TOKEN": {
+    "type": "string",
+    "description": "Your Raygun PAT token",
+    "sensitive": true,
+    "title": "RAYGUN_PAT_TOKEN",
+    "required": true
+  },
+  "SOURCEMAP_ALLOWED_DIRS": {
+    "type": "directory",
+    "description": "Comma-separated list of directories allowed for source map operations",
+    "sensitive": false,
+    "title": "SOURCEMAP_ALLOWED_DIRS",
+    "required": false
+  }
+}

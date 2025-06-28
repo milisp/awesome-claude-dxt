@@ -1,0 +1,9 @@
+{
+  "WHALE_TRACKER_API_KEY": {
+    "type": "string",
+    "description": "Environment variable to load the Whale Alert API key for the server.",
+    "sensitive": true,
+    "title": "WHALE_TRACKER_API_KEY",
+    "required": true
+  }
+}

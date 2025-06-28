@@ -1,0 +1,103 @@
+{
+  "dxt_version": "0.1",
+  "name": "time",
+  "display_name": "Time",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server that provides time and timezone conversion capabilities. It automatically detects the system's timezone and offers tools for getting current time and converting between timezones.",
+  "long_description": "",
+  "author": {
+    "name": "MCP Team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time#readme",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time",
+        "--local-timezone=${TZ}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "get_current_time",
+      "description": "Get current time in a specific timezones",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timezone": {
+            "type": "string",
+            "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use local timezone if no timezone provided by the user."
+          }
+        },
+        "required": [
+          "timezone"
+        ]
+      }
+    },
+    {
+      "name": "convert_time",
+      "description": "Convert time between timezones",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "source_timezone": {
+            "type": "string",
+            "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use local timezone if no source timezone provided by the user."
+          },
+          "time": {
+            "type": "string",
+            "description": "Time to convert in 24-hour format (HH:MM)"
+          },
+          "target_timezone": {
+            "type": "string",
+            "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use local timezone if no target timezone provided by the user."
+          }
+        },
+        "required": [
+          "source_timezone",
+          "time",
+          "target_timezone"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Current time",
+      "description": "Get the current time in a specific timezone",
+      "text": "What time is it in Tokyo right now?"
+    },
+    {
+      "name": "Time conversion",
+      "description": "Convert time between timezones",
+      "text": "Convert 3:30 PM EST to Paris time."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "System Tools",
+    "date",
+    "converter",
+    "time",
+    "timezone"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "TZ": {
+      "type": "string",
+      "description": "Environment variable to override the system's default timezone",
+      "sensitive": false,
+      "title": "TZ",
+      "required": false
+    }
+  }
+}

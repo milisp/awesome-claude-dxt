@@ -1,0 +1,23 @@
+{
+  "DISCOURSE_API_URL": {
+    "type": "string",
+    "description": "API URL for the Discourse forum that the server will connect to.",
+    "sensitive": false,
+    "title": "DISCOURSE_API_URL",
+    "required": true
+  },
+  "DISCOURSE_API_KEY": {
+    "type": "number",
+    "description": "API key for authenticating to the Discourse forum.",
+    "sensitive": true,
+    "title": "DISCOURSE_API_KEY",
+    "required": true
+  },
+  "DISCOURSE_API_USERNAME": {
+    "type": "number",
+    "description": "Username for authenticating to the Discourse forum.",
+    "sensitive": false,
+    "title": "DISCOURSE_API_USERNAME",
+    "required": true
+  }
+}

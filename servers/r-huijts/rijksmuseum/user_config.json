@@ -1,0 +1,9 @@
+{
+  "RIJKSMUSEUM_API_KEY": {
+    "type": "string",
+    "description": "Your Rijksmuseum API key used for authenticating requests to the Rijksmuseum API.",
+    "sensitive": true,
+    "title": "RIJKSMUSEUM_API_KEY",
+    "required": true
+  }
+}

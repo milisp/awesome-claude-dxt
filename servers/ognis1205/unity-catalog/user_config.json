@@ -1,0 +1,23 @@
+{
+  "UC_SERVER": {
+    "type": "string",
+    "description": "The base URL of the Unity Catalog server.",
+    "sensitive": false,
+    "title": "UC_SERVER",
+    "required": true
+  },
+  "UC_CATALOG": {
+    "type": "string",
+    "description": "The name of the Unity Catalog catalog.",
+    "sensitive": false,
+    "title": "UC_CATALOG",
+    "required": true
+  },
+  "UC_SCHEMA": {
+    "type": "string",
+    "description": "The name of the schema within a Unity Catalog catalog.",
+    "sensitive": false,
+    "title": "UC_SCHEMA",
+    "required": true
+  }
+}

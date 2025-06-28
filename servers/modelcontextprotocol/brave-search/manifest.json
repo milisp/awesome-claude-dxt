@@ -1,0 +1,110 @@
+{
+  "dxt_version": "0.1",
+  "name": "brave-search",
+  "display_name": "Brave Search",
+  "version": "1.0.0",
+  "description": "Web and local search using Brave's Search API",
+  "long_description": "",
+  "author": {
+    "name": "modelcontextprotocol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelcontextprotocol/servers"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/blob/main/src/brave-search",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "brave_web_search",
+      "description": "Performs a web search using the Brave Search API, ideal for general queries, news, articles, and online content. Use this for broad information gathering, recent events, or when you need diverse web sources. Supports pagination, content filtering, and freshness controls. Maximum 20 results per request, with offset for pagination. ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query (max 400 chars, 50 words)"
+          },
+          "count": {
+            "type": "number",
+            "description": "Number of results (1-20, default 10)",
+            "default": 10
+          },
+          "offset": {
+            "type": "number",
+            "description": "Pagination offset (max 9, default 0)",
+            "default": 0
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "brave_local_search",
+      "description": "Searches for local businesses and places using Brave's Local Search API. Best for queries related to physical locations, businesses, restaurants, services, etc. Returns detailed information including:\n- Business names and addresses\n- Ratings and review counts\n- Phone numbers and opening hours\nUse this when the query implies 'near me' or mentions specific locations. Automatically falls back to web search if no local results are found.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Local search query (e.g. 'pizza near Central Park')"
+          },
+          "count": {
+            "type": "number",
+            "description": "Number of results (1-20, default 5)",
+            "default": 5
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Web Search Example",
+      "description": "Execute a web search with pagination and filtering.",
+      "text": "brave_web_search(query=\"example search\", count=10, offset=0)"
+    },
+    {
+      "name": "Local Search Example",
+      "description": "Search for local businesses and services.",
+      "text": "brave_local_search(query=\"restaurants near me\", count=5)"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "search",
+    "Web Services",
+    "brave",
+    "local",
+    "web"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "BRAVE_API_KEY": {
+      "type": "string",
+      "description": "The API key required to authenticate requests to the Brave Search API.",
+      "sensitive": true,
+      "title": "BRAVE_API_KEY",
+      "required": true
+    }
+  }
+}

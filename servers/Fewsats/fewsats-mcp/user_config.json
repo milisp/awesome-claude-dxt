@@ -1,0 +1,9 @@
+{
+  "FEWSATS_API_KEY": {
+    "type": "string",
+    "description": "API key obtained from Fewsats.com",
+    "sensitive": true,
+    "title": "FEWSATS_API_KEY",
+    "required": true
+  }
+}

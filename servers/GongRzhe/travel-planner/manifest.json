@@ -1,0 +1,219 @@
+{
+  "dxt_version": "0.1",
+  "name": "travel-planner",
+  "display_name": "Travel Planner",
+  "version": "1.0.0",
+  "description": "Travel planning and itinerary management server integrating with Google Maps API for location search, place details, and route calculations.",
+  "long_description": "",
+  "author": {
+    "name": "GongRzhe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GongRzhe/TRAVEL-PLANNER-MCP-Server"
+  },
+  "homepage": "https://github.com/GongRzhe/TRAVEL-PLANNER-MCP-Server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "@gongrzhe/server-travelplanner-mcp"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "${GOOGLE_MAPS_API_KEY}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "create_itinerary",
+      "description": "Creates a personalized travel itinerary based on user preferences",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "Starting location"
+          },
+          "destination": {
+            "type": "string",
+            "description": "Destination location"
+          },
+          "startDate": {
+            "type": "string",
+            "description": "Start date (YYYY-MM-DD)"
+          },
+          "endDate": {
+            "type": "string",
+            "description": "End date (YYYY-MM-DD)"
+          },
+          "budget": {
+            "type": "number",
+            "description": "Budget in USD"
+          },
+          "preferences": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Travel preferences"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "startDate",
+          "endDate"
+        ]
+      }
+    },
+    {
+      "name": "optimize_itinerary",
+      "description": "Optimizes an existing itinerary based on specified criteria",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "itineraryId": {
+            "type": "string",
+            "description": "ID of the itinerary to optimize"
+          },
+          "optimizationCriteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Criteria for optimization (time, cost, etc.)"
+          }
+        },
+        "required": [
+          "itineraryId",
+          "optimizationCriteria"
+        ]
+      }
+    },
+    {
+      "name": "search_attractions",
+      "description": "Searches for attractions and points of interest in a specified location",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "Location to search attractions"
+          },
+          "radius": {
+            "type": "number",
+            "description": "Search radius in meters"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Categories of attractions"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    },
+    {
+      "name": "get_transport_options",
+      "description": "Retrieves available transportation options between two points",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "Starting point"
+          },
+          "destination": {
+            "type": "string",
+            "description": "Destination point"
+          },
+          "date": {
+            "type": "string",
+            "description": "Travel date (YYYY-MM-DD)"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "date"
+        ]
+      }
+    },
+    {
+      "name": "get_accommodations",
+      "description": "Searches for accommodation options in a specified location",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "Location to search"
+          },
+          "checkIn": {
+            "type": "string",
+            "description": "Check-in date (YYYY-MM-DD)"
+          },
+          "checkOut": {
+            "type": "string",
+            "description": "Check-out date (YYYY-MM-DD)"
+          },
+          "budget": {
+            "type": "number",
+            "description": "Maximum price per night"
+          }
+        },
+        "required": [
+          "location",
+          "checkIn",
+          "checkOut"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Search Places",
+      "description": "Search for places using Google Places API",
+      "text": "searchPlaces({ query: 'restaurants', location: '34.0522,-118.2437', radius: 5000 });"
+    },
+    {
+      "name": "Get Place Details",
+      "description": "Get detailed information about a specific place",
+      "text": "getPlaceDetails({ placeId: 'ChIJN1t_tDeuEmsRUcIa02j2sDE' });"
+    },
+    {
+      "name": "Calculate Route",
+      "description": "Calculate route between two locations",
+      "text": "calculateRoute({ origin: 'Los Angeles, CA', destination: 'San Francisco, CA', mode: 'driving' });"
+    },
+    {
+      "name": "Get Time Zone",
+      "description": "Get timezone information for a location",
+      "text": "getTimeZone({ location: '34.0522,-118.2437' });"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "google-maps",
+    "travel-planning",
+    "Professional Apps"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GOOGLE_MAPS_API_KEY": {
+      "type": "string",
+      "description": "Your Google Maps API key with the following APIs enabled: Places API, Directions API, Geocoding API, Time Zone API",
+      "sensitive": true,
+      "title": "GOOGLE_MAPS_API_KEY",
+      "required": true
+    }
+  }
+}

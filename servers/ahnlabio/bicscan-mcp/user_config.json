@@ -1,0 +1,9 @@
+{
+  "BICSCAN_API_KEY": {
+    "type": "string",
+    "description": "API key obtained from https://bicscan.io",
+    "sensitive": true,
+    "title": "BICSCAN_API_KEY",
+    "required": true
+  }
+}

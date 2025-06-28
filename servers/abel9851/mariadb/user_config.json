@@ -1,0 +1,37 @@
+{
+  "DB_HOST": {
+    "type": "number",
+    "description": "The hostname of the MariaDB server to connect to.",
+    "sensitive": false,
+    "title": "DB_HOST",
+    "required": true
+  },
+  "DB_PORT": {
+    "type": "number",
+    "description": "The port number on which the MariaDB server is listening.",
+    "sensitive": false,
+    "title": "DB_PORT",
+    "required": true
+  },
+  "DB_USER": {
+    "type": "number",
+    "description": "The username to connect to the MariaDB database.",
+    "sensitive": false,
+    "title": "DB_USER",
+    "required": true
+  },
+  "DB_PASSWORD": {
+    "type": "string",
+    "description": "The password for the MariaDB user.",
+    "sensitive": false,
+    "title": "DB_PASSWORD",
+    "required": true
+  },
+  "DB_NAME": {
+    "type": "string",
+    "description": "The name of the database to connect to.",
+    "sensitive": false,
+    "title": "DB_NAME",
+    "required": true
+  }
+}

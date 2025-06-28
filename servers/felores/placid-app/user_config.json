@@ -1,0 +1,9 @@
+{
+  "PLACID_API_TOKEN": {
+    "type": "string",
+    "description": "Your Placid API token used for authenticating requests to the Placid API.",
+    "sensitive": true,
+    "title": "PLACID_API_TOKEN",
+    "required": true
+  }
+}

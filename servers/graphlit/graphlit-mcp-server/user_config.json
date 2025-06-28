@@ -1,0 +1,23 @@
+{
+  "GRAPHLIT_ORGANIZATION_ID": {
+    "type": "string",
+    "description": "Your organization ID from Graphlit Platform",
+    "sensitive": false,
+    "title": "GRAPHLIT_ORGANIZATION_ID",
+    "required": true
+  },
+  "GRAPHLIT_ENVIRONMENT_ID": {
+    "type": "string",
+    "description": "Your environment ID from Graphlit Platform",
+    "sensitive": false,
+    "title": "GRAPHLIT_ENVIRONMENT_ID",
+    "required": true
+  },
+  "GRAPHLIT_JWT_SECRET": {
+    "type": "string",
+    "description": "Your JWT secret for signing the JWT token",
+    "sensitive": false,
+    "title": "GRAPHLIT_JWT_SECRET",
+    "required": true
+  }
+}

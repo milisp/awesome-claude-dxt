@@ -1,0 +1,105 @@
+{
+  "dxt_version": "0.1",
+  "name": "greptimedb-mcp-server",
+  "display_name": "GreptimeDB MCP Server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server implementation for [GreptimeDB](https://github.com/GreptimeTeam/greptimedb).",
+  "long_description": "",
+  "author": {
+    "name": "GreptimeTeam"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreptimeTeam/greptimedb-mcp-server"
+  },
+  "homepage": "https://github.com/GreptimeTeam/greptimedb-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "greptimedb-mcp-server"
+      ],
+      "env": {
+        "GREPTIMEDB_HOST": "localhost",
+        "GREPTIMEDB_PORT": "4002",
+        "GREPTIMEDB_USER": "root",
+        "GREPTIMEDB_PASSWORD": "",
+        "GREPTIMEDB_DATABASE": "public"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_sql",
+      "description": "Execute an SQL query on the GreptimeDB server",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The SQL query to execute"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Basic Usage",
+      "description": "Connect to GreptimeDB and explore tables",
+      "text": "Connect to my GreptimeDB instance and list all available tables."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "mcp",
+    "sql",
+    "Databases",
+    "greptimedb",
+    "database"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GREPTIMEDB_HOST": {
+      "type": "number",
+      "description": "Database host",
+      "sensitive": false,
+      "title": "GREPTIMEDB_HOST",
+      "required": true
+    },
+    "GREPTIMEDB_PORT": {
+      "type": "number",
+      "description": "Database port",
+      "sensitive": false,
+      "title": "GREPTIMEDB_PORT",
+      "required": false
+    },
+    "GREPTIMEDB_USER": {
+      "type": "number",
+      "description": "Database username",
+      "sensitive": false,
+      "title": "GREPTIMEDB_USER",
+      "required": true
+    },
+    "GREPTIMEDB_PASSWORD": {
+      "type": "string",
+      "description": "Database password",
+      "sensitive": false,
+      "title": "GREPTIMEDB_PASSWORD",
+      "required": true
+    },
+    "GREPTIMEDB_DATABASE": {
+      "type": "number",
+      "description": "Database name",
+      "sensitive": false,
+      "title": "GREPTIMEDB_DATABASE",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dxt_version": "0.1",
+  "name": "langflow-doc-qa-server",
+  "display_name": "Langflow Document Q&A",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for document Q&A powered by Langflow. It demonstrates core MCP concepts by providing a simple interface to query documents through a Langflow backend.",
+  "long_description": "",
+  "author": {
+    "name": "GongRzhe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GongRzhe/Langflow-DOC-QA-SERVER"
+  },
+  "homepage": "https://github.com/GongRzhe/Langflow-DOC-QA-SERVER",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/GongRzhe/Langflow-DOC-QA-SERVER"
+      ],
+      "env": {
+        "API_ENDPOINT": "${API_ENDPOINT}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "query_docs",
+      "description": "Query the document Q&A system with a prompt",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The query prompt to search for in the documents"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Langflow",
+    "Knowledge Base",
+    "Document Q&A"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "API_ENDPOINT": {
+      "type": "string",
+      "description": "The endpoint URL for the Langflow API service.",
+      "sensitive": false,
+      "title": "API_ENDPOINT",
+      "required": false
+    }
+  }
+}

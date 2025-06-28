@@ -1,0 +1,69 @@
+{
+  "dxt_version": "0.1",
+  "name": "unity-catalog",
+  "display_name": "Unity Catalog",
+  "version": "1.0.0",
+  "description": "An MCP server that enables LLMs to interact with Unity Catalog AI, supporting CRUD operations on Unity Catalog Functions and executing them as MCP tools.",
+  "long_description": "",
+  "author": {
+    "name": "ognis1205"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ognis1205/mcp-server-unitycatalog"
+  },
+  "homepage": "https://github.com/ognis1205/mcp-server-unitycatalog",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/ognis1205/mcp-server-unitycatalog",
+        "mcp-server-unitycatalog",
+        "--uc_server",
+        "${UC_SERVER}",
+        "--uc_catalog",
+        "${UC_CATALOG}",
+        "--uc_schema",
+        "${UC_SCHEMA}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "API",
+    "Functions",
+    "Unity Catalog"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "UC_SERVER": {
+      "type": "string",
+      "description": "The base URL of the Unity Catalog server.",
+      "sensitive": false,
+      "title": "UC_SERVER",
+      "required": true
+    },
+    "UC_CATALOG": {
+      "type": "string",
+      "description": "The name of the Unity Catalog catalog.",
+      "sensitive": false,
+      "title": "UC_CATALOG",
+      "required": true
+    },
+    "UC_SCHEMA": {
+      "type": "string",
+      "description": "The name of the schema within a Unity Catalog catalog.",
+      "sensitive": false,
+      "title": "UC_SCHEMA",
+      "required": true
+    }
+  }
+}

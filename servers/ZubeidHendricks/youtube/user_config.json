@@ -1,0 +1,9 @@
+{
+  "YOUTUBE_API_KEY": {
+    "type": "string",
+    "description": "Your YouTube Data API key, needed for authentication when making requests to the YouTube API.",
+    "sensitive": true,
+    "title": "YOUTUBE_API_KEY",
+    "required": true
+  }
+}

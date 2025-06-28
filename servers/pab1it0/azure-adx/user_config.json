@@ -1,0 +1,16 @@
+{
+  "ADX_CLUSTER_URL": {
+    "type": "string",
+    "description": "The URL of the Azure Data Explorer cluster.",
+    "sensitive": false,
+    "title": "ADX_CLUSTER_URL",
+    "required": true
+  },
+  "ADX_DATABASE": {
+    "type": "string",
+    "description": "The name of the Azure Data Explorer database to connect to.",
+    "sensitive": false,
+    "title": "ADX_DATABASE",
+    "required": true
+  }
+}

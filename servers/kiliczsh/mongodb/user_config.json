@@ -1,0 +1,9 @@
+{
+  "MONGODB_URI": {
+    "type": "string",
+    "description": "The connection string for the MongoDB database.",
+    "sensitive": false,
+    "title": "MONGODB_URI",
+    "required": true
+  }
+}

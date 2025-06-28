@@ -1,0 +1,9 @@
+{
+  "GMAIL_CREDENTIALS_PATH": {
+    "type": "string",
+    "description": "The path to the Gmail credentials file that the server will use for OAuth authentication.",
+    "sensitive": false,
+    "title": "GMAIL_CREDENTIALS_PATH",
+    "required": true
+  }
+}

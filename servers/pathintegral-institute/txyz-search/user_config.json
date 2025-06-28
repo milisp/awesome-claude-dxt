@@ -1,0 +1,9 @@
+{
+  "TXYZ_API_KEY": {
+    "type": "string",
+    "description": "API key from [TXYZ Platform](https://platform.txyz.ai/console)",
+    "sensitive": true,
+    "title": "TXYZ_API_KEY",
+    "required": true
+  }
+}

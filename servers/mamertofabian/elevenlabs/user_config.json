@@ -1,0 +1,51 @@
+{
+  "ELEVENLABS_API_KEY": {
+    "type": "string",
+    "description": "Your API key for ElevenLabs to access the text-to-speech services.",
+    "sensitive": true,
+    "title": "ELEVENLABS_API_KEY",
+    "required": true
+  },
+  "ELEVENLABS_VOICE_ID": {
+    "type": "string",
+    "description": "The ID of the voice you want to use for synthesis.",
+    "sensitive": false,
+    "title": "ELEVENLABS_VOICE_ID",
+    "required": true
+  },
+  "ELEVENLABS_MODEL_ID": {
+    "type": "string",
+    "description": "The model ID to be used, indicating the version of the ElevenLabs API to utilize.",
+    "sensitive": false,
+    "title": "ELEVENLABS_MODEL_ID",
+    "required": false
+  },
+  "ELEVENLABS_STABILITY": {
+    "type": "string",
+    "description": "Stability of the voice generation; controls variations in the output voice.",
+    "sensitive": false,
+    "title": "ELEVENLABS_STABILITY",
+    "required": false
+  },
+  "ELEVENLABS_SIMILARITY_BOOST": {
+    "type": "string",
+    "description": "Boosting similarity for the voices; affects how closely the output mimics the selected voice.",
+    "sensitive": false,
+    "title": "ELEVENLABS_SIMILARITY_BOOST",
+    "required": false
+  },
+  "ELEVENLABS_STYLE": {
+    "type": "string",
+    "description": "Style parameter to adjust the expression in the generated speech.",
+    "sensitive": false,
+    "title": "ELEVENLABS_STYLE",
+    "required": false
+  },
+  "ELEVENLABS_OUTPUT_DIR": {
+    "type": "number",
+    "description": "Directory path where the generated audio files will be saved.",
+    "sensitive": false,
+    "title": "ELEVENLABS_OUTPUT_DIR",
+    "required": false
+  }
+}

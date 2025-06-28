@@ -1,0 +1,9 @@
+{
+  "EVERART_API_KEY": {
+    "type": "string",
+    "description": "API key to access the EverArt API",
+    "sensitive": true,
+    "title": "EVERART_API_KEY",
+    "required": true
+  }
+}

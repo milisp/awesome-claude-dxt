@@ -1,0 +1,77 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-aiven",
+  "display_name": "Aiven MCP Server",
+  "version": "1.0.0",
+  "description": "A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for Aiven.",
+  "long_description": "",
+  "author": {
+    "name": "Aiven-Open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aiven-Open/mcp-aiven"
+  },
+  "homepage": "[NOT GIVEN]",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/Aiven-Open/mcp-aiven.git",
+        "mcp-aiven"
+      ],
+      "env": {
+        "AIVEN_BASE_URL": "https://api.aiven.io",
+        "AIVEN_TOKEN": "$AIVEN_TOKEN"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List Projects",
+      "description": "List all projects on your Aiven account",
+      "text": "List all my Aiven projects"
+    },
+    {
+      "name": "List Services",
+      "description": "List all services in a specific Aiven project",
+      "text": "Show me all services in my Aiven project"
+    },
+    {
+      "name": "Get Service Details",
+      "description": "Get the detail of your service in a specific Aiven project",
+      "text": "Get details about my PostgreSQL service in Aiven"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Valkey",
+    "PostgreSQL",
+    "Databases",
+    "ClickHouse",
+    "Kafka",
+    "OpenSearch"
+  ],
+  "license": "[NOT GIVEN]",
+  "user_config": {
+    "AIVEN_BASE_URL": {
+      "type": "string",
+      "description": "The Aiven API url",
+      "sensitive": false,
+      "title": "AIVEN_BASE_URL",
+      "required": true
+    },
+    "AIVEN_TOKEN": {
+      "type": "string",
+      "description": "The authentication token",
+      "sensitive": true,
+      "title": "AIVEN_TOKEN",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "dxt_version": "0.1",
+  "name": "mem0-mcp",
+  "display_name": "Mem0 Server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for Mem0, which helps with managing coding preferences.",
+  "long_description": "",
+  "author": {
+    "name": "mem0ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mem0ai/mem0-mcp"
+  },
+  "homepage": "https://github.com/mem0ai/mem0-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/mem0ai/mem0-mcp",
+        "main.py"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "coding preferences",
+    "mem0"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "host": {
+      "type": "string",
+      "description": "The host address that the server will bind to. This can be configured to allow access from different IP addresses or set it to 'localhost' for local access only.",
+      "sensitive": false,
+      "title": "host",
+      "required": false
+    },
+    "port": {
+      "type": "number",
+      "description": "The port number on which the server will listen for incoming connections. Changing this can help to avoid port conflicts with other services on the same machine.",
+      "sensitive": false,
+      "title": "port",
+      "required": false
+    }
+  }
+}

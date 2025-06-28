@@ -1,0 +1,58 @@
+{
+  "QDRANT_URL": {
+    "type": "string",
+    "description": "URL of the Qdrant server",
+    "sensitive": false,
+    "title": "QDRANT_URL",
+    "required": false
+  },
+  "QDRANT_API_KEY": {
+    "type": "string",
+    "description": "API key for the Qdrant server",
+    "sensitive": true,
+    "title": "QDRANT_API_KEY",
+    "required": false
+  },
+  "COLLECTION_NAME": {
+    "type": "string",
+    "description": "Name of the collection to use",
+    "sensitive": false,
+    "title": "COLLECTION_NAME",
+    "required": true
+  },
+  "QDRANT_LOCAL_PATH": {
+    "type": "directory",
+    "description": "Path to the local Qdrant database (alternative to QDRANT_URL)",
+    "sensitive": false,
+    "title": "QDRANT_LOCAL_PATH",
+    "required": false
+  },
+  "EMBEDDING_PROVIDER": {
+    "type": "number",
+    "description": "Embedding provider to use (currently only \"fastembed\" is supported)",
+    "sensitive": false,
+    "title": "EMBEDDING_PROVIDER",
+    "required": false
+  },
+  "EMBEDDING_MODEL": {
+    "type": "string",
+    "description": "Name of the embedding model to use",
+    "sensitive": false,
+    "title": "EMBEDDING_MODEL",
+    "required": false
+  },
+  "TOOL_STORE_DESCRIPTION": {
+    "type": "string",
+    "description": "Custom description for the store tool",
+    "sensitive": false,
+    "title": "TOOL_STORE_DESCRIPTION",
+    "required": false
+  },
+  "TOOL_FIND_DESCRIPTION": {
+    "type": "string",
+    "description": "Custom description for the find tool",
+    "sensitive": false,
+    "title": "TOOL_FIND_DESCRIPTION",
+    "required": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "THIRDWEB_SECRET_KEY": {
+    "type": "string",
+    "description": "Your thirdweb API secret key from dashboard",
+    "sensitive": true,
+    "title": "THIRDWEB_SECRET_KEY",
+    "required": true
+  },
+  "THIRDWEB_ENGINE_URL": {
+    "type": "string",
+    "description": "URL endpoint for thirdweb Engine service",
+    "sensitive": false,
+    "title": "THIRDWEB_ENGINE_URL",
+    "required": false
+  },
+  "THIRDWEB_ENGINE_AUTH_JWT": {
+    "type": "string",
+    "description": "Authentication JWT token for Engine",
+    "sensitive": false,
+    "title": "THIRDWEB_ENGINE_AUTH_JWT",
+    "required": false
+  },
+  "THIRDWEB_ENGINE_BACKEND_WALLET_ADDRESS": {
+    "type": "string",
+    "description": "Wallet address for Engine backend",
+    "sensitive": false,
+    "title": "THIRDWEB_ENGINE_BACKEND_WALLET_ADDRESS",
+    "required": false
+  },
+  "chain-id": {
+    "type": "number",
+    "description": "Blockchain network IDs to connect to (e.g., 1 for Ethereum mainnet, 137 for Polygon)",
+    "sensitive": false,
+    "title": "chain-id",
+    "required": false
+  }
+}

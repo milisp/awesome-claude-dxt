@@ -1,0 +1,16 @@
+{
+  "GLEAN_API_KEY": {
+    "type": "string",
+    "description": "The API key required to authenticate with the Glean API.",
+    "sensitive": true,
+    "title": "GLEAN_API_KEY",
+    "required": true
+  },
+  "GLEAN_DOMAIN": {
+    "type": "string",
+    "description": "The domain used for the Glean API service operations.",
+    "sensitive": false,
+    "title": "GLEAN_DOMAIN",
+    "required": true
+  }
+}

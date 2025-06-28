@@ -1,0 +1,9 @@
+{
+  "UNSTRUCTURED_API_KEY": {
+    "type": "string",
+    "description": "API key for the Unstructured platform",
+    "sensitive": true,
+    "title": "UNSTRUCTURED_API_KEY",
+    "required": true
+  }
+}

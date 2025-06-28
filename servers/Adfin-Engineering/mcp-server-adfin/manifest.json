@@ -1,0 +1,76 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-adfin",
+  "display_name": "Adfin MCP Server",
+  "version": "1.0.0",
+  "description": "1. Python 3.10 or higher",
+  "long_description": "",
+  "author": {
+    "name": "Adfin-Engineering"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adfin-Engineering/mcp-server-adfin"
+  },
+  "homepage": "[NOT GIVEN]",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "<absolute_path_to_adfin_mcp_folder>",
+        "run",
+        "main_adfin_mcp.py"
+      ],
+      "env": {
+        "ADFIN_EMAIL": "<email>",
+        "ADFIN_PASSWORD": "<password>"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Request a credit control status",
+      "description": "Get credit control status check",
+      "text": "Give me a credit control status check."
+    },
+    {
+      "name": "Create a new invoice",
+      "description": "Create an invoice with specific details",
+      "text": "Create a new invoice for 60 GBP for Abc Def that is due in a week. His email is abc.def@example.com."
+    },
+    {
+      "name": "Upload multiple invoices",
+      "description": "Upload PDF invoices from a folder",
+      "text": "Upload all pdf invoices from the invoices folder from my Desktop."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "invoicing",
+    "finance",
+    "Finance",
+    "adfin"
+  ],
+  "license": "[NOT GIVEN]",
+  "user_config": {
+    "ADFIN_EMAIL": {
+      "type": "string",
+      "description": "Email for Adfin authentication",
+      "sensitive": false,
+      "title": "ADFIN_EMAIL",
+      "required": true
+    },
+    "ADFIN_PASSWORD": {
+      "type": "string",
+      "description": "Password for Adfin authentication",
+      "sensitive": false,
+      "title": "ADFIN_PASSWORD",
+      "required": true
+    }
+  }
+}

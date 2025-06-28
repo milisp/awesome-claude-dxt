@@ -1,0 +1,51 @@
+{
+  "UNOMI_BASE_URL": {
+    "type": "string",
+    "description": "The base URL of your Apache Unomi server (e.g., http://your-unomi-server:8181)",
+    "sensitive": false,
+    "title": "UNOMI_BASE_URL",
+    "required": true
+  },
+  "UNOMI_USERNAME": {
+    "type": "string",
+    "description": "The username to authenticate with the Apache Unomi server, default is 'karaf'",
+    "sensitive": false,
+    "title": "UNOMI_USERNAME",
+    "required": true
+  },
+  "UNOMI_PASSWORD": {
+    "type": "string",
+    "description": "The password to authenticate with the Apache Unomi server, default is 'karaf'",
+    "sensitive": false,
+    "title": "UNOMI_PASSWORD",
+    "required": true
+  },
+  "UNOMI_PROFILE_ID": {
+    "type": "string",
+    "description": "The ID of the user profile to be used for context management",
+    "sensitive": false,
+    "title": "UNOMI_PROFILE_ID",
+    "required": false
+  },
+  "UNOMI_KEY": {
+    "type": "string",
+    "description": "The authorization key required for secured operations with the Unomi server, defaults to '670c26d1cc413346c3b2fd9ce65dab41'",
+    "sensitive": true,
+    "title": "UNOMI_KEY",
+    "required": false
+  },
+  "UNOMI_EMAIL": {
+    "type": "string",
+    "description": "The email address associated with the user profile, used for profile lookup",
+    "sensitive": false,
+    "title": "UNOMI_EMAIL",
+    "required": false
+  },
+  "UNOMI_SOURCE_ID": {
+    "type": "string",
+    "description": "An identifier for the source of the request (e.g., claude-desktop)",
+    "sensitive": false,
+    "title": "UNOMI_SOURCE_ID",
+    "required": false
+  }
+}

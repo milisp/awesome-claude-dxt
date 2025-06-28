@@ -1,0 +1,93 @@
+{
+  "dxt_version": "0.1",
+  "name": "ergo-blockchain-mcp",
+  "display_name": "Ergo Blockchain Explorer",
+  "version": "1.0.0",
+  "description": "-An MCP server to integrate Ergo Blockchain Node and Explorer APIs for checking address balances, analyzing transactions, viewing transaction history, performing forensic analysis of addresses, searching for tokens, and monitoring network status.",
+  "long_description": "",
+  "author": {
+    "name": "marctheshark3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marctheshark3/ergo-mcp"
+  },
+  "homepage": "https://github.com/marctheshark3/ergo-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "ergo-mcp"
+      ],
+      "env": {
+        "SERVER_HOST": "<YOUR_HOST>",
+        "SERVER_PORT": "<YOUR_PORT>",
+        "SERVER_WORKERS": "<YOUR_WORKERS>",
+        "ERGO_NODE_API": "<YOUR_ERGO_NODE_API>",
+        "ERGO_NODE_API_KEY": "<YOUR_ERGO_NODE_API_KEY>"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Running the MCP Server as a Module",
+      "description": "Run the server using Python module command.",
+      "text": "```bash\n# Make sure your virtual environment is activated:\n# Using the full path (recommended):\n/path/to/your/project/.venv/bin/python -m ergo_explorer\n\n# Or with activated virtual environment:\npython -m ergo_explorer\n```"
+    },
+    {
+      "name": "Running Tests",
+      "description": "Execute tests using pytest framework.",
+      "text": "```bash\n# Run all tests\npython -m pytest\n\n# Run specific test files\npython -m pytest tests/unit/test_address_tools.py\n```"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Python",
+    "API",
+    "Finance",
+    "Blockchain",
+    "Ergo"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "SERVER_HOST": {
+      "type": "number",
+      "description": "Host to bind the server to (default: 0.0.0.0)",
+      "sensitive": false,
+      "title": "SERVER_HOST",
+      "required": false
+    },
+    "SERVER_PORT": {
+      "type": "number",
+      "description": "Port to run the server on (default: 3001)",
+      "sensitive": false,
+      "title": "SERVER_PORT",
+      "required": false
+    },
+    "SERVER_WORKERS": {
+      "type": "number",
+      "description": "Number of worker processes (default: 4)",
+      "sensitive": false,
+      "title": "SERVER_WORKERS",
+      "required": false
+    },
+    "ERGO_NODE_API": {
+      "type": "string",
+      "description": "URL of the Ergo node API (for node-specific features)",
+      "sensitive": false,
+      "title": "ERGO_NODE_API",
+      "required": false
+    },
+    "ERGO_NODE_API_KEY": {
+      "type": "string",
+      "description": "API key for the Ergo node (if required)",
+      "sensitive": true,
+      "title": "ERGO_NODE_API_KEY",
+      "required": false
+    }
+  }
+}

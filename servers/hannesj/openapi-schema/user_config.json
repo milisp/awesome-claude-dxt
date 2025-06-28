@@ -1,0 +1,9 @@
+{
+  "ABSOLUTE_PATH_TO_OPENAPI_YAML": {
+    "type": "directory",
+    "description": "The absolute path to the OpenAPI YAML file that the MCP server will use to load the schema.",
+    "sensitive": false,
+    "title": "ABSOLUTE_PATH_TO_OPENAPI_YAML",
+    "required": true
+  }
+}

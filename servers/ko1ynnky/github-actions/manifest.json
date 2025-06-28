@@ -1,0 +1,61 @@
+{
+  "dxt_version": "0.1",
+  "name": "github-actions",
+  "display_name": "GitHub Actions",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for interacting with Github Actions.",
+  "long_description": "",
+  "author": {
+    "name": "ko1ynnky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ko1ynnky/github-actions-mcp-server"
+  },
+  "homepage": "https://github.com/ko1ynnky/github-actions-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/ko1ynnky/github-actions-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List Workflows",
+      "description": "List workflows in a GitHub repository.",
+      "text": "const result = await listWorkflows({ owner: 'your-username', repo: 'your-repository' });"
+    },
+    {
+      "name": "Trigger Workflow",
+      "description": "Trigger a workflow in a GitHub repository.",
+      "text": "const result = await triggerWorkflow({ owner: 'your-username', repo: 'your-repository', workflowId: 'ci.yml', ref: 'main', inputs: { environment: 'production' }});"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "Workflow Management",
+    "GitHub Actions",
+    "Automation"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GITHUB_PERSONAL_ACCESS_TOKEN": {
+      "type": "string",
+      "description": "A personal access token required for authentication with GitHub API, used to access user repositories and perform actions.",
+      "sensitive": true,
+      "title": "GITHUB_PERSONAL_ACCESS_TOKEN",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "api-key": {
+    "type": "string",
+    "description": "Your Lingo.dev project API key",
+    "sensitive": true,
+    "title": "api-key",
+    "required": true
+  }
+}

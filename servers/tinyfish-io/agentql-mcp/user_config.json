@@ -1,0 +1,9 @@
+{
+  "AGENTQL_API_KEY": {
+    "type": "string",
+    "description": "API key from AgentQL Dev Portal",
+    "sensitive": true,
+    "title": "AGENTQL_API_KEY",
+    "required": true
+  }
+}

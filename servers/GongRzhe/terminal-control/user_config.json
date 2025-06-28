@@ -1,0 +1,9 @@
+{
+  "terminal_controller": {
+    "type": "string",
+    "description": "The Python module that contains the implementation of the Terminal Controller's functionalities.",
+    "sensitive": false,
+    "title": "terminal_controller",
+    "required": true
+  }
+}

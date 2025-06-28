@@ -1,0 +1,16 @@
+{
+  "ALLOW_SHELL_COMMANDS": {
+    "type": "boolean",
+    "description": "Set to 'true' to enable shell command execution (e.g. `!ls`).",
+    "sensitive": false,
+    "title": "ALLOW_SHELL_COMMANDS",
+    "required": false
+  },
+  "NVIM_SOCKET_PATH": {
+    "type": "string",
+    "description": "Set to the path of your Neovim socket.",
+    "sensitive": false,
+    "title": "NVIM_SOCKET_PATH",
+    "required": false
+  }
+}

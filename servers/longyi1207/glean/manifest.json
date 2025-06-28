@@ -1,0 +1,60 @@
+{
+  "dxt_version": "0.1",
+  "name": "glean",
+  "display_name": "Glean",
+  "version": "1.0.0",
+  "description": "A server that uses Glean API to search and chat.",
+  "long_description": "",
+  "author": {
+    "name": "longyi1207",
+    "url": "https://github.com/longyi1207"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longyi1207/glean-mcp-server"
+  },
+  "homepage": "https://github.com/longyi1207/glean-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/longyi1207/glean-mcp-server"
+      ],
+      "env": {
+        "GLEAN_API_KEY": "YOUR_API_KEY_HERE",
+        "GLEAN_DOMAIN": "YOUR_DOMAIN_HERE"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "Knowledge Base",
+    "search",
+    "glean",
+    "chat",
+    "docker"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "GLEAN_API_KEY": {
+      "type": "string",
+      "description": "The API key required to authenticate with the Glean API.",
+      "sensitive": true,
+      "title": "GLEAN_API_KEY",
+      "required": true
+    },
+    "GLEAN_DOMAIN": {
+      "type": "string",
+      "description": "The domain used for the Glean API service operations.",
+      "sensitive": false,
+      "title": "GLEAN_DOMAIN",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "OB_HOST": {
+    "type": "number",
+    "description": "Database host for connecting to the OceanBase server.",
+    "sensitive": false,
+    "title": "OB_HOST",
+    "required": true
+  },
+  "OB_PORT": {
+    "type": "number",
+    "description": "Optional: Database port to connect to OceanBase, defaults to 2881 if not specified.",
+    "sensitive": false,
+    "title": "OB_PORT",
+    "required": false
+  },
+  "OB_USER": {
+    "type": "string",
+    "description": "Username for authenticating with the OceanBase database.",
+    "sensitive": false,
+    "title": "OB_USER",
+    "required": true
+  },
+  "OB_PASSWORD": {
+    "type": "string",
+    "description": "Password for the specified database user.",
+    "sensitive": false,
+    "title": "OB_PASSWORD",
+    "required": true
+  },
+  "OB_DATABASE": {
+    "type": "string",
+    "description": "Name of the OceanBase database to connect to.",
+    "sensitive": false,
+    "title": "OB_DATABASE",
+    "required": true
+  }
+}

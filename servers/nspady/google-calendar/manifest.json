@@ -1,0 +1,64 @@
+{
+  "dxt_version": "0.1",
+  "name": "google-calendar",
+  "display_name": "Google Calendar",
+  "version": "1.0.0",
+  "description": "Google Calendar MCP Server for managing Google calendar events. Also supports searching for events by attributes like title and location.",
+  "long_description": "",
+  "author": {
+    "name": "nspady"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nspady/google-calendar-mcp"
+  },
+  "homepage": "https://github.com/nspady/google-calendar-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/nspady/google-calendar-mcp"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Add Event from Screenshot",
+      "description": "Add events from screenshots and images",
+      "text": "Add this event to my calendar based on the attached screenshot."
+    },
+    {
+      "name": "Check Upcoming Events",
+      "description": "Discover upcoming events outside usual routines",
+      "text": "What events do I have coming up this week that aren't part of my usual routine?"
+    },
+    {
+      "name": "Check Attendance",
+      "description": "Identify events with unaccepted invitations",
+      "text": "Which events tomorrow have attendees who have not accepted the invitation?"
+    },
+    {
+      "name": "Auto Coordinate Events",
+      "description": "Create events based on the available times provided",
+      "text": "Here's some available that was provided to me by someone. Take a look at the available times and create an event that is free on my work calendar."
+    },
+    {
+      "name": "Check Availability",
+      "description": "Provide your availability checking both calendars",
+      "text": "Please provide availability looking at both my personal and work calendar for this upcoming week."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Google Calendar",
+    "Productivity",
+    "event management"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "NEEDLE_API_KEY": {
+    "type": "string",
+    "description": "API key for Needle service",
+    "sensitive": true,
+    "title": "NEEDLE_API_KEY",
+    "required": true
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "dxt_version": "0.1",
+  "name": "bitable-mcp",
+  "display_name": "Bitable",
+  "version": "1.0.0",
+  "description": "MCP server provides access to Lark Bitable through the Model Context Protocol. It allows users to interact with Bitable tables using predefined tools.",
+  "long_description": "",
+  "author": {
+    "name": "lloydzhou"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lloydzhou/bitable-mcp"
+  },
+  "homepage": "https://github.com/lloydzhou/bitable-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "bitable-mcp"
+      ],
+      "env": {
+        "PERSONAL_BASE_TOKEN": "${PERSONAL_BASE_TOKEN}",
+        "APP_TOKEN": "${APP_TOKEN}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "list_table",
+      "description": "list table for current bitable",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_tableArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "describe_table",
+      "description": "describe_table by table name",
+      "inputSchema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "describe_tableArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "read_query",
+      "description": "read_query by sql",
+      "inputSchema": {
+        "properties": {
+          "sql": {
+            "title": "Sql",
+            "type": "string"
+          }
+        },
+        "required": [
+          "sql"
+        ],
+        "title": "read_queryArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "List Tables",
+      "description": "Lists all tables available in Bitable.",
+      "text": "list_table"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Bitable",
+    "Lark",
+    "Databases"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "PERSONAL_BASE_TOKEN": {
+      "type": "string",
+      "description": "Personal base token required for authentication with the Bitable API.",
+      "sensitive": true,
+      "title": "PERSONAL_BASE_TOKEN",
+      "required": true
+    },
+    "APP_TOKEN": {
+      "type": "string",
+      "description": "Application token required for the Bitable server to function properly.",
+      "sensitive": true,
+      "title": "APP_TOKEN",
+      "required": true
+    }
+  }
+}

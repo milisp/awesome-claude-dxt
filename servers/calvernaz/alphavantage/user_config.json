@@ -1,0 +1,9 @@
+{
+  "ALPHAVANTAGE_API_KEY": {
+    "type": "string",
+    "description": "The API key to access the Alphavantage service.",
+    "sensitive": true,
+    "title": "ALPHAVANTAGE_API_KEY",
+    "required": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dxt_version": "0.1",
+  "name": "goodnews",
+  "display_name": "Goodnews",
+  "version": "1.0.0",
+  "description": "A simple MCP server that delivers curated positive and uplifting news stories.",
+  "long_description": "",
+  "author": {
+    "name": "VectorInstitute"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VectorInstitute/mcp-goodnews"
+  },
+  "homepage": "https://github.com/VectorInstitute/mcp-goodnews",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/VectorInstitute/mcp-goodnews",
+        "server.py"
+      ],
+      "env": {
+        "NEWS_API_KEY": "<newsapi-api-key>",
+        "COHERE_API_KEY": "<cohere-api-key>"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Fetch list of good news",
+      "description": "Retrieve uplifting news articles using MCP Goodnews.",
+      "text": "Show me some good news from today."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "uplifting",
+    "Web Services",
+    "NewsAPI",
+    "Cohere",
+    "positive news"
+  ],
+  "license": "Apache 2.0",
+  "user_config": {
+    "NEWS_API_KEY": {
+      "type": "string",
+      "description": "API key for NewsAPI to fetch news articles",
+      "sensitive": true,
+      "title": "NEWS_API_KEY",
+      "required": true
+    },
+    "COHERE_API_KEY": {
+      "type": "string",
+      "description": "API key for Cohere to analyze sentiment of news articles",
+      "sensitive": true,
+      "title": "COHERE_API_KEY",
+      "required": true
+    }
+  }
+}

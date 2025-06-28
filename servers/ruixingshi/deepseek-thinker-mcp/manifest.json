@@ -1,0 +1,75 @@
+{
+  "dxt_version": "0.1",
+  "name": "deepseek-thinker-mcp",
+  "display_name": "Deepseek Thinker",
+  "version": "1.0.0",
+  "description": "A MCP (Model Context Protocol) provider Deepseek reasoning content to MCP-enabled AI Clients, like Claude Desktop. Supports access to Deepseek's thought processes from the Deepseek API service or from a local Ollama server.",
+  "long_description": "",
+  "author": {
+    "name": "ruixingshi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruixingshi/deepseek-thinker-mcp"
+  },
+  "homepage": "https://github.com/ruixingshi/deepseek-thinker-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deepseek-thinker-mcp"
+      ],
+      "env": {
+        "API_KEY": "${API_KEY}",
+        "BASE_URL": "${BASE_URL}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "get-deepseek-thinker",
+      "description": "think with deepseek",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "originPrompt": {
+            "type": "string",
+            "description": "user's original prompt"
+          }
+        },
+        "required": [
+          "originPrompt"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "AI Systems",
+    "AI Clients",
+    "Deepseek",
+    "Reasoning"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "API_KEY": {
+      "type": "string",
+      "description": "Your OpenAI API Key for authentication with the OpenAI services.",
+      "sensitive": true,
+      "title": "API_KEY",
+      "required": true
+    },
+    "BASE_URL": {
+      "type": "string",
+      "description": "The base URL for the OpenAI API that you are connecting to.",
+      "sensitive": false,
+      "title": "BASE_URL",
+      "required": true
+    }
+  }
+}

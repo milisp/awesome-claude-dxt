@@ -1,0 +1,67 @@
+{
+  "dxt_version": "0.1",
+  "name": "whale-tracker-mcp",
+  "display_name": "Whale Tracker",
+  "version": "1.0.0",
+  "description": "A mcp server for tracking cryptocurrency whale transactions.",
+  "long_description": "",
+  "author": {
+    "name": "kukapay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kukapay/whale-tracker-mcp"
+  },
+  "homepage": "https://github.com/kukapay/whale-tracker-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/kukapay/whale-tracker-mcp",
+        "whale-tracker-mcp"
+      ],
+      "env": {
+        "WHALE_TRACKER_API_KEY": "your_api_key_here"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Fetch Recent Transactions",
+      "description": "What are the latest whale transactions on Ethereum with a minimum value of $1,000,000?",
+      "text": "What are the latest whale transactions on Ethereum with a minimum value of $1,000,000?"
+    },
+    {
+      "name": "Get Transaction Details",
+      "description": "Tell me about transaction ID 123456789.",
+      "text": "Tell me about transaction ID 123456789."
+    },
+    {
+      "name": "Analyze Whale Activity",
+      "description": "Analyze recent whale transactions on Bitcoin.",
+      "text": "Analyze recent whale transactions on Bitcoin."
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "cryptocurrency",
+    "Finance",
+    "whale tracker",
+    "API"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "WHALE_TRACKER_API_KEY": {
+      "type": "string",
+      "description": "Environment variable to load the Whale Alert API key for the server.",
+      "sensitive": true,
+      "title": "WHALE_TRACKER_API_KEY",
+      "required": true
+    }
+  }
+}

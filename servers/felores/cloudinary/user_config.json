@@ -1,0 +1,23 @@
+{
+  "CLOUDINARY_CLOUD_NAME": {
+    "type": "string",
+    "description": "Your Cloudinary cloud name, used to identify your account and resources.",
+    "sensitive": false,
+    "title": "CLOUDINARY_CLOUD_NAME",
+    "required": true
+  },
+  "CLOUDINARY_API_KEY": {
+    "type": "string",
+    "description": "Your Cloudinary API key, used to authenticate requests to the Cloudinary API.",
+    "sensitive": true,
+    "title": "CLOUDINARY_API_KEY",
+    "required": true
+  },
+  "CLOUDINARY_API_SECRET": {
+    "type": "string",
+    "description": "Your Cloudinary API secret, used to authenticate requests and secure your Cloudinary account.",
+    "sensitive": false,
+    "title": "CLOUDINARY_API_SECRET",
+    "required": true
+  }
+}

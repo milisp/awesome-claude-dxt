@@ -1,0 +1,58 @@
+{
+  "dxt_version": "0.1",
+  "name": "cryptopanic-mcp-server",
+  "display_name": "CryptoPanic News",
+  "version": "1.0.0",
+  "description": "Providing latest cryptocurrency news to AI agents, powered by CryptoPanic.",
+  "long_description": "",
+  "author": {
+    "name": "kukapay",
+    "url": "https://github.com/kukapay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kukapay/cryptopanic-mcp-server"
+  },
+  "homepage": "https://github.com/kukapay/cryptopanic-mcp-server",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/kukapay/cryptopanic-mcp-server",
+        "main.py"
+      ],
+      "env": {
+        "CRYPTOPANIC_API_KEY": "${CRYPTOPANIC_API_KEY}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Fetch Cryptocurrency News",
+      "description": "Get the latest news articles on cryptocurrencies.",
+      "text": "get_crypto_news(kind='news', num_pages=1)"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "CryptoPanic",
+    "cryptocurrency",
+    "Finance",
+    "news"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "CRYPTOPANIC_API_KEY": {
+      "type": "string",
+      "description": "API key to access CryptoPanic services. This key is necessary to authenticate requests made to the CryptoPanic API.",
+      "sensitive": true,
+      "title": "CRYPTOPANIC_API_KEY",
+      "required": true
+    }
+  }
+}

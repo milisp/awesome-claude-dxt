@@ -1,0 +1,16 @@
+{
+  "fibery-host": {
+    "type": "string",
+    "description": "Your Fibery domain (e.g., your-domain.fibery.io)",
+    "sensitive": false,
+    "title": "fibery-host",
+    "required": true
+  },
+  "fibery-api-token": {
+    "type": "string",
+    "description": "Your Fibery API token",
+    "sensitive": true,
+    "title": "fibery-api-token",
+    "required": true
+  }
+}

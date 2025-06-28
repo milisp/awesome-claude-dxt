@@ -1,0 +1,66 @@
+{
+  "dxt_version": "0.1",
+  "name": "keycloak-mcp",
+  "display_name": "Keycloak Model Context Protocol",
+  "version": "1.0.0",
+  "description": "This MCP server enables natural language interaction with Keycloak for user and realm management including creating, deleting, and listing users and realms.",
+  "long_description": "",
+  "author": {
+    "name": "ChristophEnglisch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChristophEnglisch/keycloak-model-context-protocol"
+  },
+  "homepage": "https://github.com/ChristophEnglisch/keycloak-model-context-protocol",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "keycloak-model-context-protocol"
+      ],
+      "env": {
+        "KEYCLOAK_URL": "${KEYCLOAK_URL}",
+        "KEYCLOAK_ADMIN": "${KEYCLOAK_ADMIN}",
+        "KEYCLOAK_ADMIN_PASSWORD": "${KEYCLOAK_ADMIN_PASSWORD}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "User Management",
+    "Realm Management",
+    "System Tools",
+    "Keycloak"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "KEYCLOAK_URL": {
+      "type": "string",
+      "description": "The URL of the Keycloak server instance that the MCP will connect to.",
+      "sensitive": true,
+      "title": "KEYCLOAK_URL",
+      "required": true
+    },
+    "KEYCLOAK_ADMIN": {
+      "type": "number",
+      "description": "The admin username for accessing the Keycloak server.",
+      "sensitive": true,
+      "title": "KEYCLOAK_ADMIN",
+      "required": true
+    },
+    "KEYCLOAK_ADMIN_PASSWORD": {
+      "type": "number",
+      "description": "The password for the admin user to access the Keycloak server.",
+      "sensitive": true,
+      "title": "KEYCLOAK_ADMIN_PASSWORD",
+      "required": true
+    }
+  }
+}

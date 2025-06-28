@@ -1,0 +1,16 @@
+{
+  "NAVER_CLIENT_ID": {
+    "type": "string",
+    "description": "The Client ID for accessing the Naver Open API, obtained from the Naver developer portal.",
+    "sensitive": false,
+    "title": "NAVER_CLIENT_ID",
+    "required": true
+  },
+  "NAVER_CLIENT_SECRET": {
+    "type": "string",
+    "description": "The Client Secret for accessing the Naver Open API, obtained from the Naver developer portal.",
+    "sensitive": false,
+    "title": "NAVER_CLIENT_SECRET",
+    "required": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "db-path": {
+    "type": "string",
+    "description": "Path to the database to connect to (md: for MotherDuck, :memory: for in-memory, or path to local file)",
+    "sensitive": false,
+    "title": "db-path",
+    "required": true
+  },
+  "motherduck-token": {
+    "type": "string",
+    "description": "MotherDuck access token for authentication",
+    "sensitive": true,
+    "title": "motherduck-token",
+    "required": true
+  }
+}

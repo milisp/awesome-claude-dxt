@@ -1,0 +1,77 @@
+{
+  "dxt_version": "0.1",
+  "name": "bigquery",
+  "display_name": "BigQuery",
+  "version": "1.0.0",
+  "description": "Server implementation for Google BigQuery integration that enables direct BigQuery database access and querying capabilities",
+  "long_description": "",
+  "author": {
+    "name": "ergut"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ergut/mcp-bigquery-server"
+  },
+  "homepage": "https://github.com/ergut/mcp-bigquery-server",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@ergut/mcp-bigquery-server",
+        "--project-id",
+        "${PROJECT_ID}",
+        "--location",
+        "${LOCATION}"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "query",
+      "description": "Run a read-only BigQuery SQL query",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sql": {
+            "type": "string"
+          },
+          "maximumBytesBilled": {
+            "type": "string",
+            "description": "Maximum bytes billed (default: 1GB)",
+            "optional": true
+          }
+        }
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "AI",
+    "BigQuery",
+    "LLM",
+    "Databases"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "PROJECT_ID": {
+      "type": "string",
+      "description": "Your Google Cloud project ID",
+      "sensitive": false,
+      "title": "PROJECT_ID",
+      "required": true
+    },
+    "LOCATION": {
+      "type": "string",
+      "description": "BigQuery location, defaults to 'us-central1'.",
+      "sensitive": false,
+      "title": "LOCATION",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "WEBFLOW_API_TOKEN": {
+    "type": "string",
+    "description": "Your Webflow API token to authenticate requests to the Webflow API. This token is required for the server to function and should be kept secure.",
+    "sensitive": true,
+    "title": "WEBFLOW_API_TOKEN",
+    "required": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "DART_TOKEN": {
+    "type": "string",
+    "description": "Authentication token from Dart profile",
+    "sensitive": true,
+    "title": "DART_TOKEN",
+    "required": true
+  }
+}

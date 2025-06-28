@@ -1,0 +1,77 @@
+{
+  "dxt_version": "0.1",
+  "name": "scholarly",
+  "display_name": "scholarly",
+  "version": "1.0.0",
+  "description": "A MCP server to search for scholarly and academic articles.",
+  "long_description": "",
+  "author": {
+    "name": "adityak74"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adityak74/mcp-scholarly"
+  },
+  "homepage": "https://github.com/adityak74/mcp-scholarly",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "mcp-scholarly"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "search-arxiv",
+      "description": "Search arxiv for articles related to the given keyword.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "keyword"
+        ]
+      }
+    },
+    {
+      "name": "search-google-scholar",
+      "description": "Search google scholar for articles related to the given keyword.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "keyword"
+        ]
+      }
+    }
+  ],
+  "prompts": [],
+  "tools_generated": true,
+  "keywords": [
+    "scholarly",
+    "academic",
+    "Knowledge Base"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "keyword": {
+      "type": "string",
+      "description": "The keyword to search for articles in arXiv.",
+      "sensitive": true,
+      "title": "keyword",
+      "required": true
+    }
+  }
+}

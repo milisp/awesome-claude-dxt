@@ -1,0 +1,80 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-server-milvus",
+  "display_name": "MCP Server for Milvus",
+  "version": "1.0.0",
+  "description": "This repository contains a MCP server that provides access to Milvus vector database functionality.",
+  "long_description": "",
+  "author": {
+    "name": "zilliztech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zilliztech/mcp-server-milvus"
+  },
+  "homepage": "https://github.com/zilliztech/mcp-server-milvus",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/zilliztech/mcp-server-milvus",
+        "mcp-server-milvus"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Listing Collections",
+      "description": "List all collections in the Milvus database",
+      "text": "What are the collections I have in my Milvus DB?"
+    },
+    {
+      "name": "Searching for Documents",
+      "description": "Search for documents using full text search",
+      "text": "Find documents in my text_collection that mention \"machine learning\""
+    },
+    {
+      "name": "Creating a Collection",
+      "description": "Create a new collection with specified schema",
+      "text": "Create a new collection called 'articles' in Milvus with fields for title (string), content (string), and a vector field (128 dimensions)"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "milvus",
+    "mcp",
+    "vector database",
+    "Databases",
+    "model context protocol"
+  ],
+  "license": "[NOT GIVEN]",
+  "user_config": {
+    "milvus-uri": {
+      "type": "string",
+      "description": "Milvus server URI",
+      "sensitive": false,
+      "title": "milvus-uri",
+      "required": true
+    },
+    "milvus-token": {
+      "type": "string",
+      "description": "Optional authentication token",
+      "sensitive": true,
+      "title": "milvus-token",
+      "required": false
+    },
+    "milvus-db": {
+      "type": "number",
+      "description": "Database name",
+      "sensitive": false,
+      "title": "milvus-db",
+      "required": false
+    }
+  }
+}

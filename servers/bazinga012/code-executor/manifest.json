@@ -1,0 +1,85 @@
+{
+  "dxt_version": "0.1",
+  "name": "code-executor",
+  "display_name": "Code Executor",
+  "version": "1.0.0",
+  "description": "An MCP server that allows LLMs to execute Python code within a specified Conda environment.",
+  "long_description": "",
+  "author": {
+    "name": "bazinga012"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bazinga012/mcp_code_executor"
+  },
+  "homepage": "https://github.com/bazinga012/mcp_code_executor",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/bazinga012/mcp_code_executor"
+      ],
+      "env": {
+        "CODE_STORAGE_DIR": "${CODE_STORAGE_DIR}",
+        "CONDA_ENV_NAME": "${CONDA_ENV_NAME}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "execute_code",
+      "description": "Execute Python code in the specified conda environment",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Python code to execute"
+          },
+          "filename": {
+            "type": "string",
+            "description": "Optional: Name of the file to save the code (default: generated UUID)"
+          }
+        },
+        "required": [
+          "code"
+        ]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Execute Python Code",
+      "description": "An example of executing Python code using MCP Code Executor",
+      "text": "Please execute the following code: print('Hello, World!')"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "Dev Tools",
+    "Execution",
+    "Python",
+    "Conda"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "CODE_STORAGE_DIR": {
+      "type": "directory",
+      "description": "The directory where the generated code will be stored.",
+      "sensitive": false,
+      "title": "CODE_STORAGE_DIR",
+      "required": true
+    },
+    "CONDA_ENV_NAME": {
+      "type": "string",
+      "description": "The name of the Conda environment in which the code will be executed.",
+      "sensitive": false,
+      "title": "CONDA_ENV_NAME",
+      "required": true
+    }
+  }
+}

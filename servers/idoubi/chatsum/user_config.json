@@ -1,0 +1,9 @@
+{
+  "CHAT_DB_PATH": {
+    "type": "directory",
+    "description": "Path to your chat database file that the server will use to store and retrieve chat messages.",
+    "sensitive": false,
+    "title": "CHAT_DB_PATH",
+    "required": true
+  }
+}

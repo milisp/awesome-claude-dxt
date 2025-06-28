@@ -1,0 +1,16 @@
+{
+  "TYPESENSE_HOST": {
+    "type": "number",
+    "description": "The host for the Typesense server. This is the address where your Typesense server is running.",
+    "sensitive": false,
+    "title": "TYPESENSE_HOST",
+    "required": true
+  },
+  "API_KEY": {
+    "type": "string",
+    "description": "The API key for accessing the Typesense server. This is needed for authentication when making requests to the server.",
+    "sensitive": true,
+    "title": "API_KEY",
+    "required": true
+  }
+}

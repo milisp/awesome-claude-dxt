@@ -1,0 +1,9 @@
+{
+  "REMEMBERIZER_API_TOKEN": {
+    "type": "string",
+    "description": "Your Rememberizer API token, required for accessing the Rememberizer API.",
+    "sensitive": true,
+    "title": "REMEMBERIZER_API_TOKEN",
+    "required": true
+  }
+}

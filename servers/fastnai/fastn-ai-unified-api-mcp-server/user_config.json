@@ -1,0 +1,16 @@
+{
+  "YOUR_API_KEY": {
+    "type": "string",
+    "description": "The API key is required to authenticate and access the Fastn server's features and services.",
+    "sensitive": true,
+    "title": "YOUR_API_KEY",
+    "required": true
+  },
+  "YOUR_WORKSPACE_ID": {
+    "type": "string",
+    "description": "The unique identifier for your workspace in Fastn, which directs the server to the correct environment and settings.",
+    "sensitive": false,
+    "title": "YOUR_WORKSPACE_ID",
+    "required": true
+  }
+}

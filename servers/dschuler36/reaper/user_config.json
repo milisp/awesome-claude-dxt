@@ -1,0 +1,9 @@
+{
+  "REAPER_PROJECTS_DIR": {
+    "type": "directory",
+    "description": "The directory where Reaper projects are stored, allowing the MCP server to find and interact with them.",
+    "sensitive": false,
+    "title": "REAPER_PROJECTS_DIR",
+    "required": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "dxt_version": "0.1",
+  "name": "discord",
+  "display_name": "Discord",
+  "version": "1.0.0",
+  "description": "A MCP server to connect to Discord guilds through a bot and read and write messages in channels",
+  "long_description": "",
+  "author": {
+    "name": "v-3",
+    "url": "https://github.com/v-3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v-3/discordmcp"
+  },
+  "homepage": "https://github.com/v-3/discordmcp",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/v-3/discordmcp"
+      ],
+      "env": {
+        "DISCORD_TOKEN": "${DISCORD_TOKEN}"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "Read Messages",
+      "description": "Fetch the last 5 messages from a channel.",
+      "text": "{\"channel\": \"general\", \"limit\": 5}"
+    },
+    {
+      "name": "Send Message",
+      "description": "Send a message to the specified channel.",
+      "text": "{\"channel\": \"announcements\", \"message\": \"Meeting starts in 10 minutes\"}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "LLM",
+    "Bot",
+    "Discord",
+    "Messaging"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "DISCORD_TOKEN": {
+      "type": "string",
+      "description": "The Discord bot token required for authentication and to interact with Discord's API.",
+      "sensitive": true,
+      "title": "DISCORD_TOKEN",
+      "required": true
+    }
+  }
+}

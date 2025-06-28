@@ -1,0 +1,56 @@
+{
+  "dxt_version": "0.1",
+  "name": "intercom",
+  "display_name": "Intercom Support Server",
+  "version": "1.0.0",
+  "description": "An MCP-compliant server for retrieving customer support tickets from Intercom. This tool enables AI assistants like Claude Desktop and Cline to access and analyze your Intercom support tickets.",
+  "long_description": "",
+  "author": {
+    "name": "raoulbia-ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raoulbia-ai/mcp-server-for-intercom"
+  },
+  "homepage": "https://github.com/raoulbia-ai/mcp-server-for-intercom",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "https://github.com/raoulbia-ai/mcp-server-for-intercom"
+      ],
+      "env": {
+        "INTERCOM_ACCESS_TOKEN": "your-intercom-access-token"
+      }
+    }
+  },
+  "tools": [],
+  "prompts": [
+    {
+      "name": "List Tickets Example",
+      "description": "Retrieve support tickets from Intercom between specific dates",
+      "text": "{\"startDate\":\"15/01/2025\",\"endDate\":\"21/01/2025\",\"keyword\":\"billing\"}"
+    }
+  ],
+  "tools_generated": true,
+  "keywords": [
+    "support-tickets",
+    "Intercom",
+    "Messaging",
+    "API"
+  ],
+  "license": "Apache-2.0",
+  "user_config": {
+    "INTERCOM_ACCESS_TOKEN": {
+      "type": "string",
+      "description": "Your Intercom API token used to authenticate requests to the Intercom API.",
+      "sensitive": true,
+      "title": "INTERCOM_ACCESS_TOKEN",
+      "required": true
+    }
+  }
+}

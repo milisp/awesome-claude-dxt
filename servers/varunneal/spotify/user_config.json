@@ -1,0 +1,23 @@
+{
+  "SPOTIFY_CLIENT_ID": {
+    "type": "string",
+    "description": "The client ID for your Spotify application, required to authenticate with the Spotify API.",
+    "sensitive": false,
+    "title": "SPOTIFY_CLIENT_ID",
+    "required": true
+  },
+  "SPOTIFY_CLIENT_SECRET": {
+    "type": "string",
+    "description": "The client secret for your Spotify application, needed for secure authentication with the API.",
+    "sensitive": false,
+    "title": "SPOTIFY_CLIENT_SECRET",
+    "required": true
+  },
+  "SPOTIFY_REDIRECT_URI": {
+    "type": "string",
+    "description": "The redirect URI you specified when creating the Spotify application, needed for the OAuth authentication process.",
+    "sensitive": false,
+    "title": "SPOTIFY_REDIRECT_URI",
+    "required": false
+  }
+}

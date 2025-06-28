@@ -1,0 +1,65 @@
+{
+  "CLICKHOUSE_HOST": {
+    "type": "string",
+    "description": "The hostname of your ClickHouse server",
+    "sensitive": false,
+    "title": "CLICKHOUSE_HOST",
+    "required": true
+  },
+  "CLICKHOUSE_USER": {
+    "type": "number",
+    "description": "The username for authentication",
+    "sensitive": false,
+    "title": "CLICKHOUSE_USER",
+    "required": true
+  },
+  "CLICKHOUSE_PASSWORD": {
+    "type": "string",
+    "description": "The password for authentication",
+    "sensitive": false,
+    "title": "CLICKHOUSE_PASSWORD",
+    "required": true
+  },
+  "CLICKHOUSE_PORT": {
+    "type": "number",
+    "description": "The port number of your ClickHouse server",
+    "sensitive": false,
+    "title": "CLICKHOUSE_PORT",
+    "required": false
+  },
+  "CLICKHOUSE_SECURE": {
+    "type": "boolean",
+    "description": "Enable/disable HTTPS connection",
+    "sensitive": false,
+    "title": "CLICKHOUSE_SECURE",
+    "required": false
+  },
+  "CLICKHOUSE_VERIFY": {
+    "type": "boolean",
+    "description": "Enable/disable SSL certificate verification",
+    "sensitive": false,
+    "title": "CLICKHOUSE_VERIFY",
+    "required": false
+  },
+  "CLICKHOUSE_CONNECT_TIMEOUT": {
+    "type": "number",
+    "description": "Connection timeout in seconds",
+    "sensitive": false,
+    "title": "CLICKHOUSE_CONNECT_TIMEOUT",
+    "required": false
+  },
+  "CLICKHOUSE_SEND_RECEIVE_TIMEOUT": {
+    "type": "number",
+    "description": "Send/receive timeout in seconds",
+    "sensitive": false,
+    "title": "CLICKHOUSE_SEND_RECEIVE_TIMEOUT",
+    "required": false
+  },
+  "CLICKHOUSE_DATABASE": {
+    "type": "string",
+    "description": "Default database to use",
+    "sensitive": false,
+    "title": "CLICKHOUSE_DATABASE",
+    "required": false
+  }
+}

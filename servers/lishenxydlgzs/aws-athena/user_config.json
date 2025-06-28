@@ -1,0 +1,65 @@
+{
+  "OUTPUT_S3_PATH": {
+    "type": "string",
+    "description": "S3 bucket path for saving Athena query results.",
+    "sensitive": false,
+    "title": "OUTPUT_S3_PATH",
+    "required": true
+  },
+  "AWS_REGION": {
+    "type": "string",
+    "description": "The AWS region to use for Athena queries, defaults to AWS CLI default region.",
+    "sensitive": false,
+    "title": "AWS_REGION",
+    "required": false
+  },
+  "AWS_PROFILE": {
+    "type": "number",
+    "description": "AWS CLI profile to use, defaults to 'default' profile.",
+    "sensitive": false,
+    "title": "AWS_PROFILE",
+    "required": false
+  },
+  "AWS_ACCESS_KEY_ID": {
+    "type": "string",
+    "description": "AWS access key for authentication, if not using IAM role or environment variables.",
+    "sensitive": true,
+    "title": "AWS_ACCESS_KEY_ID",
+    "required": false
+  },
+  "AWS_SECRET_ACCESS_KEY": {
+    "type": "string",
+    "description": "AWS secret key for authentication, if not using IAM role or environment variables.",
+    "sensitive": true,
+    "title": "AWS_SECRET_ACCESS_KEY",
+    "required": false
+  },
+  "AWS_SESSION_TOKEN": {
+    "type": "string",
+    "description": "Session token for temporary AWS credentials, if using temporary access.",
+    "sensitive": true,
+    "title": "AWS_SESSION_TOKEN",
+    "required": false
+  },
+  "QUERY_TIMEOUT_MS": {
+    "type": "number",
+    "description": "Timeout setting for queries in milliseconds (default: 300000 ms).",
+    "sensitive": false,
+    "title": "QUERY_TIMEOUT_MS",
+    "required": false
+  },
+  "MAX_RETRIES": {
+    "type": "number",
+    "description": "Number of retry attempts for failed queries (default: 100).",
+    "sensitive": false,
+    "title": "MAX_RETRIES",
+    "required": false
+  },
+  "RETRY_DELAY_MS": {
+    "type": "number",
+    "description": "Delay between retry attempts in milliseconds (default: 500 ms).",
+    "sensitive": false,
+    "title": "RETRY_DELAY_MS",
+    "required": false
+  }
+}

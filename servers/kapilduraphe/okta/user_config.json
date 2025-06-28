@@ -1,0 +1,16 @@
+{
+  "OKTA_ORG_URL": {
+    "type": "string",
+    "description": "The base URL for your Okta organization, should include 'https://'.",
+    "sensitive": false,
+    "title": "OKTA_ORG_URL",
+    "required": true
+  },
+  "OKTA_API_TOKEN": {
+    "type": "string",
+    "description": "A valid API token used to authenticate API requests to Okta.",
+    "sensitive": true,
+    "title": "OKTA_API_TOKEN",
+    "required": true
+  }
+}
