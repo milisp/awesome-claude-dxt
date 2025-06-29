@@ -36,6 +36,8 @@
 
 ## Extensions by Category
 
+> All extensions are located in the [servers](./servers) folder, organized by `owner/repo`.
+
 ### Development Tools
 
 - [chrome-applescript](https://github.com/anthropics/dxt/tree/main/examples/chrome-applescript) - Browser automation via AppleScript
