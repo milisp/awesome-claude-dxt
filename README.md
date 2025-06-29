@@ -34,6 +34,9 @@
 - [Submission Form](https://forms.gle/tyiAZvch1kDADKoP9) - Submit to official directory
 - [Official examples](https://github.com/anthropics/dxt/tree/main/examples) - Official examples
 
+## Contributing
+This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## Extensions by Category
 
 > All extensions are located in the [servers](./servers) folder, organized by `owner/repo`.
@@ -383,9 +386,6 @@
 ## Packaging & Management Tools
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
-
-## Contributing
-This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## About
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)

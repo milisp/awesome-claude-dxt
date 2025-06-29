@@ -18,7 +18,7 @@ Thanks for your interest in contributing!
 
 1. clone your mcp server to folder [servers](./servers) (uvx or npx can skip this step)
   - create a folder owner/repo or author/mcp-server
-2. create manifest.json in 
+2. create manifest.json in the folder
 3. install dxt
 
 ```sh
