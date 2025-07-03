@@ -39,14 +39,14 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ## Extensions by Category
 
-> All extensions are located in the [servers](./servers) folder, organized by `owner/repo`.
+> All extensions are located in the [servers](./servers) folder with manifest.json and user_config.json, organized by `owner/repo`.
 
 ### Development Tools
 
 - [chrome-applescript](https://github.com/anthropics/dxt/tree/main/examples/chrome-applescript) - Browser automation via AppleScript
 - [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes) - Connect to Kubernetes cluster and manage pods, deployments, and services.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - GitLab API, enabling project management
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Tools to read, search, and manipulate Git repositories
+- [modelcontextprotocol/gitlab](https://github.com/modelcontextprotocol/servers/blob/main/src/gitlab) - GitLab API, enabling project management
+- [modelcontextprotocol/git](https://github.com/modelcontextprotocol/servers/blob/main/src/git) - Tools to read, search, and manipulate Git repositories
 - [bazinga012/mcp_code_executor](https://github.com/bazinga012/mcp_code_executor) - An MCP server that allows LLMs to execute Python code within a specified Conda environment.
 - [mem0ai/mem0-mcp](https://github.com/mem0ai/mem0-mcp) - A Model Context Protocol server for Mem0, which helps with managing coding preferences.
 - [MCP Team/servers](https://github.com/modelcontextprotocol/servers) - MCP Server for the GitHub API, enabling file operations, repository management, search functionality, and more.
@@ -62,7 +62,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [ShenghaiWang/xcodebuild](https://github.com/ShenghaiWang/xcodebuild) - 🍎 Build iOS Xcode workspace/project and feed back errors to llm.
 - [cyberchitta/llm-context.py](https://github.com/cyberchitta/llm-context.py) - Provides a repo-packing MCP tool with configurable profiles that specify file inclusion/exclusion patterns and optional prompts.
 - [lingodotdev/lingo.dev](https://github.com/lingodotdev/lingo.dev) - The [Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) is a standard for connecting Large Language Models (LLMs) to external services. This guide will walk you through how to connect AI tools to Lingo.dev using MCP.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Retrieving and analyzing issues from Sentry.io
+- [modelcontextprotocol/sentry](https://github.com/modelcontextprotocol/servers/blob/main/src/sentry) - Retrieving and analyzing issues from Sentry.io
 - [apimatic/apimatic-validator-mcp](https://github.com/apimatic/apimatic-validator-mcp) - This repository provides a Model Context Protocol (MCP) Server for validating OpenAPI specifications using [APIMatic](https://www.apimatic.io/). The server processes OpenAPI files and returns validation summaries by leveraging APIMatic’s API.
 - [riza-io/riza-mcp](https://github.com/riza-io/riza-mcp) - [Riza](https://riza.io) offers an isolated code interpreter for your LLM-generated code.
 - [Boston343/starwind-ui-mcp](https://github.com/Boston343/starwind-ui-mcp) - This MCP provides relevant commands, documentation, and other information to allow LLMs to take full advantage of Starwind UI's open source Astro components.
@@ -101,7 +101,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [MCP Team/servers](https://github.com/modelcontextprotocol/servers) - A Model Context Protocol server that provides time and timezone conversion capabilities. It automatically detects the system's timezone and offers tools for getting current time and converting between timezones.
 - [dinghuazhou/sample-mcp-server-tos](https://github.com/dinghuazhou/sample-mcp-server-tos) - A sample MCP server for VolcEngine TOS that flexibly get objects from TOS.
 - [ChristophEnglisch/keycloak-model-context-protocol](https://github.com/ChristophEnglisch/keycloak-model-context-protocol) - This MCP server enables natural language interaction with Keycloak for user and realm management including creating, deleting, and listing users and realms.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Secure file operations with configurable access controls
+- [modelcontextprotocol/filesystem](https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem) - Secure file operations with configurable access controls
 - [Descope/descope-mcp-server](https://github.com/descope-sample-apps/descope-mcp-server) - An MCP server to integrate with [Descope](https://descope.com/) to search audit logs, manage users, and more.
 
 ### Web Services
@@ -124,13 +124,13 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [adenot/mcp-google-search](https://github.com/adenot/mcp-google-search) - Provides Google Search results via the Google Custom Search API
 - [mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp) - Integrates Google Map, Google Street View, PixAI, Stability.ai, ComfyUI API and Bluesky to provide a virtual location simulation in LLM (written in Effect.ts)
 - [pathintegral-institute/mcp.science](https://github.com/pathintegral-institute/mcp.science) - A Model Context Protocol (MCP) server for TXYZ Search API. Provides tools for academic and scholarly search, general web search, and smart search.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Location services, directions, and place details
+- [modelcontextprotocol/google-maps](https://github.com/modelcontextprotocol/servers/blob/main/src/google-maps) - Location services, directions, and place details
 - [fatwang2/search1api-mcp](https://github.com/fatwang2/search1api-mcp) - A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.
 - [leehanchung/bing-search-mcp](https://github.com/leehanchung/bing-search-mcp) - Server implementation for Microsoft Bing Web Search API.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Web and local search using Brave's Search API
+- [modelcontextprotocol/brave-search](https://github.com/modelcontextprotocol/servers/blob/main/src/brave-search) - Web and local search using Brave's Search API
 - [pfldy2850/py-mcp-naver](https://github.com/pfldy2850/py-mcp-naver) - This MCP server provides tools to interact with various Naver services, such as searching blogs, news, books, and more.
 - [sunsetcoder/flightradar24-mcp-server](https://github.com/sunsetcoder/flightradar24-mcp-server) - A Claude Desktop MCP server that helps you track flights in real-time using Flightradar24 data.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Browser automation and web scraping
+- [modelcontextprotocol/puppeteer](https://github.com/modelcontextprotocol/servers/blob/main/src/puppeteer) - Browser automation and web scraping
 - [fingertip-com/fingertip-mcp](https://github.com/fingertip-com/fingertip-mcp) - MCP server for Fingertip.com to search and create new sites.
 - [delorenj/mcp-server-ticketmaster](https://github.com/delorenj/mcp-server-ticketmaster) - Search for events, venues, and attractions through the Ticketmaster Discovery API
 - [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) - Search engine for AI agents (search + extract) powered by Tavily
@@ -142,12 +142,12 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [AshDevFr/discourse-mcp-server](https://github.com/AshDevFr/discourse-mcp-server) - A MCP server to search Discourse posts on a Discourse forum.
 - [tinyfish-io/agentql-mcp](https://github.com/tinyfish-io/agentql-mcp) - This is a Model Context Protocol (MCP) server that integrates [AgentQL](https://agentql.com)'s data extraction capabilities.
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) - A Model Context Protocol (MCP) server that provides browser automation capabilities using [Playwright](https://playwright.dev). This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - A Model Context Protocol server that provides web content fetching capabilities.
+- [modelcontextprotocol/fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) - A Model Context Protocol server that provides web content fetching capabilities.
 
 ### Messaging
 
 - [kenliao94/mcp-server-rabbitmq](https://github.com/kenliao94/mcp-server-rabbitmq) - The MCP server that interacts with RabbitMQ to publish and consume messages.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Channel management and messaging capabilities
+- [modelcontextprotocol/slack](https://github.com/modelcontextprotocol/servers/blob/main/src/slack) - Channel management and messaging capabilities
 - [vidhupv/x-mcp](https://github.com/vidhupv/x-mcp) - Create, manage and publish X/Twitter posts directly through Claude chat.
 - [GongRzhe/Gmail-MCP-Server](https://github.com/GongRzhe/Gmail-MCP-Server) - A Model Context Protocol (MCP) server for Gmail integration in Claude Desktop with auto authentication support.
 - [teddyzxcv/ntfy-mcp](https://github.com/teddyzxcv/ntfy-mcp) - The MCP server that keeps you informed by sending the notification on phone using ntfy
@@ -171,7 +171,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [neo4j-contrib/mcp-neo4j](https://github.com/neo4j-contrib/mcp-neo4j) - This server enables running Cypher graph queries, analyzing complex domain data, and automatically generating business insights that can be enhanced with Claude's analysis when an Anthropic API key is provided.
 - [vectorize-io/vectorize-mcp-server](https://github.com/vectorize-io/vectorize-mcp-server) - A Model Context Protocol (MCP) server implementation that integrates with [Vectorize](https://vectorize.io/) for advanced Vector retrieval and text extraction.
 - [designcomputer/mysql_mcp_server](https://github.com/designcomputer/mysql_mcp_server) - MySQL database integration in Python with configurable access controls and schema inspection
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Read-only database access with schema inspection
+- [modelcontextprotocol/postgres](https://github.com/modelcontextprotocol/servers/blob/main/src/postgres) - Read-only database access with schema inspection
 - [GreptimeTeam/greptimedb-mcp-server](https://github.com/GreptimeTeam/greptimedb-mcp-server) - A Model Context Protocol (MCP) server implementation for [GreptimeDB](https://github.com/GreptimeTeam/greptimedb).
 - [sirmews/mcp-pinecone](https://github.com/sirmews/mcp-pinecone) - MCP server for searching and uploading records to Pinecone. Allows for simple RAG features, leveraging Pinecone's Inference API.
 - [furey/mongodb-lens](https://github.com/furey/mongodb-lens) - Full Featured MCP Server for MongoDB Databases.
@@ -229,7 +229,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [deepfates/mcp-replicate](https://github.com/deepfates/mcp-replicate) - Search, run and manage machine learning models on Replicate through a simple tool-based interface. Browse models, create predictions, track their status, and handle generated images.
 - [evalstate/mcp-hfspace](https://github.com/evalstate/mcp-hfspace) - Server for using HuggingFace Spaces, supporting Open Source Image, Audio, Text Models and more. Claude Desktop mode for easy integration.
 - [66julienmartin/MCP-server-Deepseek_R1](https://github.com/66julienmartin/MCP-server-Deepseek_R1) - A Model Context Protocol (MCP) server implementation connecting Claude Desktop with DeepSeek's language models (R1/V3)
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Dynamic and reflective problem-solving through thought sequences
+- [modelcontextprotocol/sequentialthinking](https://github.com/modelcontextprotocol/servers/blob/main/src/sequentialthinking) - Dynamic and reflective problem-solving through thought sequences
 - [66julienmartin/MCP-server-Qwen_Max](https://github.com/66julienmartin/MCP-server-Qwen_Max) - A Model Context Protocol (MCP) server implementation for the Qwen models.
 
 ### MCP Tools
@@ -254,8 +254,8 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [skydeckai/mcp-server-rememberizer](https://github.com/skydeckai/mcp-server-rememberizer) - An MCP server designed for interacting with the Rememberizer data source, facilitating enhanced knowledge retrieval.
 - [GongRzhe/Langflow-DOC-QA-SERVER](https://github.com/GongRzhe/Langflow-DOC-QA-SERVER) - A Model Context Protocol server for document Q&A powered by Langflow. It demonstrates core MCP concepts by providing a simple interface to query documents through a Langflow backend.
 - [rember/rember-mcp](https://github.com/rember/rember-mcp) - Create spaced repetition flashcards in Rember to remember anything you learn in your chats
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Retrieval from AWS Knowledge Base using Bedrock Agent Runtime
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - Knowledge graph-based persistent memory system
+- [modelcontextprotocol/aws-kb-retrieval-server](https://github.com/modelcontextprotocol/servers/blob/main/src/aws-kb-retrieval-server) - Retrieval from AWS Knowledge Base using Bedrock Agent Runtime
+- [modelcontextprotocol/memory](https://github.com/modelcontextprotocol/servers/blob/main/src/memory) - Knowledge graph-based persistent memory system
 - [kpsunil97/devrev-mcp-server](https://github.com/kpsunil97/devrev-mcp-server) - An MCP server to integrate with DevRev APIs to search through your DevRev Knowledge Graph where objects can be imported from diff. sources listed [here](https://devrev.ai/docs/import#available-sources).
 - [apeyroux/mcp-xmind](https://github.com/apeyroux/mcp-xmind) - Read and search through your XMind directory containing XMind files.
 - [aws-samples/sample-mcp-server-s3](https://github.com/aws-samples/sample-mcp-server-s3) - A sample MCP server for AWS S3 that flexibly fetches objects from S3 such as PDF documents.
@@ -281,7 +281,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [felores/placid-mcp-server](https://github.com/felores/placid-mcp-server) - Generate image and video creatives using Placid.app templates
 - [ZubeidHendricks/youtube-mcp-server](https://github.com/ZubeidHendricks/youtube-mcp-server) - Comprehensive YouTube API integration for video management, Shorts creation, and analytics.
 - [YuChenSSR/mindmap-mcp-server](https://github.com/YuChenSSR/mindmap-mcp-server) - A server that generates mindmaps from input containing markdown code.
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - AI image generation using various models
+- [modelcontextprotocol/everart](https://github.com/modelcontextprotocol/servers/blob/main/src/everart) - AI image generation using various models
 - [mamertofabian/elevenlabs-mcp-server](https://github.com/mamertofabian/elevenlabs-mcp-server) - A server that integrates with ElevenLabs text-to-speech API capable of generating full voiceovers with multiple voices.
 - [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) - Blender integration allowing prompt enabled 3D scene creation, modeling and manipulation.
 - [varunneal/spotify-mcp](https://github.com/varunneal/spotify-mcp) - This MCP allows an LLM to play and use Spotify.
@@ -313,7 +313,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [open-strategy-partners/osp_marketing_tools](https://github.com/open-strategy-partners/osp_marketing_tools) - Content editing codes, value map, and positioning tools for product marketing.
 - [zcaceres/gtasks-mcp](https://github.com/zcaceres/gtasks-mcp) - Google Tasks API Model Context Protocol Server.
 - [esignaturescom/mcp-server-esignatures](https://github.com/esignaturescom/mcp-server-esignatures) - MCP server for eSignatures (https://esignatures.com)
-- [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) - File access and search capabilities for Google Drive
+- [modelcontextprotocol/gdrive](https://github.com/modelcontextprotocol/servers/blob/main/src/gdrive) - File access and search capabilities for Google Drive
 - [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) - Excel manipulation including data reading/writing, worksheet management, formatting, charts, and pivot table.
 - [v-3/notion-server](https://github.com/v-3/notion-server) - Notion MCP integration. Search, Read, Update, and Create pages through Claude chat.
 - [nspady/google-calendar-mcp](https://github.com/nspady/google-calendar-mcp) - Google Calendar MCP Server for managing Google calendar events. Also supports searching for events by attributes like title and location.

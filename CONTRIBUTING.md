@@ -4,6 +4,12 @@ Thanks for your interest in contributing!
 
 ## How to Contribute
 
+### Simple way, if the dxt use npx or uvx, just create a `manifest.json` file
+
+- servers/{owner}/{repo}/manifest.json
+
+### Full way
+
 - Add new `.dxt` tools or resources under the appropriate category
 - Add manifest.json to your mcp server, see example below
 - Fix typos or improve descriptions
