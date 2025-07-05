@@ -4,9 +4,10 @@ Thanks for your interest in contributing!
 
 ## How to Contribute
 
-### Simple way, if the dxt use npx or uvx, just create a `manifest.json` file
+### Simple way, if the dxt use npx or uvx, just create a `manifest.json` at your repo and test
 
 - servers/{owner}/{repo}/manifest.json
+- Create a PR to this repo list by category
 
 ### Full way
 
