@@ -1,0 +1,33 @@
+{
+  "PRIVATE_KEY": {
+    "type": "string",
+    "description": "Your base58 encoded Solana private key (from Phantom wallet export)",
+    "sensitive": true,
+    "title": "PRIVATE_KEY",
+    "required": true
+  },
+  "SOLANA_RPC_URL": {
+    "type": "string",
+    "description": "Solana RPC endpoint URL (defaults to mainnet-beta)",
+    "sensitive": false,
+    "title": "SOLANA_RPC_URL",
+    "required": false,
+    "default": "https://api.mainnet-beta.solana.com"
+  },
+  "SOLANA_NETWORK": {
+    "type": "string",
+    "description": "Solana network to use (mainnet-beta or devnet)",
+    "sensitive": false,
+    "title": "SOLANA_NETWORK",
+    "required": false,
+    "default": "mainnet-beta"
+  },
+  "REQUEST_TIMEOUT": {
+    "type": "string",
+    "description": "Request timeout in seconds",
+    "sensitive": false,
+    "title": "REQUEST_TIMEOUT",
+    "required": false,
+    "default": "30"
+  }
+} 
