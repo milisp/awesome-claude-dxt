@@ -1,0 +1,302 @@
+{
+  "dxt_version": "0.1",
+  "name": "jupiter-mcp",
+  "display_name": "Jupiter MCP",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for Solana DeFi interactions through Jupiter Exchange. Provides tools for token swaps, limit orders, balance checking, and portfolio management on Solana.",
+  "long_description": "Jupiter MCP enables seamless Solana DeFi interactions through the Jupiter Exchange API. Features include immediate token swaps via Ultra API, automated limit orders via Trigger API, comprehensive token discovery and security checks, real-time balance monitoring, and integrated referral system. Supports both mainnet and devnet with configurable RPC endpoints.",
+  "author": {
+    "name": "araa47"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/araa47/jupiter-mcp"
+  },
+  "homepage": "https://github.com/araa47/jupiter-mcp",
+  "screenshots": [],
+  "server": {
+    "type": "python",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/araa47/jupiter-mcp",
+        "jupiter-mcp"
+      ],
+      "env": {
+        "SOLANA_RPC_URL": "https://api.mainnet-beta.solana.com",
+        "PRIVATE_KEY": "${PRIVATE_KEY}",
+        "SOLANA_NETWORK": "mainnet-beta",
+        "REQUEST_TIMEOUT": "30"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "get_swap_quote",
+      "description": "Get a swap quote and unsigned transaction for immediate token swaps",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input_mint": {
+            "type": "string",
+            "description": "The mint address of the input token"
+          },
+          "output_mint": {
+            "type": "string",
+            "description": "The mint address of the output token"
+          },
+          "amount": {
+            "type": "string",
+            "description": "The amount to swap (in token units)"
+          }
+        },
+        "required": ["input_mint", "output_mint", "amount"]
+      }
+    },
+    {
+      "name": "execute_swap_transaction",
+      "description": "Execute a signed swap transaction (PAID operation)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "transaction": {
+            "type": "string",
+            "description": "The signed transaction to execute"
+          },
+          "request_id": {
+            "type": "string",
+            "description": "The request ID from the quote"
+          }
+        },
+        "required": ["transaction", "request_id"]
+      }
+    },
+    {
+      "name": "get_balances",
+      "description": "Get token balances for a wallet",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "wallet_address": {
+            "type": "string",
+            "description": "The wallet address to check balances for (optional, defaults to connected wallet)"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_shield",
+      "description": "Get token security information and risk assessment",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Array of token mint addresses to check"
+          }
+        },
+        "required": ["mints"]
+      }
+    },
+    {
+      "name": "search_token",
+      "description": "Search for tokens by name or symbol",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search query (token name or symbol)"
+          }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "create_limit_order",
+      "description": "Create a limit order transaction for automated trading",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input_mint": {
+            "type": "string",
+            "description": "The mint address of the input token"
+          },
+          "output_mint": {
+            "type": "string",
+            "description": "The mint address of the output token"
+          },
+          "making_amount": {
+            "type": "string",
+            "description": "The amount of input token to trade"
+          },
+          "taking_amount": {
+            "type": "string",
+            "description": "The amount of output token expected"
+          },
+          "slippage_bps": {
+            "type": "integer",
+            "description": "Slippage tolerance in basis points (optional)"
+          },
+          "expired_at": {
+            "type": "string",
+            "description": "Expiration timestamp (optional)"
+          }
+        },
+        "required": ["input_mint", "output_mint", "making_amount", "taking_amount"]
+      }
+    },
+    {
+      "name": "execute_limit_order",
+      "description": "Execute a limit order transaction (PAID operation)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "transaction": {
+            "type": "string",
+            "description": "The signed limit order transaction"
+          },
+          "request_id": {
+            "type": "string",
+            "description": "The request ID from the limit order creation"
+          }
+        },
+        "required": ["transaction", "request_id"]
+      }
+    },
+    {
+      "name": "cancel_limit_order",
+      "description": "Cancel a single limit order",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "order": {
+            "type": "string",
+            "description": "The order ID to cancel"
+          }
+        },
+        "required": ["order"]
+      }
+    },
+    {
+      "name": "cancel_limit_orders",
+      "description": "Cancel multiple limit orders",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "orders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Array of order IDs to cancel (optional, cancels all if not provided)"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_limit_orders",
+      "description": "Get active or historical limit orders",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "order_status": {
+            "type": "string",
+            "enum": ["active", "history"],
+            "description": "Status of orders to retrieve"
+          },
+          "wallet_address": {
+            "type": "string",
+            "description": "Wallet address to filter orders (optional)"
+          },
+          "input_mint": {
+            "type": "string",
+            "description": "Input token mint address to filter (optional)"
+          },
+          "output_mint": {
+            "type": "string",
+            "description": "Output token mint address to filter (optional)"
+          },
+          "page": {
+            "type": "integer",
+            "description": "Page number for pagination (optional)"
+          }
+        },
+        "required": ["order_status"]
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Swap SOL to USDC",
+      "description": "Get a quote to swap SOL to USDC",
+      "text": "Get me a quote to swap 0.1 SOL to USDC"
+    },
+    {
+      "name": "Check wallet balances",
+      "description": "Check token balances in connected wallet",
+      "text": "Show me my current token balances"
+    },
+    {
+      "name": "Search for a token",
+      "description": "Search for tokens by name or symbol",
+      "text": "Search for tokens matching 'bonk'"
+    },
+    {
+      "name": "Create limit order",
+      "description": "Create a limit order for automated trading",
+      "text": "Create a limit order to buy 100 USDC worth of SOL when SOL price drops to $150"
+    }
+  ],
+  "tools_generated": false,
+  "keywords": [
+    "solana",
+    "defi",
+    "jupiter",
+    "trading",
+    "finance",
+    "blockchain",
+    "cryptocurrency",
+    "swaps",
+    "limit-orders"
+  ],
+  "license": "MIT",
+  "user_config": {
+    "PRIVATE_KEY": {
+      "type": "string",
+      "description": "Your base58 encoded Solana private key (from Phantom wallet export)",
+      "sensitive": true,
+      "title": "PRIVATE_KEY",
+      "required": true
+    },
+    "SOLANA_RPC_URL": {
+      "type": "string",
+      "description": "Solana RPC endpoint URL (defaults to mainnet-beta)",
+      "sensitive": false,
+      "title": "SOLANA_RPC_URL",
+      "required": false,
+      "default": "https://api.mainnet-beta.solana.com"
+    },
+    "SOLANA_NETWORK": {
+      "type": "string",
+      "description": "Solana network to use (mainnet-beta or devnet)",
+      "sensitive": false,
+      "title": "SOLANA_NETWORK",
+      "required": false,
+      "default": "mainnet-beta"
+    },
+    "REQUEST_TIMEOUT": {
+      "type": "string",
+      "description": "Request timeout in seconds",
+      "sensitive": false,
+      "title": "REQUEST_TIMEOUT",
+      "required": false,
+      "default": "30"
+    }
+  }
+} 

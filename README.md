@@ -333,6 +333,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ### Finance
 
+- [araa47/jupiter-mcp](https://github.com/araa47/jupiter-mcp) - A Model Context Protocol server for Solana DeFi interactions through Jupiter Exchange. Provides tools for token swaps, limit orders, balance checking, and portfolio management on Solana.
 - [Kukapay/dune-analytics-mcp](https://github.com/kukapay/dune-analytics-mcp) - A mcp server that bridges Dune Analytics data to AI agents.
 - [magnetai/mcp-free-usdc-transfer](https://github.com/magnetai/mcp-free-usdc-transfer) - Send USDC on [Base](https://base.org/) for free using Claude AI! Built with [Coinbase CDP](https://docs.cdp.coinbase.com/mpc-wallet/docs/welcome).
 - [calvernaz/alphavantage](https://github.com/calvernaz/alphavantage) - MCP server for stock market data API [AlphaVantage](https://www.alphavantage.co/)
