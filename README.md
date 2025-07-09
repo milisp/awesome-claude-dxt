@@ -49,7 +49,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [modelcontextprotocol/git](https://github.com/modelcontextprotocol/servers/blob/main/src/git) - Tools to read, search, and manipulate Git repositories
 - [bazinga012/mcp_code_executor](https://github.com/bazinga012/mcp_code_executor) - An MCP server that allows LLMs to execute Python code within a specified Conda environment.
 - [mem0ai/mem0-mcp](https://github.com/mem0ai/mem0-mcp) - A Model Context Protocol server for Mem0, which helps with managing coding preferences.
-- [MCP Team/servers](https://github.com/modelcontextprotocol/servers) - MCP Server for the GitHub API, enabling file operations, repository management, search functionality, and more.
+- [modelcontextprotocol/github](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/github) - Repository management, file operations, and GitHub API integration
 - [snaggle-ai/openapi-mcp-server](https://github.com/snaggle-ai/openapi-mcp-server) - Interact with [OpenAPI](https://www.openapis.org/) APIs.
 - [semgrep/mcp](https://github.com/semgrep/mcp) - An MCP server for using Semgrep to scan code for security vulnerabilies. Secure your vibe coding! 
 - [manusa/kubernetes-mcp-server](https://github.com/manusa/kubernetes-mcp-server) - A powerful Kubernetes MCP server with additional support for OpenShift. Besides providing CRUD operations for any Kubernetes resource, this server provides specialized tools to interact with your cluster.
@@ -98,7 +98,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [SimonB97/win-cli-mcp-server](https://github.com/SimonB97/win-cli-mcp-server) - MCP server for secure command-line interactions on Windows systems, enabling controlled access to PowerShell, CMD, and Git Bash shells.
 - [pathintegral-institute/mcp.science](https://github.com/pathintegral-institute/mcp.science) - A Model Context Protocol (MCP) server for executing command-line operations on remote servers via SSH.
 - [GongRzhe/terminal-controller-mcp](https://github.com/GongRzhe/terminal-controller-mcp) - A MCP server that enables secure terminal command execution, directory navigation, and file system operations through a standardized interface.
-- [MCP Team/servers](https://github.com/modelcontextprotocol/servers) - A Model Context Protocol server that provides time and timezone conversion capabilities. It automatically detects the system's timezone and offers tools for getting current time and converting between timezones.
+- [modelcontextprotocol/time](https://github.com/modelcontextprotocol/servers/blob/main/src/time) - A Model Context Protocol server that provides time and timezone conversion capabilities. It automatically detects the system's timezone and offers tools for getting current time and converting between timezones.
 - [dinghuazhou/sample-mcp-server-tos](https://github.com/dinghuazhou/sample-mcp-server-tos) - A sample MCP server for VolcEngine TOS that flexibly get objects from TOS.
 - [ChristophEnglisch/keycloak-model-context-protocol](https://github.com/ChristophEnglisch/keycloak-model-context-protocol) - This MCP server enables natural language interaction with Keycloak for user and realm management including creating, deleting, and listing users and realms.
 - [modelcontextprotocol/filesystem](https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem) - Secure file operations with configurable access controls
@@ -244,7 +244,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [fastnai/mcp-fastn](https://github.com/fastnai/mcp-fastn) - A remote, dynamic MCP server with a unified API that connects to 1,000+ tools, actions, and workflows, featuring built-in authentication and monitoring.
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) - Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) - This server is a server that installs other MCP servers for you.
-- [MCP Team/servers](https://github.com/modelcontextprotocol/servers) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
+- [modelcontextprotocol/everything](https://github.com/modelcontextprotocol/servers/blob/main/src/everything) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
 - [integration-app/mcp-server](https://github.com/integration-app/mcp-server) - This is an implementation of the [Model Context Protocol (MCP) server](https://modelcontextprotocol.org/) that exposes tools powered by [Integration App](https://integration.app).
 
 ### Knowledge Base
