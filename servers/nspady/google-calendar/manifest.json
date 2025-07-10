@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "https://github.com/nspady/google-calendar-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

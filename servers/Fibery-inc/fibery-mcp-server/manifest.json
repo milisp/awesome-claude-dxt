@@ -27,8 +27,7 @@
         "your-domain.fibery.io",
         "--fibery-api-token",
         "your-api-token"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

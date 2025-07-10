@@ -25,8 +25,8 @@
         "adx-mcp-server"
       ],
       "env": {
-        "ADX_CLUSTER_URL": "${ADX_CLUSTER_URL}",
-        "ADX_DATABASE": "${ADX_DATABASE}"
+        "ADX_CLUSTER_URL": "${user_config.ADX_CLUSTER_URL}",
+        "ADX_DATABASE": "${user_config.ADX_DATABASE}"
       }
     }
   },

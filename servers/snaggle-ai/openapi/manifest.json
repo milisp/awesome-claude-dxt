@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "openapi-mcp-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

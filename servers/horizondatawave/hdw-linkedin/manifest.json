@@ -23,8 +23,8 @@
         "@horizondatawave/mcp"
       ],
       "env": {
-        "HDW_ACCESS_TOKEN": "${HDW_ACCESS_TOKEN}",
-        "HDW_ACCOUNT_ID": "${HDW_ACCOUNT_ID}"
+        "HDW_ACCESS_TOKEN": "${user_config.HDW_ACCESS_TOKEN}",
+        "HDW_ACCOUNT_ID": "${user_config.HDW_ACCOUNT_ID}"
       }
     }
   },

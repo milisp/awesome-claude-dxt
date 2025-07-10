@@ -22,8 +22,7 @@
       "args": [
         "-n",
         "meilisearch-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

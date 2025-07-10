@@ -25,9 +25,9 @@
         "prometheus-mcp-server"
       ],
       "env": {
-        "PROMETHEUS_URL": "${PROMETHEUS_URL}",
-        "PROMETHEUS_USERNAME": "${PROMETHEUS_USERNAME}",
-        "PROMETHEUS_PASSWORD": "${PROMETHEUS_PASSWORD}"
+        "PROMETHEUS_URL": "${user_config.PROMETHEUS_URL}",
+        "PROMETHEUS_USERNAME": "${user_config.PROMETHEUS_USERNAME}",
+        "PROMETHEUS_PASSWORD": "${user_config.PROMETHEUS_PASSWORD}"
       }
     }
   },

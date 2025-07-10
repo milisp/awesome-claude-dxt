@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "https://github.com/tesla0225/mcp-create"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

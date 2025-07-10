@@ -24,8 +24,7 @@
         "--from",
         "git+https://github.com/kukapay/crypto-feargreed-mcp",
         "main.py"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -1,6 +1,6 @@
 {
   "USER_XMIND_DIRECTORY": {
-    "type": "string",
+    "type": "directory",
     "description": "The path to the directory containing XMind files that should be processed by the server.",
     "sensitive": false,
     "title": "USER_XMIND_DIRECTORY",

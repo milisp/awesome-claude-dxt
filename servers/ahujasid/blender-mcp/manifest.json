@@ -21,8 +21,7 @@
       "command": "uvx",
       "args": [
         "blender-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

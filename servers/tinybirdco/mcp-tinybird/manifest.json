@@ -24,8 +24,8 @@
         "stdio"
       ],
       "env": {
-        "TB_API_URL": "<TINYBIRD_API_URL>",
-        "TB_ADMIN_TOKEN": "<TINYBIRD_ADMIN_TOKEN>"
+        "TB_API_URL": "${user_config.TB_API_URL}",
+        "TB_ADMIN_TOKEN": "${user_config.TB_ADMIN_TOKEN}"
       }
     }
   },

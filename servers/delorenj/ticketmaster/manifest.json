@@ -24,7 +24,7 @@
         "@delorenj/mcp-server-ticketmaster"
       ],
       "env": {
-        "TICKETMASTER_API_KEY": "${TICKETMASTER_API_KEY}"
+        "TICKETMASTER_API_KEY": "${user_config.TICKETMASTER_API_KEY}"
       }
     }
   },

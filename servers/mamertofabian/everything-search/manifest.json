@@ -23,7 +23,7 @@
         "mcp-server-everything-search"
       ],
       "env": {
-        "EVERYTHING_SDK_PATH": "${EVERYTHING_SDK_PATH}"
+        "EVERYTHING_SDK_PATH": "${user_config.EVERYTHING_SDK_PATH}"
       }
     }
   },

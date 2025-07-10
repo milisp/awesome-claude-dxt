@@ -3,7 +3,7 @@
   "name": "needle-mcp",
   "display_name": "Needle MCP Server",
   "version": "1.0.0",
-  "description": "MCP (Model Context Protocol) server to manage documents and perform searches using [Needle](https://needle-ai.com) through Claude\u2019s Desktop Application.",
+  "description": "MCP (Model Context Protocol) server to manage documents and perform searches using [Needle](https://needle-ai.com) through Claude’s Desktop Application.",
   "long_description": "",
   "author": {
     "name": "needle-ai"
@@ -25,7 +25,7 @@
         "needle-mcp"
       ],
       "env": {
-        "NEEDLE_API_KEY": "your_needle_api_key"
+        "NEEDLE_API_KEY": "${user_config.NEEDLE_API_KEY}"
       }
     }
   },

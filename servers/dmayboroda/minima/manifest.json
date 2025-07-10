@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/dmayboroda/minima.git@main#subdirectory=mcp-server",
         "minima"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

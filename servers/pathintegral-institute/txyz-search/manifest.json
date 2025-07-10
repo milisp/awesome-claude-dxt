@@ -25,7 +25,7 @@
         "mcp-txyz-search"
       ],
       "env": {
-        "TXYZ_API_KEY": "${TXYZ_API_KEY}"
+        "TXYZ_API_KEY": "${user_config.TXYZ_API_KEY}"
       }
     }
   },

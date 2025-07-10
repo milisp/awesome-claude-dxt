@@ -24,9 +24,9 @@
         "@vectorize-io/vectorize-mcp-server@latest"
       ],
       "env": {
-        "VECTORIZE_ORG_ID": "${VECTORIZE_ORG_ID}",
-        "VECTORIZE_TOKEN": "${VECTORIZE_TOKEN}",
-        "VECTORIZE_PIPELINE_ID": "${VECTORIZE_PIPELINE_ID}"
+        "VECTORIZE_ORG_ID": "${user_config.VECTORIZE_ORG_ID}",
+        "VECTORIZE_TOKEN": "${user_config.VECTORIZE_TOKEN}",
+        "VECTORIZE_PIPELINE_ID": "${user_config.VECTORIZE_PIPELINE_ID}"
       }
     }
   },

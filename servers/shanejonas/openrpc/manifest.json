@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "openrpc-mpc-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

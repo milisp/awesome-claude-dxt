@@ -24,10 +24,10 @@
         "https://github.com/pyroprompts/any-chat-completions-mcp"
       ],
       "env": {
-        "AI_CHAT_KEY": "${AI_CHAT_KEY}",
-        "AI_CHAT_NAME": "${AI_CHAT_NAME}",
-        "AI_CHAT_MODEL": "${AI_CHAT_MODEL}",
-        "AI_CHAT_BASE_URL": "${AI_CHAT_BASE_URL}"
+        "AI_CHAT_KEY": "${user_config.AI_CHAT_KEY}",
+        "AI_CHAT_NAME": "${user_config.AI_CHAT_NAME}",
+        "AI_CHAT_MODEL": "${user_config.AI_CHAT_MODEL}",
+        "AI_CHAT_BASE_URL": "${user_config.AI_CHAT_BASE_URL}"
       }
     }
   },

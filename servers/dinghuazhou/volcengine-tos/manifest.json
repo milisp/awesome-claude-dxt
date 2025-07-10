@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/dinghuazhou/sample-mcp-server-tos",
         "tos-mcp-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

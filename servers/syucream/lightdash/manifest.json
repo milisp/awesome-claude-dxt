@@ -24,8 +24,8 @@
         "lightdash-mcp-server"
       ],
       "env": {
-        "LIGHTDASH_API_KEY": "${LIGHTDASH_API_KEY}",
-        "LIGHTDASH_API_URL": "${LIGHTDASH_API_URL}"
+        "LIGHTDASH_API_KEY": "${user_config.LIGHTDASH_API_KEY}",
+        "LIGHTDASH_API_URL": "${user_config.LIGHTDASH_API_URL}"
       }
     }
   },

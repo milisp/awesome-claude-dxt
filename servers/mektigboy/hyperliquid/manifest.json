@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@mektigboy/server-hyperliquid"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

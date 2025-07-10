@@ -23,8 +23,8 @@
         "bitable-mcp"
       ],
       "env": {
-        "PERSONAL_BASE_TOKEN": "${PERSONAL_BASE_TOKEN}",
-        "APP_TOKEN": "${APP_TOKEN}"
+        "PERSONAL_BASE_TOKEN": "${user_config.PERSONAL_BASE_TOKEN}",
+        "APP_TOKEN": "${user_config.APP_TOKEN}"
       }
     }
   },

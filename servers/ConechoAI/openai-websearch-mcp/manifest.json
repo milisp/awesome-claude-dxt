@@ -23,7 +23,7 @@
         "openai-websearch-mcp"
       ],
       "env": {
-        "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+        "OPENAI_API_KEY": "${user_config.OPENAI_API_KEY}"
       }
     }
   },

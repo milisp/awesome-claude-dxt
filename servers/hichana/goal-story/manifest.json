@@ -24,8 +24,7 @@
         "goalstory-mcp",
         "https://prod-goalstory-rqc2.encr.app",
         "${YOUR_API_KEY}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

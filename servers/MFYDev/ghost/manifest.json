@@ -25,8 +25,8 @@
         "src/main.py"
       ],
       "env": {
-        "GHOST_API_URL": "${GHOST_API_URL}",
-        "GHOST_STAFF_API_KEY": "${GHOST_STAFF_API_KEY}"
+        "GHOST_API_URL": "${user_config.GHOST_API_URL}",
+        "GHOST_STAFF_API_KEY": "${user_config.GHOST_STAFF_API_KEY}"
       }
     }
   },

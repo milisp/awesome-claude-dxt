@@ -21,8 +21,7 @@
       "command": "npx",
       "args": [
         "@gongrzhe/server-gmail-autoauth-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

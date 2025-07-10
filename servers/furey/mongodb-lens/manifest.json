@@ -25,7 +25,7 @@
         "${MONGODB_URI}"
       ],
       "env": {
-        "CONFIG_LOG_LEVEL": "${CONFIG_LOG_LEVEL}"
+        "CONFIG_LOG_LEVEL": "${user_config.CONFIG_LOG_LEVEL}"
       }
     }
   },

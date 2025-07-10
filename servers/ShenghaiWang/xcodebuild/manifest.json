@@ -21,8 +21,7 @@
       "command": "uvx",
       "args": [
         "mcpxcodebuild"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

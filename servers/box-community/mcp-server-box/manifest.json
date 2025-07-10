@@ -26,8 +26,8 @@
         "src/mcp_server_box.py"
       ],
       "env": {
-        "BOX_CLIENT_ID": "your_client_id",
-        "BOX_CLIENT_SECRET": "your_client_secret"
+        "BOX_CLIENT_ID": "${user_config.BOX_CLIENT_ID}",
+        "BOX_CLIENT_SECRET": "${user_config.BOX_CLIENT_SECRET}"
       }
     }
   },

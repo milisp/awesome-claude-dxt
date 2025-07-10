@@ -23,10 +23,10 @@
         "mcp-server-qdrant"
       ],
       "env": {
-        "QDRANT_URL": "http://localhost:6333",
-        "QDRANT_API_KEY": "your_api_key",
-        "COLLECTION_NAME": "my-collection",
-        "EMBEDDING_MODEL": "sentence-transformers/all-MiniLM-L6-v2"
+        "QDRANT_URL": "${user_config.QDRANT_URL}",
+        "QDRANT_API_KEY": "${user_config.QDRANT_API_KEY}",
+        "COLLECTION_NAME": "${user_config.COLLECTION_NAME}",
+        "EMBEDDING_MODEL": "${user_config.EMBEDDING_MODEL}"
       }
     }
   },

@@ -23,10 +23,10 @@
         "mcp-server-starrocks"
       ],
       "env": {
-        "STARROCKS_HOST": "localhost",
-        "STARROCKS_PORT": "9030",
-        "STARROCKS_USER": "root",
-        "STARROCKS_PASSWORD": ""
+        "STARROCKS_HOST": "${user_config.STARROCKS_HOST}",
+        "STARROCKS_PORT": "${user_config.STARROCKS_PORT}",
+        "STARROCKS_USER": "${user_config.STARROCKS_USER}",
+        "STARROCKS_PASSWORD": "${user_config.STARROCKS_PASSWORD}"
       }
     }
   },

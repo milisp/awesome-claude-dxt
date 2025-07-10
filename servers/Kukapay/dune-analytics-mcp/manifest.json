@@ -25,7 +25,7 @@
         "main.py"
       ],
       "env": {
-        "DUNE_API_KEY": "${DUNE_API_KEY}"
+        "DUNE_API_KEY": "${user_config.DUNE_API_KEY}"
       }
     }
   },

@@ -25,7 +25,7 @@
         "bicscan-mcp"
       ],
       "env": {
-        "BICSCAN_API_KEY": "{BICSCAN_API_KEY}"
+        "BICSCAN_API_KEY": "${user_config.BICSCAN_API_KEY}"
       }
     }
   },

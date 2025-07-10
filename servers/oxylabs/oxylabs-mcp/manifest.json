@@ -23,8 +23,8 @@
         "oxylabs-mcp"
       ],
       "env": {
-        "OXYLABS_USERNAME": "YOUR_USERNAME_HERE",
-        "OXYLABS_PASSWORD": "YOUR_PASSWORD_HERE"
+        "OXYLABS_USERNAME": "${user_config.OXYLABS_USERNAME}",
+        "OXYLABS_PASSWORD": "${user_config.OXYLABS_PASSWORD}"
       }
     }
   },

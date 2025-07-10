@@ -25,10 +25,10 @@
         "x-mcp"
       ],
       "env": {
-        "TWITTER_API_KEY": "${TWITTER_API_KEY}",
-        "TWITTER_API_SECRET": "${TWITTER_API_SECRET}",
-        "TWITTER_ACCESS_TOKEN": "${TWITTER_ACCESS_TOKEN}",
-        "TWITTER_ACCESS_TOKEN_SECRET": "${TWITTER_ACCESS_TOKEN_SECRET}"
+        "TWITTER_API_KEY": "${user_config.TWITTER_API_KEY}",
+        "TWITTER_API_SECRET": "${user_config.TWITTER_API_SECRET}",
+        "TWITTER_ACCESS_TOKEN": "${user_config.TWITTER_ACCESS_TOKEN}",
+        "TWITTER_ACCESS_TOKEN_SECRET": "${user_config.TWITTER_ACCESS_TOKEN_SECRET}"
       }
     }
   },
@@ -114,7 +114,7 @@
     {
       "name": "Tweet",
       "description": "Example of sending a tweet through Claude chat.",
-      "text": "Tweet 'Just learned how to tweet through AI - mind blown! \ud83e\udd16\u2728'"
+      "text": "Tweet 'Just learned how to tweet through AI - mind blown! 🤖✨'"
     },
     {
       "name": "Create Thread",

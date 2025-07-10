@@ -23,8 +23,7 @@
         "--from",
         "llm-context",
         "lc-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

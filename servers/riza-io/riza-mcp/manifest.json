@@ -23,7 +23,7 @@
         "@riza-io/riza-mcp"
       ],
       "env": {
-        "RIZA_API_KEY": "your-api-key"
+        "RIZA_API_KEY": "${user_config.RIZA_API_KEY}"
       }
     }
   },

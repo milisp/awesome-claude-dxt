@@ -25,9 +25,9 @@
         "${INFLUXDB_ORG}"
       ],
       "env": {
-        "INFLUXDB_TOKEN": "your_token",
-        "INFLUXDB_URL": "http://localhost:8086",
-        "INFLUXDB_ORG": "your_org"
+        "INFLUXDB_TOKEN": "${user_config.INFLUXDB_TOKEN}",
+        "INFLUXDB_URL": "${user_config.INFLUXDB_URL}",
+        "INFLUXDB_ORG": "${user_config.INFLUXDB_ORG}"
       }
     }
   },

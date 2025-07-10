@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/whataboutyou-ai/eunomia-MCP-server",
         "orchestra_server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

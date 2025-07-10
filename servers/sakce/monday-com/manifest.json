@@ -23,8 +23,8 @@
         "mcp-server-monday"
       ],
       "env": {
-        "MONDAY_API_KEY": "${MONDAY_API_KEY}",
-        "MONDAY_WORKSPACE_NAME": "${MONDAY_WORKSPACE_NAME}"
+        "MONDAY_API_KEY": "${user_config.MONDAY_API_KEY}",
+        "MONDAY_WORKSPACE_NAME": "${user_config.MONDAY_WORKSPACE_NAME}"
       }
     }
   },

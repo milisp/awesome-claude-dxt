@@ -35,8 +35,7 @@
         "${DATABASE}",
         "--schema",
         "${SCHEMA}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

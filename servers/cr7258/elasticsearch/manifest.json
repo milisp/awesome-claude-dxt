@@ -23,9 +23,9 @@
         "elasticsearch-mcp-server"
       ],
       "env": {
-        "ELASTIC_HOST": "${ELASTIC_HOST}",
-        "ELASTIC_USERNAME": "${ELASTIC_USERNAME}",
-        "ELASTIC_PASSWORD": "${ELASTIC_PASSWORD}"
+        "ELASTIC_HOST": "${user_config.ELASTIC_HOST}",
+        "ELASTIC_USERNAME": "${user_config.ELASTIC_USERNAME}",
+        "ELASTIC_PASSWORD": "${user_config.ELASTIC_PASSWORD}"
       }
     }
   },

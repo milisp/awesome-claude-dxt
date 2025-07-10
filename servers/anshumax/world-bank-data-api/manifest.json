@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/anshumax/world_bank_mcp_server",
         "world_bank_mcp_server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

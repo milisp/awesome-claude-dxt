@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "kubernetes-mcp-server@latest"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

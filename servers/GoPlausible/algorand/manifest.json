@@ -25,14 +25,14 @@
         "algorand-mcp"
       ],
       "env": {
-        "NFD_API_KEY": "${NFD_API_KEY}",
-        "NFD_API_URL": "${NFD_API_URL}",
-        "ALGORAND_ALGOD": "${ALGORAND_ALGOD}",
-        "ALGORAND_TOKEN": "${ALGORAND_TOKEN}",
-        "ALGORAND_INDEXER": "${ALGORAND_INDEXER}",
-        "ALGORAND_INDEXER_API": "${ALGORAND_INDEXER_API}",
-        "ALGORAND_INDEXER_PORT": "${ALGORAND_INDEXER_PORT}",
-        "ALGORAND_NETWORK": "${ALGORAND_NETWORK}"
+        "NFD_API_KEY": "${user_config.NFD_API_KEY}",
+        "NFD_API_URL": "${user_config.NFD_API_URL}",
+        "ALGORAND_ALGOD": "${user_config.ALGORAND_ALGOD}",
+        "ALGORAND_TOKEN": "${user_config.ALGORAND_TOKEN}",
+        "ALGORAND_INDEXER": "${user_config.ALGORAND_INDEXER}",
+        "ALGORAND_INDEXER_API": "${user_config.ALGORAND_INDEXER_API}",
+        "ALGORAND_INDEXER_PORT": "${user_config.ALGORAND_INDEXER_PORT}",
+        "ALGORAND_NETWORK": "${user_config.ALGORAND_NETWORK}"
       }
     }
   },

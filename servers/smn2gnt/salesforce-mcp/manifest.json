@@ -25,9 +25,9 @@
         "salesforce"
       ],
       "env": {
-        "SALESFORCE_USERNAME": "${SALESFORCE_USERNAME}",
-        "SALESFORCE_PASSWORD": "${SALESFORCE_PASSWORD}",
-        "SALESFORCE_SECURITY_TOKEN": "${SALESFORCE_SECURITY_TOKEN}"
+        "SALESFORCE_USERNAME": "${user_config.SALESFORCE_USERNAME}",
+        "SALESFORCE_PASSWORD": "${user_config.SALESFORCE_PASSWORD}",
+        "SALESFORCE_SECURITY_TOKEN": "${user_config.SALESFORCE_SECURITY_TOKEN}"
       }
     }
   },

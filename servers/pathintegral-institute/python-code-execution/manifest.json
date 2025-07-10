@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/pathintegral-institute/mcp.science@main#subdirectory=servers/python-code-execution",
         "mcp-python-code-execution"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

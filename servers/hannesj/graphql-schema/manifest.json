@@ -23,8 +23,7 @@
         "-y",
         "mcp-graphql-schema",
         "/ABSOLUTE/PATH/TO/schema.graphqls"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

@@ -23,13 +23,13 @@
         "@inoyu/mcp-unomi-server"
       ],
       "env": {
-        "UNOMI_BASE_URL": "${UNOMI_BASE_URL}",
-        "UNOMI_USERNAME": "${UNOMI_USERNAME}",
-        "UNOMI_PASSWORD": "${UNOMI_PASSWORD}",
-        "UNOMI_PROFILE_ID": "${UNOMI_PROFILE_ID}",
-        "UNOMI_KEY": "${UNOMI_KEY}",
-        "UNOMI_EMAIL": "${UNOMI_EMAIL}",
-        "UNOMI_SOURCE_ID": "${UNOMI_SOURCE_ID}"
+        "UNOMI_BASE_URL": "${user_config.UNOMI_BASE_URL}",
+        "UNOMI_USERNAME": "${user_config.UNOMI_USERNAME}",
+        "UNOMI_PASSWORD": "${user_config.UNOMI_PASSWORD}",
+        "UNOMI_PROFILE_ID": "${user_config.UNOMI_PROFILE_ID}",
+        "UNOMI_KEY": "${user_config.UNOMI_KEY}",
+        "UNOMI_EMAIL": "${user_config.UNOMI_EMAIL}",
+        "UNOMI_SOURCE_ID": "${user_config.UNOMI_SOURCE_ID}"
       }
     }
   },

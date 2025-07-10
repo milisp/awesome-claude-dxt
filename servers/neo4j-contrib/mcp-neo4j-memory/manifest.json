@@ -27,8 +27,7 @@
         "${NEO4J_USERNAME}",
         "--password",
         "${NEO4J_PASSWORD}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@liuyoshio/mcp-compass"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

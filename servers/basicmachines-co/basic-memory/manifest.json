@@ -22,8 +22,7 @@
       "args": [
         "basic-memory",
         "mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

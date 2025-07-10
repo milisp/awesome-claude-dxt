@@ -24,15 +24,15 @@
         "@lishenxydlgzs/aws-athena-mcp"
       ],
       "env": {
-        "OUTPUT_S3_PATH": "${OUTPUT_S3_PATH}",
-        "AWS_REGION": "${AWS_REGION}",
-        "AWS_PROFILE": "${AWS_PROFILE}",
-        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
-        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
-        "AWS_SESSION_TOKEN": "${AWS_SESSION_TOKEN}",
-        "QUERY_TIMEOUT_MS": "${QUERY_TIMEOUT_MS}",
-        "MAX_RETRIES": "${MAX_RETRIES}",
-        "RETRY_DELAY_MS": "${RETRY_DELAY_MS}"
+        "OUTPUT_S3_PATH": "${user_config.OUTPUT_S3_PATH}",
+        "AWS_REGION": "${user_config.AWS_REGION}",
+        "AWS_PROFILE": "${user_config.AWS_PROFILE}",
+        "AWS_ACCESS_KEY_ID": "${user_config.AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${user_config.AWS_SECRET_ACCESS_KEY}",
+        "AWS_SESSION_TOKEN": "${user_config.AWS_SESSION_TOKEN}",
+        "QUERY_TIMEOUT_MS": "${user_config.QUERY_TIMEOUT_MS}",
+        "MAX_RETRIES": "${user_config.MAX_RETRIES}",
+        "RETRY_DELAY_MS": "${user_config.RETRY_DELAY_MS}"
       }
     }
   },

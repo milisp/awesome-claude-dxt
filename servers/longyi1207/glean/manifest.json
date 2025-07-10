@@ -25,8 +25,8 @@
         "https://github.com/longyi1207/glean-mcp-server"
       ],
       "env": {
-        "GLEAN_API_KEY": "YOUR_API_KEY_HERE",
-        "GLEAN_DOMAIN": "YOUR_DOMAIN_HERE"
+        "GLEAN_API_KEY": "${user_config.GLEAN_API_KEY}",
+        "GLEAN_DOMAIN": "${user_config.GLEAN_DOMAIN}"
       }
     }
   },

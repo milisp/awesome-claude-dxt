@@ -23,7 +23,7 @@
         "@bankless/onchain-mcp"
       ],
       "env": {
-        "BANKLESS_API_TOKEN": "your_api_token_here"
+        "BANKLESS_API_TOKEN": "${user_config.BANKLESS_API_TOKEN}"
       }
     }
   },

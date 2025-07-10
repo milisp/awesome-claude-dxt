@@ -23,11 +23,11 @@
         "mysql_mcp_server"
       ],
       "env": {
-        "MYSQL_HOST": "${MYSQL_HOST}",
-        "MYSQL_PORT": "${MYSQL_PORT}",
-        "MYSQL_USER": "${MYSQL_USER}",
-        "MYSQL_PASSWORD": "${MYSQL_PASSWORD}",
-        "MYSQL_DATABASE": "${MYSQL_DATABASE}"
+        "MYSQL_HOST": "${user_config.MYSQL_HOST}",
+        "MYSQL_PORT": "${user_config.MYSQL_PORT}",
+        "MYSQL_USER": "${user_config.MYSQL_USER}",
+        "MYSQL_PASSWORD": "${user_config.MYSQL_PASSWORD}",
+        "MYSQL_DATABASE": "${user_config.MYSQL_DATABASE}"
       }
     }
   },

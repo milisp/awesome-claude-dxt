@@ -24,7 +24,7 @@
         "search1api-mcp"
       ],
       "env": {
-        "SEARCH1API_KEY": "YOUR_SEARCH1API_KEY"
+        "SEARCH1API_KEY": "${user_config.SEARCH1API_KEY}"
       }
     }
   },

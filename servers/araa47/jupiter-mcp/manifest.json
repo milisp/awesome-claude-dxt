@@ -25,10 +25,10 @@
         "jupiter-mcp"
       ],
       "env": {
-        "SOLANA_RPC_URL": "https://api.mainnet-beta.solana.com",
-        "PRIVATE_KEY": "${PRIVATE_KEY}",
-        "SOLANA_NETWORK": "mainnet-beta",
-        "REQUEST_TIMEOUT": "30"
+        "SOLANA_RPC_URL": "${user_config.SOLANA_RPC_URL}",
+        "PRIVATE_KEY": "${user_config.PRIVATE_KEY}",
+        "SOLANA_NETWORK": "${user_config.SOLANA_NETWORK}",
+        "REQUEST_TIMEOUT": "${user_config.REQUEST_TIMEOUT}"
       }
     }
   },
@@ -52,7 +52,11 @@
             "description": "The amount to swap (in token units)"
           }
         },
-        "required": ["input_mint", "output_mint", "amount"]
+        "required": [
+          "input_mint",
+          "output_mint",
+          "amount"
+        ]
       }
     },
     {
@@ -70,7 +74,10 @@
             "description": "The request ID from the quote"
           }
         },
-        "required": ["transaction", "request_id"]
+        "required": [
+          "transaction",
+          "request_id"
+        ]
       }
     },
     {
@@ -100,7 +107,9 @@
             "description": "Array of token mint addresses to check"
           }
         },
-        "required": ["mints"]
+        "required": [
+          "mints"
+        ]
       }
     },
     {
@@ -114,7 +123,9 @@
             "description": "The search query (token name or symbol)"
           }
         },
-        "required": ["query"]
+        "required": [
+          "query"
+        ]
       }
     },
     {
@@ -148,7 +159,12 @@
             "description": "Expiration timestamp (optional)"
           }
         },
-        "required": ["input_mint", "output_mint", "making_amount", "taking_amount"]
+        "required": [
+          "input_mint",
+          "output_mint",
+          "making_amount",
+          "taking_amount"
+        ]
       }
     },
     {
@@ -166,7 +182,10 @@
             "description": "The request ID from the limit order creation"
           }
         },
-        "required": ["transaction", "request_id"]
+        "required": [
+          "transaction",
+          "request_id"
+        ]
       }
     },
     {
@@ -180,7 +199,9 @@
             "description": "The order ID to cancel"
           }
         },
-        "required": ["order"]
+        "required": [
+          "order"
+        ]
       }
     },
     {
@@ -207,7 +228,10 @@
         "properties": {
           "order_status": {
             "type": "string",
-            "enum": ["active", "history"],
+            "enum": [
+              "active",
+              "history"
+            ],
             "description": "Status of orders to retrieve"
           },
           "wallet_address": {
@@ -227,7 +251,9 @@
             "description": "Page number for pagination (optional)"
           }
         },
-        "required": ["order_status"]
+        "required": [
+          "order_status"
+        ]
       }
     }
   ],
@@ -299,4 +325,4 @@
       "default": "30"
     }
   }
-} 
+}

@@ -25,9 +25,9 @@
         "src/mcp_server_any_openapi/server.py"
       ],
       "env": {
-        "OPENAPI_JSON_DOCS_URL": "${OPENAPI_JSON_DOCS_URL}",
-        "API_REQUEST_BASE_URL": "${API_REQUEST_BASE_URL}",
-        "MCP_API_PREFIX": "${MCP_API_PREFIX}"
+        "OPENAPI_JSON_DOCS_URL": "${user_config.OPENAPI_JSON_DOCS_URL}",
+        "API_REQUEST_BASE_URL": "${user_config.API_REQUEST_BASE_URL}",
+        "MCP_API_PREFIX": "${user_config.MCP_API_PREFIX}"
       }
     }
   },

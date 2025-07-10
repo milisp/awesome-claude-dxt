@@ -24,8 +24,8 @@
         "https://github.com/bazinga012/mcp_code_executor"
       ],
       "env": {
-        "CODE_STORAGE_DIR": "${CODE_STORAGE_DIR}",
-        "CONDA_ENV_NAME": "${CONDA_ENV_NAME}"
+        "CODE_STORAGE_DIR": "${user_config.CODE_STORAGE_DIR}",
+        "CONDA_ENV_NAME": "${user_config.CONDA_ENV_NAME}"
       }
     }
   },

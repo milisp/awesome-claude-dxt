@@ -24,7 +24,7 @@
         "ns-mcp-server"
       ],
       "env": {
-        "NS_API_KEY": "${NS_API_KEY}"
+        "NS_API_KEY": "${user_config.NS_API_KEY}"
       }
     }
   },

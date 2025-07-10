@@ -23,7 +23,7 @@
         "chronulus-mcp"
       ],
       "env": {
-        "CHRONULUS_API_KEY": "<YOUR_CHRONULUS_API_KEY>"
+        "CHRONULUS_API_KEY": "${user_config.CHRONULUS_API_KEY}"
       }
     }
   },

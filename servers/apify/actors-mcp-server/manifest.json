@@ -24,7 +24,7 @@
         "@apify/actors-mcp-server"
       ],
       "env": {
-        "APIFY_TOKEN": "your-apify-token"
+        "APIFY_TOKEN": "${user_config.APIFY_TOKEN}"
       }
     }
   },

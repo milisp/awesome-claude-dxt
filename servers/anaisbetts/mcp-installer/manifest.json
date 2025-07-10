@@ -21,8 +21,7 @@
       "command": "npx",
       "args": [
         "@anaisbetts/mcp-installer"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

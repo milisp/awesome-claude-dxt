@@ -23,9 +23,9 @@
         "mcp-server-apache-airflow"
       ],
       "env": {
-        "AIRFLOW_HOST": "${AIRFLOW_HOST}",
-        "AIRFLOW_USERNAME": "${AIRFLOW_USERNAME}",
-        "AIRFLOW_PASSWORD": "${AIRFLOW_PASSWORD}"
+        "AIRFLOW_HOST": "${user_config.AIRFLOW_HOST}",
+        "AIRFLOW_USERNAME": "${user_config.AIRFLOW_USERNAME}",
+        "AIRFLOW_PASSWORD": "${user_config.AIRFLOW_PASSWORD}"
       }
     }
   },

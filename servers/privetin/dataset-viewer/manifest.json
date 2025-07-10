@@ -24,8 +24,7 @@
         "--from",
         "git+https://github.com/privetin/dataset-viewer",
         "dataset-viewer"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

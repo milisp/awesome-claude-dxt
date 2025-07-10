@@ -24,8 +24,8 @@
         "https://github.com/kiwamizamurai/mcp-kibela-server"
       ],
       "env": {
-        "KIBELA_TEAM": "${KIBELA_TEAM}",
-        "KIBELA_TOKEN": "${KIBELA_TOKEN}"
+        "KIBELA_TEAM": "${user_config.KIBELA_TEAM}",
+        "KIBELA_TOKEN": "${user_config.KIBELA_TOKEN}"
       }
     }
   },

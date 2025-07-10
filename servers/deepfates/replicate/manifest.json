@@ -23,7 +23,7 @@
         "mcp-replicate"
       ],
       "env": {
-        "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
+        "REPLICATE_API_TOKEN": "${user_config.REPLICATE_API_TOKEN}"
       }
     }
   },

@@ -24,9 +24,9 @@
         "graphlit-mcp-server"
       ],
       "env": {
-        "GRAPHLIT_ORGANIZATION_ID": "${input:organization_id}",
-        "GRAPHLIT_ENVIRONMENT_ID": "${input:environment_id}",
-        "GRAPHLIT_JWT_SECRET": "${input:jwt_secret}"
+        "GRAPHLIT_ORGANIZATION_ID": "${user_config.GRAPHLIT_ORGANIZATION_ID}",
+        "GRAPHLIT_ENVIRONMENT_ID": "${user_config.GRAPHLIT_ENVIRONMENT_ID}",
+        "GRAPHLIT_JWT_SECRET": "${user_config.GRAPHLIT_JWT_SECRET}"
       }
     }
   },

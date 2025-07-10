@@ -22,8 +22,7 @@
       "args": [
         "@cloudflare/mcp-server-cloudflare",
         "init"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

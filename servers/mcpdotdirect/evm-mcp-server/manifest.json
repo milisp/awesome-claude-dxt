@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@mcpdotdirect/evm-mcp-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

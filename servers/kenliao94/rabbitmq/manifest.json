@@ -33,8 +33,7 @@
         "${RABBITMQ_PASSWORD}",
         "--use-tls",
         "${USE_TLS}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

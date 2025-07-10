@@ -30,8 +30,7 @@
         "http",
         "--api-key",
         "${API_KEY}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

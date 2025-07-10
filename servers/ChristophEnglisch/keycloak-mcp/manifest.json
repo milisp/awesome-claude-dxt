@@ -24,9 +24,9 @@
         "keycloak-model-context-protocol"
       ],
       "env": {
-        "KEYCLOAK_URL": "${KEYCLOAK_URL}",
-        "KEYCLOAK_ADMIN": "${KEYCLOAK_ADMIN}",
-        "KEYCLOAK_ADMIN_PASSWORD": "${KEYCLOAK_ADMIN_PASSWORD}"
+        "KEYCLOAK_URL": "${user_config.KEYCLOAK_URL}",
+        "KEYCLOAK_ADMIN": "${user_config.KEYCLOAK_ADMIN}",
+        "KEYCLOAK_ADMIN_PASSWORD": "${user_config.KEYCLOAK_ADMIN_PASSWORD}"
       }
     }
   },

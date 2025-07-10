@@ -19,13 +19,9 @@
     "entry_point": "",
     "mcp_config": {
       "command": "npx",
-      "args": [
-        "-y",
-        "agentrpc",
-        "mcp"
-      ],
+      "args": ["-y", "agentrpc", "mcp"],
       "env": {
-        "AGENTRPC_API_SECRET": "<YOUR_API_SECRET>"
+        "AGENTRPC_API_SECRET": "${user_config.AGENTRPC_API_SECRET}"
       }
     }
   },
@@ -56,7 +52,7 @@
     "AGENTRPC_API_SECRET": {
       "type": "string",
       "description": "API secret for authentication",
-      "sensitive": false,
+      "sensitive": true,
       "title": "AGENTRPC_API_SECRET",
       "required": true
     }

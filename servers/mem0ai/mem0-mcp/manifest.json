@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/mem0ai/mem0-mcp",
         "main.py"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

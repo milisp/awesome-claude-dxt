@@ -27,9 +27,9 @@
         "${-s}"
       ],
       "env": {
-        "RAMP_CLIENT_ID": "${RAMP_CLIENT_ID}",
-        "RAMP_CLIENT_SECRET": "${RAMP_CLIENT_SECRET}",
-        "RAMP_ENV": "${RAMP_ENV}"
+        "RAMP_CLIENT_ID": "${user_config.RAMP_CLIENT_ID}",
+        "RAMP_CLIENT_SECRET": "${user_config.RAMP_CLIENT_SECRET}",
+        "RAMP_ENV": "${user_config.RAMP_ENV}"
       }
     }
   },

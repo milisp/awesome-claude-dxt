@@ -25,7 +25,7 @@
         "mesh-tool-server"
       ],
       "env": {
-        "HEURIST_API_KEY": "${HEURIST_API_KEY}"
+        "HEURIST_API_KEY": "${user_config.HEURIST_API_KEY}"
       }
     }
   },

@@ -23,8 +23,7 @@
       "args": [
         "-y",
         "https://github.com/Coding-Solo/godot-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

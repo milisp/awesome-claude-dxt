@@ -23,8 +23,7 @@
         "-y",
         "@modelcontextprotocol/server-postgres",
         "postgresql://localhost/mydb"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

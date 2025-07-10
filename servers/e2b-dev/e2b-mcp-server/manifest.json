@@ -23,7 +23,7 @@
         "e2b-mcp-server"
       ],
       "env": {
-        "E2B_API_KEY": "${e2bApiKey}"
+        "E2B_API_KEY": "${user_config.E2B_API_KEY}"
       }
     }
   },

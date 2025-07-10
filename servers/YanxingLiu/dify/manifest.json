@@ -25,7 +25,7 @@
         "dify_mcp_server"
       ],
       "env": {
-        "CONFIG_PATH": "${CONFIG_PATH}"
+        "CONFIG_PATH": "${user_config.CONFIG_PATH}"
       }
     }
   },

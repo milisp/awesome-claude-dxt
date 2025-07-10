@@ -24,7 +24,7 @@
         "@ivotoby/contentful-management-mcp-server"
       ],
       "env": {
-        "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN": "${CONTENTFUL_MANAGEMENT_ACCESS_TOKEN}"
+        "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN": "${user_config.CONTENTFUL_MANAGEMENT_ACCESS_TOKEN}"
       }
     }
   },

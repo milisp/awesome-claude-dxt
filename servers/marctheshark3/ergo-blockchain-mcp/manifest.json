@@ -23,11 +23,11 @@
         "ergo-mcp"
       ],
       "env": {
-        "SERVER_HOST": "<YOUR_HOST>",
-        "SERVER_PORT": "<YOUR_PORT>",
-        "SERVER_WORKERS": "<YOUR_WORKERS>",
-        "ERGO_NODE_API": "<YOUR_ERGO_NODE_API>",
-        "ERGO_NODE_API_KEY": "<YOUR_ERGO_NODE_API_KEY>"
+        "SERVER_HOST": "${user_config.SERVER_HOST}",
+        "SERVER_PORT": "${user_config.SERVER_PORT}",
+        "SERVER_WORKERS": "${user_config.SERVER_WORKERS}",
+        "ERGO_NODE_API": "${user_config.ERGO_NODE_API}",
+        "ERGO_NODE_API_KEY": "${user_config.ERGO_NODE_API_KEY}"
       }
     }
   },

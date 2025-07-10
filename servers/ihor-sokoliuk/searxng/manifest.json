@@ -24,7 +24,7 @@
         "https://github.com/ihor-sokoliuk/mcp-searxng"
       ],
       "env": {
-        "SEARXNG_URL": "${SEARXNG_URL}"
+        "SEARXNG_URL": "${user_config.SEARXNG_URL}"
       }
     }
   },

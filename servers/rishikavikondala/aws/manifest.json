@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/rishikavikondala/mcp-server-aws",
         "mcp-server-aws"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

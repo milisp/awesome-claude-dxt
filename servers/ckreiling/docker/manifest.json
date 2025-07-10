@@ -21,8 +21,7 @@
         "--from",
         "git+https://github.com/ckreiling/mcp-server-docker",
         "mcp-server-docker"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

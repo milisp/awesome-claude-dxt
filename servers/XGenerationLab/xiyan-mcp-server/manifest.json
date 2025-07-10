@@ -24,7 +24,7 @@
         "xiyan_mcp_server"
       ],
       "env": {
-        "YML": "${YML}"
+        "YML": "${user_config.YML}"
       }
     }
   },

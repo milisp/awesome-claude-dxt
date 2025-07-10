@@ -24,8 +24,7 @@
         "git+https://github.com/burningion/video-editing-mcp",
         "video-editor-mcp",
         "${YOURAPIKEY}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

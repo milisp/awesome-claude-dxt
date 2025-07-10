@@ -25,8 +25,8 @@
         "cfbd-mcp-server"
       ],
       "env": {
-        "CFB_API_KEY": "${CFB_API_KEY}",
-        "PATH": "${PATH}"
+        "CFB_API_KEY": "${user_config.CFB_API_KEY}",
+        "PATH": "${user_config.PATH}"
       }
     }
   },

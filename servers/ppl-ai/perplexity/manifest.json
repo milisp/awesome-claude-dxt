@@ -24,7 +24,7 @@
         "server-perplexity-ask"
       ],
       "env": {
-        "PERPLEXITY_API_KEY": "YOUR_API_KEY_HERE"
+        "PERPLEXITY_API_KEY": "${user_config.PERPLEXITY_API_KEY}"
       }
     }
   },

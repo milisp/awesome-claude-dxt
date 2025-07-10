@@ -24,7 +24,7 @@
         "https://github.com/v-3/notion-server"
       ],
       "env": {
-        "NOTION_API_KEY": "${NOTION_API_KEY}"
+        "NOTION_API_KEY": "${user_config.NOTION_API_KEY}"
       }
     }
   },

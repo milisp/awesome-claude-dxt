@@ -24,9 +24,9 @@
         "@ashdev/discourse-mcp-server"
       ],
       "env": {
-        "DISCOURSE_API_URL": "${DISCOURSE_API_URL}",
-        "DISCOURSE_API_KEY": "${DISCOURSE_API_KEY}",
-        "DISCOURSE_API_USERNAME": "${DISCOURSE_API_USERNAME}"
+        "DISCOURSE_API_URL": "${user_config.DISCOURSE_API_URL}",
+        "DISCOURSE_API_KEY": "${user_config.DISCOURSE_API_KEY}",
+        "DISCOURSE_API_USERNAME": "${user_config.DISCOURSE_API_USERNAME}"
       }
     }
   },

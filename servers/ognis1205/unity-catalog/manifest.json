@@ -29,8 +29,7 @@
         "${UC_CATALOG}",
         "--uc_schema",
         "${UC_SCHEMA}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

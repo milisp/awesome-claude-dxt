@@ -24,10 +24,10 @@
         "https://github.com/ravenwits/mcp-server-arangodb"
       ],
       "env": {
-        "ARANGO_URL": "${ARANGO_URL}",
-        "ARANGO_DATABASE": "${ARANGO_DATABASE}",
-        "ARANGO_USERNAME": "${ARANGO_USERNAME}",
-        "ARANGO_PASSWORD": "${ARANGO_PASSWORD}"
+        "ARANGO_URL": "${user_config.ARANGO_URL}",
+        "ARANGO_DATABASE": "${user_config.ARANGO_DATABASE}",
+        "ARANGO_USERNAME": "${user_config.ARANGO_USERNAME}",
+        "ARANGO_PASSWORD": "${user_config.ARANGO_PASSWORD}"
       }
     }
   },

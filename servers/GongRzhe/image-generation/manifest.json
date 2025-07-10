@@ -23,10 +23,10 @@
         "@gongrzhe/image-gen-server"
       ],
       "env": {
-        "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}",
-        "MODEL": "${MODEL}",
-        "your-replicate-api-token": "${your_replicate_api_token}",
-        "alternative-model-name": "${alternative_model_name}"
+        "REPLICATE_API_TOKEN": "${user_config.REPLICATE_API_TOKEN}",
+        "MODEL": "${user_config.MODEL}",
+        "your-replicate-api-token": "${user_config.your-replicate-api-token}",
+        "alternative-model-name": "${user_config.alternative-model-name}"
       }
     }
   },

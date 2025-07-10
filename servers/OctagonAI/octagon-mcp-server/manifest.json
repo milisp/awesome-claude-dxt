@@ -24,7 +24,7 @@
         "octagon-mcp"
       ],
       "env": {
-        "OCTAGON_API_KEY": "your_octagon_api_key"
+        "OCTAGON_API_KEY": "${user_config.OCTAGON_API_KEY}"
       }
     }
   },

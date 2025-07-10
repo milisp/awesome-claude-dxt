@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@bharathvaj/whois-mcp@latest"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

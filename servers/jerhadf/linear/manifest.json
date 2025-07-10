@@ -24,7 +24,7 @@
         "linear-mcp-server"
       ],
       "env": {
-        "LINEAR_API_KEY": "${LINEAR_API_KEY}"
+        "LINEAR_API_KEY": "${user_config.LINEAR_API_KEY}"
       }
     }
   },

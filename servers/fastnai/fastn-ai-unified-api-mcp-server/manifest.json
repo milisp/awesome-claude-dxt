@@ -27,8 +27,7 @@
         "${YOUR_API_KEY}",
         "--space_id",
         "${YOUR_WORKSPACE_ID}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

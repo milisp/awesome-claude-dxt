@@ -24,8 +24,8 @@
         "@magnetai/free-usdc-transfer"
       ],
       "env": {
-        "COINBASE_CDP_API_KEY_NAME": "${COINBASE_CDP_API_KEY_NAME}",
-        "COINBASE_CDP_PRIVATE_KEY": "${COINBASE_CDP_PRIVATE_KEY}"
+        "COINBASE_CDP_API_KEY_NAME": "${user_config.COINBASE_CDP_API_KEY_NAME}",
+        "COINBASE_CDP_PRIVATE_KEY": "${user_config.COINBASE_CDP_PRIVATE_KEY}"
       }
     }
   },

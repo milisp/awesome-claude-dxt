@@ -27,8 +27,7 @@
         "jsr:@omedia/mcp-server-drupal@${VERSION}",
         "--drupal-url",
         "${DRUPAL_BASE_URL}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

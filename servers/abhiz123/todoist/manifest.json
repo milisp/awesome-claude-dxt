@@ -24,7 +24,7 @@
         "@abhiz123/todoist-mcp-server"
       ],
       "env": {
-        "TODOIST_API_TOKEN": "${TODOIST_API_TOKEN}"
+        "TODOIST_API_TOKEN": "${user_config.TODOIST_API_TOKEN}"
       }
     }
   },

@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/asusevski/opendota-mcp-server.git",
         "src/opendota_server/server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

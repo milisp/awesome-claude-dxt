@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/zilliztech/mcp-server-milvus",
         "mcp-server-milvus"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

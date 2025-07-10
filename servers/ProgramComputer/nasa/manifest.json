@@ -24,7 +24,7 @@
         "@programcomputer/nasa-mcp-server"
       ],
       "env": {
-        "NASA_API_KEY": "${NASA_API_KEY}"
+        "NASA_API_KEY": "${user_config.NASA_API_KEY}"
       }
     }
   },

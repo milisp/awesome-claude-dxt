@@ -23,11 +23,11 @@
         "mssql_mcp_server"
       ],
       "env": {
-        "MSSQL_DRIVER": "${MSSQL_DRIVER}",
-        "MSSQL_HOST": "${MSSQL_HOST}",
-        "MSSQL_USER": "${MSSQL_USER}",
-        "MSSQL_PASSWORD": "${MSSQL_PASSWORD}",
-        "MSSQL_DATABASE": "${MSSQL_DATABASE}"
+        "MSSQL_DRIVER": "${user_config.MSSQL_DRIVER}",
+        "MSSQL_HOST": "${user_config.MSSQL_HOST}",
+        "MSSQL_USER": "${user_config.MSSQL_USER}",
+        "MSSQL_PASSWORD": "${user_config.MSSQL_PASSWORD}",
+        "MSSQL_DATABASE": "${user_config.MSSQL_DATABASE}"
       }
     }
   },

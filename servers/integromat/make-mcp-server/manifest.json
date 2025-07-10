@@ -24,9 +24,9 @@
         "@makehq/mcp-server"
       ],
       "env": {
-        "MAKE_API_KEY": "<your-api-key>",
-        "MAKE_ZONE": "<your-zone>",
-        "MAKE_TEAM": "<your-team-id>"
+        "MAKE_API_KEY": "${user_config.MAKE_API_KEY}",
+        "MAKE_ZONE": "${user_config.MAKE_ZONE}",
+        "MAKE_TEAM": "${user_config.MAKE_TEAM}"
       }
     }
   },

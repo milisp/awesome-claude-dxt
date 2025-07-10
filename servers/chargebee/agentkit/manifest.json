@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@chargebee/mcp@latest"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

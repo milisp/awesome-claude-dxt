@@ -21,8 +21,7 @@
       "command": "uvx",
       "args": [
         "mcp-rquest"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

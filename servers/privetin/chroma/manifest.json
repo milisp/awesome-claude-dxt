@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/privetin/chroma",
         "chroma"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -23,7 +23,7 @@
         "mcp-server-esignatures"
       ],
       "env": {
-        "ESIGNATURES_SECRET_TOKEN": "your-esignatures-api-secret-token"
+        "ESIGNATURES_SECRET_TOKEN": "${user_config.ESIGNATURES_SECRET_TOKEN}"
       }
     }
   },

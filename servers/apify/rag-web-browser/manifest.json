@@ -23,7 +23,7 @@
         "@apify/mcp-server-rag-web-browser"
       ],
       "env": {
-        "APIFY_TOKEN": "${APIFY_TOKEN}"
+        "APIFY_TOKEN": "${user_config.APIFY_TOKEN}"
       }
     }
   },

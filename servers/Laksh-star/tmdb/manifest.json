@@ -24,7 +24,7 @@
         "https://github.com/Laksh-star/mcp-server-tmdb"
       ],
       "env": {
-        "TMDB_API_KEY": "${TMDB_API_KEY}"
+        "TMDB_API_KEY": "${user_config.TMDB_API_KEY}"
       }
     }
   },

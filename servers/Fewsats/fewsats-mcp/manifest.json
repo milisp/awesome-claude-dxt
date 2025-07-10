@@ -23,7 +23,7 @@
         "fewsats-mcp"
       ],
       "env": {
-        "FEWSATS_API_KEY": "YOUR_FEWSATS_API_KEY"
+        "FEWSATS_API_KEY": "${user_config.FEWSATS_API_KEY}"
       }
     }
   },

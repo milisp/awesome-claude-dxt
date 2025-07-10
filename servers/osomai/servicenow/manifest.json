@@ -25,10 +25,10 @@
         "servicenow-mcp"
       ],
       "env": {
-        "SERVICENOW_INSTANCE_URL": "${SERVICENOW_INSTANCE_URL}",
-        "SERVICENOW_USERNAME": "${SERVICENOW_USERNAME}",
-        "SERVICENOW_PASSWORD": "${SERVICENOW_PASSWORD}",
-        "SERVICENOW_AUTH_TYPE": "${SERVICENOW_AUTH_TYPE}"
+        "SERVICENOW_INSTANCE_URL": "${user_config.SERVICENOW_INSTANCE_URL}",
+        "SERVICENOW_USERNAME": "${user_config.SERVICENOW_USERNAME}",
+        "SERVICENOW_PASSWORD": "${user_config.SERVICENOW_PASSWORD}",
+        "SERVICENOW_AUTH_TYPE": "${user_config.SERVICENOW_AUTH_TYPE}"
       }
     }
   },

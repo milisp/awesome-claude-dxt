@@ -24,7 +24,7 @@
         "deepseek-mcp-server"
       ],
       "env": {
-        "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}"
+        "DEEPSEEK_API_KEY": "${user_config.DEEPSEEK_API_KEY}"
       }
     }
   },

@@ -3,7 +3,7 @@
   "name": "apimatic-validator-mcp",
   "display_name": "APIMatic Validator MCP Server",
   "version": "1.0.0",
-  "description": "This repository provides a Model Context Protocol (MCP) Server for validating OpenAPI specifications using [APIMatic](https://www.apimatic.io/). The server processes OpenAPI files and returns validation summaries by leveraging APIMatic\u2019s API.",
+  "description": "This repository provides a Model Context Protocol (MCP) Server for validating OpenAPI specifications using [APIMatic](https://www.apimatic.io/). The server processes OpenAPI files and returns validation summaries by leveraging APIMatic’s API.",
   "long_description": "",
   "author": {
     "name": "apimatic"
@@ -23,7 +23,7 @@
         "build/index.js"
       ],
       "env": {
-        "APIMATIC_API_KEY": "<Add your APIMatic token here>"
+        "APIMATIC_API_KEY": "${user_config.APIMATIC_API_KEY}"
       }
     }
   },

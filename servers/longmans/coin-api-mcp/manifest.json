@@ -25,7 +25,7 @@
         "coin-api"
       ],
       "env": {
-        "COINMARKETCAP_API_KEY": "${COINMARKETCAP_API_KEY}"
+        "COINMARKETCAP_API_KEY": "${user_config.COINMARKETCAP_API_KEY}"
       }
     }
   },
@@ -221,7 +221,7 @@
           },
           "convert_id": {
             "type": "string",
-            "description": "Optionally calculate market quotes by CoinMarketCap ID instead of symbol. This option is identical to\u00a0convert\u00a0outside of ID format."
+            "description": "Optionally calculate market quotes by CoinMarketCap ID instead of symbol. This option is identical to convert outside of ID format."
           },
           "aux": {
             "type": "string",

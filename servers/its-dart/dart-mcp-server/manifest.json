@@ -24,7 +24,7 @@
         "dart-mcp-server"
       ],
       "env": {
-        "DART_TOKEN": "dsa_..."
+        "DART_TOKEN": "${user_config.DART_TOKEN}"
       }
     }
   },

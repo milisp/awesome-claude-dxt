@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/isaacwasserman/mcp-vegalite-server",
         "mcp_server_vegalite"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -27,8 +27,7 @@
         "--jira-url=${JIRA_URL}",
         "--jira-username=${JIRA_USERNAME}",
         "--jira-token=${JIRA_TOKEN}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

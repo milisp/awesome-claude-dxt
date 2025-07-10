@@ -25,9 +25,9 @@
         "spotify-mcp"
       ],
       "env": {
-        "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
-        "SPOTIFY_CLIENT_SECRET": "${SPOTIFY_CLIENT_SECRET}",
-        "SPOTIFY_REDIRECT_URI": "${SPOTIFY_REDIRECT_URI}"
+        "SPOTIFY_CLIENT_ID": "${user_config.SPOTIFY_CLIENT_ID}",
+        "SPOTIFY_CLIENT_SECRET": "${user_config.SPOTIFY_CLIENT_SECRET}",
+        "SPOTIFY_REDIRECT_URI": "${user_config.SPOTIFY_REDIRECT_URI}"
       }
     }
   },

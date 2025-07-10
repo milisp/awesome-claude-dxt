@@ -23,8 +23,7 @@
         "-y",
         "mcp-mongo-server",
         "${MONGODB_URI}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

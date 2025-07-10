@@ -20,19 +20,18 @@
     "mcp_config": {
       "command": "uvx",
       "args": [
-        "mcp-server-mariadb",
+        "mcp_server_mariadb",
         "--host",
-        "${DB_HOST}",
+        "${user_config.DB_HOST}",
         "--port",
-        "${DB_PORT}",
+        "${user_config.DB_PORT}",
         "--user",
-        "${DB_USER}",
+        "${user_config.DB_USER}",
         "--password",
-        "${DB_PASSWORD}",
+        "${user_config.DB_PASSWORD}",
         "--database",
-        "${DB_NAME}"
-      ],
-      "env": {}
+        "${user_config.DB_NAME}"
+      ]
     }
   },
   "tools": [
@@ -47,9 +46,7 @@
             "description": "SQL query to execute"
           }
         },
-        "required": [
-          "query"
-        ]
+        "required": ["query"]
       }
     }
   ],
@@ -61,17 +58,14 @@
     }
   ],
   "tools_generated": true,
-  "keywords": [
-    "MariaDB",
-    "Data Retrieval",
-    "Databases"
-  ],
+  "keywords": ["MariaDB", "Data Retrieval", "Databases"],
   "license": "MIT",
   "user_config": {
     "DB_HOST": {
-      "type": "number",
+      "type": "string",
       "description": "The hostname of the MariaDB server to connect to.",
       "sensitive": false,
+      "default": "127.0.0.1",
       "title": "DB_HOST",
       "required": true
     },
@@ -79,11 +73,12 @@
       "type": "number",
       "description": "The port number on which the MariaDB server is listening.",
       "sensitive": false,
+      "default": "3306",
       "title": "DB_PORT",
       "required": true
     },
     "DB_USER": {
-      "type": "number",
+      "type": "string",
       "description": "The username to connect to the MariaDB database.",
       "sensitive": false,
       "title": "DB_USER",
@@ -92,7 +87,7 @@
     "DB_PASSWORD": {
       "type": "string",
       "description": "The password for the MariaDB user.",
-      "sensitive": false,
+      "sensitive": true,
       "title": "DB_PASSWORD",
       "required": true
     },
@@ -100,6 +95,7 @@
       "type": "string",
       "description": "The name of the database to connect to.",
       "sensitive": false,
+      "default": "test",
       "title": "DB_NAME",
       "required": true
     }

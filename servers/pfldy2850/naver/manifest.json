@@ -25,8 +25,8 @@
         "src/server.py"
       ],
       "env": {
-        "NAVER_CLIENT_ID": "${NAVER_CLIENT_ID}",
-        "NAVER_CLIENT_SECRET": "${NAVER_CLIENT_SECRET}"
+        "NAVER_CLIENT_ID": "${user_config.NAVER_CLIENT_ID}",
+        "NAVER_CLIENT_SECRET": "${user_config.NAVER_CLIENT_SECRET}"
       }
     }
   },

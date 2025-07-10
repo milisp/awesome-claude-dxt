@@ -28,14 +28,14 @@
         "mcp-clickhouse"
       ],
       "env": {
-        "CLICKHOUSE_HOST": "<clickhouse-host>",
-        "CLICKHOUSE_PORT": "<clickhouse-port>",
-        "CLICKHOUSE_USER": "<clickhouse-user>",
-        "CLICKHOUSE_PASSWORD": "<clickhouse-password>",
-        "CLICKHOUSE_SECURE": "true",
-        "CLICKHOUSE_VERIFY": "true",
-        "CLICKHOUSE_CONNECT_TIMEOUT": "30",
-        "CLICKHOUSE_SEND_RECEIVE_TIMEOUT": "30"
+        "CLICKHOUSE_HOST": "${user_config.CLICKHOUSE_HOST}",
+        "CLICKHOUSE_PORT": "${user_config.CLICKHOUSE_PORT}",
+        "CLICKHOUSE_USER": "${user_config.CLICKHOUSE_USER}",
+        "CLICKHOUSE_PASSWORD": "${user_config.CLICKHOUSE_PASSWORD}",
+        "CLICKHOUSE_SECURE": "${user_config.CLICKHOUSE_SECURE}",
+        "CLICKHOUSE_VERIFY": "${user_config.CLICKHOUSE_VERIFY}",
+        "CLICKHOUSE_CONNECT_TIMEOUT": "${user_config.CLICKHOUSE_CONNECT_TIMEOUT}",
+        "CLICKHOUSE_SEND_RECEIVE_TIMEOUT": "${user_config.CLICKHOUSE_SEND_RECEIVE_TIMEOUT}"
       }
     }
   },

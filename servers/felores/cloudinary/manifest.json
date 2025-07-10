@@ -23,9 +23,9 @@
         "@felores/cloudinary-mcp-server@latest"
       ],
       "env": {
-        "CLOUDINARY_CLOUD_NAME": "${CLOUDINARY_CLOUD_NAME}",
-        "CLOUDINARY_API_KEY": "${CLOUDINARY_API_KEY}",
-        "CLOUDINARY_API_SECRET": "${CLOUDINARY_API_SECRET}"
+        "CLOUDINARY_CLOUD_NAME": "${user_config.CLOUDINARY_CLOUD_NAME}",
+        "CLOUDINARY_API_KEY": "${user_config.CLOUDINARY_API_KEY}",
+        "CLOUDINARY_API_SECRET": "${user_config.CLOUDINARY_API_SECRET}"
       }
     }
   },

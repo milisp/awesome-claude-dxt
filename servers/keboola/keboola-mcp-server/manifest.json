@@ -27,8 +27,8 @@
         "${api-url}"
       ],
       "env": {
-        "KBC_STORAGE_TOKEN": "your-keboola-storage-token",
-        "KBC_WORKSPACE_USER": "your-workspace-user"
+        "KBC_STORAGE_TOKEN": "${user_config.KBC_STORAGE_TOKEN}",
+        "KBC_WORKSPACE_USER": "${user_config.KBC_WORKSPACE_USER}"
       }
     }
   },

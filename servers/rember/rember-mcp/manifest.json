@@ -23,8 +23,7 @@
         "-y",
         "@getrember/mcp",
         "--api-key=${api-key}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

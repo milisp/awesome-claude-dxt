@@ -24,8 +24,8 @@
         "deepseek-thinker-mcp"
       ],
       "env": {
-        "API_KEY": "${API_KEY}",
-        "BASE_URL": "${BASE_URL}"
+        "API_KEY": "${user_config.API_KEY}",
+        "BASE_URL": "${user_config.BASE_URL}"
       }
     }
   },

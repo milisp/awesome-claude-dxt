@@ -24,8 +24,7 @@
         "lingo.dev",
         "mcp",
         "${api-key}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

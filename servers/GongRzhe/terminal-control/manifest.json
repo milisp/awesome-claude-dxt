@@ -21,8 +21,7 @@
       "command": "uvx",
       "args": [
         "terminal-controller"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

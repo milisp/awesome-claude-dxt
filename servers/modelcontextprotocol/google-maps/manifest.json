@@ -24,7 +24,7 @@
         "@modelcontextprotocol/server-google-maps"
       ],
       "env": {
-        "GOOGLE_MAPS_API_KEY": "${GOOGLE_MAPS_API_KEY}"
+        "GOOGLE_MAPS_API_KEY": "${user_config.GOOGLE_MAPS_API_KEY}"
       }
     }
   },

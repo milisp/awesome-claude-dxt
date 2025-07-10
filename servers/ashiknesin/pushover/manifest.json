@@ -27,8 +27,7 @@
         "${YOUR_TOKEN}",
         "--user",
         "${YOUR_USER}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -25,11 +25,11 @@
         "oceanbase_mcp_server"
       ],
       "env": {
-        "OB_HOST": "${OB_HOST}",
-        "OB_PORT": "${OB_PORT}",
-        "OB_USER": "${OB_USER}",
-        "OB_PASSWORD": "${OB_PASSWORD}",
-        "OB_DATABASE": "${OB_DATABASE}"
+        "OB_HOST": "${user_config.OB_HOST}",
+        "OB_PORT": "${user_config.OB_PORT}",
+        "OB_USER": "${user_config.OB_USER}",
+        "OB_PASSWORD": "${user_config.OB_PASSWORD}",
+        "OB_DATABASE": "${user_config.OB_DATABASE}"
       }
     }
   },

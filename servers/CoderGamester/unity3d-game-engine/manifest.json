@@ -24,7 +24,7 @@
         "https://github.com/CoderGamester/mcp-unity"
       ],
       "env": {
-        "UNITY_PORT": "8090"
+        "UNITY_PORT": "${user_config.UNITY_PORT}"
       }
     }
   },

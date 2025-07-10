@@ -23,8 +23,7 @@
         "-y",
         "https://github.com/calclavia/mcp-obsidian.git",
         "${OBSIDIAN_VAULT_PATH}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

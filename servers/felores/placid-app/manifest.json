@@ -23,7 +23,7 @@
         "@felores/placid-mcp-server"
       ],
       "env": {
-        "PLACID_API_TOKEN": "${PLACID_API_TOKEN}"
+        "PLACID_API_TOKEN": "${user_config.PLACID_API_TOKEN}"
       }
     }
   },

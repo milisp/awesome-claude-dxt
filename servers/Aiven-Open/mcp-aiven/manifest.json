@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/Aiven-Open/mcp-aiven"
   },
-  "homepage": "[NOT GIVEN]",
+  "homepage": "https://github.com/Aiven-Open/mcp-aiven",
   "screenshots": [],
   "server": {
     "type": "python",
@@ -25,8 +25,8 @@
         "mcp-aiven"
       ],
       "env": {
-        "AIVEN_BASE_URL": "https://api.aiven.io",
-        "AIVEN_TOKEN": "$AIVEN_TOKEN"
+        "AIVEN_BASE_URL": "${user_config.AIVEN_BASE_URL}",
+        "AIVEN_TOKEN": "${user_config.AIVEN_TOKEN}"
       }
     }
   },

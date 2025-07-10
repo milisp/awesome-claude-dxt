@@ -24,7 +24,7 @@
         "@modelcontextprotocol/server-everart"
       ],
       "env": {
-        "EVERART_API_KEY": "${EVERART_API_KEY}"
+        "EVERART_API_KEY": "${user_config.EVERART_API_KEY}"
       }
     }
   },

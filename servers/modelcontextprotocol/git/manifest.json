@@ -23,8 +23,7 @@
         "mcp-server-git",
         "--repository",
         "${GIT_REPO_PATH}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

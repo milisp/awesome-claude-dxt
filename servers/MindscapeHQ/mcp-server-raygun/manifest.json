@@ -24,7 +24,7 @@
         "@raygun.io/mcp-server-raygun"
       ],
       "env": {
-        "RAYGUN_PAT_TOKEN": "your-pat-token-here"
+        "RAYGUN_PAT_TOKEN": "${user_config.RAYGUN_PAT_TOKEN}"
       }
     }
   },

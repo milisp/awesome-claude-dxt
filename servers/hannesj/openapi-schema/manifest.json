@@ -23,8 +23,7 @@
         "-y",
         "mcp-openapi-schema",
         "${ABSOLUTE_PATH_TO_OPENAPI_YAML}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -24,7 +24,7 @@
         "https://github.com/zcaceres/mcp-markdownify-server"
       ],
       "env": {
-        "UV_PATH": "${UV_PATH}"
+        "UV_PATH": "${user_config.UV_PATH}"
       }
     }
   },

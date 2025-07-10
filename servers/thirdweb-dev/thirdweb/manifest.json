@@ -23,7 +23,7 @@
         "thirdweb-mcp"
       ],
       "env": {
-        "THIRDWEB_SECRET_KEY": "your-secret-key"
+        "THIRDWEB_SECRET_KEY": "${user_config.THIRDWEB_SECRET_KEY}"
       }
     }
   },

@@ -24,8 +24,8 @@
         "@gannonh/firebase-mcp"
       ],
       "env": {
-        "SERVICE_ACCOUNT_KEY_PATH": "${SERVICE_ACCOUNT_KEY_PATH}",
-        "FIREBASE_STORAGE_BUCKET": "${FIREBASE_STORAGE_BUCKET}"
+        "SERVICE_ACCOUNT_KEY_PATH": "${user_config.SERVICE_ACCOUNT_KEY_PATH}",
+        "FIREBASE_STORAGE_BUCKET": "${user_config.FIREBASE_STORAGE_BUCKET}"
       }
     }
   },

@@ -24,7 +24,7 @@
         "agentql-mcp"
       ],
       "env": {
-        "AGENTQL_API_KEY": "YOUR_API_KEY"
+        "AGENTQL_API_KEY": "${user_config.AGENTQL_API_KEY}"
       }
     }
   },

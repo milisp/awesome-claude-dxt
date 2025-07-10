@@ -21,8 +21,7 @@
       "command": "uvx",
       "args": [
         "scrapling-fetch-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

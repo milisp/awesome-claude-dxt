@@ -23,7 +23,7 @@
         "mcp-server-rememberizer"
       ],
       "env": {
-        "REMEMBERIZER_API_TOKEN": "${REMEMBERIZER_API_TOKEN}"
+        "REMEMBERIZER_API_TOKEN": "${user_config.REMEMBERIZER_API_TOKEN}"
       }
     }
   },

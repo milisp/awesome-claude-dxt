@@ -25,7 +25,7 @@
         "alphavantage"
       ],
       "env": {
-        "ALPHAVANTAGE_API_KEY": "${ALPHAVANTAGE_API_KEY}"
+        "ALPHAVANTAGE_API_KEY": "${user_config.ALPHAVANTAGE_API_KEY}"
       }
     }
   },

@@ -23,8 +23,7 @@
         "mcp-server-sentry",
         "--auth-token",
         "${YOUR_SENTRY_TOKEN}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

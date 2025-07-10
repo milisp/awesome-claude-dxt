@@ -24,7 +24,7 @@
         "mcp-server-rijksmuseum"
       ],
       "env": {
-        "RIJKSMUSEUM_API_KEY": "${RIJKSMUSEUM_API_KEY}"
+        "RIJKSMUSEUM_API_KEY": "${user_config.RIJKSMUSEUM_API_KEY}"
       }
     }
   },

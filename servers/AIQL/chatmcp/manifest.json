@@ -3,7 +3,7 @@
   "name": "chatmcp",
   "display_name": "Chat Desktop App",
   "version": "1.0.0",
-  "description": "\u2013 An Open Source Cross-platform GUI Desktop application compatible with Linux, macOS, and Windows, enabling seamless interaction with MCP servers across dynamically selectable LLMs, by **[AIQL](https://github.com/AI-QL/chat-mcp)**",
+  "description": "– An Open Source Cross-platform GUI Desktop application compatible with Linux, macOS, and Windows, enabling seamless interaction with MCP servers across dynamically selectable LLMs, by **[AIQL](https://github.com/AI-QL/chat-mcp)**",
   "long_description": "",
   "author": {
     "name": "AIQL"
@@ -19,32 +19,24 @@
     "entry_point": "",
     "mcp_config": {
       "command": "npx",
-      "args": [
-        "-y",
-        "https://github.com/AI-QL/chat-mcp"
-      ],
+      "args": ["-y", "https://github.com/AI-QL/chat-mcp"],
       "env": {
-        "SEARCH_PATH": "${SEARCH_PATH}"
+        "SEARCH_PATH": "${user_config.SEARCH_PATH}"
       }
     }
   },
   "tools": [],
   "prompts": [],
   "tools_generated": true,
-  "keywords": [
-    "MCP Tools",
-    "LLM",
-    "Electron",
-    "cross-platform"
-  ],
+  "keywords": ["MCP Tools", "LLM", "Electron", "cross-platform"],
   "license": "Apache-2.0",
   "user_config": {
     "SEARCH_PATH": {
-      "type": "string",
+      "type": "directory",
       "description": "This environment variable specifies the system's executable search path, which determines where the operating system looks for executable files when running commands.",
       "sensitive": false,
       "title": "SEARCH_PATH",
-      "required": false
+      "required": true
     }
   }
 }

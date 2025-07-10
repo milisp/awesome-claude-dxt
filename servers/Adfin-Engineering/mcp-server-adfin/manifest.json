@@ -26,8 +26,8 @@
         "main_adfin_mcp.py"
       ],
       "env": {
-        "ADFIN_EMAIL": "<email>",
-        "ADFIN_PASSWORD": "<password>"
+        "ADFIN_EMAIL": "${user_config.ADFIN_EMAIL}",
+        "ADFIN_PASSWORD": "${user_config.ADFIN_PASSWORD}"
       }
     }
   },

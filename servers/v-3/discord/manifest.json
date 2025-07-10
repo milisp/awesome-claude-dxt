@@ -25,7 +25,7 @@
         "https://github.com/v-3/discordmcp"
       ],
       "env": {
-        "DISCORD_TOKEN": "${DISCORD_TOKEN}"
+        "DISCORD_TOKEN": "${user_config.DISCORD_TOKEN}"
       }
     }
   },

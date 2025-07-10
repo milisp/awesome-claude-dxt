@@ -24,8 +24,8 @@
         "https://github.com/kapilduraphe/okta-mcp-server"
       ],
       "env": {
-        "OKTA_ORG_URL": "${OKTA_ORG_URL}",
-        "OKTA_API_TOKEN": "${OKTA_API_TOKEN}"
+        "OKTA_ORG_URL": "${user_config.OKTA_ORG_URL}",
+        "OKTA_API_TOKEN": "${user_config.OKTA_API_TOKEN}"
       }
     }
   },

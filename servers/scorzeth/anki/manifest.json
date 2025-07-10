@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "https://github.com/scorzeth/anki-mcp-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

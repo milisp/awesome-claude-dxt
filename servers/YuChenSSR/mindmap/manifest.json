@@ -23,8 +23,7 @@
         "mindmap-mcp-server",
         "--return-type",
         "html"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

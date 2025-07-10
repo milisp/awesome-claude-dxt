@@ -24,8 +24,7 @@
         "--from",
         "git+https://github.com/nkapila6/mcp-local-rag",
         "mcp-local-rag"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

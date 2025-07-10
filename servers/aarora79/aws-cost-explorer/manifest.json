@@ -26,11 +26,11 @@
         "server.py"
       ],
       "env": {
-        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
-        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
-        "AWS_REGION": "${AWS_REGION}",
-        "BEDROCK_LOG_GROUP_NAME": "${BEDROCK_LOG_GROUP_NAME}",
-        "MCP_TRANSPORT": "stdio"
+        "AWS_ACCESS_KEY_ID": "${user_config.AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${user_config.AWS_SECRET_ACCESS_KEY}",
+        "AWS_REGION": "${user_config.AWS_REGION}",
+        "BEDROCK_LOG_GROUP_NAME": "${user_config.BEDROCK_LOG_GROUP_NAME}",
+        "MCP_TRANSPORT": "${user_config.MCP_TRANSPORT}"
       }
     }
   },

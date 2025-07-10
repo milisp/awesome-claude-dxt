@@ -23,7 +23,7 @@
         "logfire-mcp"
       ],
       "env": {
-        "LOGFIRE_READ_TOKEN": "YOUR_READ_TOKEN"
+        "LOGFIRE_READ_TOKEN": "${user_config.LOGFIRE_READ_TOKEN}"
       }
     }
   },

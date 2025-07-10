@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "https://github.com/zcaceres/fetch-mcp"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/ZilongXue/claude-post",
         "email-client"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -25,7 +25,7 @@
         "mcp-materials-project"
       ],
       "env": {
-        "MP_API_KEY": "your_materials_project_api_key_here"
+        "MP_API_KEY": "${user_config.MP_API_KEY}"
       }
     }
   },
@@ -169,8 +169,8 @@
     },
     {
       "name": "moire_homobilayer",
-      "description": "Generate a moir\u00e9 superstructure of a 2D homobilayer. Returns information about the newly created moir\u00e9 structure.",
-      "prompt": "Create a moir\u00e9 structure of graphene with 5 degree twist",
+      "description": "Generate a moiré superstructure of a 2D homobilayer. Returns information about the newly created moiré structure.",
+      "prompt": "Create a moiré structure of graphene with 5 degree twist",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -180,11 +180,11 @@
           },
           "interlayer_spacing": {
             "type": "number",
-            "description": "The interlayer spacing between the two layers in \u00c5ngstr\u00f6m"
+            "description": "The interlayer spacing between the two layers in Ångström"
           },
           "max_num_atoms": {
             "type": "integer",
-            "description": "Maximum number of atoms in the moir\u00e9 superstructure",
+            "description": "Maximum number of atoms in the moiré superstructure",
             "default": 10
           },
           "twist_angle": {
@@ -194,7 +194,7 @@
           },
           "vacuum_thickness": {
             "type": "number",
-            "description": "Vacuum thickness in z-direction in \u00c5ngstr\u00f6m",
+            "description": "Vacuum thickness in z-direction in Ångström",
             "default": 15.0
           }
         }
@@ -232,9 +232,9 @@
       "text": "Create a 2x2x2 supercell of graphite"
     },
     {
-      "name": "Create moir\u00e9 structure",
-      "description": "Generate a moir\u00e9 superstructure",
-      "text": "Create a moir\u00e9 structure of graphene with 3.4\u00c5 interlayer spacing and 5\u00b0 twist angle"
+      "name": "Create moiré structure",
+      "description": "Generate a moiré superstructure",
+      "text": "Create a moiré structure of graphene with 3.4Å interlayer spacing and 5° twist angle"
     }
   ],
   "tools_generated": true,

@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "@gongrzhe/quickchart-mcp-server"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

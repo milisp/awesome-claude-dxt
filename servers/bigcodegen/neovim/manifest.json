@@ -24,8 +24,8 @@
         "mcp-neovim-server"
       ],
       "env": {
-        "ALLOW_SHELL_COMMANDS": "${ALLOW_SHELL_COMMANDS}",
-        "NVIM_SOCKET_PATH": "${NVIM_SOCKET_PATH}"
+        "ALLOW_SHELL_COMMANDS": "${user_config.ALLOW_SHELL_COMMANDS}",
+        "NVIM_SOCKET_PATH": "${user_config.NVIM_SOCKET_PATH}"
       }
     }
   },

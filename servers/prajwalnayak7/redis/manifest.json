@@ -23,8 +23,7 @@
         "--from",
         "git+https://github.com/prajwalnayak7/mcp-server-redis",
         "src/server.py"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

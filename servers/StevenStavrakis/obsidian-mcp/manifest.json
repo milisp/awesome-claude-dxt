@@ -24,8 +24,7 @@
         "obsidian-mcp",
         "${OBSIDIAN_VAULT_PATH}",
         "${OBSIDIAN_VAULT_PATH2}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

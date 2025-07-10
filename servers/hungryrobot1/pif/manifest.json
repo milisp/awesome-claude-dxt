@@ -22,8 +22,7 @@
       "args": [
         "-y",
         "https://github.com/hungryrobot1/MCP-PIF"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [],

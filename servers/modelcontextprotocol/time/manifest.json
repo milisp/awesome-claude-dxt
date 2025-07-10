@@ -22,8 +22,7 @@
       "args": [
         "mcp-server-time",
         "--local-timezone=${TZ}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

@@ -24,8 +24,7 @@
         "@simonb97/server-win-cli",
         "--config",
         "${config}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [

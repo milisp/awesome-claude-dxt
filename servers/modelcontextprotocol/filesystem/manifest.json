@@ -24,8 +24,7 @@
         "@modelcontextprotocol/server-filesystem",
         "${USER_FILESYSTEM_DIRECTORY}",
         "${USER_FILESYSTEM_ALLOWED_DIR}"
-      ],
-      "env": {}
+      ]
     }
   },
   "tools": [
