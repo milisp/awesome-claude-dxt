@@ -1,10 +1,25 @@
-# awesome-claude-dxt
 # Awesome Claude Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome Claude Desktop Extensions (.dxt files), tools, and resources
+[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README-th.md)
+[![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
+[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh_TW.md)
+[![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README.zh.md)
+[![日本語](https://img.shields.io/badge/日本語-クリック-青)](README.ja.md)
+[![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README.ko.md)
+[![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt_BR.md)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
+
+A curated list of awesome Claude Desktop Extensions (.dxt files), tools, and resources
+
+* [What is DXT?](#what-is-dxt)
+
+## What is DXT?
+
+[dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop
 
 ## Contents
 - [Official Resources](#official-resources)
+- [Community Resources](#community-resources)
 - [Extensions by Category](#extensions-by-category)
   - [Development Tools](#development-tools)
   - [File Management](#file-management)
@@ -26,7 +41,6 @@
 - [Development Tools](#development-tools-1)
 - [Packaging & Management](#packaging--management)
 - [Documentation & Tutorials](#documentation--tutorials)
-- [Community Resources](#community-resources)
 
 ## Official Resources
 - [Desktop Extensions Announcement](https://www.anthropic.com/engineering/desktop-extensions) - Official blog post
@@ -34,12 +48,24 @@
 - [Submission Form](https://forms.gle/tyiAZvch1kDADKoP9) - Submit to official directory
 - [Official examples](https://github.com/anthropics/dxt/tree/main/examples) - Official examples
 
+## Community
+
+* [r/dxt Reddit](https://www.reddit.com/r/dxt)
+
 ## Contributing
 This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+## Community Collaboration Plan (PR or issue communication are welcome)
+- [ ] [README.zh-TW.md](README.zh-TW.md) 繁體中文翻譯（歡迎貢獻）
+- [ ] [README.zh.md](README.zh.md) 中文翻译（欢迎贡献）
+- [ ] [README.ja.md](README.ja.md) 日本語翻訳（貢献歓迎）
+- [ ] [README.ko.md](README.ko.md) 한국어(기여를 환영합니다) 
+- [ ] [README.pt_BR.md](README.pt_BR.md) Português Brasileiro(Kontribuoj bonvenaj)
+- [ ] [README-th.md](README-th.md) ไทย(ยินดีรับการสนับสนุน)
+
 ## Extensions by Category
 
-> All extensions are located in the [servers](./servers) folder with manifest.json and user_config.json, organized by `owner/repo`.
+All extensions are located in the servers folder, each organized by owner/repo, and containing a `manifest.json` and `user_config.json`. If the `manifest.json` is verified by the community, a `verified.json` file will also be included.
 
 ### Development Tools
 
@@ -51,7 +77,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [mem0ai/mem0-mcp](https://github.com/mem0ai/mem0-mcp) - A Model Context Protocol server for Mem0, which helps with managing coding preferences.
 - [modelcontextprotocol/github](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/github) - Repository management, file operations, and GitHub API integration
 - [snaggle-ai/openapi-mcp-server](https://github.com/snaggle-ai/openapi-mcp-server) - Interact with [OpenAPI](https://www.openapis.org/) APIs.
-- [semgrep/mcp](https://github.com/semgrep/mcp) - An MCP server for using Semgrep to scan code for security vulnerabilies. Secure your vibe coding! 
+- [semgrep/mcp](https://github.com/semgrep/mcp) - An MCP server for using Semgrep to scan code for security vulnerabilies. Secure your vibe coding!
 - [manusa/kubernetes-mcp-server](https://github.com/manusa/kubernetes-mcp-server) - A powerful Kubernetes MCP server with additional support for OpenShift. Besides providing CRUD operations for any Kubernetes resource, this server provides specialized tools to interact with your cluster.
 - [pathintegral-institute/mcp.science](https://github.com/pathintegral-institute/mcp.science) - A secure sandboxed Python code execution environment for MCP (Model-Client-Program) architecture.
 - [MindscapeHQ/mcp-server-raygun](https://github.com/MindscapeHQ/mcp-server-raygun) - MCP Server for Raygun's API V3 endpoints for interacting with your Crash Reporting and Real User Monitoring applications. This server provides comprehensive access to Raygun's API features through the Model Context Protocol.
@@ -67,7 +93,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [riza-io/riza-mcp](https://github.com/riza-io/riza-mcp) - [Riza](https://riza.io) offers an isolated code interpreter for your LLM-generated code.
 - [Boston343/starwind-ui-mcp](https://github.com/Boston343/starwind-ui-mcp) - This MCP provides relevant commands, documentation, and other information to allow LLMs to take full advantage of Starwind UI's open source Astro components.
 - [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) - Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, we provide an installer as well as an MCP Server for [Cloudflare's API](https://api.cloudflare.com).
-- [its-dart/dart-mcp-server](https://github.com/its-dart/dart-mcp-server) - <h1>Dart MCP Server</h1>
+- [its-dart/dart-mcp-server](https://github.com/its-dart/dart-mcp-server) - Dart MCP Server
 - [agentrpc/agentrpc](https://github.com/agentrpc/agentrpc) - > Universal RPC layer for AI agents across network boundaries and languages
 - [yangkyeongmo/mcp-server-apache-airflow](https://github.com/yangkyeongmo/mcp-server-apache-airflow) - A MCP Server that connects to [Apache Airflow](https://airflow.apache.org/) using official python client.
 - [pydantic/logfire-mcp](https://github.com/pydantic/logfire-mcp) - This repository contains a Model Context Protocol (MCP) server with tools that can access the OpenTelemetry traces and
@@ -211,12 +237,12 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [tinybirdco/mcp-tinybird](https://github.com/tinybirdco/mcp-tinybird) - An MCP server to interact with a Tinybird Workspace from any MCP client.
 - [pab1it0/prometheus-mcp-server](https://github.com/pab1it0/prometheus-mcp-server) - Query and analyze Prometheus - open-source monitoring system.
 - [rishijatia/fantasy-pl-mcp](https://github.com/rishijatia/fantasy-pl-mcp) - Give your coding agent direct access to up-to date Fantasy Premier League data
-- [keboola/keboola-mcp-server](https://github.com/keboola/keboola-mcp-server) - <a href="https://glama.ai/mcp/servers/72mwt1x862"><img width="380" height="200" src="https://glama.ai/mcp/servers/72mwt1x862/badge" alt="Keboola Explorer Server MCP server" /></a>
+- [keboola/keboola-mcp-server](https://github.com/keboola/keboola-mcp-server) - Keboola Explorer Server MCP server
 - [reading-plus-ai/mcp-server-data-exploration](https://github.com/reading-plus-ai/mcp-server-data-exploration) - MCP server for autonomous data exploration on .csv-based datasets, providing intelligent insights with minimal effort. NOTE: Will execute arbitrary Python code on your machine, please use with caution!
 - [privetin/dataset-viewer](https://github.com/privetin/dataset-viewer) - Browse and analyze Hugging Face datasets with features like search, filtering, statistics, and data export
 - [asusevski/opendota-mcp-server](https://github.com/asusevski/opendota-mcp-server) - Interact with OpenDota API to retrieve Dota 2 match data, player statistics, and more.
 - [syucream/lightdash-mcp-server](https://github.com/syucream/lightdash-mcp-server) - Interact with [Lightdash](https://www.lightdash.com/), a BI tool.
-- [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) - <a href="https://glama.ai/mcp/servers/xabrrs4bka">
+- [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) - The Official Model Context Protocol (MCP) server for Kagi search & other tools.
 
 ### AI Systems
 
@@ -240,7 +266,7 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [AIQL/chat-mcp](https://github.com/AI-QL/chat-mcp) - – An Open Source Cross-platform GUI Desktop application compatible with Linux, macOS, and Windows, enabling seamless interaction with MCP servers across dynamically selectable LLMs, by **[AIQL](https://github.com/AI-QL/chat-mcp)**
 - [pathintegral-institute/mcp.science](https://github.com/pathintegral-institute/mcp.science) - A MCP (Model Context Protocol) server that interacts with the Materials Project database, allowing for material search, structure visualization, and manipulation.
 - [e2b-dev/mcp-server](https://github.com/e2b-dev/mcp-server) - This repository contains the source code for the [E2B](https://e2b.dev) MCP server.
-- [ChronulusAI/chronulus-mcp](https://github.com/ChronulusAI/chronulus-mcp) - <img width="150px" src="https://www.chronulus.com/brand-assets/chronulus-logo-blue-on-alpha-square.png" alt="Chronulus AI">
+- [ChronulusAI/chronulus-mcp](https://github.com/ChronulusAI/chronulus-mcp) - MCP Server for Chronulus AI Forecasting and Prediction Agents
 - [fastnai/mcp-fastn](https://github.com/fastnai/mcp-fastn) - A remote, dynamic MCP server with a unified API that connects to 1,000+ tools, actions, and workflows, featuring built-in authentication and monitoring.
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) - Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) - This server is a server that installs other MCP servers for you.
@@ -384,12 +410,13 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 }
 ```
 
+## Documentation & Tutorials
+
+- [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)
+
 ## Packaging & Management Tools
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
 
 ## About
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)
-
-## Community Resources
-- [r/dxt on Reddit](https://www.reddit.com/r/dxt) – Community discussions, help, and showcase
