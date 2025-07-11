@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/Adfin-Engineering/mcp-server-adfin"
   },
-  "homepage": "[NOT GIVEN]",
+  "homepage": "https://github.com/Adfin-Engineering/mcp-server-adfin",
   "screenshots": [],
   "server": {
     "type": "python",
@@ -21,7 +21,7 @@
       "command": "uv",
       "args": [
         "--directory",
-        "<absolute_path_to_adfin_mcp_folder>",
+        "${__dirname}/",
         "run",
         "main_adfin_mcp.py"
       ],
@@ -68,7 +68,7 @@
     "ADFIN_PASSWORD": {
       "type": "string",
       "description": "Password for Adfin authentication",
-      "sensitive": false,
+      "sensitive": true,
       "title": "ADFIN_PASSWORD",
       "required": true
     }
