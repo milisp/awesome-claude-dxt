@@ -9,7 +9,12 @@
 [![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt-BR.md)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
 
+
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
+
+⭐️ If this repo is helpful to you, please give it a 
+[![Star](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
+
 
 * [What is DXT?](#what-is-dxt)
 
@@ -19,7 +24,8 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 
 ## Contents
 - [Official Resources](#official-resources)
-- [Community Resources](#community-resources)
+- [Community](#community)
+- [Contributing](#contributing)
 - [Extensions by Category](#extensions-by-category)
   - [Development Tools](#development-tools)
   - [File Management](#file-management)
@@ -39,7 +45,7 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
   - [Finance](#finance)
   - [examples](#examples)
 - [Development Tools](#development-tools-1)
-- [Packaging & Management](#packaging--management)
+- [Packaging & Management Tools](#packaging--management-tools)
 - [Documentation & Tutorials](#documentation--tutorials)
 
 ## Official Resources
@@ -55,7 +61,8 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 ## Contributing
 This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Community Collaboration Plan (PR or issue communication are welcome)
+## Community Collaboration Plan
+PR or issue communication are welcome
 - [ ] [README.zh-TW.md](README.zh-TW.md) 繁體中文翻譯（歡迎貢獻）
 - [ ] [README.zh.md](README.zh.md) 中文翻译（欢迎贡献）
 - [ ] [README.ja.md](README.ja.md) 日本語翻訳（貢献歓迎）
@@ -412,7 +419,11 @@ All extensions are located in the servers folder, each organized by owner/repo, 
 
 ## Documentation & Tutorials
 
-- [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)
+- [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)s
+
+## Development Tools
+
+- [Claude code](https://docs.anthropic.com/en/docs/claude-code/overview) - AI tools like Claude Code are particularly good at creating desktop extensions
 
 ## Packaging & Management Tools
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
