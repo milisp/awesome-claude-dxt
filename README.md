@@ -8,7 +8,10 @@
 [![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README.ko.md)
 [![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt-BR.md)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
-
+[![Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
+[![Forks](https://img.shields.io/github/forks/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/network/members)
+[![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/milisp/awesome-claude-dxt)](https://github.com/milisp/awesome-claude-dxt/commits)
 
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
 
