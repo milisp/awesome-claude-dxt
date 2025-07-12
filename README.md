@@ -15,10 +15,6 @@
 
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
 
-⭐️ If this repo is helpful to you, please give it a 
-[![Star](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
-
-
 * [What is DXT?](#what-is-dxt)
 
 ## What is DXT?
@@ -60,6 +56,15 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 ## Community
 
 * [r/dxt Reddit](https://www.reddit.com/r/dxt)
+
+## ☕ Support
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/milisp)
+&nbsp;&nbsp;
+[![GitHub Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
+
+If you find this project helpful, please consider starring or buying me a coffee!
+
 
 ## Contributing
 This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
