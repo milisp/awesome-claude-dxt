@@ -1,50 +1,62 @@
 # Contributing to Awesome Claude Desktop Extensions
 
-Thanks for your interest in contributing!
+Thank you for your interest in contributing!
 
 ## How to Contribute
 
-### Simple way
+- Add your DXT server/tool to the list
+- [Report an issue](https://github.com/milisp/awesome-claude-dxt/issues)
 
-if your mcp server use npx or uvx, just create a `manifest.json` at your repo root
-and test then list at this repo
+---
 
-- servers/{owner}/{repo}/manifest.json
-- Create a PR to this repo list by category
+## Quick Contribution (Recommended)
 
-### Full way
+If your MCP server uses `npx` or `uvx`, you can contribute in a few simple steps:
 
-- Add new `.dxt` tools or resources under the appropriate category
-- Add manifest.json to your mcp server, see example below
-- Fix typos or improve descriptions
-- Keep the list alphabetically sorted within each category
-- Ensure links are valid and point to useful content
+1. **Create a `manifest.json`**  
+   Place it at the root of your repository.
+2. **Test your server**  
+   Make sure it works as expected.
+3. **Add your server to this repo**  
+   (Option)
+   Place your manifest at:  
+   `servers/{owner}/{repo}/manifest.json`
+4. **Open a Pull Request**  
+   Add your server under the appropriate category in the list.
 
-### example
+---
 
-#### uvx example
+## Full Contribution Guide
 
-##### Step
+If you want to add new DXT tools, resources, or make improvements:
 
-1. clone your mcp server to folder [servers](./servers) (uvx or npx can skip this step)
-  - create a folder owner/repo or author/mcp-server
-2. create manifest.json in the folder
-3. install dxt
+- Add new `.dxt` tools or resources under the correct category.
+- Add a `manifest.json` to your MCP server (see example below).
+- Fix typos or improve descriptions.
+- Keep the list alphabetically sorted within each category.
+- Ensure all links are valid and useful.
 
-```sh
-npm install -g @anthropic-ai/dxt
-```
+---
 
-4. pack dxt
+## Example: Python (uvx) Server
 
-```sh
-dxt pack
-```
+**Step-by-step:**
 
-- [servers/ahujasid/blender-mcp](./servers/ahujasid/blender-mcp)
+1. Clone your MCP server into the `servers` folder (skip if using `npx` or `uvx`).
+   - Folder structure: `servers/{owner}/{repo}` or `servers/{author}/{mcp-server}`
+2. Create a `manifest.json` in your server folder.
+3. Install DXT CLI:
+   ```sh
+   npm install -g @anthropic-ai/dxt
+   ```
+4. Pack your DXT:
+   ```sh
+   dxt pack
+   ```
+5. Add your server to the list, e.g.:
+   - [servers/ahujasid/blender-mcp](./servers/ahujasid/blender-mcp)
 
-`manifest.json`
-
+**Sample `manifest.json`:**
 ```json
 {
   "dxt_version": "0.1",
@@ -69,11 +81,13 @@ dxt pack
 }
 ```
 
+---
+
 ## Pull Request Checklist
 
-- Your entry includes a short description
-- You tested the link(s)
-- You didn’t break formatting
+- [ ] Your entry includes a short description
+- [ ] You tested the link(s)
+- [ ] You didn’t break formatting
 
 ---
 

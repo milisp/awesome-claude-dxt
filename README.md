@@ -1,21 +1,21 @@
-# Awesome Claude Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome (not only Claude) Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README-th.md)
+[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README.th.md)
 [![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
-[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh_TW.md)
+[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh-TW.md)
 [![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README.zh.md)
 [![日本語](https://img.shields.io/badge/日本語-クリック-青)](README.ja.md)
 [![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README.ko.md)
-[![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt_BR.md)
+[![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt-BR.md)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
 
-A curated list of awesome Claude Desktop Extensions (.dxt files), tools, and resources
+A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
 
 * [What is DXT?](#what-is-dxt)
 
 ## What is DXT?
 
-[dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop
+[dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop and other Desktop apps
 
 ## Contents
 - [Official Resources](#official-resources)
@@ -60,8 +60,8 @@ This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [ ] [README.zh.md](README.zh.md) 中文翻译（欢迎贡献）
 - [ ] [README.ja.md](README.ja.md) 日本語翻訳（貢献歓迎）
 - [ ] [README.ko.md](README.ko.md) 한국어(기여를 환영합니다) 
-- [ ] [README.pt_BR.md](README.pt_BR.md) Português Brasileiro(Kontribuoj bonvenaj)
-- [ ] [README-th.md](README-th.md) ไทย(ยินดีรับการสนับสนุน)
+- [ ] [README.pt-BR.md](README.pt-BR.md) Português Brasileiro(Kontribuoj bonvenaj)
+- [ ] [README.th.md](README.th.md) ไทย(ยินดีรับการสนับสนุน)
 
 ## Extensions by Category
 

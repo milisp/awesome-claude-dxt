@@ -1,4 +1,4 @@
-# Awesome Claude Desktop Extensions (.dxt)
+# Awesome (not only Claude) Desktop Extensions (.dxt)
 
 [![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
 [![日本語](https://img.shields.io/badge/日本語-クリック-青)](README.ja.md)
