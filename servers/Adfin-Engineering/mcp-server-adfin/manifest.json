@@ -20,9 +20,10 @@
     "mcp_config": {
       "command": "uv",
       "args": [
+        "run",
         "--directory",
         "${__dirname}/",
-        "run",
+        "python",
         "main_adfin_mcp.py"
       ],
       "env": {

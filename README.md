@@ -65,7 +65,6 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 
 If you find this project helpful, please consider starring or buying me a coffee!
 
-
 ## Contributing
 This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -81,6 +80,27 @@ PR or issue communication are welcome
 ## Extensions by Category
 
 All extensions are located in the servers folder, each organized by owner/repo, and containing a `manifest.json` and `user_config.json`. If the `manifest.json` is verified by the community, a `verified.json` file will also be included.
+
+### Real world ${__dirname} examples
+
+If you have any disconnect issue check the `manifest.json` at these useful repos, python and nodejs
+
+- [taylorwilsdon/google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp) - Full natural language control over Google Calendar, Drive, Gmail, Docs, Sheets, Slides, Forms, Tasks and Chat through all MCP clients, AI assistants and developer tools
+
+```md
+"mcp_config": {
+  "command": "uv",
+  "args": [
+    "run",
+    "--directory",
+    "${__dirname}",
+    "python",
+    "${__dirname}/main.py"
+  ]
+}
+```
+
+- [bgauryy/octocode-mcp](https://github.com/bgauryy/octocode-mcp) - GitHub code search and npm package exploration MCP server
 
 ### Development Tools
 
@@ -427,7 +447,7 @@ All extensions are located in the servers folder, each organized by owner/repo, 
 
 ## Documentation & Tutorials
 
-- [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)s
+- [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)
 
 ## Development Tools
 
@@ -437,5 +457,5 @@ All extensions are located in the servers folder, each organized by owner/repo, 
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
 
-## About
+## Aboutawesome-claude-dxt 
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)

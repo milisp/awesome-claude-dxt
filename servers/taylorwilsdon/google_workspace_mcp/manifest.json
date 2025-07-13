@@ -1,0 +1,222 @@
+{
+    "dxt_version": "0.1",
+    "name": "workspace-mcp",
+    "display_name": "Google Workspace MCP",
+    "version": "1.1.5",
+    "description": "Full natural language control over Google Calendar, Drive, Gmail, Docs, Sheets, Slides, Forms, Tasks and Chat through all MCP clients, AI assistants and developer tools",
+    "long_description": "A production-ready MCP server that integrates all major Google Workspace services with AI assistants. Built with FastMCP for optimal performance, featuring advanced authentication handling, service caching, and streamlined development patterns.",
+    "author": {
+      "name": "Taylor Wilsdon",
+      "email": "taylor@taylorwilsdon.com",
+      "url": "https://taylorwilsdon.com"
+    },
+    "homepage": "https://workspacemcp.com/",
+    "documentation": "https://github.com/taylorwilsdon/google_workspace_mcp",
+    "support": "https://github.com/taylorwilsdon/google_workspace_mcp/issues",
+    "server": {
+      "type": "python",
+      "entry_point": "main.py",
+      "mcp_config": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--directory",
+          "${__dirname}",
+          "python",
+          "${__dirname}/main.py"
+        ],
+        "env": {
+          "GOOGLE_OAUTH_CLIENT_ID": "${user_config.GOOGLE_OAUTH_CLIENT_ID}",
+          "GOOGLE_OAUTH_CLIENT_SECRET": "${user_config.GOOGLE_OAUTH_CLIENT_SECRET}",
+          "GOOGLE_OAUTH_REDIRECT_URI": "${user_config.GOOGLE_OAUTH_REDIRECT_URI}",
+          "GOOGLE_CLIENT_SECRET_PATH": "${user_config.GOOGLE_CLIENT_SECRET_PATH}",
+          "GOOGLE_CLIENT_SECRETS": "${user_config.GOOGLE_CLIENT_SECRETS}",
+          "WORKSPACE_MCP_BASE_URI": "${user_config.WORKSPACE_MCP_BASE_URI}",
+          "WORKSPACE_MCP_PORT": "${user_config.WORKSPACE_MCP_PORT}",
+          "OAUTHLIB_INSECURE_TRANSPORT": "${user_config.OAUTHLIB_INSECURE_TRANSPORT}"
+        }
+      }
+    },
+    "tools": [
+      {
+        "name": "google_calendar",
+        "display_name": "Google Calendar",
+        "description": "Manage Google Calendar through AI with full calendar and event capability",
+        "category": "productivity"
+      },
+      {
+        "name": "google_drive",
+        "display_name": "Google Drive",
+        "description": "Manage Google Drive through AI with full search, list and create capability",
+        "category": "storage"
+      },
+      {
+        "name": "gmail",
+        "display_name": "Gmail",
+        "description": "Manage Gmail through AI with support for search, draft, send, respond and more",
+        "category": "communication"
+      },
+      {
+        "name": "google_docs",
+        "display_name": "Google Docs",
+        "description": "Manage Google Docs through AI with capability to search, extract, list, create and copy - including templated variable replacement support",
+        "category": "productivity"
+      },
+      {
+        "name": "google_sheets",
+        "display_name": "Google Sheets",
+        "description": "Manage Google Sheets through AI with support for read, write, modify and create",
+        "category": "productivity"
+      },
+      {
+        "name": "google_slides",
+        "display_name": "Google Slides",
+        "description": "Manage Google Slides through AI with support for creation, modification and presentation management",
+        "category": "productivity"
+      },
+      {
+        "name": "google_forms",
+        "display_name": "Google Forms",
+        "description": "Manage Google Forms through AI with support for creation, retrieval, publishing, response management and more",
+        "category": "productivity"
+      },
+      {
+        "name": "google_chat",
+        "display_name": "Google Chat",
+        "description": "Manage Google Chat through AI with support for space and DM list, get, send and search messages",
+        "category": "communication"
+      },
+      {
+        "name": "google_tasks",
+        "display_name": "Google Tasks",
+        "description": "Manage Google Tasks through AI with support for task creation, management, and organization",
+        "category": "productivity"
+      }
+    ],
+    "user_config": {
+      "GOOGLE_OAUTH_CLIENT_ID": {
+        "type": "string",
+        "title": "Google OAuth Client ID",
+        "description": "OAuth 2.0 client ID from Google Cloud Console (e.g., your-client-id.apps.googleusercontent.com)",
+        "required": false,
+        "sensitive": false,
+        "default": "your-client-id.apps.googleusercontent.com",
+        "validation": {
+          "pattern": "^[a-zA-Z0-9-]+\\.apps\\.googleusercontent\\.com$"
+        }
+      },
+      "GOOGLE_OAUTH_CLIENT_SECRET": {
+        "type": "string",
+        "title": "Google OAuth Client Secret",
+        "description": "OAuth 2.0 client secret from Google Cloud Console",
+        "required": false,
+        "sensitive": true,
+        "validation": {
+          "min_length": 24
+        }
+      },
+      "GOOGLE_OAUTH_REDIRECT_URI": {
+        "type": "string",
+        "title": "Google OAuth Redirect URI",
+        "description": "OAuth 2.0 redirect URI for authentication callback",
+        "required": false,
+        "sensitive": false,
+        "default": "http://localhost:8000/oauth2callback",
+        "validation": {
+          "pattern": "^https?://[a-zA-Z0-9.-]+(:[0-9]+)?/oauth2callback$"
+        }
+      },
+      "GOOGLE_CLIENT_SECRET_PATH": {
+        "type": "file",
+        "title": "Google Client Secret File Path",
+        "description": "Path to the client_secret.json file containing OAuth credentials",
+        "required": false,
+        "sensitive": false,
+        "validation": {
+          "extensions": [".json"]
+        }
+      },
+      "GOOGLE_CLIENT_SECRETS": {
+        "type": "string",
+        "title": "Google Client Secrets (Legacy)",
+        "description": "Legacy environment variable for client secret file path (use GOOGLE_CLIENT_SECRET_PATH instead)",
+        "required": false,
+        "sensitive": false,
+        "deprecated": true
+      },
+      "WORKSPACE_MCP_BASE_URI": {
+        "type": "string",
+        "title": "Workspace MCP Base URI",
+        "description": "Base URI for the MCP server, affects OAuth redirect URI and Gemini function calling",
+        "required": false,
+        "sensitive": false,
+        "default": "http://localhost",
+        "validation": {
+          "pattern": "^https?://[a-zA-Z0-9.-]+(:[0-9]+)?$"
+        }
+      },
+      "WORKSPACE_MCP_PORT": {
+        "type": "number",
+        "title": "Workspace MCP Port",
+        "description": "Port number for the MCP server to listen on",
+        "required": false,
+        "sensitive": false,
+        "default": 8000,
+        "validation": {
+          "min": 1024,
+          "max": 65535
+        }
+      },
+      "OAUTHLIB_INSECURE_TRANSPORT": {
+        "type": "boolean",
+        "title": "OAuth Insecure Transport",
+        "description": "Allow OAuth over HTTP for development (enable for development only)",
+        "required": false,
+        "sensitive": false,
+        "default": true,
+        "platform_overrides": {
+          "production": {
+            "default": false
+          }
+        }
+      }
+    },
+    "permissions": {
+      "network": true,
+      "filesystem": {
+        "read": true,
+        "write": ["${config_dir}", "${temp_dir}"]
+      }
+    },
+    "requirements": {
+      "python": ">=3.8",
+      "platforms": ["windows", "macos", "linux"]
+    },
+    "keywords": [
+      "google",
+      "workspace",
+      "mcp",
+      "server",
+      "calendar",
+      "drive",
+      "docs",
+      "forms",
+      "gmail",
+      "slides",
+      "sheets",
+      "chat",
+      "tasks",
+      "oauth",
+      "productivity",
+      "ai-assistant"
+    ],
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp"
+    },
+    "release": {
+        "download_url": "https://github.com/taylorwilsdon/google_workspace_mcp/releases/download/v1.1.5/google_workspace_mcp.dxt",
+        "sha256": "sha256:badbfd0dcf22406b6e9d89202f4808542ce9d7e98931df54b7f832d91f3e1e01"
+    }
+  }
