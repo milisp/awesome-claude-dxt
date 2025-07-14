@@ -11,6 +11,7 @@
 [![Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
 [![Forks](https://img.shields.io/github/forks/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/network/members)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
+[![Discord](https://img.shields.io/discord/1394197669794025564?logo=discord&label=discord)](https://discord.gg/N3gtxgJfby)
 [![Last Commit](https://img.shields.io/github/last-commit/milisp/awesome-claude-dxt)](https://github.com/milisp/awesome-claude-dxt/commits)
 [![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/milisp)
@@ -56,6 +57,7 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 ## Community
 
 * [r/dxt Reddit](https://www.reddit.com/r/dxt)
+* [Discord](https://discord.gg/N3gtxgJfby)
 
 ## ☕ Support
 
@@ -455,5 +457,5 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
 
-## About awesome-claude-dxt 
+## About awesome-claude-dxt
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)
