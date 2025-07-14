@@ -27,33 +27,11 @@
   "tools": [
     {
       "name": "search-arxiv",
-      "description": "Search arxiv for articles related to the given keyword.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "keyword": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "keyword"
-        ]
-      }
+      "description": "Search arxiv for articles related to the given keyword."
     },
     {
       "name": "search-google-scholar",
-      "description": "Search google scholar for articles related to the given keyword.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "keyword": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "keyword"
-        ]
-      }
+      "description": "Search google scholar for articles related to the given keyword."
     }
   ],
   "prompts": [],

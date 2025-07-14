@@ -37,17 +37,7 @@
   "tools": [
     {
       "name": "query_database",
-      "description": "Execute a read-only operation against the MariaDB database.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "SQL query to execute"
-          }
-        },
-        "required": ["query"]
-      }
+      "description": "Execute a read-only operation against the MariaDB database."
     }
   ],
   "prompts": [
@@ -58,7 +48,11 @@
     }
   ],
   "tools_generated": true,
-  "keywords": ["MariaDB", "Data Retrieval", "Databases"],
+  "keywords": [
+    "MariaDB",
+    "Data Retrieval",
+    "Databases"
+  ],
   "license": "MIT",
   "user_config": {
     "DB_HOST": {

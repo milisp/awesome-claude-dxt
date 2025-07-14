@@ -34,99 +34,23 @@
   "tools": [
     {
       "name": "execute_query",
-      "description": "Execute a PromQL instant query against Prometheus",
-      "inputSchema": {
-        "properties": {
-          "query": {
-            "title": "Query",
-            "type": "string"
-          },
-          "time": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Time"
-          }
-        },
-        "required": [
-          "query"
-        ],
-        "title": "execute_queryArguments",
-        "type": "object"
-      }
+      "description": "Execute a PromQL instant query against Prometheus"
     },
     {
       "name": "execute_range_query",
-      "description": "Execute a PromQL range query with start time, end time, and step interval",
-      "inputSchema": {
-        "properties": {
-          "query": {
-            "title": "Query",
-            "type": "string"
-          },
-          "start": {
-            "title": "Start",
-            "type": "string"
-          },
-          "end": {
-            "title": "End",
-            "type": "string"
-          },
-          "step": {
-            "title": "Step",
-            "type": "string"
-          }
-        },
-        "required": [
-          "query",
-          "start",
-          "end",
-          "step"
-        ],
-        "title": "execute_range_queryArguments",
-        "type": "object"
-      }
+      "description": "Execute a PromQL range query with start time, end time, and step interval"
     },
     {
       "name": "list_metrics",
-      "description": "List all available metrics in Prometheus",
-      "inputSchema": {
-        "properties": {},
-        "title": "list_metricsArguments",
-        "type": "object"
-      }
+      "description": "List all available metrics in Prometheus"
     },
     {
       "name": "get_metric_metadata",
-      "description": "Get metadata for a specific metric",
-      "inputSchema": {
-        "properties": {
-          "metric": {
-            "title": "Metric",
-            "type": "string"
-          }
-        },
-        "required": [
-          "metric"
-        ],
-        "title": "get_metric_metadataArguments",
-        "type": "object"
-      }
+      "description": "Get metadata for a specific metric"
     },
     {
       "name": "get_targets",
-      "description": "Get information about all scrape targets",
-      "inputSchema": {
-        "properties": {},
-        "title": "get_targetsArguments",
-        "type": "object"
-      }
+      "description": "Get information about all scrape targets"
     }
   ],
   "prompts": [

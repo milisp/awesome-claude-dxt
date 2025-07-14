@@ -31,24 +31,7 @@
   "tools": [
     {
       "name": "extract-web-data",
-      "description": "Extracts structured data as JSON from a web page given a URL using a Natural Language description of the data.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL of the public webpage to extract data from"
-          },
-          "prompt": {
-            "type": "string",
-            "description": "Natural Language description of the data to extract from the page"
-          }
-        },
-        "required": [
-          "url",
-          "prompt"
-        ]
-      }
+      "description": "Extracts structured data as JSON from a web page given a URL using a Natural Language description of the data."
     }
   ],
   "prompts": [

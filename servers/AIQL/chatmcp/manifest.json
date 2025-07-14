@@ -19,7 +19,10 @@
     "entry_point": "",
     "mcp_config": {
       "command": "npx",
-      "args": ["-y", "https://github.com/AI-QL/chat-mcp"],
+      "args": [
+        "-y",
+        "https://github.com/AI-QL/chat-mcp"
+      ],
       "env": {
         "SEARCH_PATH": "${user_config.SEARCH_PATH}"
       }
@@ -28,7 +31,12 @@
   "tools": [],
   "prompts": [],
   "tools_generated": true,
-  "keywords": ["MCP Tools", "LLM", "Electron", "cross-platform"],
+  "keywords": [
+    "MCP Tools",
+    "LLM",
+    "Electron",
+    "cross-platform"
+  ],
   "license": "Apache-2.0",
   "user_config": {
     "SEARCH_PATH": {

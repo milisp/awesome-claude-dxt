@@ -33,323 +33,59 @@
   "tools": [
     {
       "name": "search_blog",
-      "description": "Search blog posts on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for blog posts"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search blog posts on Naver."
     },
     {
       "name": "search_news",
-      "description": "Search news articles on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for news articles"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search news articles on Naver."
     },
     {
       "name": "search_book",
-      "description": "Search books on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for books"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search books on Naver."
     },
     {
       "name": "get_book_adv",
-      "description": "Get detailed book information using title or ISBN.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for book title or ISBN (optional)"
-        },
-        "d_titl": {
-          "type": "string",
-          "description": "Book title (optional)"
-        },
-        "d_isbn": {
-          "type": "string",
-          "description": "Book ISBN (optional)"
-        }
-      },
-      "required": []
+      "description": "Get detailed book information using title or ISBN."
     },
     {
       "name": "adult_check",
-      "description": "Check if a search term is adult content.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search term to check for adult content"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Check if a search term is adult content."
     },
     {
       "name": "search_encyc",
-      "description": "Search encyclopedia entries on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for encyclopedia entries"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search encyclopedia entries on Naver."
     },
     {
       "name": "search_cafe_article",
-      "description": "Search articles in Naver cafes.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for cafe articles"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search articles in Naver cafes."
     },
     {
       "name": "search_kin",
-      "description": "Search questions and answers on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for Q&A"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search questions and answers on Naver."
     },
     {
       "name": "search_local",
-      "description": "Search local information on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for local information"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'random')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search local information on Naver."
     },
     {
       "name": "fix_spelling",
-      "description": "Correct spelling errors in a given text.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Text to correct spelling errors"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Correct spelling errors in a given text."
     },
     {
       "name": "search_webkr",
-      "description": "Search web pages on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for web pages"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search web pages on Naver."
     },
     {
       "name": "search_image",
-      "description": "Search images on Naver with filters.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for images"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        },
-        "filter": {
-          "type": "string",
-          "description": "Filter for image search (default: 'all')"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search images on Naver with filters."
     },
     {
       "name": "search_shop",
-      "description": "Search shopping items on Naver with filters.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for shopping items"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        },
-        "sort": {
-          "type": "string",
-          "description": "Sorting method (default: 'sim')"
-        },
-        "filter": {
-          "type": "string",
-          "description": "Filter for shopping search (optional)"
-        },
-        "exclude": {
-          "type": "string",
-          "description": "Exclude filter for shopping search (optional)"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search shopping items on Naver with filters."
     },
     {
       "name": "search_doc",
-      "description": "Search documents on Naver.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query for documents"
-        },
-        "display": {
-          "type": "integer",
-          "description": "Number of results to display (default: 10)"
-        },
-        "start": {
-          "type": "integer",
-          "description": "Starting index for pagination (default: 1)"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search documents on Naver."
     }
   ],
   "prompts": [

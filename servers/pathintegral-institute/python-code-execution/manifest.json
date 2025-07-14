@@ -29,26 +29,7 @@
   "tools": [
     {
       "name": "python_code_execution",
-      "description": "Execute Python code in a secure sandbox with restricted imports and resource limits. Supports visualization with matplotlib and numerical computation with numpy.",
-      "prompt": "Execute this Python code: print('Hello, world!')",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "string",
-            "description": "Python code to execute",
-            "minLength": 1
-          },
-          "show_output": {
-            "type": "boolean",
-            "description": "Whether to show the output of the code execution",
-            "default": true
-          }
-        }
-      },
-      "required": [
-        "code"
-      ]
+      "description": "Execute Python code in a secure sandbox with restricted imports and resource limits. Supports visualization with matplotlib and numerical computation with numpy."
     }
   ],
   "prompts": [

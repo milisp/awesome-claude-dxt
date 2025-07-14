@@ -29,240 +29,47 @@
   "tools": [
     {
       "name": "git_status",
-      "description": "Shows the working tree status",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path"
-        ],
-        "title": "GitStatus",
-        "type": "object"
-      }
+      "description": "Shows the working tree status"
     },
     {
       "name": "git_diff_unstaged",
-      "description": "Shows changes in the working directory that are not yet staged",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path"
-        ],
-        "title": "GitDiffUnstaged",
-        "type": "object"
-      }
+      "description": "Shows changes in the working directory that are not yet staged"
     },
     {
       "name": "git_diff_staged",
-      "description": "Shows changes that are staged for commit",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path"
-        ],
-        "title": "GitDiffStaged",
-        "type": "object"
-      }
+      "description": "Shows changes that are staged for commit"
     },
     {
       "name": "git_diff",
-      "description": "Shows differences between branches or commits",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "target": {
-            "title": "Target",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path",
-          "target"
-        ],
-        "title": "GitDiff",
-        "type": "object"
-      }
+      "description": "Shows differences between branches or commits"
     },
     {
       "name": "git_commit",
-      "description": "Records changes to the repository",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "message": {
-            "title": "Message",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path",
-          "message"
-        ],
-        "title": "GitCommit",
-        "type": "object"
-      }
+      "description": "Records changes to the repository"
     },
     {
       "name": "git_add",
-      "description": "Adds file contents to the staging area",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "files": {
-            "items": {
-              "type": "string"
-            },
-            "title": "Files",
-            "type": "array"
-          }
-        },
-        "required": [
-          "repo_path",
-          "files"
-        ],
-        "title": "GitAdd",
-        "type": "object"
-      }
+      "description": "Adds file contents to the staging area"
     },
     {
       "name": "git_reset",
-      "description": "Unstages all staged changes",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path"
-        ],
-        "title": "GitReset",
-        "type": "object"
-      }
+      "description": "Unstages all staged changes"
     },
     {
       "name": "git_log",
-      "description": "Shows the commit logs",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "max_count": {
-            "default": 10,
-            "title": "Max Count",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "repo_path"
-        ],
-        "title": "GitLog",
-        "type": "object"
-      }
+      "description": "Shows the commit logs"
     },
     {
       "name": "git_create_branch",
-      "description": "Creates a new branch from an optional base branch",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "branch_name": {
-            "title": "Branch Name",
-            "type": "string"
-          },
-          "base_branch": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Base Branch"
-          }
-        },
-        "required": [
-          "repo_path",
-          "branch_name"
-        ],
-        "title": "GitCreateBranch",
-        "type": "object"
-      }
+      "description": "Creates a new branch from an optional base branch"
     },
     {
       "name": "git_checkout",
-      "description": "Switches branches",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "branch_name": {
-            "title": "Branch Name",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path",
-          "branch_name"
-        ],
-        "title": "GitCheckout",
-        "type": "object"
-      }
+      "description": "Switches branches"
     },
     {
       "name": "git_show",
-      "description": "Shows the contents of a commit",
-      "inputSchema": {
-        "properties": {
-          "repo_path": {
-            "title": "Repo Path",
-            "type": "string"
-          },
-          "revision": {
-            "title": "Revision",
-            "type": "string"
-          }
-        },
-        "required": [
-          "repo_path",
-          "revision"
-        ],
-        "title": "GitShow",
-        "type": "object"
-      }
+      "description": "Shows the contents of a commit"
     }
   ],
   "prompts": [],

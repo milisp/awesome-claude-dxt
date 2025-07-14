@@ -19,7 +19,11 @@
     "entry_point": "",
     "mcp_config": {
       "command": "npx",
-      "args": ["-y", "agentrpc", "mcp"],
+      "args": [
+        "-y",
+        "agentrpc",
+        "mcp"
+      ],
       "env": {
         "AGENTRPC_API_SECRET": "${user_config.AGENTRPC_API_SECRET}"
       }

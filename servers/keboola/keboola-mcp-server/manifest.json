@@ -35,110 +35,31 @@
   "tools": [
     {
       "name": "list_bucket_info",
-      "description": "List information about all buckets in the project.",
-      "inputSchema": {
-        "properties": {},
-        "title": "list_bucket_infoArguments",
-        "type": "object"
-      }
+      "description": "List information about all buckets in the project."
     },
     {
       "name": "get_bucket_metadata",
-      "description": "Get detailed information about a specific bucket.",
-      "inputSchema": {
-        "properties": {
-          "bucket_id": {
-            "description": "Unique ID of the bucket.",
-            "title": "Bucket Id",
-            "type": "string"
-          }
-        },
-        "required": [
-          "bucket_id"
-        ],
-        "title": "get_bucket_metadataArguments",
-        "type": "object"
-      }
+      "description": "Get detailed information about a specific bucket."
     },
     {
       "name": "list_bucket_tables",
-      "description": "List all tables in a specific bucket with their basic information.",
-      "inputSchema": {
-        "properties": {
-          "bucket_id": {
-            "description": "Unique ID of the bucket.",
-            "title": "Bucket Id",
-            "type": "string"
-          }
-        },
-        "required": [
-          "bucket_id"
-        ],
-        "title": "list_bucket_tablesArguments",
-        "type": "object"
-      }
+      "description": "List all tables in a specific bucket with their basic information."
     },
     {
       "name": "get_table_metadata",
-      "description": "Get detailed information about a specific table including its DB identifier and column information.",
-      "inputSchema": {
-        "properties": {
-          "table_id": {
-            "description": "Unique ID of the table.",
-            "title": "Table Id",
-            "type": "string"
-          }
-        },
-        "required": [
-          "table_id"
-        ],
-        "title": "get_table_metadataArguments",
-        "type": "object"
-      }
+      "description": "Get detailed information about a specific table including its DB identifier and column information."
     },
     {
       "name": "query_table",
-      "description": "\n    Executes an SQL SELECT query to get the data from the underlying snowflake database.\n    * When constructing the SQL SELECT query make sure to use the fully qualified table names\n      that include the database name, schema name and the table name.\n    * The fully qualified table name can be found in the table information, use a tool to get the information\n      about tables. The fully qualified table name can be found in the response for that tool.\n    * Snowflake is case-sensitive so always wrap the column names in double quotes.\n\n    Examples:\n    * SQL queries must include the fully qualified table names including the database name, e.g.:\n      SELECT * FROM \"db_name\".\"db_schema_name\".\"table_name\";\n    ",
-      "inputSchema": {
-        "properties": {
-          "sql_query": {
-            "description": "SQL SELECT query to run.",
-            "title": "Sql Query",
-            "type": "string"
-          }
-        },
-        "required": [
-          "sql_query"
-        ],
-        "title": "query_tableArguments",
-        "type": "object"
-      }
+      "description": "\n    Executes an SQL SELECT query to get the data from the underlying snowflake database.\n    * When constructing the SQL SELECT query make sure to use the fully qualified table names\n      that include the database name, schema name and the table name.\n    * The fully qualified table name can be found in the table information, use a tool to get the information\n      about tables. The fully qualified table name can be found in the response for that tool.\n    * Snowflake is case-sensitive so always wrap the column names in double quotes.\n\n    Examples:\n    * SQL queries must include the fully qualified table names including the database name, e.g.:\n      SELECT * FROM \"db_name\".\"db_schema_name\".\"table_name\";\n    "
     },
     {
       "name": "list_components",
-      "description": "List all available components and their configurations.",
-      "inputSchema": {
-        "properties": {},
-        "title": "list_componentsArguments",
-        "type": "object"
-      }
+      "description": "List all available components and their configurations."
     },
     {
       "name": "list_component_configs",
-      "description": "List all configurations for a specific component.",
-      "inputSchema": {
-        "properties": {
-          "component_id": {
-            "title": "Component Id",
-            "type": "string"
-          }
-        },
-        "required": [
-          "component_id"
-        ],
-        "title": "list_component_configsArguments",
-        "type": "object"
-      }
+      "description": "List all configurations for a specific component."
     }
   ],
   "prompts": [

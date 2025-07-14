@@ -33,35 +33,11 @@
   "tools": [
     {
       "name": "read_query",
-      "description": "Execute a SELECT query or commands that return a ResultSet",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "SQL query to execute"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Execute a SELECT query or commands that return a ResultSet"
     },
     {
       "name": "write_query",
-      "description": "Execute an DDL/DML or other StarRocks command that do not have a ResultSet",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "SQL to execute"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Execute an DDL/DML or other StarRocks command that do not have a ResultSet"
     }
   ],
   "prompts": [],

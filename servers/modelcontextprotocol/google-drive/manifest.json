@@ -28,16 +28,7 @@
   "tools": [
     {
       "name": "search",
-      "description": "Search for files in Google Drive.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "Search query"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Search for files in Google Drive."
     }
   ],
   "prompts": [],

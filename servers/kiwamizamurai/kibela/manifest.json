@@ -32,49 +32,15 @@
   "tools": [
     {
       "name": "kibela_search_notes",
-      "description": "Search Kibela notes with given query",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "Search query"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Search Kibela notes with given query"
     },
     {
       "name": "kibela_get_my_notes",
-      "description": "Get your latest notes from Kibela",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "limit": {
-            "type": "number",
-            "description": "Number of notes to fetch (max 50)",
-            "default": 15
-          }
-        }
-      }
+      "description": "Get your latest notes from Kibela"
     },
     {
       "name": "kibela_get_note_content",
-      "description": "Get content and comments of a specific note",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "Note ID"
-          }
-        },
-        "required": [
-          "id"
-        ]
-      }
+      "description": "Get content and comments of a specific note"
     }
   ],
   "prompts": [

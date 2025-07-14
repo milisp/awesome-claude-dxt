@@ -29,27 +29,7 @@
   "tools": [
     {
       "name": "fetch-web",
-      "description": "Fetch URL and return content according to its content type. Returns parsed content by default or raw content if specified.",
-      "prompt": "Fetch web from url: https://example.com",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "URL to fetch",
-            "format": "uri",
-            "minLength": 1
-          },
-          "raw": {
-            "type": "boolean",
-            "description": "Whether to return raw content",
-            "default": false
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
+      "description": "Fetch URL and return content according to its content type. Returns parsed content by default or raw content if specified."
     }
   ],
   "prompts": [

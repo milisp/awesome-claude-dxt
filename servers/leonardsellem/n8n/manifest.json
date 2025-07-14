@@ -32,63 +32,11 @@
   "tools": [
     {
       "name": "install_repo_mcp_server",
-      "description": "Install an MCP server via npx or uvx",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "The package name of the MCP server"
-          },
-          "args": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "The arguments to pass along"
-          },
-          "env": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "The environment variables to set, delimited by ="
-          }
-        },
-        "required": [
-          "name"
-        ]
-      }
+      "description": "Install an MCP server via npx or uvx"
     },
     {
       "name": "install_local_mcp_server",
-      "description": "Install an MCP server whose code is cloned locally on your computer",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "path": {
-            "type": "string",
-            "description": "The path to the MCP server code cloned on your computer"
-          },
-          "args": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "The arguments to pass along"
-          },
-          "env": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "The environment variables to set, delimited by ="
-          }
-        },
-        "required": [
-          "path"
-        ]
-      }
+      "description": "Install an MCP server whose code is cloned locally on your computer"
     }
   ],
   "prompts": [],

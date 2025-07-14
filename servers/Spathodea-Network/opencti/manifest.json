@@ -32,220 +32,67 @@
   "tools": [
     {
       "name": "get_latest_reports",
-      "description": "獲取最新的OpenCTI報告",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        }
-      }
+      "description": "獲取最新的OpenCTI報告"
     },
     {
       "name": "get_report_by_id",
-      "description": "根據ID獲取OpenCTI報告",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "報告ID"
-          }
-        },
-        "required": [
-          "id"
-        ]
-      }
+      "description": "根據ID獲取OpenCTI報告"
     },
     {
       "name": "search_indicators",
-      "description": "搜尋OpenCTI中的指標",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "搜尋關鍵字"
-          },
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "搜尋OpenCTI中的指標"
     },
     {
       "name": "search_malware",
-      "description": "搜尋OpenCTI中的惡意程式",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "搜尋關鍵字"
-          },
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "搜尋OpenCTI中的惡意程式"
     },
     {
       "name": "search_threat_actors",
-      "description": "搜尋OpenCTI中的威脅行為者",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "搜尋關鍵字"
-          },
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "搜尋OpenCTI中的威脅行為者"
     },
     {
       "name": "get_user_by_id",
-      "description": "根據ID獲取使用者資訊",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "使用者ID"
-          }
-        },
-        "required": [
-          "id"
-        ]
-      }
+      "description": "根據ID獲取使用者資訊"
     },
     {
       "name": "list_users",
-      "description": "列出所有使用者",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有使用者"
     },
     {
       "name": "list_groups",
-      "description": "列出所有群組",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        }
-      }
+      "description": "列出所有群組"
     },
     {
       "name": "list_attack_patterns",
-      "description": "列出所有攻擊模式",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "first": {
-            "type": "number",
-            "description": "返回結果數量限制",
-            "default": 10
-          }
-        }
-      }
+      "description": "列出所有攻擊模式"
     },
     {
       "name": "get_campaign_by_name",
-      "description": "根據名稱獲取行動資訊",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "行動名稱"
-          }
-        },
-        "required": [
-          "name"
-        ]
-      }
+      "description": "根據名稱獲取行動資訊"
     },
     {
       "name": "list_connectors",
-      "description": "列出所有連接器",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有連接器"
     },
     {
       "name": "list_status_templates",
-      "description": "列出所有狀態模板",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有狀態模板"
     },
     {
       "name": "get_file_by_id",
-      "description": "根據ID獲取檔案資訊",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "檔案ID"
-          }
-        },
-        "required": [
-          "id"
-        ]
-      }
+      "description": "根據ID獲取檔案資訊"
     },
     {
       "name": "list_files",
-      "description": "列出所有檔案",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有檔案"
     },
     {
       "name": "list_marking_definitions",
-      "description": "列出所有標記定義",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有標記定義"
     },
     {
       "name": "list_labels",
-      "description": "列出所有標籤",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "列出所有標籤"
     }
   ],
   "prompts": [

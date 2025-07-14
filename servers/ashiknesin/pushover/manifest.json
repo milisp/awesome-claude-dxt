@@ -33,40 +33,7 @@
   "tools": [
     {
       "name": "send",
-      "description": "Send a notification via Pushover",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "minLength": 1
-          },
-          "title": {
-            "type": "string"
-          },
-          "priority": {
-            "type": "number",
-            "minimum": -2,
-            "maximum": 2
-          },
-          "sound": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string",
-            "format": "uri"
-          },
-          "url_title": {
-            "type": "string"
-          },
-          "device": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "message"
-        ]
-      }
+      "description": "Send a notification via Pushover"
     }
   ],
   "prompts": [],

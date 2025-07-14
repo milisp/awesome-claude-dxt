@@ -33,66 +33,15 @@
   "tools": [
     {
       "name": "retrieve",
-      "description": "Retrieve documents from the configured pipeline.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "question": {
-            "type": "string",
-            "description": "The term to search for."
-          },
-          "k": {
-            "type": "number",
-            "description": "The number of documents to retrieve.",
-            "default": 4
-          }
-        },
-        "required": [
-          "question"
-        ]
-      }
+      "description": "Retrieve documents from the configured pipeline."
     },
     {
       "name": "extract",
-      "description": "Perform text extraction and chunking on a document.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "base64Document": {
-            "type": "string",
-            "description": "Document encoded in base64."
-          },
-          "contentType": {
-            "type": "string",
-            "description": "Document content type."
-          }
-        },
-        "required": [
-          "base64Document",
-          "contentType"
-        ]
-      }
+      "description": "Perform text extraction and chunking on a document."
     },
     {
       "name": "deep-research",
-      "description": "Generate a deep research on the configured pipeline.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "The deep research query."
-          },
-          "webSearch": {
-            "type": "boolean",
-            "description": "Whether to perform a web search."
-          }
-        },
-        "required": [
-          "query",
-          "webSearch"
-        ]
-      }
+      "description": "Generate a deep research on the configured pipeline."
     }
   ],
   "prompts": [

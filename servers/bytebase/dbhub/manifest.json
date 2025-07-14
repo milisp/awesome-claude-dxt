@@ -32,22 +32,11 @@
   "tools": [
     {
       "name": "list_connectors",
-      "description": "Lists all available database connectors and their sample DSNs. Indicates which connector is active based on the current DSN.",
-      "inputSchema": {},
-      "required": []
+      "description": "Lists all available database connectors and their sample DSNs. Indicates which connector is active based on the current DSN."
     },
     {
       "name": "run_query",
-      "description": "Executes a SQL query and returns the results.",
-      "inputSchema": {
-        "query": {
-          "type": "string",
-          "description": "SQL query to execute"
-        }
-      },
-      "required": [
-        "query"
-      ]
+      "description": "Executes a SQL query and returns the results."
     }
   ],
   "prompts": [],

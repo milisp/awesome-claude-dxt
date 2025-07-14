@@ -33,20 +33,7 @@
   "tools": [
     {
       "name": "search_posts",
-      "description": "Search Discourse posts",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "minLength": 5,
-            "description": "Query"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Search Discourse posts"
     }
   ],
   "prompts": [],

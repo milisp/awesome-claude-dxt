@@ -29,21 +29,7 @@
   "tools": [
     {
       "name": "query",
-      "description": "Find a context in local files (PDF, CSV, DOCX, MD, TXT)",
-      "inputSchema": {
-        "properties": {
-          "text": {
-            "description": "context to find",
-            "title": "Text",
-            "type": "string"
-          }
-        },
-        "required": [
-          "text"
-        ],
-        "title": "Query",
-        "type": "object"
-      }
+      "description": "Find a context in local files (PDF, CSV, DOCX, MD, TXT)"
     }
   ],
   "prompts": [],

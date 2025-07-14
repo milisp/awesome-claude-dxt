@@ -35,226 +35,43 @@
   "tools": [
     {
       "name": "get_swap_quote",
-      "description": "Get a swap quote and unsigned transaction for immediate token swaps",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "input_mint": {
-            "type": "string",
-            "description": "The mint address of the input token"
-          },
-          "output_mint": {
-            "type": "string",
-            "description": "The mint address of the output token"
-          },
-          "amount": {
-            "type": "string",
-            "description": "The amount to swap (in token units)"
-          }
-        },
-        "required": [
-          "input_mint",
-          "output_mint",
-          "amount"
-        ]
-      }
+      "description": "Get a swap quote and unsigned transaction for immediate token swaps"
     },
     {
       "name": "execute_swap_transaction",
-      "description": "Execute a signed swap transaction (PAID operation)",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "transaction": {
-            "type": "string",
-            "description": "The signed transaction to execute"
-          },
-          "request_id": {
-            "type": "string",
-            "description": "The request ID from the quote"
-          }
-        },
-        "required": [
-          "transaction",
-          "request_id"
-        ]
-      }
+      "description": "Execute a signed swap transaction (PAID operation)"
     },
     {
       "name": "get_balances",
-      "description": "Get token balances for a wallet",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "wallet_address": {
-            "type": "string",
-            "description": "The wallet address to check balances for (optional, defaults to connected wallet)"
-          }
-        }
-      }
+      "description": "Get token balances for a wallet"
     },
     {
       "name": "get_shield",
-      "description": "Get token security information and risk assessment",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "mints": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Array of token mint addresses to check"
-          }
-        },
-        "required": [
-          "mints"
-        ]
-      }
+      "description": "Get token security information and risk assessment"
     },
     {
       "name": "search_token",
-      "description": "Search for tokens by name or symbol",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "The search query (token name or symbol)"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Search for tokens by name or symbol"
     },
     {
       "name": "create_limit_order",
-      "description": "Create a limit order transaction for automated trading",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "input_mint": {
-            "type": "string",
-            "description": "The mint address of the input token"
-          },
-          "output_mint": {
-            "type": "string",
-            "description": "The mint address of the output token"
-          },
-          "making_amount": {
-            "type": "string",
-            "description": "The amount of input token to trade"
-          },
-          "taking_amount": {
-            "type": "string",
-            "description": "The amount of output token expected"
-          },
-          "slippage_bps": {
-            "type": "integer",
-            "description": "Slippage tolerance in basis points (optional)"
-          },
-          "expired_at": {
-            "type": "string",
-            "description": "Expiration timestamp (optional)"
-          }
-        },
-        "required": [
-          "input_mint",
-          "output_mint",
-          "making_amount",
-          "taking_amount"
-        ]
-      }
+      "description": "Create a limit order transaction for automated trading"
     },
     {
       "name": "execute_limit_order",
-      "description": "Execute a limit order transaction (PAID operation)",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "transaction": {
-            "type": "string",
-            "description": "The signed limit order transaction"
-          },
-          "request_id": {
-            "type": "string",
-            "description": "The request ID from the limit order creation"
-          }
-        },
-        "required": [
-          "transaction",
-          "request_id"
-        ]
-      }
+      "description": "Execute a limit order transaction (PAID operation)"
     },
     {
       "name": "cancel_limit_order",
-      "description": "Cancel a single limit order",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "order": {
-            "type": "string",
-            "description": "The order ID to cancel"
-          }
-        },
-        "required": [
-          "order"
-        ]
-      }
+      "description": "Cancel a single limit order"
     },
     {
       "name": "cancel_limit_orders",
-      "description": "Cancel multiple limit orders",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "orders": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Array of order IDs to cancel (optional, cancels all if not provided)"
-          }
-        }
-      }
+      "description": "Cancel multiple limit orders"
     },
     {
       "name": "get_limit_orders",
-      "description": "Get active or historical limit orders",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "order_status": {
-            "type": "string",
-            "enum": [
-              "active",
-              "history"
-            ],
-            "description": "Status of orders to retrieve"
-          },
-          "wallet_address": {
-            "type": "string",
-            "description": "Wallet address to filter orders (optional)"
-          },
-          "input_mint": {
-            "type": "string",
-            "description": "Input token mint address to filter (optional)"
-          },
-          "output_mint": {
-            "type": "string",
-            "description": "Output token mint address to filter (optional)"
-          },
-          "page": {
-            "type": "integer",
-            "description": "Page number for pagination (optional)"
-          }
-        },
-        "required": [
-          "order_status"
-        ]
-      }
+      "description": "Get active or historical limit orders"
     }
   ],
   "prompts": [

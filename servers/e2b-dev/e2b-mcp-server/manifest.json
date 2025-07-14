@@ -30,18 +30,7 @@
   "tools": [
     {
       "name": "run_code",
-      "description": "Run python code in a secure sandbox by E2B. Using the Jupyter Notebook syntax.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "code"
-        ]
-      }
+      "description": "Run python code in a secure sandbox by E2B. Using the Jupyter Notebook syntax."
     }
   ],
   "prompts": [],

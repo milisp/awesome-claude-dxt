@@ -1,7 +1,7 @@
 {
   "dxt_version": "0.1",
   "name": "huggingface-spaces",
-  "display_name": "HuggingFace Spaces \ud83e\udd17",
+  "display_name": "HuggingFace Spaces 🤗",
   "version": "1.0.0",
   "description": "Server for using HuggingFace Spaces, supporting Open Source Image, Audio, Text Models and more. Claude Desktop mode for easy integration.",
   "long_description": "",
@@ -28,67 +28,11 @@
   "tools": [
     {
       "name": "available-files",
-      "description": "A list of available file and resources. If the User requests things like 'most recent image' or 'the audio' use this tool to identify the intended resource.This tool returns 'resource uri', 'name', 'size', 'last modified'  and 'mime type' in a markdown table",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "A list of available file and resources. If the User requests things like 'most recent image' or 'the audio' use this tool to identify the intended resource.This tool returns 'resource uri', 'name', 'size', 'last modified'  and 'mime type' in a markdown table"
     },
     {
       "name": "FLUX_1-schnell-infer",
-      "description": "Call the FLUX.1-schnell endpoint /infer",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "prompt": {
-            "type": "string",
-            "description": "Prompt",
-            "examples": [
-              "Hello!!"
-            ]
-          },
-          "seed": {
-            "type": "number",
-            "description": "Seed",
-            "default": 0
-          },
-          "randomize_seed": {
-            "type": "boolean",
-            "description": "Randomize seed",
-            "default": true,
-            "examples": [
-              true
-            ]
-          },
-          "width": {
-            "type": "number",
-            "description": "Width",
-            "default": 1024,
-            "examples": [
-              256
-            ]
-          },
-          "height": {
-            "type": "number",
-            "description": "Height",
-            "default": 1024,
-            "examples": [
-              256
-            ]
-          },
-          "num_inference_steps": {
-            "type": "number",
-            "description": "Number of inference steps",
-            "default": 4,
-            "examples": [
-              1
-            ]
-          }
-        },
-        "required": [
-          "prompt"
-        ]
-      }
+      "description": "Call the FLUX.1-schnell endpoint /infer"
     }
   ],
   "prompts": [

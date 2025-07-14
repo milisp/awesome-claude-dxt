@@ -39,47 +39,7 @@
   "tools": [
     {
       "name": "ssh_exec",
-      "description": "Execute a command on the remote system",
-      "inputSchema": {
-        "properties": {
-          "command": {
-            "description": "Command for SSH server to execute",
-            "title": "Command",
-            "type": "string"
-          },
-          "arguments": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "description": "Arguments to pass to the command",
-            "title": "Arguments"
-          },
-          "timeout": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "description": "Timeout in seconds for command execution",
-            "title": "Timeout"
-          }
-        },
-        "required": [
-          "command"
-        ],
-        "title": "ssh_execArguments",
-        "type": "object"
-      }
+      "description": "Execute a command on the remote system"
     }
   ],
   "prompts": [

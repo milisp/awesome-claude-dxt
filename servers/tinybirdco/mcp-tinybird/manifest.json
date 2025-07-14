@@ -32,156 +32,47 @@
   "tools": [
     {
       "name": "list-data-sources",
-      "description": "List all Data Sources in the Tinybird Workspace",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "List all Data Sources in the Tinybird Workspace"
     },
     {
       "name": "get-data-source",
-      "description": "Get details of a Data Source in the Tinybird Workspace, such as the schema",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "datasource_id": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "datasource_id"
-        ]
-      }
+      "description": "Get details of a Data Source in the Tinybird Workspace, such as the schema"
     },
     {
       "name": "list-pipes",
-      "description": "List all Pipe Endpoints in the Tinybird Workspace",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "List all Pipe Endpoints in the Tinybird Workspace"
     },
     {
       "name": "get-pipe",
-      "description": "Get details of a Pipe Endpoint in the Tinybird Workspace, such as the nodes SQLs to understand what they do or what Data Sources they use",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "pipe_id": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "pipe_id"
-        ]
-      }
+      "description": "Get details of a Pipe Endpoint in the Tinybird Workspace, such as the nodes SQLs to understand what they do or what Data Sources they use"
     },
     {
       "name": "request-pipe-data",
-      "description": "Requests data from a Pipe Endpoint in the Tinybird Workspace, includes parameters",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "pipe_id": {
-            "type": "string"
-          },
-          "params": {
-            "type": "object",
-            "properties": {}
-          }
-        },
-        "required": [
-          "pipe_id"
-        ]
-      }
+      "description": "Requests data from a Pipe Endpoint in the Tinybird Workspace, includes parameters"
     },
     {
       "name": "run-select-query",
-      "description": "Runs a select query to the Tinybird Workspace. It may query Data Sources or Pipe Endpoints",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "select_query": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "select_query"
-        ]
-      }
+      "description": "Runs a select query to the Tinybird Workspace. It may query Data Sources or Pipe Endpoints"
     },
     {
       "name": "append-insight",
-      "description": "Add a business insight to the memo",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "insight": {
-            "type": "string",
-            "description": "Business insight discovered from data analysis"
-          }
-        },
-        "required": [
-          "insight"
-        ]
-      }
+      "description": "Add a business insight to the memo"
     },
     {
       "name": "llms-tinybird-docs",
-      "description": "The Tinybird product description and documentation, including API Reference in LLM friendly format",
-      "inputSchema": {
-        "type": "object",
-        "properties": {}
-      }
+      "description": "The Tinybird product description and documentation, including API Reference in LLM friendly format"
     },
     {
       "name": "analyze-pipe",
-      "description": "Analyze the Pipe Endpoint SQL",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "pipe_name": {
-            "type": "string",
-            "description": "The Pipe Endpoint name"
-          }
-        },
-        "required": [
-          "pipe_name"
-        ]
-      }
+      "description": "Analyze the Pipe Endpoint SQL"
     },
     {
       "name": "push-datafile",
-      "description": "Push a .datasource or .pipe file to the Workspace",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "files": {
-            "type": "string",
-            "description": "The datafile local path"
-          }
-        },
-        "required": [
-          "files"
-        ]
-      }
+      "description": "Push a .datasource or .pipe file to the Workspace"
     },
     {
       "name": "save-event",
-      "description": "Sends an event to a Data Source in Tinybird. The data needs to be in NDJSON format and conform to the Data Source schema in Tinybird",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "datasource_name": {
-            "type": "string",
-            "description": "The name of the Data Source in Tinybird"
-          },
-          "data": {
-            "type": "string",
-            "description": "A JSON object that will be converted to a NDJSON String to save in the Tinybird Data Source via the events API. It should contain one key for each column in the Data Source"
-          }
-        }
-      }
+      "description": "Sends an event to a Data Source in Tinybird. The data needs to be in NDJSON format and conform to the Data Source schema in Tinybird"
     }
   ],
   "prompts": [

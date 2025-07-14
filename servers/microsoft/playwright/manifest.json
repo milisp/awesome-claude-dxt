@@ -27,335 +27,79 @@
   "tools": [
     {
       "name": "browser_close",
-      "description": "Close the page",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Close the page"
     },
     {
       "name": "browser_wait",
-      "description": "Wait for a specified time in seconds",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "time": {
-            "type": "number",
-            "description": "The time to wait in seconds"
-          }
-        },
-        "required": [
-          "time"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Wait for a specified time in seconds"
     },
     {
       "name": "browser_resize",
-      "description": "Resize the browser window",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "width": {
-            "type": "number",
-            "description": "Width of the browser window"
-          },
-          "height": {
-            "type": "number",
-            "description": "Height of the browser window"
-          }
-        },
-        "required": [
-          "width",
-          "height"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Resize the browser window"
     },
     {
       "name": "browser_file_upload",
-      "description": "Upload one or multiple files",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "paths": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "The absolute paths to the files to upload. Can be a single file or multiple files."
-          }
-        },
-        "required": [
-          "paths"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Upload one or multiple files"
     },
     {
       "name": "browser_install",
-      "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Install the browser specified in the config. Call this if you get an error about the browser not being installed."
     },
     {
       "name": "browser_press_key",
-      "description": "Press a key on the keyboard",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "key": {
-            "type": "string",
-            "description": "Name of the key to press or a character to generate, such as `ArrowLeft` or `a`"
-          }
-        },
-        "required": [
-          "key"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Press a key on the keyboard"
     },
     {
       "name": "browser_navigate",
-      "description": "Navigate to a URL",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL to navigate to"
-          }
-        },
-        "required": [
-          "url"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Navigate to a URL"
     },
     {
       "name": "browser_navigate_back",
-      "description": "Go back to the previous page",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Go back to the previous page"
     },
     {
       "name": "browser_navigate_forward",
-      "description": "Go forward to the next page",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Go forward to the next page"
     },
     {
       "name": "browser_pdf_save",
-      "description": "Save page as PDF",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Save page as PDF"
     },
     {
       "name": "browser_screen_capture",
-      "description": "Take a screenshot of the current page",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Take a screenshot of the current page"
     },
     {
       "name": "browser_screen_move_mouse",
-      "description": "Move mouse to a given position",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "element": {
-            "type": "string",
-            "description": "Human-readable element description used to obtain permission to interact with the element"
-          },
-          "x": {
-            "type": "number",
-            "description": "X coordinate"
-          },
-          "y": {
-            "type": "number",
-            "description": "Y coordinate"
-          }
-        },
-        "required": [
-          "element",
-          "x",
-          "y"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Move mouse to a given position"
     },
     {
       "name": "browser_screen_click",
-      "description": "Click left mouse button",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "element": {
-            "type": "string",
-            "description": "Human-readable element description used to obtain permission to interact with the element"
-          },
-          "x": {
-            "type": "number",
-            "description": "X coordinate"
-          },
-          "y": {
-            "type": "number",
-            "description": "Y coordinate"
-          }
-        },
-        "required": [
-          "element",
-          "x",
-          "y"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Click left mouse button"
     },
     {
       "name": "browser_screen_drag",
-      "description": "Drag left mouse button",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "element": {
-            "type": "string",
-            "description": "Human-readable element description used to obtain permission to interact with the element"
-          },
-          "startX": {
-            "type": "number",
-            "description": "Start X coordinate"
-          },
-          "startY": {
-            "type": "number",
-            "description": "Start Y coordinate"
-          },
-          "endX": {
-            "type": "number",
-            "description": "End X coordinate"
-          },
-          "endY": {
-            "type": "number",
-            "description": "End Y coordinate"
-          }
-        },
-        "required": [
-          "element",
-          "startX",
-          "startY",
-          "endX",
-          "endY"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Drag left mouse button"
     },
     {
       "name": "browser_screen_type",
-      "description": "Type text",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "text": {
-            "type": "string",
-            "description": "Text to type into the element"
-          },
-          "submit": {
-            "type": "boolean",
-            "description": "Whether to submit entered text (press Enter after)"
-          }
-        },
-        "required": [
-          "text"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Type text"
     },
     {
       "name": "browser_tab_list",
-      "description": "List browser tabs",
-      "inputSchema": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "List browser tabs"
     },
     {
       "name": "browser_tab_new",
-      "description": "Open a new tab",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL to navigate to in the new tab. If not provided, the new tab will be blank."
-          }
-        },
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Open a new tab"
     },
     {
       "name": "browser_tab_select",
-      "description": "Select a tab by index",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "index": {
-            "type": "number",
-            "description": "The index of the tab to select"
-          }
-        },
-        "required": [
-          "index"
-        ],
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Select a tab by index"
     },
     {
       "name": "browser_tab_close",
-      "description": "Close a tab",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "index": {
-            "type": "number",
-            "description": "The index of the tab to close. Closes current tab if not provided."
-          }
-        },
-        "additionalProperties": false,
-        "$schema": "http://json-schema.org/draft-07/schema#"
-      }
+      "description": "Close a tab"
     }
   ],
   "prompts": [

@@ -29,24 +29,7 @@
   "tools": [
     {
       "name": "get_indicator_for_country",
-      "description": "Get values for an indicator for a specific country from the World Bank API",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "country_id": {
-            "type": "string",
-            "description": "The ID of the country for which the indicator is to be queried"
-          },
-          "indicator_id": {
-            "type": "string",
-            "description": "The ID of the indicator to be queried"
-          }
-        },
-        "required": [
-          "country_id",
-          "indicator_id"
-        ]
-      }
+      "description": "Get values for an indicator for a specific country from the World Bank API"
     }
   ],
   "prompts": [

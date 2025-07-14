@@ -42,51 +42,15 @@
   "tools": [
     {
       "name": "list_databases",
-      "description": "List available ClickHouse databases",
-      "inputSchema": {
-        "properties": {},
-        "title": "list_databasesArguments",
-        "type": "object"
-      }
+      "description": "List available ClickHouse databases"
     },
     {
       "name": "list_tables",
-      "description": "List available ClickHouse tables in a database",
-      "inputSchema": {
-        "properties": {
-          "database": {
-            "title": "Database",
-            "type": "string"
-          },
-          "like": {
-            "default": null,
-            "title": "Like",
-            "type": "string"
-          }
-        },
-        "required": [
-          "database"
-        ],
-        "title": "list_tablesArguments",
-        "type": "object"
-      }
+      "description": "List available ClickHouse tables in a database"
     },
     {
       "name": "run_select_query",
-      "description": "Run a SELECT query in a ClickHouse database",
-      "inputSchema": {
-        "properties": {
-          "query": {
-            "title": "Query",
-            "type": "string"
-          }
-        },
-        "required": [
-          "query"
-        ],
-        "title": "run_select_queryArguments",
-        "type": "object"
-      }
+      "description": "Run a SELECT query in a ClickHouse database"
     }
   ],
   "prompts": [

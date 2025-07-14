@@ -34,19 +34,7 @@
   "tools": [
     {
       "name": "execute_sql",
-      "description": "Execute an SQL query on the GreptimeDB server",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "query": {
-            "type": "string",
-            "description": "The SQL query to execute"
-          }
-        },
-        "required": [
-          "query"
-        ]
-      }
+      "description": "Execute an SQL query on the GreptimeDB server"
     }
   ],
   "prompts": [

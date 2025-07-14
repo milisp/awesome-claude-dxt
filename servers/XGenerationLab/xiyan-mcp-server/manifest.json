@@ -31,20 +31,7 @@
   "tools": [
     {
       "name": "get_data",
-      "description": "Fetch the data from database through a natural language query\n\n    Args:\n        query: The query in natual language\n    ",
-      "inputSchema": {
-        "properties": {
-          "query": {
-            "title": "Query",
-            "type": "string"
-          }
-        },
-        "required": [
-          "query"
-        ],
-        "title": "get_dataArguments",
-        "type": "object"
-      }
+      "description": "Fetch the data from database through a natural language query\n\n    Args:\n        query: The query in natual language\n    "
     }
   ],
   "prompts": [],

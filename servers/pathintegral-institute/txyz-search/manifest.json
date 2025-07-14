@@ -32,18 +32,15 @@
   "tools": [
     {
       "name": "txyz_search_scholar",
-      "description": "Academic and scholarly search for papers, articles, and other academic materials",
-      "prompt": "Find recent research papers about quantum computing"
+      "description": "Academic and scholarly search for papers, articles, and other academic materials"
     },
     {
       "name": "txyz_search_web",
-      "description": "General web search functionality for resources from web pages",
-      "prompt": "Find information about the latest smartphone releases"
+      "description": "General web search functionality for resources from web pages"
     },
     {
       "name": "txyz_search_smart",
-      "description": "Automatically selects the best search type based on the query (may include either scholarly materials or web pages)",
-      "prompt": "What are the latest developments in climate change research?"
+      "description": "Automatically selects the best search type based on the query (may include either scholarly materials or web pages)"
     }
   ],
   "prompts": [

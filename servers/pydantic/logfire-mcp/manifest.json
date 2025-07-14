@@ -30,73 +30,19 @@
   "tools": [
     {
       "name": "find_exceptions",
-      "description": "Get the exceptions on a file.\n\n    Args:\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    ",
-      "inputSchema": {
-        "properties": {
-          "age": {
-            "title": "Age",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "age"
-        ],
-        "title": "find_exceptionsArguments",
-        "type": "object"
-      }
+      "description": "Get the exceptions on a file.\n\n    Args:\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    "
     },
     {
       "name": "find_exceptions_in_file",
-      "description": "Get the details about the 10 most recent exceptions on the file.\n\n    Args:\n        filepath: The path to the file to find exceptions in.\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    ",
-      "inputSchema": {
-        "properties": {
-          "filepath": {
-            "title": "Filepath",
-            "type": "string"
-          },
-          "age": {
-            "title": "Age",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "filepath",
-          "age"
-        ],
-        "title": "find_exceptions_in_fileArguments",
-        "type": "object"
-      }
+      "description": "Get the details about the 10 most recent exceptions on the file.\n\n    Args:\n        filepath: The path to the file to find exceptions in.\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    "
     },
     {
       "name": "arbitrary_query",
-      "description": "Run an arbitrary query on the Logfire database.\n\n    The schema is available via the `get_logfire_records_schema` tool.\n\n    Args:\n        query: The query to run, as a SQL string.\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    ",
-      "inputSchema": {
-        "properties": {
-          "query": {
-            "title": "Query",
-            "type": "string"
-          },
-          "age": {
-            "title": "Age",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "query",
-          "age"
-        ],
-        "title": "arbitrary_queryArguments",
-        "type": "object"
-      }
+      "description": "Run an arbitrary query on the Logfire database.\n\n    The schema is available via the `get_logfire_records_schema` tool.\n\n    Args:\n        query: The query to run, as a SQL string.\n        age: Number of minutes to look back, e.g. 30 for last 30 minutes. Maximum allowed value is 7 days.\n    "
     },
     {
       "name": "get_logfire_records_schema",
-      "description": "Get the records schema from Logfire.\n\n    To perform the `arbitrary_query` tool, you can use the `schema://records` to understand the schema.\n    ",
-      "inputSchema": {
-        "properties": {},
-        "title": "get_logfire_records_schemaArguments",
-        "type": "object"
-      }
+      "description": "Get the records schema from Logfire.\n\n    To perform the `arbitrary_query` tool, you can use the `schema://records` to understand the schema.\n    "
     }
   ],
   "prompts": [
