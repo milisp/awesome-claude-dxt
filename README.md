@@ -1,21 +1,21 @@
 # Awesome (not only Claude) Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README.th.md)
 [![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
-[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh-TW.md)
 [![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README.zh.md)
 [![日本語](https://img.shields.io/badge/日本語-クリック-青)](README.ja.md)
 [![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README.ko.md)
 [![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt-BR.md)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
+[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README.th.md)
+[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh-TW.md)
+
 [![Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
 [![Forks](https://img.shields.io/github/forks/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/network/members)
-[![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
 [![Last Commit](https://img.shields.io/github/last-commit/milisp/awesome-claude-dxt)](https://github.com/milisp/awesome-claude-dxt/commits)
+[![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/milisp)
 
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
-
-* [What is DXT?](#what-is-dxt)
 
 ## What is DXT?
 
@@ -59,16 +59,14 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 
 ## ☕ Support
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/milisp)
-&nbsp;&nbsp;
 [![GitHub Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
 
-If you find this project helpful, please consider starring or buying me a coffee!
+If you find this project helpful, please consider starring!
 
 ## Contributing
 This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Community Collaboration Plan
+## Community Collaboration Translation Plan
 PR or issue communication are welcome
 - [ ] [README.zh-TW.md](README.zh-TW.md) 繁體中文翻譯（歡迎貢獻）
 - [ ] [README.zh.md](README.zh.md) 中文翻译（欢迎贡献）
