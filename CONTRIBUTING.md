@@ -6,6 +6,7 @@ Thank you for your interest in contributing!
 
 - Add your DXT server/tool to the list
 - [Report an issue](https://github.com/milisp/awesome-claude-dxt/issues)
+- Translate README.md into your familiar language 
 
 ---
 
