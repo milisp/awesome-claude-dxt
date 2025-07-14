@@ -455,5 +455,5 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
 
-## Aboutawesome-claude-dxt 
+## About awesome-claude-dxt 
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)

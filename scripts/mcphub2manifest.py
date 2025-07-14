@@ -87,6 +87,13 @@ def get_manifest(data):
     if not author:
         repo_url = repository["url"]
         author = repo_url.split("/")[3]
+    if data.get("tools"):
+        data["tools"] = [
+            {"name": t["name"], "description": t["description"]}
+            for t in data["tools"]
+        ]
+    else:
+        data["tools"] = []
     manifest = {
         "dxt_version": "0.1",
         "name": data["name"],
