@@ -1,6 +1,10 @@
 # dxt files
 *.dxt
 
+# manifests
+manifests.json.zip
+manifests.json
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -39,4 +43,3 @@ yarn-error.log*
 next-env.d.ts
 
 /.vscode
-
