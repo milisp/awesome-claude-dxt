@@ -6,7 +6,6 @@
 [![Discord](https://img.shields.io/discord/1394197669794025564?logo=discord&label=discord)](https://discord.gg/N3gtxgJfby)
 [![Last Commit](https://img.shields.io/github/last-commit/milisp/awesome-claude-dxt)](https://github.com/milisp/awesome-claude-dxt/commits)
 [![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buymeacoffee)](https://www.buymeacoffee.com/milisp)
 
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
 
