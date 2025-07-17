@@ -1,13 +1,5 @@
 # Awesome (not only Claude) Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
-[![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README.zh.md)
-[![日本語](https://img.shields.io/badge/日本語-クリック-青)](README.ja.md)
-[![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README.ko.md)
-[![Português Brasileiro](https://img.shields.io/badge/Português_Brasileiro-Clique-green)](README.pt-BR.md)
-[![ไทย](https://img.shields.io/badge/Thai-Click-blue)](README.th.md)
-[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README.zh-TW.md)
-
 [![Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
 [![Forks](https://img.shields.io/github/forks/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/network/members)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/dxt?style=flat&logo=reddit&label=subreddit)](https://www.reddit.com/r/dxt/)
@@ -28,6 +20,7 @@ A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), too
 - [Contributing](#contributing)
 - [Extensions by Category](#extensions-by-category)
   - [Development Tools](#development-tools)
+  - [Command Line](#command-line)
   - [File Management](#file-management)
   - [System Tools](#system-tools)
   - [Web Services](#web-services)
@@ -145,6 +138,9 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [ognis1205/mcp-server-unitycatalog](https://github.com/ognis1205/mcp-server-unitycatalog) - An MCP server that enables LLMs to interact with Unity Catalog AI, supporting CRUD operations on Unity Catalog Functions and executing them as MCP tools.
 - [JetBrains/mcp-jetbrains](https://github.com/JetBrains/mcp-jetbrains) - The server proxies requests from client to JetBrains IDE.
 
+### Command Line
+
+- [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) 📇 🏠 🍎 🪟 🐧 - A swiss-army-knife that can manage/execute programs and read/write/search/edit code and text files.
 
 ### File Management
 
