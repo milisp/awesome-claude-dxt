@@ -87,7 +87,7 @@
       "required": true
     },
     "SLACK_TEAM_ID": {
-      "type": "number",
+      "type": "string",
       "description": "The unique identifier of the Slack workspace, required for operations within the workspace.",
       "sensitive": false,
       "title": "SLACK_TEAM_ID",
