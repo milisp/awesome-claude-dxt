@@ -1,0 +1,9 @@
+{
+    "MCP_INTEGRATION_URL": {
+      "type": "string",
+      "title": "MCP Integration URL",
+      "description": "MCP Integration URL from your account at https://transcribe.com, can be found in Automation popup",
+      "required": true,
+      "sensitive": true
+    }
+  }

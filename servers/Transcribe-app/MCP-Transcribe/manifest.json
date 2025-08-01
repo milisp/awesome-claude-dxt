@@ -1,0 +1,64 @@
+{
+  "version": "1.0.2",
+  "dxt_version": "0.1",
+  "name": "Transcribe.com tools",
+  "description": "Essential tools for transcribing audio and video files and converting audio into text",
+  "author": {
+    "name": "Transcribe.com",
+    "email": "support@transcribe.com",
+    "url": "https://github.com/transcribe-app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/transcribe-app/mcp-transcribe"
+  },
+  "homepage": "https://transcribe.com",
+  "icon": "favicon-32x32.png",
+  "server": {
+    "type": "node",
+    "entry_point": "build/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/build/index.js"
+      ],
+      "env": {
+        "MCP_INTEGRATION_URL": "${user_config.MCP_INTEGRATION_URL}"
+      }
+    }
+  },
+  "compatibility": {
+    "runtimes": {
+      "node": ">=20.0.0"
+    }
+  },
+  "tools": [
+    {
+      "name": "transcribe-file-convert-to-text"
+    }
+  ],
+  "user_config": {
+    "MCP_INTEGRATION_URL": {
+      "type": "string",
+      "title": "MCP Integration URL",
+      "description": "MCP Integration URL from your account at https://transcribe.com, can be found in Automation popup",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "keywords": [
+    "transcription",
+    "dictation",
+    "otter",
+    "meeting",
+    "notes",
+    "live",
+    "convert",
+    "interview",
+    "classes",
+    "research",
+    "irecord",
+    "service"
+  ],
+  "license": "MIT"
+}
