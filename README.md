@@ -9,6 +9,9 @@
 
 A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
 
+- [milisp/plux](https://github.com/milisp/plux) - Better gui for everyone use AI, File tree + plus button, One-click + your files to AI. AI finder/explorer
+
+
 ## What is DXT?
 
 [dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop and other Desktop apps
