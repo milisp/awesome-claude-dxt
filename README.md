@@ -1,4 +1,4 @@
-# Awesome (not only Claude) Desktop Extensions (.dxt) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Claude dxt [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [![Stars](https://img.shields.io/github/stars/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/stargazers)
 [![Forks](https://img.shields.io/github/forks/milisp/awesome-claude-dxt?style=social)](https://github.com/milisp/awesome-claude-dxt/network/members)
@@ -7,10 +7,12 @@
 [![Last Commit](https://img.shields.io/github/last-commit/milisp/awesome-claude-dxt)](https://github.com/milisp/awesome-claude-dxt/commits)
 [![License](https://img.shields.io/github/license/milisp/awesome-claude-dxt)](LICENSE)
 
-A curated list of awesome (not only Claude) Desktop Extensions (.dxt files), tools, and resources
+A curated list of awesome (not only Claude) Desktop Extensions, tools, and resources
 
-- [milisp/plux](https://github.com/milisp/plux) - Better gui for everyone use AI, File tree + plus button, One-click + your files to AI. AI finder/explorer
+## 🌟 Featured Project
 
+[**milisp/plux**](https://github.com/milisp/plux) — The fastest way to connect your files to AI.  
+Think file explorer + “add to AI” button — discover, send, and manage your files with one click.
 
 ## What is DXT?
 
