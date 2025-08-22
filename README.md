@@ -11,8 +11,8 @@ A curated list of awesome (not only Claude) Desktop Extensions, tools, and resou
 
 ## 🌟 Featured Project
 
-[**milisp/plux**](https://github.com/milisp/plux) — The fastest way to connect your files to AI.  
-Think file explorer + “add to AI” button — discover, send, and manage your files with one click.
+[**milisp/plux**](https://github.com/milisp/plux) — AI finder/explorer @files from FileTree to AI & build-in notepad
+[**milisp/codexia**](https://github.com/milisp/codexia) — Tauri app for openai codex cli
 
 ## What is DXT?
 
