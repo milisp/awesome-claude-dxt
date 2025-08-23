@@ -9,10 +9,8 @@
 
 A curated list of awesome (not only Claude) Desktop Extensions, tools, and resources
 
-## 🌟 Featured Project
-
-[**milisp/plux**](https://github.com/milisp/plux) — AI finder/explorer @files from FileTree to AI & build-in notepad
-[**milisp/codexia**](https://github.com/milisp/codexia) — Tauri app for openai codex cli
+> [!TIP]
+> **⭐ Star the repo and follow [milisp](https://x.com/lisp_mi) on X and [github](https://github.com/milisp) for more**.
 
 ## What is DXT?
 
