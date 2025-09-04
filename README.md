@@ -9,12 +9,17 @@
 
 A curated list of awesome (not only Claude) Desktop Extensions, tools, and resources
 
+## What is DXT
+
+[dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop and other Desktop apps
+
 > [!TIP]
 > **⭐ Star the repo and follow [milisp](https://x.com/lisp_mi) on X and [github](https://github.com/milisp) for more**.
 
-## What is DXT?
+## Feature Projects
 
-[dxt](https://www.anthropic.com/engineering/desktop-extensions) is Desktop Extensions: One-click MCP server installation for Claude Desktop and other Desktop apps
+- [mcp-linker](https://github.com/milisp/mcp-linker) - mcp manager, add & syncs MCP server configurations across clients like Claude, Cursor
+- [milisp/codexia](https://github.com/milisp/codexia) - The missing GUI for the OpenAI Codex CLI, (FileTree + notepad + git diff) all in a lightweight Tauri desktop app.
 
 ## Contents
 - [Official Resources](#official-resources)
@@ -61,16 +66,7 @@ A curated list of awesome (not only Claude) Desktop Extensions, tools, and resou
 If you find this project helpful, please consider starring!
 
 ## Contributing
-This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Community Collaboration Translation Plan
-PR or issue communication are welcome
-- [ ] [README.zh-TW.md](README.zh-TW.md) 繁體中文翻譯（歡迎貢獻）
-- [ ] [README.zh.md](README.zh.md) 中文翻译（欢迎贡献）
-- [ ] [README.ja.md](README.ja.md) 日本語翻訳（貢献歓迎）
-- [ ] [README.ko.md](README.ko.md) 한국어(기여를 환영합니다) 
-- [ ] [README.pt-BR.md](README.pt-BR.md) Português Brasileiro(Kontribuoj bonvenaj)
-- [ ] [README.th.md](README.th.md) ไทย(ยินดีรับการสนับสนุน)
+This list is community-maintained. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Or [translate plan](./translate-plan.md)
 
 ## Extensions by Category
 
@@ -455,6 +451,12 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 ## Packaging & Management Tools
 - [mcp-linker](https://github.com/milisp/mcp-linker) - Cross-platform MCP management tool with planned .dxt support 🚀
 - [@anthropic-ai/dxt](https://www.npmjs.com/package/@anthropic-ai/dxt) - Official packaging toolkit
+- [@anthropic-ai/mcpb](https://www.npmjs.com/package/@anthropic-ai/mcpb) - Official packaging mcpb toolkit
 
 ## About awesome-claude-dxt
 Curated by [@milisp](https://github.com/milisp) | Author of [mcp-linker](https://github.com/milisp/mcp-linker)
+
+---
+
+**[⬆ Back to Top](#What-is-DXT)**
+*Last updated: 09 2025*
