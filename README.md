@@ -299,7 +299,6 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) - Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) - This server is a server that installs other MCP servers for you.
 - [modelcontextprotocol/everything](https://github.com/modelcontextprotocol/servers/blob/main/src/everything) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
-- [integration-app/mcp-server](https://github.com/integration-app/mcp-server) - This is an implementation of the [Model Context Protocol (MCP) server](https://modelcontextprotocol.org/) that exposes tools powered by [Integration App](https://integration.app).
 
 ### Knowledge Base
 
@@ -357,7 +356,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [Fibery-inc/fibery-mcp-server](https://github.com/Fibery-inc/fibery-mcp-server) - This MCP (Model Context Protocol) server provides integration between Fibery and any LLM provider supporting the MCP protocol (e.g., Claude for Desktop), allowing you to interact with your Fibery workspace using natural language.
 - [ivo-toby/contentful-mcp](https://github.com/ivo-toby/contentful-mcp) - Read, update, delete, publish content in your [Contentful](https://contentful.com/) space(s) from this MCP Server.
 - [jerhadf/linear-mcp-server](https://github.com/jerhadf/linear-mcp-server) - Allows LLM to interact with Linear's API for project management, including searching, creating, and updating issues.
-- [osomai/servicenow-mcp](https://github.com/osomai/servicenow-mcp) - A MCP server to interact with a ServiceNow instance
+- [echelon-ai-labs/servicenow-mcp](https://github.com/echelon-ai-labs/servicenow-mcp) - A MCP server to interact with a ServiceNow instance
 - [integromat/make-mcp-server](https://github.com/integromat/make-mcp-server) - A Model Context Protocol server that enables Make scenarios to be utilized as tools by AI assistants. This integration allows AI systems to trigger and interact with your Make automation workflows.
 - [sakce/mcp-server-monday](https://github.com/sakce/mcp-server-monday) - MCP Server to interact with Monday.com boards and items.
 - [smn2gnt/MCP-Salesforce](https://github.com/smn2gnt/MCP-Salesforce) - Interact with Salesforce Data and Metadata

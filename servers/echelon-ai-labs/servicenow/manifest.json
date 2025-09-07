@@ -6,13 +6,13 @@
   "description": "A MCP server to interact with a ServiceNow instance",
   "long_description": "",
   "author": {
-    "name": "osomai"
+    "name": "echelon-ai-labs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/osomai/servicenow-mcp"
+    "url": "https://github.com/echelon-ai-labs/servicenow-mcp"
   },
-  "homepage": "https://github.com/osomai/servicenow-mcp",
+  "homepage": "https://github.com/echelon-ai-labs/servicenow-mcp",
   "screenshots": [],
   "server": {
     "type": "python",
@@ -21,7 +21,7 @@
       "command": "uvx",
       "args": [
         "--from",
-        "git+https://github.com/osomai/servicenow-mcp",
+        "git+https://github.com/echelon-ai-labs/servicenow-mcp",
         "servicenow-mcp"
       ],
       "env": {
