@@ -185,7 +185,6 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [modelcontextprotocol/brave-search](https://github.com/modelcontextprotocol/servers/blob/main/src/brave-search) - Web and local search using Brave's Search API
 - [pfldy2850/py-mcp-naver](https://github.com/pfldy2850/py-mcp-naver) - This MCP server provides tools to interact with various Naver services, such as searching blogs, news, books, and more.
 - [sunsetcoder/flightradar24-mcp-server](https://github.com/sunsetcoder/flightradar24-mcp-server) - A Claude Desktop MCP server that helps you track flights in real-time using Flightradar24 data.
-- [modelcontextprotocol/puppeteer](https://github.com/modelcontextprotocol/servers/blob/main/src/puppeteer) - Browser automation and web scraping
 - [fingertip-com/fingertip-mcp](https://github.com/fingertip-com/fingertip-mcp) - MCP server for Fingertip.com to search and create new sites.
 - [delorenj/mcp-server-ticketmaster](https://github.com/delorenj/mcp-server-ticketmaster) - Search for events, venues, and attractions through the Ticketmaster Discovery API
 - [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp) - Search engine for AI agents (search + extract) powered by Tavily
