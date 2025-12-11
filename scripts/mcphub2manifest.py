@@ -4,12 +4,19 @@ from pathlib import Path
 import requests
 
 raw_url = "https://raw.githubusercontent.com/samanhappy/mcphub/main/servers.json"
-response = requests.get(raw_url)
+servers_file = Path("servers.json")
 
-if response.status_code == 200:
-    servers = response.json()
+if servers_file.exists():
+    with open(servers_file, "r") as f:
+        servers = json.load(f)
 else:
-    raise Exception(f"Failed to fetch servers.json: {response.status_code}")
+    response = requests.get(raw_url)
+    if response.status_code == 200:
+        servers = response.json()
+        with open(servers_file, "w") as f:
+            json.dump(servers, f, indent=2)
+    else:
+        raise Exception(f"Failed to fetch servers.json: {response.status_code}")
 
 
 def write_json(filename="manifest.json", manifest=None):
@@ -89,7 +96,7 @@ def get_manifest(data):
         author = repo_url.split("/")[3]
     if data.get("tools"):
         data["tools"] = [
-            {"name": t["name"], "description": t["description"]}
+            {"name": t["name"], "description": t.get("description", "")}
             for t in data["tools"]
         ]
     else:
@@ -132,7 +139,7 @@ def get_manifest(data):
 count = 0
 keys = set()
 readme = ""
-BASE_DIR = Path.home() / "projects/awesome-claude-dxt/servers"
+BASE_DIR = Path.cwd() / "servers"
 server_list = []
 for k, v in servers.items():
     # print(k, v['installations'].keys())
