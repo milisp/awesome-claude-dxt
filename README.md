@@ -370,6 +370,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [modelcontextprotocol/gdrive](https://github.com/modelcontextprotocol/servers/blob/main/src/gdrive) - File access and search capabilities for Google Drive
 - [haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server) - Excel manipulation including data reading/writing, worksheet management, formatting, charts, and pivot table.
 - [v-3/notion-server](https://github.com/v-3/notion-server) - Notion MCP integration. Search, Read, Update, and Create pages through Claude chat.
+- [vasylenko/claude-desktop-extension-bear-notes](https://github.com/vasylenko/claude-desktop-extension-bear-notes) - Search, read, create, and update Bear Notes directly from Claude. Local-only with complete privacy.
 - [nspady/google-calendar-mcp](https://github.com/nspady/google-calendar-mcp) - Google Calendar MCP Server for managing Google calendar events. Also supports searching for events by attributes like title and location.
 - [hichana/goalstory-mcp](https://github.com/hichana/goalstory-mcp) - a Goal Tracker and Visualization Tool for personal and professional development.
 - [horizondatawave/hdw-mcp-server](https://github.com/horizondatawave/hdw-mcp-server) - Access to profile data and management of user account with [HorizonDataWave.ai](https://horizondatawave.ai/).
