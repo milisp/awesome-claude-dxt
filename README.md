@@ -139,6 +139,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 ### Command Line
 
 - [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) 📇 🏠 🍎 🪟 🐧 - A swiss-army-knife that can manage/execute programs and read/write/search/edit code and text files.
+- [daxaur/openpaw](https://github.com/daxaur/openpaw) - A CLI tool that adds 39 personal assistant skills to Claude Code — focus mode, task dashboard, smart home, email, calendar, and more.
 
 ### File Management
 
