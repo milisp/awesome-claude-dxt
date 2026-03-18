@@ -317,6 +317,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [run-llama/mcp-server-llamacloud](https://github.com/run-llama/mcp-server-llamacloud) - Integrate the data stored in a managed index on [LlamaCloud](https://cloud.llamaindex.ai/)
 - [kiwamizamurai/mcp-kibela-server](https://github.com/kiwamizamurai/mcp-kibela-server) - Interact with Kibela API.
 - [StevenStavrakis/obsidian-mcp](https://github.com/StevenStavrakis/obsidian-mcp) - (by Steven Stavrakis) An MCP server for Obsidian.md with tools for searching, reading, writing, and organizing notes.
+- [connerlambden/bgpt-mcp](https://github.com/connerlambden/bgpt-mcp) - Hosted MCP server for searching scientific papers with full-text experimental data. SSE + Streamable HTTP endpoints, 50 free searches, no API key needed.
 - [adityak74/mcp-scholarly](https://github.com/adityak74/mcp-scholarly) - A MCP server to search for scholarly and academic articles.
 - [scorzeth/anki-mcp-server](https://github.com/scorzeth/anki-mcp-server) - An MCP server for interacting with your [Anki](https://apps.ankiweb.net/) decks and cards.
 - [calclavia/mcp-obsidian](https://github.com/calclavia/mcp-obsidian) - Read and search through your Obsidian vault or any directory containing Markdown notes
