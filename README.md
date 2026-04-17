@@ -159,6 +159,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [ChristophEnglisch/keycloak-model-context-protocol](https://github.com/ChristophEnglisch/keycloak-model-context-protocol) - This MCP server enables natural language interaction with Keycloak for user and realm management including creating, deleting, and listing users and realms.
 - [modelcontextprotocol/filesystem](https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem) - Secure file operations with configurable access controls
 - [Descope/descope-mcp-server](https://github.com/descope-sample-apps/descope-mcp-server) - An MCP server to integrate with [Descope](https://descope.com/) to search audit logs, manage users, and more.
+- [MichaelAdamGroberman/mac-mcp](https://github.com/MichaelAdamGroberman/mac-mcp) - Native macOS control via Swift + AppKit + Accessibility + cached OSAKit. 32 typed allow-listed tools across windows, Finder, clipboard, screenshots, mouse/trackpad/keyboard (CGEvent), Mail/Calendar/Messages/Safari/Notes, iTerm/Terminal, and iPhone Mirroring. Code-signed Developer ID + hardened runtime for stable TCC grants. No `run_shell` / `run_applescript` escape hatches. Ships as a one-click `.mcpb`.
 
 ### Web Services
 
