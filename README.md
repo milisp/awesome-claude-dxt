@@ -344,6 +344,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) - Blender integration allowing prompt enabled 3D scene creation, modeling and manipulation.
 - [varunneal/spotify-mcp](https://github.com/varunneal/spotify-mcp) - This MCP allows an LLM to play and use Spotify.
 - [GongRzhe/Image-Generation-MCP-Server](https://github.com/GongRzhe/Image-Generation-MCP-Server) - This MCP server provides image generation capabilities using the Replicate Flux model.
+- [MohamedAbdallah-14/prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset) - MCP server and CLI that generates production-ready visual assets (app icons, favicons, OG images, logos) by routing each request across 30+ image generation models. Zero API key for first run via Pollinations, Stable Horde, and HuggingFace free tiers.
 - [zcaceres/mcp-markdownify-server](https://github.com/zcaceres/mcp-markdownify-server) - MCP to convert almost anything to Markdown (PPTX, HTML, PDF, Youtube Transcripts and more)
 - [GongRzhe/Quickchart-MCP-Server](https://github.com/GongRzhe/Quickchart-MCP-Server) - A Model Context Protocol server for generating charts using QuickChart.io
 - [burningion/video-editing-mcp](https://github.com/burningion/video-editing-mcp) - A Model Context Protocol Server to add, edit, and search videos with [Video Jungle](https://www.video-jungle.com/).
@@ -370,6 +371,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [abhiz123/todoist-mcp-server](https://github.com/abhiz123/todoist-mcp-server) - Interact with Todoist to manage your tasks.
 - [sooperset/mcp-atlassian](https://github.com/sooperset/mcp-atlassian) - Interact with Atlassian Cloud products (Confluence and Jira) including searching/reading Confluence spaces/pages, accessing Jira issues, and project metadata.
 - [open-strategy-partners/osp_marketing_tools](https://github.com/open-strategy-partners/osp_marketing_tools) - Content editing codes, value map, and positioning tools for product marketing.
+- [MohamedAbdallah-14/unslop](https://github.com/MohamedAbdallah-14/unslop) - MCP server and CLI that removes named AI writing tells from text: tricolons, em-dash pileups, hedging stacks, sycophancy openers, overused vocab like "delve" and "crucial". Lint-only audit mode included. Five intensity levels.
 - [zcaceres/gtasks-mcp](https://github.com/zcaceres/gtasks-mcp) - Google Tasks API Model Context Protocol Server.
 - [esignaturescom/mcp-server-esignatures](https://github.com/esignaturescom/mcp-server-esignatures) - MCP server for eSignatures (https://esignatures.com)
 - [modelcontextprotocol/gdrive](https://github.com/modelcontextprotocol/servers/blob/main/src/gdrive) - File access and search capabilities for Google Drive
