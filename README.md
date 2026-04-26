@@ -201,6 +201,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [modelcontextprotocol/fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) - A Model Context Protocol server that provides web content fetching capabilities.
 
 - [Xquik-dev/x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) - X/Twitter data MCP server & AI agent skill. REST API and 20 extraction tools for profiles, tweets, followers, and more.
+- [Rakesh1002/namemyapp-mcp](https://github.com/Rakesh1002/namemyapp-mcp) - Generate brandable business names with live domain availability and one-click buy URLs. 12 tools: AI naming, domain check, registration, DNS, logos, legal docs, brand & social kits. Remote MCP at `https://mcp.namemy.app/mcp` (OAuth) and `/direct` (bearer); npm: `@namemyapp/mcp`.
 
 ### Messaging
 
