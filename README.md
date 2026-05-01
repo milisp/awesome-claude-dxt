@@ -360,6 +360,8 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 
 ### Productivity
 
+- [LMCP](https://www.local-mcp.com) - Connect your AI to Mail, Calendar, Teams, Outlook, OneDrive, Excel, Word, WhatsApp and 95+ more local tools. Runs 100% locally, no API keys, GDPR compliant. macOS + Windows. [Download .mcpb](https://download.local-mcp.com/local-mcp.mcpb)
+
 - [transcribe-app/mcp-transcribe](https://github.com/transcribe-app/mcp-transcribe) - This service provides fast and reliable transcriptions for audio/video files and voice memos. It allows LLMs to interact with the text content of audio/video files.
 - [Fibery-inc/fibery-mcp-server](https://github.com/Fibery-inc/fibery-mcp-server) - This MCP (Model Context Protocol) server provides integration between Fibery and any LLM provider supporting the MCP protocol (e.g., Claude for Desktop), allowing you to interact with your Fibery workspace using natural language.
 - [ivo-toby/contentful-mcp](https://github.com/ivo-toby/contentful-mcp) - Read, update, delete, publish content in your [Contentful](https://contentful.com/) space(s) from this MCP Server.
