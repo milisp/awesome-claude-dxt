@@ -335,6 +335,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [Spathodea-Network/opencti-mcp](https://github.com/Spathodea-Network/opencti-mcp) - Interact with OpenCTI platform to retrieve threat intelligence data including reports, indicators, malware and threat actors.
 - [hungryrobot1/MCP-PIF](https://github.com/hungryrobot1/MCP-PIF) - A Personal Intelligence Framework (PIF), providing tools for file operations, structured reasoning, and journal-based documentation to support continuity and evolving human-AI collaboration across sessions.
 - [ProgramComputer/NASA-MCP-server](https://github.com/ProgramComputer/NASA-MCP-server) - Access to a unified gateway of NASA's data sources including but not limited to APOD, NEO, EPIC, GIBS.
+- [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) - 24/7 local screen & mic recording; MCP server lets agents search OCR, accessibility, and audio transcripts of everything you've seen, said, or heard. Works with Ollama.
 
 ### Media Creation
 
