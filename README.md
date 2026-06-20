@@ -387,6 +387,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [hichana/goalstory-mcp](https://github.com/hichana/goalstory-mcp) - a Goal Tracker and Visualization Tool for personal and professional development.
 - [horizondatawave/hdw-mcp-server](https://github.com/horizondatawave/hdw-mcp-server) - Access to profile data and management of user account with [HorizonDataWave.ai](https://horizondatawave.ai/).
 - [kenjihikmatullah/productboard-mcp](https://github.com/kenjihikmatullah/productboard-mcp) - Integrate the Productboard API into agentic workflows via MCP.
+- [jabbawocky/standupcraft](https://github.com/jabbawocky/standupcraft) - MCP server that reads your git commits and GitHub activity to generate daily standups, weekly client reports, and sprint retros inside Claude Desktop. No API key required — runs entirely locally.
 
 ### Professional Apps
 
