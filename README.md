@@ -454,6 +454,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 }
 ```
 
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates (wiki, mental-models, voice, protocols) + 5 Claude Code skills. Solves context amnesia — every session starts context-full. MIT, one-command install.
 ## Documentation & Tutorials
 
 - [desktop-extensions](https://www.anthropic.com/engineering/desktop-extensions)
