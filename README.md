@@ -307,6 +307,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) - This server is a server that installs other MCP servers for you.
 - [modelcontextprotocol/everything](https://github.com/modelcontextprotocol/servers/blob/main/src/everything) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
 - [BuyWhere/buywhere-mcp](https://github.com/BuyWhere/buywhere-mcp) - Real-time product search and price-comparison MCP server for AI agents. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Free API key with no signup.
+- [KernelLord/pickysteve](https://github.com/KernelLord/pickysteve) - Skill router and context picker for coding agents: hybrid BM25+embedding retrieval, cross-encoder rerank, and an LLM judge pick the right skill, then a fail-closed prompt-injection gate (ONNX classifier) scans the request and every retrieved document before assembly. Runs 100% local on Ollama by default; ships an MCP stdio server and OpenAI-compatible proxy with a one-command installer wiring 18 coding agents (Claude Code, Cursor, Windsurf, Aider, and more).
 
 ### Knowledge Base
 
