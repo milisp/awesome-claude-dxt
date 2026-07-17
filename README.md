@@ -306,7 +306,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [sparfenyuk/mcp-proxy](https://github.com/sparfenyuk/mcp-proxy) - Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.
 - [anaisbetts/mcp-installer](https://github.com/anaisbetts/mcp-installer) - This server is a server that installs other MCP servers for you.
 - [modelcontextprotocol/everything](https://github.com/modelcontextprotocol/servers/blob/main/src/everything) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
-- [BuyWhere/buywhere-mcp](https://github.com/BuyWhere/buywhere-mcp) - Real-time product search and price-comparison MCP server for AI agents. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Free API key with no signup.
+- [BuyWhere/buywhere-mcp](https://github.com/BuyWhere/buywhere-mcp?utm_source=awesome-claude-dxt&utm_medium=referral&utm_campaign=june30_25k&utm_content=awesome-claude-dxt) - Real-time product search and price-comparison MCP server for AI agents. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Free API key with no signup.
 
 ### Knowledge Base
 
