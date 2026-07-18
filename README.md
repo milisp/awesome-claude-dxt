@@ -360,6 +360,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [dschuler36/reaper-mcp-server](https://github.com/dschuler36/reaper-mcp-server) - Interact with your [Reaper](https://www.reaper.fm/) (Digital Audio Workstation) projects.
 - [quazaai/UnityMCPIntegration](https://github.com/quazaai/UnityMCPIntegration) - Advanced Unity3d Game Engine MCP which supports ,Execution of Any Editor Related Code Directly Inside of Unity, Fetch Logs, Get Editor State and Allow File Access of the Project making it much more useful in Script Editing or asset creation.
 - [Coding Solo/godot-mcp](https://github.com/Coding-Solo/godot-mcp) - A MCP server providing comprehensive Godot engine integration for project editing, debugging, and scene management.
+- [Pantani/ableton-mind](https://github.com/Pantani/ableton-mind) - Control Ableton Live from plain language with a local Remote Script bridge, embedded device knowledge, music recipes, and a create→verify loop. Ships a one-click .mcpb for Claude Desktop.
 - [Pantani/tdmcp](https://github.com/Pantani/tdmcp) - Build real TouchDesigner node networks from plain language (audio-reactive visuals, feedback loops, particles, generative art, projection mapping) with a create→verify→preview loop. Ships a one-click .dxt for Claude Desktop.
 
 ### Productivity
