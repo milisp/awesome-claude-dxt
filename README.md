@@ -360,7 +360,6 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [dschuler36/reaper-mcp-server](https://github.com/dschuler36/reaper-mcp-server) - Interact with your [Reaper](https://www.reaper.fm/) (Digital Audio Workstation) projects.
 - [quazaai/UnityMCPIntegration](https://github.com/quazaai/UnityMCPIntegration) - Advanced Unity3d Game Engine MCP which supports ,Execution of Any Editor Related Code Directly Inside of Unity, Fetch Logs, Get Editor State and Allow File Access of the Project making it much more useful in Script Editing or asset creation.
 - [Coding Solo/godot-mcp](https://github.com/Coding-Solo/godot-mcp) - A MCP server providing comprehensive Godot engine integration for project editing, debugging, and scene management.
-- [Pantani/tdmcp](https://github.com/Pantani/tdmcp) - Build real TouchDesigner node networks from plain language (audio-reactive visuals, feedback loops, particles, generative art, projection mapping) with a create→verify→preview loop. Ships a one-click .dxt for Claude Desktop.
 
 ### Productivity
 
@@ -425,6 +424,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [mcpdotdirect/evm-mcp-server](https://github.com/mcpdotdirect/evm-mcp-server) - Comprehensive blockchain services for 30+ EVM networks, supporting native tokens, ERC20, NFTs, smart contracts, transactions, and ENS resolution.
 - [marctheshark3/ergo-mcp](https://github.com/marctheshark3/ergo-mcp) - -An MCP server to integrate Ergo Blockchain Node and Explorer APIs for checking address balances, analyzing transactions, viewing transaction history, performing forensic analysis of addresses, searching for tokens, and monitoring network status.
 - [XeroAPI/xero-mcp-server](https://github.com/XeroAPI/xero-mcp-server) - This is a Model Context Protocol (MCP) server implementation for Xero. It provides a bridge between the MCP protocol and Xero's API, allowing for standardized access to Xero's accounting and business features.
+- [thebrierfox/intuitek-ace](https://github.com/thebrierfox/intuitek-ace) - Passive income analysis MCP server with live US Treasury rates, dividend ETF and REIT yield scanning, and AI-powered portfolio optimization. Two tools: analyze_yield_opportunities and optimize_income_portfolio. Hosted cloud endpoint at api.intuitek.ai/yield/mcp — no auth required.
 
 ### examples
 
