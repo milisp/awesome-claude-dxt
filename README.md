@@ -391,6 +391,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [hichana/goalstory-mcp](https://github.com/hichana/goalstory-mcp) - a Goal Tracker and Visualization Tool for personal and professional development.
 - [horizondatawave/hdw-mcp-server](https://github.com/horizondatawave/hdw-mcp-server) - Access to profile data and management of user account with [HorizonDataWave.ai](https://horizondatawave.ai/).
 - [kenjihikmatullah/productboard-mcp](https://github.com/kenjihikmatullah/productboard-mcp) - Integrate the Productboard API into agentic workflows via MCP.
+- [jabbawocky/proposalcraft](https://github.com/jabbawocky/proposalcraft) - MCP server that drafts freelance client proposals in your voice, learned from your past winning work. Runs locally via Claude Desktop — no API key, no cloud, nothing leaves your machine. Free tier: 5 proposals/month.
 
 ### Professional Apps
 
