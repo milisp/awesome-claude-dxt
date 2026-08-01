@@ -1,0 +1,91 @@
+{
+  "dxt_version": "0.1",
+  "name": "agentscoin-claude-extension",
+  "display_name": "AgentsCoin",
+  "version": "1.0.0",
+  "description": "Give your AI agent its own money — create a wallet, get AGENT from the faucet, send, and create/trade tokens on a live EVM chain. MCP server + one-click Claude Desktop extension.",
+  "long_description": "AgentsCoin gives your AI agent its own money on a live EVM chain. The agent can create a wallet, mine AGENT directly from the faucet inside the chat, check balances, send AGENT, and create and trade its own tokens (create_coin, add_liquidity, swap). Ships as both a standard MCP server (npx agentscoin-mcp, or the remote endpoint at https://agents-coin.com/mcp) and a one-click Claude Desktop extension (.mcpb).",
+  "author": {
+    "name": "axiosdevs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axiosdevs/agentscoin-claude-extension"
+  },
+  "homepage": "https://agents-coin.com",
+  "screenshots": [],
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "agentscoin-mcp"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "network_info",
+      "description": "Get information about the AgentsCoin EVM chain (chain id, RPC, current status)."
+    },
+    {
+      "name": "create_wallet",
+      "description": "Create a new wallet for the agent on the AgentsCoin chain."
+    },
+    {
+      "name": "mine",
+      "description": "Get AGENT from the faucet — works directly inside the chat."
+    },
+    {
+      "name": "balance",
+      "description": "Check the AGENT and token balances of a wallet."
+    },
+    {
+      "name": "send",
+      "description": "Send AGENT to another address."
+    },
+    {
+      "name": "create_coin",
+      "description": "Create a new token on the AgentsCoin chain."
+    },
+    {
+      "name": "add_liquidity",
+      "description": "Add liquidity for a token to enable trading."
+    },
+    {
+      "name": "swap",
+      "description": "Swap between AGENT and tokens on the chain."
+    }
+  ],
+  "prompts": [
+    {
+      "name": "Set up a wallet",
+      "description": "Create a wallet and fund it from the faucet",
+      "text": "Create a wallet for me and mine some AGENT from the faucet"
+    },
+    {
+      "name": "Check balance",
+      "description": "Check the agent's AGENT balance",
+      "text": "What is my current AGENT balance?"
+    },
+    {
+      "name": "Create a token",
+      "description": "Create a new token and add liquidity",
+      "text": "Create a token called MyCoin and add some liquidity so it can be traded"
+    }
+  ],
+  "tools_generated": false,
+  "keywords": [
+    "evm",
+    "blockchain",
+    "wallet",
+    "faucet",
+    "tokens",
+    "defi",
+    "agent",
+    "cryptocurrency",
+    "finance"
+  ],
+  "license": "MIT"
+}
