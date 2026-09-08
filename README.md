@@ -142,6 +142,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 
 - [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) 📇 🏠 🍎 🪟 🐧 - A swiss-army-knife that can manage/execute programs and read/write/search/edit code and text files.
 - [daxaur/openpaw](https://github.com/daxaur/openpaw) - A CLI tool that adds 39 personal assistant skills to Claude Code — focus mode, task dashboard, smart home, email, calendar, and more.
+- [yylo-dev/yylo](https://github.com/yylo-dev/yylo) - A command-line orchestrator for coding agents, repeatable workflows, and receipt-backed repository changes, with typed task, validation, merge, and release-readiness boundaries. Ships Claude Code skills (kanban workflow, ralph loop); each task runs in a dedicated branch/worktree and the merge queue owns risk-based review.
 
 ### File Management
 
