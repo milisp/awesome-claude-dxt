@@ -308,6 +308,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [modelcontextprotocol/everything](https://github.com/modelcontextprotocol/servers/blob/main/src/everything) - This MCP server exercises all the features of the MCP protocol. It is a test server for builders of MCP clients.
 - [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, with proof of exploitation.
 - [BuyWhere/buywhere-mcp](https://github.com/BuyWhere/buywhere-mcp?utm_source=awesome-claude-dxt&utm_medium=referral&utm_campaign=june30_25k&utm_content=awesome-claude-dxt) - Real-time product search and price-comparison MCP server for AI agents. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Free API key with no signup.
+- [Continuum-AI-Corp/OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) - MCP server over a recorded agent run: what it sent, every tool call with arguments, shell exit codes, files changed, and which event caused which — plus offline replay of that run. Local stdio, no credentials.
 
 ### Knowledge Base
 
