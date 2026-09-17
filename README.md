@@ -340,6 +340,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [hungryrobot1/MCP-PIF](https://github.com/hungryrobot1/MCP-PIF) - A Personal Intelligence Framework (PIF), providing tools for file operations, structured reasoning, and journal-based documentation to support continuity and evolving human-AI collaboration across sessions.
 - [ProgramComputer/NASA-MCP-server](https://github.com/ProgramComputer/NASA-MCP-server) - Access to a unified gateway of NASA's data sources including but not limited to APOD, NEO, EPIC, GIBS.
 - [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) - 24/7 local screen & mic recording; MCP server lets agents search OCR, accessibility, and audio transcripts of everything you've seen, said, or heard. Works with Ollama.
+- [mnemoverse/mcp-memory-server](https://github.com/mnemoverse/mcp-memory-server) - Hosted memory server for AI agents over MCP; tell it a recalled memory helped or misled, and it re-ranks what comes back next. Each release ships a `.mcpb` bundle; tool calls need a free API key.
 
 ### Media Creation
 
