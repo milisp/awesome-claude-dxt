@@ -456,6 +456,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
   "license": "MIT"
 }
 ```
+- [usenetstate/statsnet-mcp](https://github.com/usenetstate/statsnet-mcp) - Background check any company in the world: registration, executives, courts and finances. Remote: `https://statsnet.co/mcp`
 
 ## Documentation & Tutorials
 
