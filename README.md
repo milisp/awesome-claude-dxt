@@ -393,6 +393,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [hichana/goalstory-mcp](https://github.com/hichana/goalstory-mcp) - a Goal Tracker and Visualization Tool for personal and professional development.
 - [horizondatawave/hdw-mcp-server](https://github.com/horizondatawave/hdw-mcp-server) - Access to profile data and management of user account with [HorizonDataWave.ai](https://horizondatawave.ai/).
 - [kenjihikmatullah/productboard-mcp](https://github.com/kenjihikmatullah/productboard-mcp) - Integrate the Productboard API into agentic workflows via MCP.
+- [amflimited/threadfox-lite](https://github.com/amflimited/threadfox-lite) - Read-only Reddit research tools as a Claude Desktop extension (.mcpb in each release): subreddit rules, community search, account standing and post status through your own signed-in Chrome.
 
 ### Professional Apps
 
