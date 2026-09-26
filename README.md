@@ -292,6 +292,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [66julienmartin/MCP-server-Deepseek_R1](https://github.com/66julienmartin/MCP-server-Deepseek_R1) - A Model Context Protocol (MCP) server implementation connecting Claude Desktop with DeepSeek's language models (R1/V3)
 - [modelcontextprotocol/sequentialthinking](https://github.com/modelcontextprotocol/servers/blob/main/src/sequentialthinking) - Dynamic and reflective problem-solving through thought sequences
 - [66julienmartin/MCP-server-Qwen_Max](https://github.com/66julienmartin/MCP-server-Qwen_Max) - A Model Context Protocol (MCP) server implementation for the Qwen models.
+- [mtangoz/grill](https://github.com/mtangoz/grill) - Say "grill this" and a judge model from a different AI company than Claude argues the strongest case against your decision, names the cheapest test that would settle each doubt, and gives a verdict. Bring your own OpenRouter key (about a cent a grill). Ships a one-click `.mcpb`.
 
 ### MCP Tools
 
