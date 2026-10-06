@@ -427,6 +427,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [mcpdotdirect/evm-mcp-server](https://github.com/mcpdotdirect/evm-mcp-server) - Comprehensive blockchain services for 30+ EVM networks, supporting native tokens, ERC20, NFTs, smart contracts, transactions, and ENS resolution.
 - [marctheshark3/ergo-mcp](https://github.com/marctheshark3/ergo-mcp) - -An MCP server to integrate Ergo Blockchain Node and Explorer APIs for checking address balances, analyzing transactions, viewing transaction history, performing forensic analysis of addresses, searching for tokens, and monitoring network status.
 - [XeroAPI/xero-mcp-server](https://github.com/XeroAPI/xero-mcp-server) - This is a Model Context Protocol (MCP) server implementation for Xero. It provides a bridge between the MCP protocol and Xero's API, allowing for standardized access to Xero's accounting and business features.
+- [voidly-ai/pay-mcp](https://github.com/voidly-ai/pay-mcp) - MCP server for Voidpay, an agent services marketplace. Agents find services and storefronts and prepare owner-approved checkout links; it never signs or pays. Published [MCPB 0.7.4](https://github.com/voidly-ai/pay-mcp/releases/download/v0.7.4/voidpay-marketplace-0.7.4.mcpb) available (Node >=20, Apache-2.0).
 
 ### examples
 
