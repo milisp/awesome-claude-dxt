@@ -204,6 +204,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 
 - [Xquik-dev/x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) - X/Twitter data MCP server & AI agent skill. REST API and 20 extraction tools for profiles, tweets, followers, and more.
 - [Rakesh1002/namemyapp-mcp](https://github.com/Rakesh1002/namemyapp-mcp) - Generate brandable business names with live domain availability and one-click buy URLs. 12 tools: AI naming, domain check, registration, DNS, logos, legal docs, brand & social kits. Remote MCP at `https://mcp.namemy.app/mcp` (OAuth) and `/direct` (bearer); npm: `@namemyapp/mcp`.
+- [waynehamadi/datacircle-plugin](https://github.com/waynehamadi/datacircle-plugin) - Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. Right now we have 3 live LinkedIn profile APIs that we trust: Up2Data, HarvestAPI and Fetchin. Remote server at `https://api.datacircle.dev/mcp`. The first time, your client signs you in with your Datacircle email (OAuth). Or send your API key as a Bearer token.
 
 ### Messaging
 
