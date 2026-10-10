@@ -298,6 +298,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [unifai-network/unifai-mcp-server](https://github.com/unifai-network/unifai-mcp-server) - Dynamically search and call tools using UnifAI Network
 - [tesla0225/mcp-create](https://github.com/tesla0225/mcp-create) - A dynamic MCP server management service that creates, runs, and manages Model Context Protocol servers on-the-fly.
 - [liuyoshio/mcp-compass](https://github.com/liuyoshio/mcp-compass) - Suggest the right MCP server for your needs
+- [agentage/find-mcp](https://github.com/agentage/find-mcp) - Search 17,000+ MCP servers from the official MCP registry, via remote Streamable HTTP (catalog.agentage.io/mcp) or stdio (npx @agentage/find-mcp)
 - [AIQL/chat-mcp](https://github.com/AI-QL/chat-mcp) - – An Open Source Cross-platform GUI Desktop application compatible with Linux, macOS, and Windows, enabling seamless interaction with MCP servers across dynamically selectable LLMs, by **[AIQL](https://github.com/AI-QL/chat-mcp)**
 - [pathintegral-institute/mcp.science](https://github.com/pathintegral-institute/mcp.science) - A MCP (Model Context Protocol) server that interacts with the Materials Project database, allowing for material search, structure visualization, and manipulation.
 - [e2b-dev/mcp-server](https://github.com/e2b-dev/mcp-server) - This repository contains the source code for the [E2B](https://e2b.dev) MCP server.
