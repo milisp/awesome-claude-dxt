@@ -427,6 +427,7 @@ If you have any disconnect issue check the `manifest.json` at these useful repos
 - [mcpdotdirect/evm-mcp-server](https://github.com/mcpdotdirect/evm-mcp-server) - Comprehensive blockchain services for 30+ EVM networks, supporting native tokens, ERC20, NFTs, smart contracts, transactions, and ENS resolution.
 - [marctheshark3/ergo-mcp](https://github.com/marctheshark3/ergo-mcp) - -An MCP server to integrate Ergo Blockchain Node and Explorer APIs for checking address balances, analyzing transactions, viewing transaction history, performing forensic analysis of addresses, searching for tokens, and monitoring network status.
 - [XeroAPI/xero-mcp-server](https://github.com/XeroAPI/xero-mcp-server) - This is a Model Context Protocol (MCP) server implementation for Xero. It provides a bridge between the MCP protocol and Xero's API, allowing for standardized access to Xero's accounting and business features.
+- [Tapetide-hq/nse-bse-indian-stock-market-data-mcp](https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp) - Indian stock market data for about 8,200 NSE and BSE stocks: quotes, quarterly financials, shareholding, a 326-ratio screener, FII/DII flows and option chains. Runs via `npx -y tapetide-mcp` with a free token, or as a remote server at `https://mcp.tapetide.com/mcp`.
 
 ### examples
 
